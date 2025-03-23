@@ -37,7 +37,7 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
+
     "com.unity.cinemachine": {
       "version": "2.10.3",
       "depth": 0,
@@ -47,8 +47,7 @@
       },
       "url": "https://packages.unity.com"
     },
-=======
->>>>>>> origin/ui
+
     "com.unity.collab-proxy": {
       "version": "2.7.1",
       "depth": 0,
