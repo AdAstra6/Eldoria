@@ -1,53 +1,54 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
-    private List<Transform> waypoints; // No need to assign manually
+    public Tile currentTile; // The tile the player is currently on
     public float moveSpeed = 5f;
     private bool isMoving = false;
-    public int currentTileIndex = 0;
-
-    private void Start()
-    {
-        // Automatically get waypoints from MapManager
-        waypoints = new List<Transform>(FindObjectOfType<MapManager>().waypoints);
-    }
 
     public void Move(int steps)
     {
-        if (isMoving || waypoints == null || waypoints.Count == 0) return;
+        if (isMoving || currentTile == null) return;
         StartCoroutine(MoveAlongPath(steps));
     }
 
     private IEnumerator MoveAlongPath(int steps)
     {
         isMoving = true;
+
         for (int i = 0; i < steps; i++)
         {
-            if (currentTileIndex + 1 < waypoints.Count)
+            Tile nextTile = currentTile.GetNextTile(); // Get the next tile from the current one
+
+            if (nextTile == null) break; // Stop if there is no next tile
+
+            Vector3 targetPosition = nextTile.transform.position;
+            while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
-                currentTileIndex++;
-                Vector3 targetPosition = waypoints[currentTileIndex].position;
-                while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-                    yield return null;
-                }
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+                yield return null;
             }
+
+            currentTile = nextTile; // Update current tile
         }
+
         isMoving = false;
         HandleTileEffect();
     }
 
     private void HandleTileEffect()
     {
-        Tile currentTile = waypoints[currentTileIndex].GetComponent<Tile>();
-        if (currentTile != null)
+        if (currentTile.isCrossway)
+        {
+            Debug.Log("Crossway reached! The player must choose a direction.");
+            // TODO: Show UI for player choice
+        }
+        else
         {
             Debug.Log("Landed on: " + currentTile.name);
         }
+
         GameManager.Instance.EndTurn();
     }
 }
