@@ -10,9 +10,10 @@ public class Tile : MonoBehaviour
     {
         if (isCrossway)
         {
-            // Temporary: Choose the first path automatically
-            return nextTiles[0]; // You will later replace this with player choice
+            Debug.Log("Crossway reached! The player must choose a direction.");
+            return null; // Stop movement and wait for player choice
         }
-        return nextTiles[0]; // Default single path
+
+        return nextTiles.Count > 0 ? nextTiles[0] : null; // Default movement
     }
 }

@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    public Tile currentTile; // The tile the player is currently on
+    public Tile currentTile;
     public float moveSpeed = 5f;
     private bool isMoving = false;
+    private int remainingSteps = 0;
 
     public void Move(int steps)
     {
@@ -16,39 +17,82 @@ public class Player : MonoBehaviour
     private IEnumerator MoveAlongPath(int steps)
     {
         isMoving = true;
+        remainingSteps = steps;
 
-        for (int i = 0; i < steps; i++)
+        while (remainingSteps > 0)
         {
-            Tile nextTile = currentTile.GetNextTile(); // Get the next tile from the current one
-
-            if (nextTile == null) break; // Stop if there is no next tile
-
-            Vector3 targetPosition = nextTile.transform.position;
-            while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
+            // Immediately check for crossways at current tile
+            if (currentTile.isCrossway)
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-                yield return null;
+                Debug.Log("Reached crossway. Waiting for path choice.");
+                UIManager.Instance.DisplayPathChoices(currentTile.nextTiles, this);
+                isMoving = false;
+                yield break; // Pause movement until path is chosen
             }
 
-            currentTile = nextTile; // Update current tile
+            Tile nextTile = currentTile.GetNextTile();
+
+            if (nextTile == null)
+            {
+                Debug.Log("Path blocked. Stopping movement.");
+                break;
+            }
+
+            // Move to next tile
+            yield return StartCoroutine(MoveToTile(nextTile.transform.position));
+            currentTile = nextTile;
+            remainingSteps--;
         }
 
         isMoving = false;
-        HandleTileEffect();
+        if (remainingSteps <= 0) GameManager.Instance.EndTurn();
     }
 
-    private void HandleTileEffect()
+    // New helper function for movement between tiles
+    private IEnumerator MoveToTile(Vector3 targetPosition)
     {
-        if (currentTile.isCrossway)
+        while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
         {
-            Debug.Log("Crossway reached! The player must choose a direction.");
-            // TODO: Show UI for player choice
+            transform.position = Vector3.MoveTowards(
+                transform.position, 
+                targetPosition, 
+                moveSpeed * Time.deltaTime
+            );
+            yield return null;
+        }
+    }
+
+    public void ChoosePath(Tile chosenTile)
+    {
+        if (chosenTile == null) return;
+
+        // Start movement to chosen path first
+        StartCoroutine(CompleteCrosswayMovement(chosenTile));
+    }
+
+    private IEnumerator CompleteCrosswayMovement(Tile chosenTile)
+    {
+        isMoving = true;
+
+        // 1. Move to the chosen tile
+        yield return StartCoroutine(MoveToTile(chosenTile.transform.position));
+        
+        // 2. Update current tile AFTER movement
+        currentTile = chosenTile;
+        
+        // 3. Consume the step
+        remainingSteps--;
+
+        isMoving = false;
+
+        // 4. Continue movement if steps remain
+        if (remainingSteps > 0)
+        {
+            StartCoroutine(MoveAlongPath(remainingSteps));
         }
         else
         {
-            Debug.Log("Landed on: " + currentTile.name);
+            GameManager.Instance.EndTurn();
         }
-
-        GameManager.Instance.EndTurn();
     }
 }
