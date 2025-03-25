@@ -5,7 +5,9 @@ using UnityEngine.Rendering.Universal.Internal;
 
 public class GameplayManager : MonoBehaviour
 {
-    public const int MAX_PLAYERS = 4;
-    private readonly Map map;
-    private readonly Player[] players = new Player[MAX_PLAYERS];
+    
+    private Map map;
+    [SerializeField] private List<Player> Players;
+    
+
 }

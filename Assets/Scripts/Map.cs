@@ -7,6 +7,7 @@ public class Map : MonoBehaviour
 {
     [SerializeField] RoadNetwork roadNetwork;
     [SerializeField] Tilemap roadsTilemap;
+    [SerializeField] List<Node> spawnPoints;
 
     private void Awake()
     {
