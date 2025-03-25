@@ -7,13 +7,13 @@ using UnityEngine.Tilemaps;
 public class Player1 : MonoBehaviour
     
 {
-    WalkableTile currentTile;
+    [SerializeField] Node currentNode;
     int lives;
 
-    public Player1(WalkableTile tile, int lives)
+    public Player1(Node node, int lives)
     {
-        this.currentTile = tile;
         this.lives = lives;
+        this.currentNode = node;
     }
 
 }
