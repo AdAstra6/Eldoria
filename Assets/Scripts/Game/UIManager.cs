@@ -11,8 +11,12 @@ public class UIManager : MonoBehaviour
     public Button pathButtonPrefab; // The prefab for each path choice
     private Player currentPlayer;
 
+    private Button rollDiceButton;
+    private Button endTurnButton;
+
     private void Awake()
     {
+
         if (Instance == null)
         {
             Instance = this;
@@ -23,6 +27,11 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Multiple UIManager instances detected!");
             Destroy(gameObject);
         }
+        rollDiceButton = GameObject.Find("RollDiceButton").GetComponent<Button>();
+        rollDiceButton.gameObject.SetActive(false);
+        endTurnButton = GameObject.Find("EndTurnButton").GetComponent<Button>();
+        endTurnButton.gameObject.SetActive(false);
+
     }
 
 
@@ -56,5 +65,25 @@ public class UIManager : MonoBehaviour
     {
         pathSelectionPanel.SetActive(false); // Hide the panel
         currentPlayer.ChoosePath(selectedTile); // Move the player
+    }
+
+    // Roll Dice button methods
+    public void RollDiceButtonShow()
+    {
+        rollDiceButton.gameObject.SetActive(true );
+    }
+    public void RollDiceButtonHide()
+    {
+        rollDiceButton.gameObject.SetActive(false);
+    }
+
+    // End Turn button methods
+    public void EndTurnButtonShow()
+    {
+        endTurnButton.gameObject.SetActive(true);
+    }
+    public void EndTurnButtonHide()
+    {
+        endTurnButton.gameObject.SetActive(false);
     }
 }

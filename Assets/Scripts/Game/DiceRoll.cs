@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class DiceRoll : MonoBehaviour
 {
-    public Player player;
+    private Player currentPlayer;
+    public Player CurrentPlayer { get { return currentPlayer; } set { currentPlayer = value; } }
 
     [SerializeField] private TMP_Text diceResultText; // Assign via Inspector
 
@@ -27,6 +29,6 @@ public class DiceRoll : MonoBehaviour
             Debug.LogError("DiceResultText Text component not assigned in the Inspector.");
         }
 
-        player.Move(total);
+        currentPlayer.Move(total);
     }
 }

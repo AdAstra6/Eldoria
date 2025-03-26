@@ -4,13 +4,20 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     public Tile currentTile;
+    private Tile nextTile;
+    private bool pathChosen = false;
+
     public float moveSpeed = 5f;
     private bool isMoving = false;
     private int remainingSteps = 0;
+    private PlayerStats playerState;
+    public PlayerStats PlayerState
+    {  get { return playerState; } set {playerState = value;}}
 
     public void Move(int steps)
     {
         if (isMoving || currentTile == null) return;
+        this.playerState = PlayerStats.MOVING;
         StartCoroutine(MoveAlongPath(steps));
     }
 
@@ -18,6 +25,7 @@ public class Player : MonoBehaviour
     {
         isMoving = true;
         remainingSteps = steps;
+        Tile nextTile = null;
 
         while (remainingSteps > 0)
         {
@@ -27,10 +35,11 @@ public class Player : MonoBehaviour
                 Debug.Log("Reached crossway. Waiting for path choice.");
                 UIManager.Instance.DisplayPathChoices(currentTile.nextTiles, this);
                 isMoving = false;
-                yield break; // Pause movement until path is chosen
-            }
-
-            Tile nextTile = currentTile.GetNextTile();
+                yield return new WaitUntil(() => pathChosen); // Pause movement until path is chosen
+                pathChosen = false; // Reset the flag for the next crossway
+                isMoving = true;
+                nextTile = this.nextTile;
+            } else { nextTile = currentTile.GetNextTile(); }
 
             if (nextTile == null)
             {
@@ -45,6 +54,7 @@ public class Player : MonoBehaviour
         }
 
         isMoving = false;
+        this.playerState = PlayerStats.END_MOVING;
         if (remainingSteps <= 0) GameManager.Instance.EndTurn();
     }
 
@@ -67,32 +77,10 @@ public class Player : MonoBehaviour
         if (chosenTile == null) return;
 
         // Start movement to chosen path first
-        StartCoroutine(CompleteCrosswayMovement(chosenTile));
+        //StartCoroutine(CompleteCrosswayMovement(chosenTile));
+        nextTile = chosenTile;
+        pathChosen = true;
     }
 
-    private IEnumerator CompleteCrosswayMovement(Tile chosenTile)
-    {
-        isMoving = true;
-
-        // 1. Move to the chosen tile
-        yield return StartCoroutine(MoveToTile(chosenTile.transform.position));
-        
-        // 2. Update current tile AFTER movement
-        currentTile = chosenTile;
-        
-        // 3. Consume the step
-        remainingSteps--;
-
-        isMoving = false;
-
-        // 4. Continue movement if steps remain
-        if (remainingSteps > 0)
-        {
-            StartCoroutine(MoveAlongPath(remainingSteps));
-        }
-        else
-        {
-            GameManager.Instance.EndTurn();
-        }
-    }
+    
 }
