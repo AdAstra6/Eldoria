@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InteractionSystemController : MonoBehaviour
+{
+    public InteractionSystemController Instance;
+    public const int MAX_PERMITTED_STEPS = 6;
+    
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+    public void TriggerTileInteraction(Player player)
+    {
+        Tile tile = player.currentTile;
+        switch (tile.type)
+        {
+            case TileType.MCQUESTION:
+                Debug.Log(player.name + " landed on a MCQuestion tile!");
+                // QuestionManager.Instance.AskQuestion(player);
+                break;
+            case TileType.PUZZLE:
+                Debug.Log(player.name + " landed on a Puzzle tile!");
+                // player.SolvePuzzle();
+                break;
+            case TileType.PENALTY:
+                Debug.Log(player.name + " landed on a Penalty tile!");
+                int stepsBack = Random.Range(1, MAX_PERMITTED_STEPS);
+                player.MoveBackward(stepsBack);
+                player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
+                break;
+            case TileType.TELEPORT:
+                Debug.Log(player.name + " landed on a Teleport tile!");
+                // player.TeleportToRandomTile();
+                break;
+            default:
+                Debug.Log(player.name + " landed on a Normal tile.");
+                player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
+                break;
+        }
+    }
+}

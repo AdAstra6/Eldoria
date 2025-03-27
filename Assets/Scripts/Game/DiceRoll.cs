@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.PlasticSCM.Editor.WebApi;
+
 
 public class DiceRoll : MonoBehaviour
 {
@@ -17,7 +17,6 @@ public class DiceRoll : MonoBehaviour
         int dice1 = Random.Range(1, 7);
         int dice2 = Random.Range(1, 7);
         int total = dice1 + dice2;
-
         Debug.Log("Rolled: " + total);
 
         if (diceResultText != null)

@@ -9,6 +9,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private Map map;
     [SerializeField] private List<Player> Players;
     [SerializeField] private int playersCount;
+    [SerializeField] private InteractionSystemController interactionSystemController;
     private int currentPlayerIndex;
     [SerializeField] private DiceRoll diceRoll;
 
@@ -53,7 +54,7 @@ public class GameplayManager : MonoBehaviour
                 // HERE WHERE THE PLAYER SHOULD INTERACT WITH THE TILE
                 // NOW BECAUSE NO INTERACTION WITH THE TILE IS IMPLEMENTED THE PLAYER GO TO STRATEGIC CHOICE STATE
                 uiManager.RollDiceButtonHide();
-                Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
+                interactionSystemController.Instance.TriggerTileInteraction(Players[currentPlayerIndex]);
                 break;
             case PlayerStats.ANSWERING_QUESTION:
                 Debug.Log("Player " + currentPlayerIndex + " is answering a question.");

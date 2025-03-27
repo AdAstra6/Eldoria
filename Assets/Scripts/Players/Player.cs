@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     private bool isMoving = false;
     private int remainingSteps = 0;
     private PlayerStats playerState;
+
+    private Stack<Tile> pathcrossedPath = new Stack<Tile>();
     public PlayerStats PlayerState
     {  get { return playerState; } set {playerState = value;}}
 
@@ -19,6 +22,18 @@ public class Player : MonoBehaviour
         if (isMoving || currentTile == null) return;
         this.playerState = PlayerStats.MOVING;
         StartCoroutine(MoveAlongPath(steps));
+    }
+    public void MoveBackward(int steps)
+    {
+        if (isMoving || currentTile == null) return;
+        this.playerState = PlayerStats.MOVING_BACK;
+        while (steps >0 && pathcrossedPath.Count > 0)
+        {
+            Tile lastTile = GetLastPathCrossed();
+            StartCoroutine(MoveToTile(lastTile.transform.position));
+            currentTile = lastTile;
+            steps--;
+        }
     }
 
     private IEnumerator MoveAlongPath(int steps)
@@ -49,6 +64,7 @@ public class Player : MonoBehaviour
 
             // Move to next tile
             yield return StartCoroutine(MoveToTile(nextTile.transform.position));
+            this.SavePathCrossed(currentTile);
             currentTile = nextTile;
             remainingSteps--;
         }
@@ -82,5 +98,21 @@ public class Player : MonoBehaviour
         pathChosen = true;
     }
 
-    
+    // Saving and accessing the path crossed by the player
+    public void SavePathCrossed(Tile tile)
+    {
+        pathcrossedPath.Push(tile);
+    }
+    public Tile GetLastPathCrossed()
+    {
+        if (pathcrossedPath.Count > 0)
+        {
+            Tile lastTile = pathcrossedPath.Pop();
+            Debug.Log("Last tile crossed: " + lastTile.name);
+            return lastTile;
+        }
+        return null;
+    }
+
+
 }
