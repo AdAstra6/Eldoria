@@ -1,4 +1,0 @@
-repository "Eldoria/Eldoria@11270570778642@cloud"
-  path "/"
-    br "/main"
-    co "/main"
