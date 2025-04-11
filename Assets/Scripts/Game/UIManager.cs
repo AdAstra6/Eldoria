@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class UIManager : MonoBehaviour
 
     private Button rollDiceButton;
     private Button endTurnButton;
+
+    // UI for MCQuestion
+    public GameObject questionPanel; // Reference the UI Panel
+    public TMP_Text questionText; // Question text field
+    public Button correctButton;
+    public Button[] wrongButton;
+    public TMP_Text feedbackText; // Feedback text field
 
     private void Awake()
     {
@@ -31,6 +39,9 @@ public class UIManager : MonoBehaviour
         rollDiceButton.gameObject.SetActive(false);
         endTurnButton = GameObject.Find("EndTurnButton").GetComponent<Button>();
         endTurnButton.gameObject.SetActive(false);
+
+        pathSelectionPanel.SetActive(false); // Hide the panel at start
+        questionPanel.SetActive(false); // Hide the question panel at start
 
     }
 
@@ -70,7 +81,7 @@ public class UIManager : MonoBehaviour
     // Roll Dice button methods
     public void RollDiceButtonShow()
     {
-        rollDiceButton.gameObject.SetActive(true );
+        rollDiceButton.gameObject.SetActive(true);
     }
     public void RollDiceButtonHide()
     {
@@ -86,4 +97,65 @@ public class UIManager : MonoBehaviour
     {
         endTurnButton.gameObject.SetActive(false);
     }
+
+
+
+    public void ShowQuestionPanel(Player player)
+    {
+        questionPanel.SetActive(true); // Show UI Panel
+
+        // Temporary hardcoded question & options (Replace this with actual question system)
+        string question = "What is 2 + 2?";
+        string[] options = { "4", "3", "5", "6" };  // First option is correct
+
+        questionText.text = question;
+
+        // Assign correct button text
+        correctButton.GetComponentInChildren<TMP_Text>().text = options[0];
+        correctButton.onClick.RemoveAllListeners();
+        correctButton.onClick.AddListener(() => SubmitAnswer(player, true));
+
+        // Assign wrong buttons text
+        for (int i = 0; i < wrongButton.Length; i++)
+        {
+            wrongButton[i].GetComponentInChildren<TMP_Text>().text = options[i + 1]; // Skip first (correct) option
+            wrongButton[i].onClick.RemoveAllListeners();
+            wrongButton[i].onClick.AddListener(() => SubmitAnswer(player, false));
+        }
+    }
+
+
+
+    private void SubmitAnswer(Player player, bool isCorrect)
+    {
+
+        // Show feedback message
+        UIManager.Instance.ShowFeedback(isCorrect ? "Correct Answer!" : "Wrong Answer!");
+
+        QuestionManager.Instance.HandleAnswer(player, isCorrect);
+    }
+
+    public void ShowFeedback(string message)
+    {
+        Debug.Log("ShowFeedback called with message: " + message);
+        feedbackText.text = message;
+        feedbackText.gameObject.SetActive(true);
+
+        StartCoroutine(HideFeedbackAfterDelay());
+    }
+
+    private IEnumerator HideFeedbackAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.HideQuestionPanel();
+    }
+    public void HideQuestionPanel()
+    {
+        questionText.text = ""; // Clear question text
+        feedbackText.text = ""; // Clear feedback text
+        questionPanel.SetActive(false); // Hide UI Panel
+    }
+
 }
+
+

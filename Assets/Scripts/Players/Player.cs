@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
     private Stack<Tile> pathcrossedPath = new Stack<Tile>();
     public PlayerStats PlayerState
-    {  get { return playerState; } set {playerState = value;}}
+    { get { return playerState; } set { playerState = value; } }
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         this.playerState = PlayerStats.MOVING;
         StartCoroutine(MoveAlongPath(steps));
     }
-    public void MoveBackward(int steps)
+    /*public void MoveBackward(int steps)
     {
         if (isMoving || currentTile == null) return;
         this.playerState = PlayerStats.MOVING_BACK;
@@ -39,7 +39,31 @@ public class Player : MonoBehaviour
             currentTile = lastTile;
             steps--;
         }
+    }*/
+    public void MoveBackward(int steps)
+    {
+        if (isMoving || currentTile == null) return;
+        this.playerState = PlayerStats.MOVING_BACK;
+        StartCoroutine(MoveBackwardCoroutine(steps));
     }
+
+    private IEnumerator MoveBackwardCoroutine(int steps)
+    {
+        isMoving = true;
+
+        while (steps > 0 && pathcrossedPath.Count > 0)
+        {
+            Tile lastTile = GetLastPathCrossed();
+            yield return StartCoroutine(MoveToTile(lastTile.transform.position)); // Wait until movement completes
+            currentTile = lastTile;
+            steps--;
+        }
+
+        isMoving = false;
+        this.playerState = PlayerStats.END_MOVING;
+        GameManager.Instance.EndTurn();
+    }
+
 
     private IEnumerator MoveAlongPath(int steps)
     {
@@ -59,7 +83,8 @@ public class Player : MonoBehaviour
                 pathChosen = false; // Reset the flag for the next crossway
                 isMoving = true;
                 nextTile = this.nextTile;
-            } else { nextTile = currentTile.GetNextTile(); }
+            }
+            else { nextTile = currentTile.GetNextTile(); }
 
             if (nextTile == null)
             {
@@ -85,8 +110,8 @@ public class Player : MonoBehaviour
         while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
         {
             transform.position = Vector3.MoveTowards(
-                transform.position, 
-                targetPosition, 
+                transform.position,
+                targetPosition,
                 moveSpeed * Time.deltaTime
             );
             yield return null;
