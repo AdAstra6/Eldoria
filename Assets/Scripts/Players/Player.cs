@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     public PlayerStats PlayerState
     { get { return playerState; } set { playerState = value; } }
 
+    private void Start()
+    {
+        Random.InitState(System.DateTime.Now.Millisecond);
+    }
+
     public void Move(int steps)
     {
         if (isMoving || currentTile == null) return;
