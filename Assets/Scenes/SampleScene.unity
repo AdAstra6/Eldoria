@@ -1652,6 +1652,7 @@ Transform:
   m_Children:
   - {fileID: 1046720421}
   - {fileID: 2130279075}
+  - {fileID: 740926952}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688374851
@@ -1845,6 +1846,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &740926951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740926952}
+  - component: {fileID: 740926953}
+  m_Layer: 0
+  m_Name: QuestionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740926952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740926951}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.154057, y: 0.59332925, z: -9.982871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 650404896}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &740926953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740926951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e9a7c793e50a54891730290db3a031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808890229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,11 +2580,14 @@ MonoBehaviour:
   buttonParent: {fileID: 886934718}
   pathButtonPrefab: {fileID: 2436924743460212924, guid: 8c7e7db288acb3547ae6c6a250fb66fe,
     type: 3}
-  questionPanel: {fileID: 0}
-  questionText: {fileID: 0}
-  correctButton: {fileID: 0}
-  wrongButton: []
-  feedbackText: {fileID: 0}
+  questionPanel: {fileID: 1953675717}
+  questionText: {fileID: 688374853}
+  correctButton: {fileID: 1924184821}
+  wrongButton:
+  - {fileID: 36434024}
+  - {fileID: 834563929}
+  - {fileID: 1929296696}
+  feedbackText: {fileID: 2121659908}
 --- !u!4 &1046720421
 Transform:
   m_ObjectHideFlags: 0
