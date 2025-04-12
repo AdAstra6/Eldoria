@@ -17,6 +17,7 @@ public class DiceRoll : MonoBehaviour
         int dice1 = Random.Range(1, 7);
         int dice2 = Random.Range(1, 7);
         int total = dice1 + dice2;
+        total = 1; // For testing purposes, always set to 1 TODO: Remove this line in production
         Debug.Log("Rolled: " + total);
 
         if (diceResultText != null)
