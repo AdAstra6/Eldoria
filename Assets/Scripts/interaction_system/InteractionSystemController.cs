@@ -21,7 +21,7 @@ public class InteractionSystemController : MonoBehaviour
         {
             case TileType.MCQUESTION:
                 Debug.Log(player.name + " landed on a MCQuestion tile!");
-                QuestionManager.Instance.AskQuestion(player);
+                GameQuestionManager.Instance.AskQuestion(player);
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
                 break;
             case TileType.PUZZLE:

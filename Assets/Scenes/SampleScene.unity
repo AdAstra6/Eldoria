@@ -1856,6 +1856,8 @@ GameObject:
   m_Component:
   - component: {fileID: 740926952}
   - component: {fileID: 740926953}
+  - component: {fileID: 740926955}
+  - component: {fileID: 740926954}
   m_Layer: 0
   m_Name: QuestionManager
   m_TagString: Untagged
@@ -1890,6 +1892,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e9a7c793e50a54891730290db3a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  QuestionManager: {fileID: 740926955}
+--- !u!114 &740926954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740926951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a310932e9bef8e4e8bb89a8699d9e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionManager: {fileID: 740926955}
+  questionPanel: {fileID: 1953675717}
+  questionText: {fileID: 688374853}
+  optionButtons:
+  - {fileID: 1924184821}
+  - {fileID: 36434024}
+  - {fileID: 834563929}
+  - {fileID: 1929296696}
+  optionTexts:
+  - {fileID: 808890231}
+  - {fileID: 84659452}
+  - {fileID: 1613385912}
+  - {fileID: 379864240}
+--- !u!114 &740926955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740926951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16511cfd64abd8547a33717c26be32f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionsJsonFile: {fileID: 0}
 --- !u!1 &808890229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,14 +2621,6 @@ MonoBehaviour:
   buttonParent: {fileID: 886934718}
   pathButtonPrefab: {fileID: 2436924743460212924, guid: 8c7e7db288acb3547ae6c6a250fb66fe,
     type: 3}
-  questionPanel: {fileID: 1953675717}
-  questionText: {fileID: 688374853}
-  correctButton: {fileID: 1924184821}
-  wrongButton:
-  - {fileID: 36434024}
-  - {fileID: 834563929}
-  - {fileID: 1929296696}
-  feedbackText: {fileID: 2121659908}
 --- !u!4 &1046720421
 Transform:
   m_ObjectHideFlags: 0
