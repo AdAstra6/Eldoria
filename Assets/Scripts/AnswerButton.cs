@@ -1,17 +1,22 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AnswerButton : MonoBehaviour
 {
     public bool isCorrectAnswer; // Set this in the Inspector for the correct button
-    private Button button;
-    private Image image;
+    [SerializeField] private Button button;
+    public Button Button { get { return button; } set { button = value; } }
+    [SerializeField] private TMP_Text Text; // Assign via Inspector
+    public TMP_Text TextAnswer { get { return Text; } set { Text = value; } }
+    [SerializeField] private Image image;
+    public Image Image { get { return image; } set { image = value; } }
 
     private void Start()
     {
         button = GetComponent<Button>();
         image = GetComponent<Image>();
-        button.onClick.AddListener(CheckAnswer);
+        //button.onClick.AddListener(CheckAnswer);
     }
 
     private void CheckAnswer()

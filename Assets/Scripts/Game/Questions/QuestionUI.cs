@@ -13,16 +13,21 @@ public class QuestionUI : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private GameObject questionPanel;
     [SerializeField] private TMP_Text questionText;
-    [SerializeField] private Button[] optionButtons;
-    [SerializeField] private TMP_Text[] optionTexts;
 
     [Header("Colors")]
     [SerializeField] private Color correctColor = Color.green;
     [SerializeField] private Color wrongColor = Color.red;
     [SerializeField] private Color defaultColor = Color.white;
 
-    private Question currentQuestion;
+    [SerializeField] private Question currentQuestion;
     private Player currentPlayer;
+
+    /*
+        integrate new ui by Adlen
+     */
+    [SerializeField] private AnswerButton[] answerButtons;
+    [SerializeField] private GameObject scrollUI;
+    [SerializeField] private FadeScript fadeScroll;
 
     private void Awake()
     {
@@ -30,24 +35,29 @@ public class QuestionUI : MonoBehaviour
         {
             Instance = this;
             InitializeButtons();
+            questionPanel.SetActive(false);
         }
         else Destroy(gameObject);
     }
 
     void InitializeButtons()
     {
-        for (int i = 0; i < optionButtons.Length; i++)
+        for (int i = 0; i < answerButtons.Length; i++)
         {
             int index = i;
-            optionButtons[i].onClick.AddListener(() => OnAnswerSelected(index));
+            answerButtons[i].Button = answerButtons[i].GetComponent<Button>(); // Update to new UI
+            answerButtons[i].Button.onClick.AddListener(() => OnAnswerSelected(index));
         }
     }
 
     public void ShowQuestion(Player player)
     {
         currentPlayer = player;
-        questionPanel.SetActive(true);
+        //questionPanel.SetActive(true);
         LoadQuestion();
+        questionPanel.SetActive(true);
+        // Fade in the question panel
+        fadeScroll.StartFadeIn();
     }
 
     private void LoadQuestion()
@@ -62,36 +72,33 @@ public class QuestionUI : MonoBehaviour
 
         questionText.text = currentQuestion.text;
 
-        for (int i = 0; i < optionTexts.Length; i++)
+        for (int i = 0; i < answerButtons.Length; i++)
         {
             if (i < currentQuestion.options.Length)
             {
-                optionTexts[i].text = currentQuestion.options[i];
-                optionButtons[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                optionButtons[i].gameObject.SetActive(false);
+                answerButtons[i].TextAnswer.text = currentQuestion.options[i]; // Update new UI text
+
             }
         }
     }
 
     IEnumerator ProcessAnswerVisuals(int selectedIndex, bool isCorrect)
     {
-        // Disable all buttons
-        foreach (Button button in optionButtons)
+        foreach (AnswerButton button in answerButtons)
         {
-            button.interactable = false;
+            button.Button.interactable = false;
         }
 
         // Color selected button
-        Image selectedButtonImage = optionButtons[selectedIndex].GetComponent<Image>();
+        Image selectedButtonImage = answerButtons[selectedIndex].Image; // Update to new UI
+        selectedButtonImage = answerButtons[selectedIndex].Image; // Update to new UI
+
         selectedButtonImage.color = isCorrect ? correctColor : wrongColor;
 
         // If wrong, show correct answer
         if (!isCorrect)
         {
-            Image correctButtonImage = optionButtons[currentQuestion.correctAnswer].GetComponent<Image>();
+            Image correctButtonImage = answerButtons[currentQuestion.correctAnswer].Image; // Update to new UI
             correctButtonImage.color = correctColor;
         }
 
@@ -104,14 +111,18 @@ public class QuestionUI : MonoBehaviour
 
     public void HideQuestion()
     {
+        // Hide the question panel
+        fadeScroll.StartFadeOut();
+        //fadeScroll.disableAnimation();
         questionPanel.SetActive(false);
+
         ClearQuestion();
 
         // Reset all button colors
-        foreach (Button button in optionButtons)
+        foreach (AnswerButton button in answerButtons)
         {
-            button.GetComponent<Image>().color = defaultColor;
-            button.interactable = true;
+            button.Button.GetComponent<Image>().color = defaultColor;
+            button.Button.interactable = true;
         }
     }
 
@@ -125,7 +136,6 @@ public class QuestionUI : MonoBehaviour
     private void ClearQuestion()
     {
         questionText.text = "";
-        foreach (var text in optionTexts) text.text = "";
         currentQuestion = null;
         currentPlayer = null;
     }
