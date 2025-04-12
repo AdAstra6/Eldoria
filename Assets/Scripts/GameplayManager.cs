@@ -14,6 +14,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private DiceRoll diceRoll;
 
     private UIManager uiManager;
+    [SerializeField] private GameplayCameraController gameplayCameraController;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class GameplayManager : MonoBehaviour
             Debug.Log("Player " + i + " spawned at " + spawnPoints[i].name);
         }
         this.currentPlayerIndex = 0;
+        gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
     }
 
     void Update()
@@ -36,6 +38,8 @@ public class GameplayManager : MonoBehaviour
         {
             case PlayerStats.IDLE:
                 Debug.Log("Player " + currentPlayerIndex + " is idle.");
+                gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
+                gameplayCameraController.SetType(CameraType.FIXED);
                 diceRoll.CurrentPlayer = Players[currentPlayerIndex];
                 UIManager.Instance.RollDiceButtonShow();
                 Players[currentPlayerIndex].PlayerState = PlayerStats.ROLLING_DICE;
@@ -61,6 +65,7 @@ public class GameplayManager : MonoBehaviour
                 break;
             case PlayerStats.STRATEGIC_CHOICE:
                 Debug.Log("Player " + currentPlayerIndex + " is making a strategic choice.");
+                gameplayCameraController.SetType(CameraType.FREE);
                 // HERE WHERE THE PLAYER SHOULD MAKE A STRATEGIC CHOICE AND HE CAN END HIS TURN
                 UIManager.Instance.EndTurnButtonShow();
                 break;
@@ -74,6 +79,7 @@ public class GameplayManager : MonoBehaviour
                 {
                     currentPlayerIndex = 0;
                 }
+
                 //EndTurn();
                 break;
         }
