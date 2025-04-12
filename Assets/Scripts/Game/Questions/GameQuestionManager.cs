@@ -24,7 +24,6 @@ public class GameQuestionManager : MonoBehaviour
         else PenalizePlayer(player);
         
         GameManager.Instance.EndTurn();
-        QuestionUI.Instance.HideQuestion();
     }
 
     private void RewardPlayer(Player player)
