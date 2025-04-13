@@ -6,7 +6,7 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager Instance;
+    [SerializeField] public static UIManager Instance;
     public GameObject pathSelectionPanel; // The panel that appears at crossways
     public Transform buttonParent; // Where buttons will be placed
     public Button pathButtonPrefab; // The prefab for each path choice

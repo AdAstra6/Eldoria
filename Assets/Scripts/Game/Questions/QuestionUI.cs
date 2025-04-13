@@ -13,6 +13,7 @@ public class QuestionUI : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private GameObject questionPanel;
     [SerializeField] private TMP_Text questionText;
+    [SerializeField] private GameObject timeFinished;
 
     [Header("Colors")]
     [SerializeField] private Color correctColor = Color.green;
@@ -28,6 +29,7 @@ public class QuestionUI : MonoBehaviour
     [SerializeField] private AnswerButton[] answerButtons;
     [SerializeField] private GameObject scrollUI;
     [SerializeField] private FadeScript fadeScroll;
+    [SerializeField] private TimerCountDown timerCountDown;
 
     private void Awake()
     {
@@ -35,7 +37,9 @@ public class QuestionUI : MonoBehaviour
         {
             Instance = this;
             InitializeButtons();
+            timerCountDown.TimerEnd += () => StartCoroutine(this.TimeFinished());
             questionPanel.SetActive(false);
+            timeFinished.SetActive(false);
         }
         else Destroy(gameObject);
     }
@@ -124,6 +128,7 @@ public class QuestionUI : MonoBehaviour
             button.Button.GetComponent<Image>().color = defaultColor;
             button.Button.interactable = true;
         }
+        timeFinished.SetActive(false);
     }
 
     private void OnAnswerSelected(int selectedIndex)
@@ -138,5 +143,22 @@ public class QuestionUI : MonoBehaviour
         questionText.text = "";
         currentQuestion = null;
         currentPlayer = null;
+    }
+
+    public IEnumerator TimeFinished()
+    {
+        if (currentQuestion != null)
+        {
+            timeFinished.SetActive(true);
+            foreach (AnswerButton button in answerButtons)
+            {
+                button.Button.interactable = false;
+            }
+            Image correctButtonImage = answerButtons[currentQuestion.correctAnswer].Image; // Update to new UI
+            correctButtonImage.color = correctColor;
+        }
+        yield return new WaitForSeconds(3f);
+        GameQuestionManager.Instance.HandleAnswer(currentPlayer, false);
+        HideQuestion();
     }
 }

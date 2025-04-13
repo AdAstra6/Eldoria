@@ -1,11 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Threading;
 
 public class GameQuestionManager : MonoBehaviour
 {
     public static GameQuestionManager Instance;
     
-    [SerializeField] private QuestionManager QuestionManager; 
+    [SerializeField] private QuestionManager QuestionManager;
+    [SerializeField] private TimerCountDown timerCountDown;
+    public const float MCQTime = 20f; // Time for multiple choice question 
 
     private void Awake()
     {
@@ -15,7 +18,10 @@ public class GameQuestionManager : MonoBehaviour
 
     public void AskQuestion(Player player)
     {
+        this.timerCountDown.SetTotalTime(MCQTime);
+        this.timerCountDown.Restart();
         QuestionUI.Instance.ShowQuestion(player);
+
     }
 
     public void HandleAnswer(Player player, bool isCorrect)
