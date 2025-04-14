@@ -6989,7 +6989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionManager: {fileID: 740926955}
   questionPanel: {fileID: 1733262773}
-  questionText: {fileID: 688374853}
+  questionText: {fileID: 411752834}
   timeFinished: {fileID: 1658550347}
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
@@ -7002,10 +7002,10 @@ MonoBehaviour:
     difficulty: 
     category: 
   answerButtons:
+  - {fileID: 941646226}
   - {fileID: 175184133}
   - {fileID: 1286007856}
   - {fileID: 718325182}
-  - {fileID: 941646226}
   scrollUI: {fileID: 1733262773}
   fadeScroll: {fileID: 439444078}
   timerCountDown: {fileID: 439609363}
