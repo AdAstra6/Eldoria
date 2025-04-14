@@ -33,6 +33,6 @@ public class DiceRoll : MonoBehaviour
             Debug.LogError("DiceResultText Text component not assigned in the Inspector.");
         }
 
-        currentPlayer.Move(1); 
+        currentPlayer.Move(total); 
     }
 }
