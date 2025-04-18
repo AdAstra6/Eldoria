@@ -1,0 +1,84 @@
+{
+    "players": [
+      {
+        "name": "Anes",
+        "id": 1,
+        "elo": 0,
+        "categoriesElo": {
+          "geography": 0,
+          "ethics": 0,
+          "math": 0,
+          "biology": 0,
+          "sport": 0,
+          "general_knowledge": 0
+        },
+        "games": {
+          "played": 0,
+          "won": 0,
+          "winRatio": 0.0
+        },
+        "age": 19,
+        "icon": "ProfileIcons/anes"
+      },
+      {
+        "name": "Adlene",
+        "id": 2,
+        "elo": 0,
+        "categoriesElo": {
+          "geography": 0,
+          "ethics": 0,
+          "math": 0,
+          "biology": 0,
+          "sport": 0,
+          "general_knowledge": 0
+        },
+        "games": {
+          "played": 0,
+          "won": 0,
+          "winRatio": 0.0
+        },
+        "age": 19,
+        "icon": "ProfileIcons/adlene"
+      },
+      {
+        "name": "Ousama",
+        "id": 3,
+        "elo": 0,
+        "categoriesElo": {
+          "geography": 0,
+          "ethics": 0,
+          "math": 0,
+          "biology": 0,
+          "sport": 0,
+          "general_knowledge": 0
+        },
+        "games": {
+          "played": 0,
+          "won": 0,
+          "winRatio": 0.0
+        },
+        "age": 19,
+        "icon": "ProfileIcons/ousama"
+      },
+      {
+        "name": "Zinou",
+        "id": 4,
+        "elo": 0,
+        "categoriesElo": {
+          "geography": 0,
+          "ethics": 0,
+          "math": 0,
+          "biology": 0,
+          "sport": 0,
+          "general_knowledge": 0
+        },
+        "games": {
+          "played": 0,
+          "won": 0,
+          "winRatio": 0.0
+        },
+        "age": 19,
+        "icon": "ProfileIcons/zinou"
+      }
+    ]
+  }
