@@ -20,17 +20,32 @@ public class GameplayManager : MonoBehaviour
     {
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         Debug.Log("GameplayManager initialized.");
+
+        List<PlayerProfile> selectedProfiles = GameData.SelectedProfiles;
+        playersCount = selectedProfiles.Count;
         List<Tile> spawnPoints = map.getRandomSpawnpoints(playersCount);
-        for (int i = 0; i < playersCount; i++)
+
+        for (int i = 0; i < Players.Count; i++)
         {
-            Players[i].currentTile = spawnPoints[i];
-            Players[i].transform.position = spawnPoints[i].transform.position;
-            Players[i].PlayerState = PlayerStats.IDLE;
-            Debug.Log("Player " + i + " spawned at " + spawnPoints[i].name);
+            if (i < playersCount)
+            {
+                Players[i].gameObject.SetActive(true); // activate used players
+                Players[i].Initialize(selectedProfiles[i]);
+                Players[i].currentTile = spawnPoints[i];
+                Players[i].transform.position = spawnPoints[i].transform.position;
+                Players[i].PlayerState = PlayerStats.IDLE;
+                Debug.Log("Player " + i + " spawned at " + spawnPoints[i].name);
+            }
+            else
+            {
+                Players[i].gameObject.SetActive(false); // deactivate unused players
+            }
         }
+
         this.currentPlayerIndex = 0;
         gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
     }
+
 
     void Update()
     {
