@@ -146,6 +146,6 @@ public class ProfileSelectionUI : MonoBehaviour
             return;
         }
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
 }

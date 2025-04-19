@@ -5,6 +5,6 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Profiles"); 
+        SceneManager.LoadScene("CreateGame"); 
     }
 }
