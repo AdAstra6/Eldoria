@@ -8,12 +8,14 @@ public class GameQuestionManager : MonoBehaviour
     
     [SerializeField] private QuestionManager QuestionManager;
     [SerializeField] private TimerCountDown timerCountDown;
-    public const float MCQTime = 20f; // Time for multiple choice question 
+    public const float MCQTime = 60f; // Time for multiple choice question 
+    private const float MSCQcriticalTIme = 15f;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        timerCountDown.criticalTime = MSCQcriticalTIme;
     }
 
     public void AskQuestion(Player player)

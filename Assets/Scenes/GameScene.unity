@@ -3947,8 +3947,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 751428956}
   totalTime: 59
+  criticalTime: 0
   timerObject: {fileID: 439609358}
-  image: {fileID: 0}
+  image: {fileID: 439609361}
 --- !u!1 &441066518
 GameObject:
   m_ObjectHideFlags: 0
@@ -11375,7 +11376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
@@ -16169,7 +16170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1733262774
 MonoBehaviour:
   m_ObjectHideFlags: 0

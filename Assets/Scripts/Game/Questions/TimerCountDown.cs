@@ -7,6 +7,7 @@ public class TimerCountDown : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
     public float totalTime;// Time in seconds
+    public float criticalTime;
 
     [SerializeField] private GameObject timerObject;
     [SerializeField] private Image image;
@@ -33,7 +34,7 @@ public class TimerCountDown : MonoBehaviour
         if (!isRunning) return;
 
         currentTime -= Time.deltaTime;
-        if (currentTime <= 10) image.color = Color.red;
+        if (currentTime <= criticalTime) image.color = Color.red;
 
         if (currentTime <= 0f)
         {
@@ -52,6 +53,7 @@ public class TimerCountDown : MonoBehaviour
     // Optional: Reset method
     public void Restart()
     {
+        image.color = Color.white;
         currentTime = totalTime;
         isRunning = true;
     }
