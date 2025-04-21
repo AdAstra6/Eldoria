@@ -59,5 +59,9 @@ public class FadeScript : MonoBehaviour
             }
         }
     }
+    void Start()
+    {
+        myUIGroup.alpha = 0;
+    }
 }
 
