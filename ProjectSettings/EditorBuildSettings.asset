@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreateGame.unity
     guid: 4e0deb86ed5da184ba5df0e36b1bc342
-  - enabled: 0
-    path: Assets/Scenes/Profiles.unity
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
     guid: 906059c8684e28c448726ac6bf2ccae8
   - enabled: 1
     path: Assets/Scenes/GameScene.unity

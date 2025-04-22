@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ProfilePanelUImanager : MonoBehaviour
 {
     [SerializeField] FadeScript statsFadeIn;
     [SerializeField] BookPanel Book;
@@ -20,5 +20,10 @@ public class NewBehaviourScript : MonoBehaviour
     public void startStatsFadeIn()
     {
         statsFadeIn.StartFadeIn();
+        
+    }
+    public void startStatsFadeOut()
+    {
+        statsFadeIn.StartFadeOut();
     }
 }
