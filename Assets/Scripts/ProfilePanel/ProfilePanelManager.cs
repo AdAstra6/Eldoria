@@ -1,54 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 
 public class ProfilePanelManager : MonoBehaviour
 {
     [SerializeField] private Animator bookAnimator;
     [SerializeField] private ProfilePanelUImanager uimanager;
-    private float delayTime = 1.1f;  // Delay time for the fade animation when flipping the page
-    List<PlayerProfile> profiles;
-    int currentProfileIndex = 0;
+    private float animationDelay = 1.1f;
+    private List<PlayerProfile> profiles;
+    private int currentIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
         ProfileManager profileManager = new ProfileManager();
         profiles = profileManager.LoadProfiles();
-        bool hasProfiles = profiles.Count > 0;
-        if (hasProfiles)
+        if (profiles.Count > 0)
         {
-            uimanager.UpdateProfileDisplay(profiles[currentProfileIndex]);
-            uimanager.HideErrorText();
+            // Load the first profile
+            PlayerProfile currentProfile = profiles[0];
+            uimanager.LoadProfile(currentProfile);
+            uimanager.ClearErrorText();
+            uimanager.DisableErrorMessage();
         }
         else
         {
-            uimanager.SetErrorText();
+            Debug.LogError("No profiles found.");
+            uimanager.SetErrorText("No profiles found.");
+            uimanager.EnableErrorMessage();
         }
+        // set up buttons listeners
+        uimanager.nextButton.onClick.AddListener(() => StartNextProfile());
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-    // Wrapper method with void return type
     public void StartNextProfile()
     {
         StartCoroutine(NextProfile());
     }
+
     public IEnumerator NextProfile()
     {
         // update profiles
         uimanager.startStatsFadeOut();
-        currentProfileIndex++;
-        if (currentProfileIndex >= profiles.Count)
-        {
-            currentProfileIndex = 0;
-        }
         bookAnimator.SetTrigger("RightFlipPage");
-        yield return new WaitForSeconds(delayTime);
+        yield return new WaitForSeconds(animationDelay);
+        currentIndex = (currentIndex + 1) % profiles.Count;
+        PlayerProfile currentProfile = profiles[currentIndex];
+        uimanager.LoadProfile(currentProfile);
         uimanager.startStatsFadeIn();
-        uimanager.UpdateProfileDisplay(profiles[currentProfileIndex]);
     }
 }

@@ -6,12 +6,18 @@ public class FadeScript : MonoBehaviour
     [SerializeField] private CanvasGroup myUIGroup;
     private bool fadeIn = false;
     private bool fadeOut = false;
-    [SerializeField] private float fadeSpeed = 1f; // Adjust speed if needed
-  /*  IEnumerator Start()
+    [SerializeField] private float fadeOutSpeed = 1f; // Adjust speed if needed
+    public float FadeOutSpeed
     {
-        //yield return new WaitForSeconds(1.5f);
-        //StartFadeIn(); removed this to make the fade in only happen when the animation event is called
-    }*/
+        get { return fadeOutSpeed; }
+        set { fadeOutSpeed = value; }
+    }
+    [SerializeField] private float fadeInSpeed = 1f; // Adjust speed if needed
+    public float FadeInSpeed
+    {
+        get { return fadeInSpeed; }
+        set { fadeInSpeed = value; }
+    }
 
     // Called from the animation event at 0.4 seconds
     public void StartFadeIn()
@@ -37,7 +43,7 @@ public class FadeScript : MonoBehaviour
         {
             if (myUIGroup.alpha < 1)
             {
-                myUIGroup.alpha += Time.deltaTime * fadeSpeed;
+                myUIGroup.alpha += Time.deltaTime * fadeInSpeed;
                 if (myUIGroup.alpha >= 1)
                 {
                     myUIGroup.alpha = 1;
@@ -50,7 +56,7 @@ public class FadeScript : MonoBehaviour
         {
             if (myUIGroup.alpha > 0)
             {
-                myUIGroup.alpha -= Time.deltaTime * fadeSpeed;
+                myUIGroup.alpha -= Time.deltaTime * fadeOutSpeed;
                 if (myUIGroup.alpha <= 0)
                 {
                     myUIGroup.alpha = 0;

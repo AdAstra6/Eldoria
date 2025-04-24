@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: f085dd95f04059d4e81fab44ea6f0dd2
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: animation1_Clip
+    second: {fileID: 7400000, guid: 25fcca0cab327f14b81d015059483b26, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -72,7 +77,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +90,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +103,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638805947662430392
+  platformSettingsDirtyTick: 638809182398962494
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,6 +127,26 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
+  - name: Frame_3
+    originalName: 
+    pivot: {x: -0.20158109, y: -1.9437231}
+    alignment: 9
+    border: {x: 0, y: 188, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 726
+      width: 128
+      height: 231
+    spriteID: b8830d3eb31ba604e9e24ffd1a9eb591
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 726}
   - name: Frame_0
     originalName: 
     pivot: {x: -0.20158109, y: -1.9310344}
@@ -182,26 +207,6 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 486}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: -0.20158109, y: -1.9437231}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 726
-      width: 253
-      height: 231
-    spriteID: b8830d3eb31ba604e9e24ffd1a9eb591
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 726}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
