@@ -8,6 +8,7 @@ public class GameQuestionManager : MonoBehaviour
     
     [SerializeField] private QuestionManager QuestionManager;
     [SerializeField] private TimerCountDown timerCountDown;
+    [SerializeField] private GameplayManager gameplayManager;
     public const float MCQTime = 60f; // Time for multiple choice question 
     private const float MSCQcriticalTIme = 15f;
 
@@ -20,6 +21,7 @@ public class GameQuestionManager : MonoBehaviour
 
     public void AskQuestion(Player player)
     {
+        gameplayManager.QuestionStarted();
         this.timerCountDown.SetTotalTime(MCQTime);
         this.timerCountDown.Restart();
         QuestionUI.Instance.ShowQuestion(player);
@@ -30,8 +32,7 @@ public class GameQuestionManager : MonoBehaviour
     {
         if (isCorrect) RewardPlayer(player);
         else PenalizePlayer(player);
-        
-        GameManager.Instance.EndTurn();
+        gameplayManager.QuestionAnswered();
     }
 
     private void RewardPlayer(Player player)

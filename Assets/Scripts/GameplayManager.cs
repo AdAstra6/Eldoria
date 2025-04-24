@@ -63,6 +63,7 @@ public class GameplayManager : MonoBehaviour
                 Debug.Log("Player " + currentPlayerIndex + " is rolling the dice.");
                 break;
             case PlayerStats.MOVING:
+                uiManager.RollDiceButtonHide();
                 Debug.Log("Player " + currentPlayerIndex + " is moving.");
                 break;
             case PlayerStats.CHOOSING_PATH:
@@ -72,7 +73,6 @@ public class GameplayManager : MonoBehaviour
                 Debug.Log("Player " + currentPlayerIndex + " has ended moving.");
                 // HERE WHERE THE PLAYER SHOULD INTERACT WITH THE TILE
                 // NOW BECAUSE NO INTERACTION WITH THE TILE IS IMPLEMENTED THE PLAYER GO TO STRATEGIC CHOICE STATE
-                uiManager.RollDiceButtonHide();
                 interactionSystemController.Instance.TriggerTileInteraction(Players[currentPlayerIndex]);
                 break;
             case PlayerStats.ANSWERING_QUESTION:
@@ -99,6 +99,16 @@ public class GameplayManager : MonoBehaviour
                 break;
         }
     }
+
+    public void QuestionAnswered()
+    {
+        Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
+    }
+    public void QuestionStarted()
+    {
+        Players[currentPlayerIndex].PlayerState = PlayerStats.ANSWERING_QUESTION;
+    }
+    
 
     public void EndTurn()
     {

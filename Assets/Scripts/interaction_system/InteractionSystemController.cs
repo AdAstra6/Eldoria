@@ -6,7 +6,8 @@ public class InteractionSystemController : MonoBehaviour
 {
     public InteractionSystemController Instance;
     public const int MAX_PERMITTED_STEPS = 6;
-    
+
+
     void Awake()
     {
         if (Instance == null)
@@ -22,7 +23,7 @@ public class InteractionSystemController : MonoBehaviour
             case TileType.MCQUESTION:
                 Debug.Log(player.name + " landed on a MCQuestion tile!");
                 GameQuestionManager.Instance.AskQuestion(player);
-                player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
+                //player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system TODO: delete this line after test
                 break;
             case TileType.PUZZLE:
                 Debug.Log(player.name + " landed on a Puzzle tile!");
@@ -44,4 +45,5 @@ public class InteractionSystemController : MonoBehaviour
                 break;
         }
     }
+
 }
