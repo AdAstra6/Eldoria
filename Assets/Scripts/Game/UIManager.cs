@@ -15,6 +15,9 @@ public class UIManager : MonoBehaviour
     private Button rollDiceButton;
     private Button endTurnButton;
 
+    [SerializeField] private TMP_Text penaltyText;
+    [SerializeField] private GameObject penaltyTileEffects;
+
     private void Awake()
     {
 
@@ -90,7 +93,16 @@ public class UIManager : MonoBehaviour
         endTurnButton.gameObject.SetActive(false);
     }
 
-
+    public void ShowPenaltyText(Player player , int stepBack)
+    {
+        string message = player.profileData.Name + " felt in penalty tyle! \n has to go back " + stepBack + " steps!";
+        penaltyText.text = message;
+        penaltyTileEffects.SetActive(true);
+    }
+    public void HidePenaltyText()
+    {
+       penaltyTileEffects.SetActive(false);
+    }
 
 }
 

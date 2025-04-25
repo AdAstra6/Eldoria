@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal.Internal;
 
 public class GameplayManager : MonoBehaviour
 {
-
+    public static GameplayManager Instance { get; private set; } 
     [SerializeField] private Map map;
     [SerializeField] private List<Player> Players;
     [SerializeField] private int playersCount;
@@ -18,6 +18,7 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
+        Instance = this; 
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         Debug.Log("GameplayManager initialized.");
 

@@ -32,7 +32,10 @@ public class InteractionSystemController : MonoBehaviour
             case TileType.PENALTY:
                 Debug.Log(player.name + " landed on a Penalty tile!");
                 int stepsBack = Random.Range(1, MAX_PERMITTED_STEPS);
+                StartCoroutine(TriggerPenaltyInteraction(player, stepsBack));
+                
                 player.MoveBackward(stepsBack);
+                
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
                 break;
             case TileType.TELEPORT:
@@ -44,6 +47,15 @@ public class InteractionSystemController : MonoBehaviour
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
                 break;
         }
+    }
+
+    public IEnumerator TriggerPenaltyInteraction(Player player ,int stepBack)
+    {
+        Tile tile = player.currentTile;
+        UIManager.Instance.ShowPenaltyText(player, stepBack);
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.HidePenaltyText();
+
     }
 
 }
