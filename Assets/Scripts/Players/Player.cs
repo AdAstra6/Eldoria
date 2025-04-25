@@ -198,4 +198,12 @@ public class Player : MonoBehaviour
 
         nameLabel.text = $"{profileData.Name}\nHP: {hearts}";
     }
+
+    public void DecreaseHealth(int amount = 1) // << Added for decreasing health
+    {
+        CurrentHealth = Mathf.Max(CurrentHealth - amount, 0);
+        Debug.Log($"{profileData.Name}'s Health is now {CurrentHealth}");
+        UpdateNameAndHealthUI(); // Optional: refresh health display if you show HP
+    }
+
 }

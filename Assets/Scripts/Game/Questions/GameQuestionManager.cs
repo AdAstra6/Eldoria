@@ -45,5 +45,6 @@ public class GameQuestionManager : MonoBehaviour
     {
         Debug.Log($"{player.name} answered incorrectly!");
         // Implement penalty logic
+        player.DecreaseHealth(1); // Decrease health by 1
     }
 }
