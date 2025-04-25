@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameMakerMenuManager : MonoBehaviour
 {
     public const int MAX_PLAYERS = 4; // Maximum number of players allowed
+    public const int MIN_PLAYERS = 2; // Minimum number of players allowed
     private GameModes gameMode;
     private int playersCount;
     public int PlayersCount
@@ -37,7 +38,7 @@ public class GameMakerMenuManager : MonoBehaviour
 
     void Start()
     {
-        playersCount = 0;
+        playersCount = MIN_PLAYERS;
         gameMode = GameModes.KIDS;
         kidsButtonIcon.color = new Color(0.5f, 0.5f, 0.5f, 1);
         selectedProfiles = new List<PlayerProfile>();
@@ -78,7 +79,7 @@ public class GameMakerMenuManager : MonoBehaviour
     }
     public void DecreasePlayersCount()
     {
-        if (playersCount > 0)
+        if (playersCount > MIN_PLAYERS)
         {
             playersCount--;
             playerCountText.text = playersCount.ToString();
