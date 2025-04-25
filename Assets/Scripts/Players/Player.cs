@@ -5,18 +5,21 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+
     public Tile currentTile;
     private Tile nextTile;
     private bool pathChosen = false;
+    private bool nextTileReached = false;
 
-    public float moveSpeed = 5f;
-    private bool isMoving = false;
+    public float moveSpeed = 0.5f;
+    [SerializeField] private bool isMoving = false;
     private int remainingSteps = 0;
     private PlayerStats playerState;
 
     private Stack<Tile> pathcrossedPath = new Stack<Tile>();
 
     public PlayerProfile profileData;
+    [SerializeField] private PlayerVisual playerVisual;
 
     private TMP_Text nameLabel;  // << Added for player name display
 
@@ -45,12 +48,28 @@ public class Player : MonoBehaviour
     private void Start()
     {
         Random.InitState(System.DateTime.Now.Millisecond);
+        playerVisual = GetComponent<PlayerVisual>();
+        if (playerVisual == null)
+        {
+            Debug.LogError("PlayerVisual component not found in children.");
+            return;
+        }
+            playerVisual.SetMoving(false);
+            playerVisual.SetMovementDirection(PlayerMovementDirection.NONE);
+       
+    }
+    private void Update()
+    {
+        playerVisual.SetMoving(isMoving);
+        playerVisual.SetMovementDirection(isMoving ? currentTile.MovementDirection : PlayerMovementDirection.NONE);
     }
 
     public void Move(int steps)
     {
         if (isMoving || currentTile == null) return;
         this.playerState = PlayerStats.MOVING;
+        isMoving = true;
+        playerVisual.SetMoving(true);
         StartCoroutine(MoveAlongPath(steps));
     }
 
@@ -106,8 +125,10 @@ public class Player : MonoBehaviour
                 Debug.Log("Path blocked. Stopping movement.");
                 break;
             }
-
+            this.nextTileReached = false;
+            isMoving = true;
             yield return StartCoroutine(MoveToTile(nextTile.transform.position));
+            //yield return new WaitUntil(() => nextTileReached);
             this.SavePathCrossed(currentTile);
             currentTile = nextTile;
             remainingSteps--;
@@ -129,6 +150,8 @@ public class Player : MonoBehaviour
             );
             yield return null;
         }
+        nextTileReached = true;
+
     }
 
     public void ChoosePath(Tile chosenTile)
