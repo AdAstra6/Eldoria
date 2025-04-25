@@ -36,24 +36,23 @@ public class GameplayCameraController : MonoBehaviour
         switch (currentPhase)
         {
             case CameraType.FIXED:
-                
-                virtualCam.Follow = player;
-                ZoomTo(movePhaseZoom);
                 freeCameraRig.transform.position = player.position;
                 break;
-
             case CameraType.FREE:
-                virtualCam.Follow = freeCameraRig.transform;
-
                 HandleFreeCamera();
                 break;
         }
     }
 
-    void ZoomTo(float targetZoom)
+    void ZoomTo(float targetZoom, bool instant = false)
     {
-        float currentZoom = mainCam.orthographicSize;
-        mainCam.orthographicSize = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomSpeed);
+        if (instant)
+            virtualCam.m_Lens.OrthographicSize = targetZoom;
+        else
+        {
+            float currentZoom = virtualCam.m_Lens.OrthographicSize;
+            virtualCam.m_Lens.OrthographicSize = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomSpeed);
+        }
     }
 
     void HandleFreeCamera()
@@ -78,6 +77,15 @@ public class GameplayCameraController : MonoBehaviour
     public void SetType(CameraType type)
     {
         currentPhase = type;
+        if (type == CameraType.FIXED)
+        {
+            ZoomTo(movePhaseZoom, true); 
+            virtualCam.Follow = player;
+        }
+        else if (type == CameraType.FREE)
+        {
+            virtualCam.Follow = freeCameraRig.transform;
+        }
     }
     public void SetPlayer(Transform newPlayer)
     {
