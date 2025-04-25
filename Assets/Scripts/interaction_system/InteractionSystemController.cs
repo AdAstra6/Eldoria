@@ -37,6 +37,7 @@ public class InteractionSystemController : MonoBehaviour
                 player.MoveBackward(stepsBack);
                 
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
+                GameplayManager.Instance.ItemInventoryUI.ShowItems(player);
                 break;
             case TileType.TELEPORT:
                 Debug.Log(player.name + " landed on a Teleport tile!");
@@ -45,6 +46,7 @@ public class InteractionSystemController : MonoBehaviour
             default:
                 Debug.Log(player.name + " landed on a Normal tile.");
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
+                GameplayManager.Instance.ItemInventoryUI.ShowItems(player); // Show item inventory UI for normal tiles
                 break;
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameplayManager : MonoBehaviour
 {
-    public static GameplayManager Instance { get; private set; } 
+    public static GameplayManager Instance { get; private set; }
     [SerializeField] private Map map;
     [SerializeField] private List<Player> Players;
     [SerializeField] private int playersCount;
@@ -15,11 +15,13 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private DiceRoll diceRoll;
 
     private UIManager uiManager;
+    [SerializeField] private ItemInventoryUI itemInventoryUI;
+    public ItemInventoryUI ItemInventoryUI => itemInventoryUI;
     [SerializeField] private GameplayCameraController gameplayCameraController;
 
     void Start()
     {
-        Instance = this; 
+        Instance = this;
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         Debug.Log("GameplayManager initialized.");
 
@@ -46,6 +48,7 @@ public class GameplayManager : MonoBehaviour
 
                 //temporary
                 Players[i].inventory.Add(new Item(ItemType.BONUS_DICE, "Bonus Dice", "Adds extra dice on next roll"));
+                Players[i].inventory.Add(new Item(ItemType.HEAL_POTION, "Heal Potion", "Restores 1 health point"));
                 averageElo += Players[i].profileData.Elo;
             }
             else
@@ -95,19 +98,13 @@ public class GameplayManager : MonoBehaviour
                 gameplayCameraController.SetType(CameraType.FREE);
                 // HERE WHERE THE PLAYER SHOULD MAKE A STRATEGIC CHOICE AND HE CAN END HIS TURN
                 UIManager.Instance.EndTurnButtonShow();
-
-
-                // temporary
-                if (Input.GetKeyDown(KeyCode.I)) // Press I to test
-                {
-                    TestUseFirstItem();
-                }
                 break;
             case PlayerStats.END_TURN:
                 Debug.Log("Player " + currentPlayerIndex + " has ended their turn.");
                 // HERE WHERE THE PLAYER TURN ENDED AND THE NEXT PLAYER TURN STARTS
                 Players[currentPlayerIndex].PlayerState = PlayerStats.IDLE;
                 UIManager.Instance.EndTurnButtonHide();
+                itemInventoryUI.Hide(); // Hide item inventory UI after turn ends
                 currentPlayerIndex++;
                 if (currentPlayerIndex >= playersCount)
                 {
@@ -122,6 +119,7 @@ public class GameplayManager : MonoBehaviour
     public void QuestionAnswered()
     {
         Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
+        itemInventoryUI.ShowItems(Players[currentPlayerIndex]);
     }
     public void QuestionStarted()
     {
@@ -136,26 +134,11 @@ public class GameplayManager : MonoBehaviour
 
     public void GameOver(bool isWin)
     {
-        foreach (Player player in Players) 
+        foreach (Player player in Players)
         {
-            EloSystemManager.ApplyAccumulatedElo(player, isWin); 
+            EloSystemManager.ApplyAccumulatedElo(player, isWin);
             Debug.Log($"{player.name} has {player.profileData.Elo} Elo points.");
         }
 
-    }
-
-
-    // temporary
-    public void TestUseFirstItem()
-    {
-        Player currentPlayer = Players[currentPlayerIndex];
-        if (currentPlayer.inventory.Count > 0)
-        {
-            currentPlayer.UseItem(currentPlayer.inventory[0]);
-        }
-        else
-        {
-            Debug.Log("No items available for player.");
-        }
     }
 }
