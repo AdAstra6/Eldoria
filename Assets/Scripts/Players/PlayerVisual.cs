@@ -29,8 +29,8 @@ public class PlayerVisual : MonoBehaviour
         {
             PlayerMovementDirection.DOWN => 0,
             PlayerMovementDirection.LEFT => 1,
-            PlayerMovementDirection.RIGHT => 2,
-            PlayerMovementDirection.UP => 3,
+            PlayerMovementDirection.UP => 2,
+            PlayerMovementDirection.RIGHT => 3,
             _ => -1 // NONE or undefined
         };
 
