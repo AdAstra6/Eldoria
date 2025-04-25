@@ -181,6 +181,7 @@ MonoBehaviour:
       WinRatio: 0
     Age: 0
     Icon: 
+  inventory: []
   playerVisual: {fileID: 0}
 --- !u!212 &21403133
 SpriteRenderer:
@@ -6085,6 +6086,7 @@ MonoBehaviour:
       WinRatio: 0
     Age: 0
     Icon: 
+  inventory: []
   playerVisual: {fileID: 0}
 --- !u!4 &628857881
 Transform:
@@ -7248,6 +7250,13 @@ MonoBehaviour:
   QuestionManager: {fileID: 740926955}
   timerCountDown: {fileID: 439609363}
   gameplayManager: {fileID: 650404895}
+  currentQuestion:
+    id: 0
+    text: 
+    options: []
+    correctAnswer: 0
+    difficulty: 
+    category: 
 --- !u!114 &740926954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10494,6 +10503,13 @@ MonoBehaviour:
   QuestionManager: {fileID: 740926955}
   timerCountDown: {fileID: 439609363}
   gameplayManager: {fileID: 650404895}
+  currentQuestion:
+    id: 0
+    text: 
+    options: []
+    correctAnswer: 0
+    difficulty: 
+    category: 
 --- !u!1 &1129000126
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,7 +10890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  type: 5
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
@@ -14284,7 +14300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 5
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
@@ -14696,7 +14712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 5
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
@@ -15158,6 +15174,7 @@ MonoBehaviour:
       WinRatio: 0
     Age: 0
     Icon: 
+  inventory: []
   playerVisual: {fileID: 0}
 --- !u!212 &1673464309
 SpriteRenderer:
@@ -16707,6 +16724,7 @@ MonoBehaviour:
       WinRatio: 0
     Age: 0
     Icon: 
+  inventory: []
   playerVisual: {fileID: 0}
 --- !u!4 &1813221560
 Transform:

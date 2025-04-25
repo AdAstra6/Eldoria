@@ -113,6 +113,8 @@ public static class EloSystemManager
             profile.CategoriesElo[category.GetKey()] = Math.Max(MinElo, profile.CategoriesElo[category.GetKey()] + changes[category.GetKey()]);
            
         }
+        profile.Elo = GetAverageElo(profile);
     }
+
 
 }

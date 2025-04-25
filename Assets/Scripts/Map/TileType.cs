@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum TileType
 {
-    NORMAL, MCQUESTION, PUZZLE, PENALTY, TELEPORT
+    NORMAL, MCQUESTION, PUZZLE, PENALTY, TELEPORT , FINISH
 }

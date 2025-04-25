@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
 using UnityEngine.SceneManagement;
@@ -17,9 +18,17 @@ public class GameplayManager : MonoBehaviour
     private UIManager uiManager;
     [SerializeField] private GameplayCameraController gameplayCameraController;
 
+    private GamePhase gamePhase;
+    public GamePhase GamePhase
+    {
+        get { return gamePhase; }
+        set { gamePhase = value; }
+    }
+
     void Start()
     {
-        Instance = this; 
+        Instance = this;
+        gamePhase = GamePhase.FIRST_PHASE;
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         Debug.Log("GameplayManager initialized.");
 
@@ -61,6 +70,10 @@ public class GameplayManager : MonoBehaviour
 
     void Update()
     {
+        if (gamePhase == GamePhase.GAME_OVER)
+        {
+            return;
+        }
         switch (Players[currentPlayerIndex].PlayerState)
         {
             case PlayerStats.IDLE:
@@ -136,12 +149,27 @@ public class GameplayManager : MonoBehaviour
 
     public void GameOver(bool isWin)
     {
-        foreach (Player player in Players) 
+        gamePhase = GamePhase.GAME_OVER;
+        ProfileManager profileManager = new ProfileManager();
+        List<PlayerProfile> profiles = new List<PlayerProfile>();
+        for (int i = 0; i < playersCount; i++)
         {
-            EloSystemManager.ApplyAccumulatedElo(player, isWin); 
-            Debug.Log($"{player.name} has {player.profileData.Elo} Elo points.");
+            Debug.Log("AccumulatedElo Keys:");
+            foreach (string key in Players[i].AccumulatedElo.Keys)
+            {
+                Debug.Log($"Key: {key}");
+            }
+
+            Debug.Log("Player acumulated : " + Players[i].AccumulatedElo.Keys.ToList());
+            EloSystemManager.ApplyAccumulatedElo(Players[i], isWin);
+            Debug.Log($"{Players[i].profileData.Name} has {Players[i].profileData.Elo} Elo points.");
+            profiles.Add(Players[i].profileData);
         }
 
+        profileManager.SaveProfiles(profiles);
+        Debug.Log("Game Over. Elo points saved.");
+        // Load the main menu scene
+        SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
     }
 
 

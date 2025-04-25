@@ -42,6 +42,10 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Teleport tile!");
                 // player.TeleportToRandomTile();
                 break;
+            case TileType.FINISH:
+                Debug.Log(player.name + " landed on a Finish tile!");
+                GameplayManager.Instance.GameOver(true); // Players won the game
+                break;
             default:
                 Debug.Log(player.name + " landed on a Normal tile.");
                 player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system

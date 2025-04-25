@@ -52,5 +52,9 @@ public class GameQuestionManager : MonoBehaviour
         EloSystemManager.SubtractEloBasedOnQuestionResult(player, currentQuestion.difficulty, currentQuestion.category, gameAverageElo);
         // Implement penalty logic
         player.DecreaseHealth(1); // Decrease health by 1
+        if (player.CurrentHealth <= 0)
+        {
+            GameplayManager.Instance.GameOver(false);
+        }
     }
 }

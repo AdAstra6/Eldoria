@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private Stack<Tile> pathcrossedPath = new Stack<Tile>();
 
     public PlayerProfile profileData;
-    public Dictionary<string, int> AccumulatedElo = new Dictionary<string, int>();
+    public Dictionary<string, int> AccumulatedElo;
 
     public List<Item> inventory = new List<Item>(); // << Added for inventory management
     public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
@@ -56,10 +56,12 @@ public class Player : MonoBehaviour
         {
             UpdateNameAndHealthUI();
         }
+        AccumulatedElo = new Dictionary<string, int>();
         foreach (QuestionsCategories category in Enum.GetValues(typeof(QuestionsCategories)))
-
         {
-            AccumulatedElo.Add(category.GetKey(), 0);
+            string key = category.GetKey();
+            Debug.Log($"Initializing key: {key}");
+            AccumulatedElo.Add(key, 0);
         }
     }
 

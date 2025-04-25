@@ -38,7 +38,7 @@
       "options": ["Oxygen", "Gold", "Silver", "Iron"],
       "correctAnswer": 0,
       "difficulty": "easy",
-      "category": "science"
+      "category": "biology"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "options": ["Shakespeare", "Dickens", "Hemingway", "Tolkien"],
       "correctAnswer": 0,
       "difficulty": "easy",
-      "category": "literature"
+      "category": "general_knowledge"
     },
     {
       "id": 7,
@@ -62,7 +62,7 @@
       "options": ["1912", "1905", "1898", "1923"],
       "correctAnswer": 0,
       "difficulty": "medium",
-      "category": "history"
+      "category": "general_knowledge"
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "options": ["Gold", "Iron", "Diamond", "Quartz"],
       "correctAnswer": 2,
       "difficulty": "easy",
-      "category": "science"
+      "category": "biology"
     },
     {
       "id": 11,
@@ -102,7 +102,7 @@
       "options": ["Leonardo da Vinci", "Vincent Van Gogh", "Pablo Picasso", "Claude Monet"],
       "correctAnswer": 0,
       "difficulty": "medium",
-      "category": "art"
+      "category": "general_knowledge"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
       "correctAnswer": 1,
       "difficulty": "easy",
-      "category": "science"
+      "category": "biology"
     },
     {
       "id": 15,
@@ -126,7 +126,7 @@
       "options": ["1945", "1939", "1918", "1963"],
       "correctAnswer": 0,
       "difficulty": "medium",
-      "category": "history"
+      "category": "general_knowledge"
     },
     {
       "id": 17,
@@ -142,7 +142,7 @@
       "options": ["Au", "Ag", "Gd", "Go"],
       "correctAnswer": 0,
       "difficulty": "easy",
-      "category": "science"
+      "category": "biology"
     },
     {
       "id": 19,
@@ -150,7 +150,7 @@
       "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
       "correctAnswer": 0,
       "difficulty": "hard",
-      "category": "technology"
+      "category": "general_knowledge"
     },
     {
       "id": 20,
@@ -159,270 +159,6 @@
       "correctAnswer": 2,
       "difficulty": "easy",
       "category": "geography"
-    },
-    {
-      "id": 21,
-      "text": "How many continents are there?",
-      "options": ["5", "6", "7", "8"],
-      "correctAnswer": 2,
-      "difficulty": "easy",
-      "category": "geography"
-    },
-    {
-      "id": 22,
-      "text": "What is 15% of 200?",
-      "options": ["25", "30", "35", "40"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "math"
-    },
-    {
-      "id": 23,
-      "text": "Who discovered penicillin?",
-      "options": ["Alexander Fleming", "Marie Curie", "Albert Einstein", "Isaac Newton"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "science"
-    },
-    {
-      "id": 24,
-      "text": "What is the boiling point of water at sea level in Celsius?",
-      "options": ["50°C", "75°C", "100°C", "125°C"],
-      "correctAnswer": 2,
-      "difficulty": "easy",
-      "category": "science"
-    },
-    {
-      "id": 25,
-      "text": "How many hearts does an octopus have?",
-      "options": ["1", "2", "3", "4"],
-      "correctAnswer": 2,
-      "difficulty": "medium",
-      "category": "biology"
-    },
-    {
-      "id": 26,
-      "text": "What is the longest river in the world?",
-      "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "geography"
-    },
-    {
-      "id": 27,
-      "text": "What is the sum of the interior angles of a triangle?",
-      "options": ["90°", "180°", "270°", "360°"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "math"
-    },
-    {
-      "id": 28,
-      "text": "Which country gifted the Statue of Liberty to the USA?",
-      "options": ["France", "Spain", "Italy", "Germany"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "history"
-    },
-    {
-      "id": 29,
-      "text": "What is the fastest land animal?",
-      "options": ["Lion", "Cheetah", "Elephant", "Gazelle"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "biology"
-    },
-    {
-      "id": 30,
-      "text": "Who developed the theory of general relativity?",
-      "options": ["Newton", "Einstein", "Tesla", "Galileo"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "science"
-    },
-    {
-      "id": 31,
-      "text": "Which planet has the most moons in our solar system?",
-      "options": ["Saturn", "Jupiter", "Uranus", "Neptune"],
-      "correctAnswer": 1,
-      "difficulty": "hard",
-      "category": "astronomy"
-    },
-    {
-      "id": 32,
-      "text": "What is the capital of Japan?",
-      "options": ["Tokyo", "Kyoto", "Osaka", "Hiroshima"],
-      "correctAnswer": 0,
-      "difficulty": "easy",
-      "category": "geography"
-    },
-    {
-      "id": 33,
-      "text": "Which language has the most native speakers?",
-      "options": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
-      "correctAnswer": 2,
-      "difficulty": "medium",
-      "category": "language"
-    },
-    {
-      "id": 34,
-      "text": "How many zeros are in one thousand?",
-      "options": ["2", "3", "4", "1"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "math"
-    },
-    {
-      "id": 35,
-      "text": "In which continent is Egypt located?",
-      "options": ["Africa", "Asia", "Europe", "South America"],
-      "correctAnswer": 0,
-      "difficulty": "easy",
-      "category": "geography"
-    },
-    {
-      "id": 36,
-      "text": "What is the currency of the United Kingdom?",
-      "options": ["Euro", "Dollar", "Pound Sterling", "Yen"],
-      "correctAnswer": 2,
-      "difficulty": "medium",
-      "category": "economics"
-    },
-    {
-      "id": 37,
-      "text": "Who is the author of '1984'?",
-      "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "J.K. Rowling"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "literature"
-    },
-    {
-      "id": 38,
-      "text": "What is the hardest part of the human body?",
-      "options": ["Skull", "Teeth", "Bones", "Fingernails"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "biology"
-    },
-    {
-      "id": 39,
-      "text": "What is the process by which plants make their food?",
-      "options": ["Photosynthesis", "Metabolism", "Digestion", "Respiration"],
-      "correctAnswer": 0,
-      "difficulty": "easy",
-      "category": "science"
-    },
-    {
-      "id": 40,
-      "text": "What is the largest planet in our solar system?",
-      "options": ["Earth", "Jupiter", "Saturn", "Neptune"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "astronomy"
-    },
-    {
-      "id": 41,
-      "text": "Which element has the chemical symbol 'Fe'?",
-      "options": ["Iron", "Fluorine", "Lead", "Copper"],
-      "correctAnswer": 0,
-      "difficulty": "easy",
-      "category": "science"
-    },
-    {
-      "id": 42,
-      "text": "How many days are in a leap year?",
-      "options": ["365", "366", "364", "360"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "math"
-    },
-    {
-      "id": 43,
-      "text": "What instrument measures atmospheric pressure?",
-      "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "science"
-    },
-    {
-      "id": 44,
-      "text": "Who painted the ceiling of the Sistine Chapel?",
-      "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Caravaggio"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "art"
-    },
-    {
-      "id": 45,
-      "text": "What is the boiling point of water in Fahrenheit?",
-      "options": ["180°F", "212°F", "240°F", "200°F"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "science"
-    },
-    {
-      "id": 46,
-      "text": "Which famous scientist introduced the three laws of motion?",
-      "options": ["Galileo", "Newton", "Einstein", "Copernicus"],
-      "correctAnswer": 1,
-      "difficulty": "medium",
-      "category": "science"
-    },
-    {
-      "id": 47,
-      "text": "What is the primary language spoken in Brazil?",
-      "options": ["Spanish", "Portuguese", "French", "English"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "language"
-    },
-    {
-      "id": 48,
-      "text": "How many players are there on a soccer team on the field?",
-      "options": ["9", "10", "11", "12"],
-      "correctAnswer": 2,
-      "difficulty": "easy",
-      "category": "sports"
-    },
-    {
-      "id": 49,
-      "text": "Which country hosted the 2016 Summer Olympics?",
-      "options": ["Brazil", "China", "UK", "Russia"],
-      "correctAnswer": 0,
-      "difficulty": "medium",
-      "category": "sports"
-    },
-    {
-      "id": 50,
-      "text": "What is the capital of Australia?",
-      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
-      "correctAnswer": 2,
-      "difficulty": "medium",
-      "category": "geography"
-    },
-    {
-      "id": 51,
-      "text": "Which organ pumps blood throughout the human body?",
-      "options": ["Brain", "Heart", "Liver", "Lungs"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "biology"
-    },
-    {
-      "id": 52,
-      "text": "What gas do animals exhale during respiration?",
-      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-      "correctAnswer": 2,
-      "difficulty": "easy",
-      "category": "science"
-    },
-    {
-      "id": 53,
-      "text": "Who is known as the King of Pop?",
-      "options": ["Elvis Presley", "Michael Jackson", "Prince", "Justin Bieber"],
-      "correctAnswer": 1,
-      "difficulty": "easy",
-      "category": "pop culture"
     }
   ]
 }
