@@ -51,6 +51,7 @@ public static class EloSystemManager
         player.AccumulatedElo[categoryName] = player.AccumulatedElo.TryGetValue(categoryName, out int currentValue)
             ? currentValue + (int)Math.Round(gain)
             : (int)Math.Round(gain);
+        Debug.Log($"Adding Elo: {categoryName} - {gain}");
     }
 
     public static void SubtractEloBasedOnQuestionResult(Player player, string difficulty, string categoryName, int gameAverageElo)

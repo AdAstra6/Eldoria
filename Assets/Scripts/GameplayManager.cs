@@ -162,10 +162,11 @@ public class GameplayManager : MonoBehaviour
             EloSystemManager.ApplyAccumulatedElo(Players[i], isWin);
             Debug.Log($"{Players[i].profileData.Name} has {Players[i].profileData.Elo} Elo points.");
             profiles.Add(Players[i].profileData);
-
-        profileManager.SaveProfiles(profiles);
+        }
+        profileManager.UpdateProfiles(profiles);
         Debug.Log("Game Over. Elo points saved.");
         // Load the main menu scene
         SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
-    }
+    
+        }
 }

@@ -50,4 +50,61 @@ public class ProfileManager
         var profiles = LoadProfiles();
         return profiles.Find(p => p.Id == id);
     }
+
+    public void UpdateProfiles(List<PlayerProfile> updatedProfiles)
+    {
+        List<PlayerProfile> currentProfiles = LoadProfiles();
+        foreach (PlayerProfile updatedProfile in updatedProfiles)
+        {
+            PlayerProfile existingProfile = currentProfiles.Find(p => p.Id == updatedProfile.Id);
+            if (existingProfile != null)
+            {
+                // Update existing profile
+                existingProfile.Name = updatedProfile.Name;
+                existingProfile.Elo = updatedProfile.Elo;
+                existingProfile.CategoriesElo = updatedProfile.CategoriesElo;
+                existingProfile.Games = updatedProfile.Games;
+                existingProfile.Age = updatedProfile.Age;
+                existingProfile.Icon = updatedProfile.Icon;
+            }
+            else
+            {
+                // Add new profile
+                currentProfiles.Add(updatedProfile);
+            }
+        }
+        SaveProfiles(updatedProfiles);
+    }
+    public void UpdateProfile(PlayerProfile updatedProfile)
+    {
+        List<PlayerProfile> currentProfiles = LoadProfiles();
+        PlayerProfile existingProfile = currentProfiles.Find(p => p.Id == updatedProfile.Id);
+        if (existingProfile != null)
+        {
+            // Update existing profile
+            existingProfile.Name = updatedProfile.Name;
+            existingProfile.Elo = updatedProfile.Elo;
+            existingProfile.CategoriesElo = updatedProfile.CategoriesElo;
+            existingProfile.Games = updatedProfile.Games;
+            existingProfile.Age = updatedProfile.Age;
+            existingProfile.Icon = updatedProfile.Icon;
+        }
+        else
+        {
+            // Add new profile
+            currentProfiles.Add(updatedProfile);
+        }
+        SaveProfiles(currentProfiles);
+    }
+
+    public void DeleteProfile(int id)
+    {
+        List<PlayerProfile> currentProfiles = LoadProfiles();
+        PlayerProfile existingProfile = currentProfiles.Find(p => p.Id == id);
+        if (existingProfile != null)
+        {
+            currentProfiles.Remove(existingProfile);
+            SaveProfiles(currentProfiles);
+        }
+    }
 }
