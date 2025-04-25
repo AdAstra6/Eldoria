@@ -22,6 +22,11 @@ public class DiceRoll : MonoBehaviour
         int dice1 = Random.Range(1, 7);
         int dice2 = Random.Range(1, 7);
         int total = dice1 + dice2;
+        if (currentPlayer.HasBonusDiceNextTurn)
+        {
+            total += Random.Range(1, 7); // Add bonus dice roll
+            currentPlayer.HasBonusDiceNextTurn = false; // Reset bonus dice for next turn
+        }
         Debug.Log("Rolled: " + total);
 
         if (diceResultText != null)
