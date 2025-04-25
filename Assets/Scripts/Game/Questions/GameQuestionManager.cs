@@ -51,5 +51,6 @@ public class GameQuestionManager : MonoBehaviour
         Debug.Log($"{player.name} answered incorrectly!");
         EloSystemManager.SubtractEloBasedOnQuestionResult(player, currentQuestion.difficulty, currentQuestion.category, gameAverageElo);
         // Implement penalty logic
+        player.DecreaseHealth(1); // Decrease health by 1
     }
 }

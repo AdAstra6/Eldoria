@@ -34,12 +34,18 @@ public class GameplayManager : MonoBehaviour
             if (i < playersCount)
             {
                 Players[i].gameObject.SetActive(true); // activate used players
-                Players[i].Initialize(selectedProfiles[i]);
                 Players[i].SetInitialHealth(initialHealth); // Set initial health for each player
+                Players[i].Initialize(selectedProfiles[i]);
                 Players[i].currentTile = spawnPoints[i];
                 Players[i].transform.position = spawnPoints[i].transform.position;
                 Players[i].PlayerState = PlayerStats.IDLE;
                 Debug.Log("Player " + i + " spawned at " + spawnPoints[i].name);
+
+
+
+
+                //temporary
+                Players[i].inventory.Add(new Item(ItemType.BONUS_DICE, "Bonus Dice", "Adds extra dice on next roll"));
                 averageElo += Players[i].profileData.Elo;
             }
             else
@@ -89,6 +95,13 @@ public class GameplayManager : MonoBehaviour
                 gameplayCameraController.SetType(CameraType.FREE);
                 // HERE WHERE THE PLAYER SHOULD MAKE A STRATEGIC CHOICE AND HE CAN END HIS TURN
                 UIManager.Instance.EndTurnButtonShow();
+
+
+                // temporary
+                if (Input.GetKeyDown(KeyCode.I)) // Press I to test
+                {
+                    TestUseFirstItem();
+                }
                 break;
             case PlayerStats.END_TURN:
                 Debug.Log("Player " + currentPlayerIndex + " has ended their turn.");
@@ -114,7 +127,7 @@ public class GameplayManager : MonoBehaviour
     {
         Players[currentPlayerIndex].PlayerState = PlayerStats.ANSWERING_QUESTION;
     }
-    
+
 
     public void EndTurn()
     {
@@ -129,5 +142,20 @@ public class GameplayManager : MonoBehaviour
             Debug.Log($"{player.name} has {player.profileData.Elo} Elo points.");
         }
 
+    }
+
+
+    // temporary
+    public void TestUseFirstItem()
+    {
+        Player currentPlayer = Players[currentPlayerIndex];
+        if (currentPlayer.inventory.Count > 0)
+        {
+            currentPlayer.UseItem(currentPlayer.inventory[0]);
+        }
+        else
+        {
+            Debug.Log("No items available for player.");
+        }
     }
 }

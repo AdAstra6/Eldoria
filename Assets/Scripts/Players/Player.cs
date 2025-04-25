@@ -22,6 +22,10 @@ public class Player : MonoBehaviour
     public PlayerProfile profileData;
     public Dictionary<string, int> AccumulatedElo = new Dictionary<string, int>();
 
+    public List<Item> inventory = new List<Item>(); // << Added for inventory management
+    public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
+
+
     [SerializeField] private PlayerVisual playerVisual;
 
     private TMP_Text nameLabel;  // << Added for player name display
@@ -50,7 +54,7 @@ public class Player : MonoBehaviour
 
         if (nameLabel != null)
         {
-            nameLabel.text = profile.Name;
+            UpdateNameAndHealthUI();
         }
         foreach (QuestionsCategories category in Enum.GetValues(typeof(QuestionsCategories)))
 
@@ -197,4 +201,41 @@ public class Player : MonoBehaviour
         }
         return null;
     }
+
+    private void UpdateNameAndHealthUI() // << Added for updating name and health UI
+    {
+        if (nameLabel == null) return;
+
+        int hearts = CurrentHealth;
+
+        nameLabel.text = $"{profileData.Name}\nHP: {hearts}";
+    }
+
+    public void DecreaseHealth(int amount = 1) // << Added for decreasing health
+    {
+        CurrentHealth = Mathf.Max(CurrentHealth - amount, 0);
+        Debug.Log($"{profileData.Name}'s Health is now {CurrentHealth}");
+        UpdateNameAndHealthUI(); // Optional: refresh health display if you show HP
+    }
+
+    public void UseItem(Item item) // << Added for using items
+    {
+        switch (item.Type)
+        {
+            case ItemType.HEAL_POTION:
+                CurrentHealth++;
+                Debug.Log($"{profileData.Name} used a Heal Potion! HP is now {CurrentHealth}");
+                UpdateNameAndHealthUI();
+                break;
+
+            case ItemType.BONUS_DICE:
+                HasBonusDiceNextTurn = true;
+                Debug.Log($"{profileData.Name} used a Bonus Dice! They’ll roll 3 dice next turn.");
+                break;
+        }
+
+        inventory.Remove(item); // Remove after use
+    }
+
+
 }
