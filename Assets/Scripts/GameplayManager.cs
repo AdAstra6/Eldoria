@@ -31,8 +31,8 @@ public class GameplayManager : MonoBehaviour
             if (i < playersCount)
             {
                 Players[i].gameObject.SetActive(true); // activate used players
-                Players[i].Initialize(selectedProfiles[i]);
                 Players[i].SetInitialHealth(initialHealth); // Set initial health for each player
+                Players[i].Initialize(selectedProfiles[i]);
                 Players[i].currentTile = spawnPoints[i];
                 Players[i].transform.position = spawnPoints[i].transform.position;
                 Players[i].PlayerState = PlayerStats.IDLE;

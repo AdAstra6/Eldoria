@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
 
         if (nameLabel != null)
         {
-            nameLabel.text = profile.Name;
+            UpdateNameAndHealthUI();
         }
     }
 
@@ -188,5 +188,14 @@ public class Player : MonoBehaviour
             return lastTile;
         }
         return null;
+    }
+
+    private void UpdateNameAndHealthUI() // << Added for updating name and health UI
+    {
+        if (nameLabel == null) return;
+
+        int hearts = CurrentHealth;
+
+        nameLabel.text = $"{profileData.Name}\nHP: {hearts}";
     }
 }
