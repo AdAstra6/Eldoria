@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
     private Stack<Tile> pathcrossedPath = new Stack<Tile>();
 
     public PlayerProfile profileData;
+    public Dictionary<string, int> AccumulatedElo = new Dictionary<string, int>();
+
     [SerializeField] private PlayerVisual playerVisual;
 
     private TMP_Text nameLabel;  // << Added for player name display
@@ -49,6 +52,11 @@ public class Player : MonoBehaviour
         {
             nameLabel.text = profile.Name;
         }
+        foreach (QuestionsCategories category in Enum.GetValues(typeof(QuestionsCategories)))
+
+        {
+            AccumulatedElo.Add(category.GetKey(), 0);
+        }
     }
 
     public PlayerStats PlayerState
@@ -59,7 +67,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Random.InitState(System.DateTime.Now.Millisecond);
+        UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
         playerVisual = GetComponent<PlayerVisual>();
         if (playerVisual == null)
         {

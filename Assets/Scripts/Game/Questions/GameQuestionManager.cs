@@ -5,10 +5,12 @@ using System.Threading;
 public class GameQuestionManager : MonoBehaviour
 {
     public static GameQuestionManager Instance;
-    
+    public static int gameAverageElo = 0;
+
     [SerializeField] private QuestionManager QuestionManager;
     [SerializeField] private TimerCountDown timerCountDown;
     [SerializeField] private GameplayManager gameplayManager;
+    [SerializeField] private Question currentQuestion;
     public const float MCQTime = 60f; // Time for multiple choice question 
     private const float MSCQcriticalTIme = 15f;
 
@@ -24,6 +26,8 @@ public class GameQuestionManager : MonoBehaviour
         gameplayManager.QuestionStarted();
         this.timerCountDown.SetTotalTime(MCQTime);
         this.timerCountDown.Restart();
+        currentQuestion = QuestionManager.GetRandomQuestion();
+        QuestionUI.Instance.CurrentQuestion = currentQuestion;
         QuestionUI.Instance.ShowQuestion(player);
 
     }
@@ -38,12 +42,14 @@ public class GameQuestionManager : MonoBehaviour
     private void RewardPlayer(Player player)
     {
         Debug.Log($"{player.name} answered correctly!");
+        EloSystemManager.AddEloBasedOnQuestionResult(player,currentQuestion.difficulty ,currentQuestion.category, gameAverageElo);
         // Add movement bonus or other rewards
     }
 
     private void PenalizePlayer(Player player)
     {
         Debug.Log($"{player.name} answered incorrectly!");
+        EloSystemManager.SubtractEloBasedOnQuestionResult(player, currentQuestion.difficulty, currentQuestion.category, gameAverageElo);
         // Implement penalty logic
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
+using UnityEngine.SceneManagement;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GameplayManager : MonoBehaviour
         playersCount = selectedProfiles.Count;
         List<Tile> spawnPoints = map.getRandomSpawnpoints(playersCount);
         int initialHealth = playersCount == 2 ? 4 : 3;
+        int averageElo = 0;
 
         for (int i = 0; i < Players.Count; i++)
         {
@@ -38,13 +40,14 @@ public class GameplayManager : MonoBehaviour
                 Players[i].transform.position = spawnPoints[i].transform.position;
                 Players[i].PlayerState = PlayerStats.IDLE;
                 Debug.Log("Player " + i + " spawned at " + spawnPoints[i].name);
+                averageElo += Players[i].profileData.Elo;
             }
             else
             {
                 Players[i].gameObject.SetActive(false); // deactivate unused players
             }
         }
-
+        GameQuestionManager.gameAverageElo = averageElo / playersCount;
         this.currentPlayerIndex = 0;
         gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
     }
@@ -116,5 +119,15 @@ public class GameplayManager : MonoBehaviour
     public void EndTurn()
     {
         Players[currentPlayerIndex].PlayerState = PlayerStats.END_TURN;
+    }
+
+    public void GameOver(bool isWin)
+    {
+        foreach (Player player in Players) 
+        {
+            EloSystemManager.ApplyAccumulatedElo(player, isWin); 
+            Debug.Log($"{player.name} has {player.profileData.Elo} Elo points.");
+        }
+
     }
 }

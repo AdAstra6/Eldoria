@@ -21,6 +21,11 @@ public class QuestionUI : MonoBehaviour
     [SerializeField] private Color defaultColor = Color.white;
 
     [SerializeField] private Question currentQuestion;
+    public Question CurrentQuestion
+    {
+        get { return currentQuestion; }
+        set { currentQuestion = value; }
+    }
     private Player currentPlayer;
 
     /*
@@ -66,7 +71,7 @@ public class QuestionUI : MonoBehaviour
 
     private void LoadQuestion()
     {
-        currentQuestion = questionManager.GetRandomQuestion();
+        //currentQuestion = questionManager.GetRandomQuestion(); // Question loaded in GameQuestionManager
 
         if (currentQuestion == null)
         {
