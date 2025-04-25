@@ -9,7 +9,7 @@ public class GameplayManager : MonoBehaviour
 {
     public static GameplayManager Instance { get; private set; }
     [SerializeField] private Map map;
-    [SerializeField] private List<Player> Players;
+    [SerializeField] public List<Player> Players;
     [SerializeField] private int playersCount;
     [SerializeField] private InteractionSystemController interactionSystemController;
     private int currentPlayerIndex;
@@ -18,6 +18,9 @@ public class GameplayManager : MonoBehaviour
     private UIManager uiManager;
     [SerializeField] private ItemInventoryUI itemInventoryUI;
     public ItemInventoryUI ItemInventoryUI => itemInventoryUI;
+
+    [SerializeField] public GivePanelUI givePanelUI;
+
     [SerializeField] private GameplayCameraController gameplayCameraController;
 
     private GamePhase gamePhase;
@@ -118,6 +121,7 @@ public class GameplayManager : MonoBehaviour
                 Players[currentPlayerIndex].PlayerState = PlayerStats.IDLE;
                 UIManager.Instance.EndTurnButtonHide();
                 itemInventoryUI.Hide(); // Hide item inventory UI after turn ends
+                givePanelUI.Hide(); // Hide give panel UI after turn ends
                 currentPlayerIndex++;
                 if (currentPlayerIndex >= playersCount)
                 {
@@ -133,6 +137,10 @@ public class GameplayManager : MonoBehaviour
     {
         Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
         itemInventoryUI.ShowItems(Players[currentPlayerIndex]);
+        if (!givePanelUI.gameObject.activeSelf)
+        {
+            givePanelUI.Show(Players[currentPlayerIndex], Players);
+        }
     }
     public void QuestionStarted()
     {
@@ -163,9 +171,10 @@ public class GameplayManager : MonoBehaviour
             Debug.Log($"{Players[i].profileData.Name} has {Players[i].profileData.Elo} Elo points.");
             profiles.Add(Players[i].profileData);
 
-        profileManager.SaveProfiles(profiles);
-        Debug.Log("Game Over. Elo points saved.");
-        // Load the main menu scene
-        SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
+            profileManager.SaveProfiles(profiles);
+            Debug.Log("Game Over. Elo points saved.");
+            // Load the main menu scene
+            SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
+        }
     }
 }

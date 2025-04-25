@@ -239,5 +239,32 @@ public class Player : MonoBehaviour
         inventory.Remove(item); // Remove after use
     }
 
+    public void GiveItem(Player target, Item item)
+    {
+        if (inventory.Contains(item))
+        {
+            inventory.Remove(item);
+            target.inventory.Add(item);
+            Debug.Log($"{profileData.Name} gave {item.Name} to {target.profileData.Name}");
+        }
+    }
+
+    public void GiveHeart(Player target)
+    {
+        if (CurrentHealth > 1 )
+        {
+            CurrentHealth--;
+            target.CurrentHealth++;
+            UpdateNameAndHealthUI();
+            target.UpdateNameAndHealthUI();
+            Debug.Log($"{profileData.Name} gave 1 heart to {target.profileData.Name}");
+        }
+        else
+        {
+            Debug.Log("Can't give heart (maybe not enough HP or target is full).");
+        }
+    }
+
+
 
 }
