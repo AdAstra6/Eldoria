@@ -24,6 +24,7 @@ public class GameplayManager : MonoBehaviour
         List<PlayerProfile> selectedProfiles = GameData.SelectedProfiles;
         playersCount = selectedProfiles.Count;
         List<Tile> spawnPoints = map.getRandomSpawnpoints(playersCount);
+        int initialHealth = playersCount == 2 ? 4 : 3;
 
         for (int i = 0; i < Players.Count; i++)
         {
@@ -31,6 +32,7 @@ public class GameplayManager : MonoBehaviour
             {
                 Players[i].gameObject.SetActive(true); // activate used players
                 Players[i].Initialize(selectedProfiles[i]);
+                Players[i].SetInitialHealth(initialHealth); // Set initial health for each player
                 Players[i].currentTile = spawnPoints[i];
                 Players[i].transform.position = spawnPoints[i].transform.position;
                 Players[i].PlayerState = PlayerStats.IDLE;

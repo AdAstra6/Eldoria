@@ -23,6 +23,18 @@ public class Player : MonoBehaviour
 
     private TMP_Text nameLabel;  // << Added for player name display
 
+
+    public int MaxHealth { get; private set; } // << Added for health management
+    public int CurrentHealth { get; private set; }  // << Added for health management
+
+    public void SetInitialHealth(int health)  // << Added for setting initial health
+    {
+        MaxHealth = health;
+        CurrentHealth = health;
+    }
+
+
+
     public void Initialize(PlayerProfile profile)
     {
         this.profileData = profile;
@@ -54,9 +66,9 @@ public class Player : MonoBehaviour
             Debug.LogError("PlayerVisual component not found in children.");
             return;
         }
-            playerVisual.SetMoving(false);
-            playerVisual.SetMovementDirection(PlayerMovementDirection.NONE);
-       
+        playerVisual.SetMoving(false);
+        playerVisual.SetMovementDirection(PlayerMovementDirection.NONE);
+
     }
     private void Update()
     {
