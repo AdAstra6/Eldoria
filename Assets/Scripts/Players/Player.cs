@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public Tile currentTile;
     private Tile nextTile;
     private bool pathChosen = false;
-    private bool nextTileReached = false;
+   
 
     public float moveSpeed = 0.5f;
     [SerializeField] private bool isMoving = false;
@@ -151,7 +151,7 @@ public class Player : MonoBehaviour
                 Debug.Log("Path blocked. Stopping movement.");
                 break;
             }
-            this.nextTileReached = false;
+           
             isMoving = true;
             yield return StartCoroutine(MoveToTile(nextTile.transform.position));
             //yield return new WaitUntil(() => nextTileReached);
@@ -176,7 +176,7 @@ public class Player : MonoBehaviour
             );
             yield return null;
         }
-        nextTileReached = true;
+       
 
     }
 

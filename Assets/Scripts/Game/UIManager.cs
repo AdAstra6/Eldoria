@@ -6,12 +6,14 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
+    
     [SerializeField] public static UIManager Instance;
     public GameObject pathSelectionPanel; // The panel that appears at crossways
     public Transform buttonParent; // Where buttons will be placed
     public Button pathButtonPrefab; // The prefab for each path choice
     private Player currentPlayer;
 
+    [SerializeField] DiceRoll dice;
     private Button rollDiceButton;
     private Button endTurnButton;
 
@@ -76,11 +78,11 @@ public class UIManager : MonoBehaviour
     // Roll Dice button methods
     public void RollDiceButtonShow()
     {
-        rollDiceButton.gameObject.SetActive(true);
+        dice.showBeforeAnim();
     }
     public void RollDiceButtonHide()
     {
-        rollDiceButton.gameObject.SetActive(false);
+        dice.hideAfterAnim();
     }
 
     // End Turn button methods
@@ -102,6 +104,7 @@ public class UIManager : MonoBehaviour
     public void HidePenaltyText()
     {
        penaltyTileEffects.SetActive(false);
+
     }
 
 }

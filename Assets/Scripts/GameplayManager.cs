@@ -94,7 +94,7 @@ public class GameplayManager : MonoBehaviour
                 Debug.Log("Player " + currentPlayerIndex + " is rolling the dice.");
                 break;
             case PlayerStats.MOVING:
-                uiManager.RollDiceButtonHide();
+                //uiManager.RollDiceButtonHide();
                 Debug.Log("Player " + currentPlayerIndex + " is moving.");
                 break;
             case PlayerStats.CHOOSING_PATH:

@@ -420,6 +420,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1531272231}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &33957578
 SpriteRenderer:
@@ -523,6 +524,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 877885060}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &40597724
 SpriteRenderer:
@@ -626,6 +628,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 2006730381}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &76840367
 SpriteRenderer:
@@ -972,6 +975,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1213598921}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!4 &110864976
 Transform:
@@ -1090,6 +1094,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 845226419}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &128800884
 SpriteRenderer:
@@ -1527,6 +1532,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1720495356}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &185536141
 SpriteRenderer:
@@ -1778,6 +1784,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1473776769}
+  - {fileID: 259480280}
   - {fileID: 958773740}
   - {fileID: 1093425388}
   - {fileID: 1733262778}
@@ -1840,6 +1847,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1048169489}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &192694383
 SpriteRenderer:
@@ -1943,6 +1951,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1051081464}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &234902594
 SpriteRenderer:
@@ -2046,6 +2055,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1967476576}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &239658307
 SpriteRenderer:
@@ -2149,6 +2159,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 550326436}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &252036450
 SpriteRenderer:
@@ -2252,6 +2263,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 937704544}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &256907105
 SpriteRenderer:
@@ -2306,6 +2318,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &259480279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259480280}
+  - component: {fileID: 259480281}
+  m_Layer: 5
+  m_Name: Dice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &259480280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259480279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 278224062}
+  - {fileID: 2107582981}
+  m_Father: {fileID: 191482913}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &259480281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259480279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58f56e004f58034395c45a4d7640ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dice1: {fileID: 278224063}
+  dice2: {fileID: 2107582982}
+  instance: {fileID: 1473776768}
 --- !u!1 &275483716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,6 +2533,103 @@ Transform:
   - {fileID: 649633650}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &278224061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278224062}
+  - component: {fileID: 278224065}
+  - component: {fileID: 278224064}
+  - component: {fileID: 278224063}
+  m_Layer: 5
+  m_Name: Dice1Anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &278224062
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278224061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.63937}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259480280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -808.5, y: 158.00006}
+  m_SizeDelta: {x: 92, y: 91.6257}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &278224063
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278224061}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e5459427a3420145b5997dff88538e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &278224064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278224061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fb7fdcaba48677242b2a5989b64c39c3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &278224065
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278224061}
+  m_CullTransparentMesh: 1
 --- !u!1 &296767516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2517,6 +2679,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1466719121}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &296767519
 SpriteRenderer:
@@ -2620,6 +2783,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1885434598}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &297794674
 SpriteRenderer:
@@ -2723,6 +2887,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1381488302}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &302260274
 SpriteRenderer:
@@ -3007,6 +3172,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 234902593}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &338072534
 SpriteRenderer:
@@ -3111,6 +3277,7 @@ MonoBehaviour:
   - {fileID: 1358453090}
   - {fileID: 1710895037}
   isCrossway: 1
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &363391733
 SpriteRenderer:
@@ -3348,6 +3515,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1323440266}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &373224362
 SpriteRenderer:
@@ -3451,6 +3619,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1921220928}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &392156350
 SpriteRenderer:
@@ -3554,6 +3723,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 965758374}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &404637943
 SpriteRenderer:
@@ -3657,6 +3827,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1912955875}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &405374684
 SpriteRenderer:
@@ -3760,6 +3931,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 192694382}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &408930738
 SpriteRenderer:
@@ -4181,6 +4353,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 392156349}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &441066521
 SpriteRenderer:
@@ -4391,6 +4564,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 559129866}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &445981166
 SpriteRenderer:
@@ -4494,6 +4668,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1073929058}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &448919356
 SpriteRenderer:
@@ -4669,6 +4844,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1966440350}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &458332792
 SpriteRenderer:
@@ -4951,6 +5127,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1133685403}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &485630477
 SpriteRenderer:
@@ -5257,6 +5434,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 338072533}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &538978515
 SpriteRenderer:
@@ -5360,6 +5538,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 791760628}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &550326437
 SpriteRenderer:
@@ -5463,6 +5642,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1090096474}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &559129867
 SpriteRenderer:
@@ -5566,6 +5746,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1880972512}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &563484963
 SpriteRenderer:
@@ -5669,6 +5850,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 2142815765}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &566277943
 SpriteRenderer:
@@ -5772,6 +5954,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1589541161}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &599103713
 SpriteRenderer:
@@ -5875,6 +6058,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1493751553}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &600879729
 SpriteRenderer:
@@ -5978,6 +6162,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1509432899}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &602458666
 SpriteRenderer:
@@ -6081,6 +6266,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 448919355}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &602939951
 SpriteRenderer:
@@ -6290,6 +6476,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1136531422}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &625650872
 SpriteRenderer:
@@ -6468,6 +6655,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1389150760}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &631642864
 SpriteRenderer:
@@ -6718,6 +6906,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 563484962}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &649633652
 SpriteRenderer:
@@ -6882,6 +7071,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1057929095}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &662627966
 SpriteRenderer:
@@ -7119,6 +7309,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1510056752}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &711460312
 SpriteRenderer:
@@ -7443,6 +7634,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 405374683}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &723153658
 SpriteRenderer:
@@ -7796,6 +7988,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1447917330}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &775437031
 SpriteRenderer:
@@ -7899,6 +8092,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 40597723}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &791760629
 SpriteRenderer:
@@ -8002,6 +8196,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1685166534}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &845226420
 SpriteRenderer:
@@ -8105,6 +8300,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1209070488}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &845824017
 SpriteRenderer:
@@ -8209,6 +8405,7 @@ MonoBehaviour:
   - {fileID: 76840366}
   - {fileID: 711460311}
   isCrossway: 1
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &846094249
 SpriteRenderer:
@@ -8312,6 +8509,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 599103712}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &877885061
 SpriteRenderer:
@@ -8564,6 +8762,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 110864975}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!4 &892200940
 Transform:
@@ -8682,6 +8881,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1943480645}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &933799738
 SpriteRenderer:
@@ -8852,6 +9052,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 933799737}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &937704545
 SpriteRenderer:
@@ -9226,6 +9427,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1930578726}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &965758375
 SpriteRenderer:
@@ -9329,6 +9531,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1925345194}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &971218805
 SpriteRenderer:
@@ -9432,6 +9635,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 538978514}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1029999963
 SpriteRenderer:
@@ -9550,6 +9754,7 @@ MonoBehaviour:
   buttonParent: {fileID: 886934718}
   pathButtonPrefab: {fileID: 2436924743460212924, guid: 8c7e7db288acb3547ae6c6a250fb66fe,
     type: 3}
+  dice: {fileID: 2130279074}
   penaltyText: {fileID: 364669373}
   penaltyTileEffects: {fileID: 1684504126}
 --- !u!4 &1046720421
@@ -9618,6 +9823,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1584631297}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1048169490
 SpriteRenderer:
@@ -9721,6 +9927,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1962813446}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1048976260
 SpriteRenderer:
@@ -9824,6 +10031,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1361499438}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1051081465
 SpriteRenderer:
@@ -9927,6 +10135,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 845226419}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1057929096
 SpriteRenderer:
@@ -10030,6 +10239,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 566277942}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1073929059
 SpriteRenderer:
@@ -10133,6 +10343,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 2084131766}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1082053345
 SpriteRenderer:
@@ -10236,6 +10447,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1789110239}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1089816181
 SpriteRenderer:
@@ -10339,6 +10551,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 404637942}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1090096475
 SpriteRenderer:
@@ -10564,6 +10777,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 602458665}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1095342655
 SpriteRenderer:
@@ -10940,6 +11154,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1618619492}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1133685404
 SpriteRenderer:
@@ -11190,6 +11405,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1136531423
 SpriteRenderer:
@@ -11293,6 +11509,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1361201729}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1146033952
 SpriteRenderer:
@@ -11396,6 +11613,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1911911352}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1159479903
 SpriteRenderer:
@@ -11499,6 +11717,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1760840374}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1176873442
 SpriteRenderer:
@@ -11602,6 +11821,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1870996471}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1209070489
 SpriteRenderer:
@@ -11690,6 +11910,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1788211976}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1213598922
 SpriteRenderer:
@@ -11809,6 +12030,7 @@ MonoBehaviour:
   - {fileID: 185536140}
   - {fileID: 602939950}
   isCrossway: 1
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1220529769
 SpriteRenderer:
@@ -12059,6 +12281,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 363391732}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1231238815
 SpriteRenderer:
@@ -12430,6 +12653,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 649633651}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1245452802
 SpriteRenderer:
@@ -12852,6 +13076,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 563484962}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1323440267
 SpriteRenderer:
@@ -12955,6 +13180,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 631642863}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1326063360
 SpriteRenderer:
@@ -13058,6 +13284,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 662627965}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1336538348
 SpriteRenderer:
@@ -13161,6 +13388,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1159479902}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1358453091
 SpriteRenderer:
@@ -13264,6 +13492,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 128800883}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1361201730
 SpriteRenderer:
@@ -13367,6 +13596,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1827588696}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1361499439
 SpriteRenderer:
@@ -13470,6 +13700,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 302260273}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1380010417
 SpriteRenderer:
@@ -13573,6 +13804,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1963572414}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1381488303
 SpriteRenderer:
@@ -13676,6 +13908,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1957252385}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1389150761
 SpriteRenderer:
@@ -13898,6 +14131,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 485630476}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1431938612
 SpriteRenderer:
@@ -14001,6 +14235,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 33957577}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1447917331
 SpriteRenderer:
@@ -14104,6 +14339,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 252036449}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1458686425
 SpriteRenderer:
@@ -14207,6 +14443,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 845824016}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1466719122
 SpriteRenderer:
@@ -14394,6 +14631,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1867059070}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1473620659
 SpriteRenderer:
@@ -14534,7 +14772,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2130279074}
         m_TargetAssemblyTypeName: DiceRoll, Assembly-CSharp
-        m_MethodName: RollDice
+        m_MethodName: StartRollDiceCorroutine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14631,6 +14869,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 256907104}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1493751554
 SpriteRenderer:
@@ -14734,6 +14973,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1509432900
 SpriteRenderer:
@@ -14837,6 +15077,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 408930737}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1510056753
 SpriteRenderer:
@@ -14940,6 +15181,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 723153657}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1531272232
 SpriteRenderer:
@@ -15120,6 +15362,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 296767518}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1584631298
 SpriteRenderer:
@@ -15223,6 +15466,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 0}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1589541162
 SpriteRenderer:
@@ -15326,6 +15570,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 775437030}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1609432949
 SpriteRenderer:
@@ -15429,6 +15674,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 239658306}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1618619493
 SpriteRenderer:
@@ -15532,6 +15778,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 846094248}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1622410818
 SpriteRenderer:
@@ -15816,6 +16063,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1431938611}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1685166535
 SpriteRenderer:
@@ -16062,6 +16310,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1806596958}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1710895038
 SpriteRenderer:
@@ -16165,6 +16414,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1146033951}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1720495357
 SpriteRenderer:
@@ -16383,6 +16633,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 971218804}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1735708240
 SpriteRenderer:
@@ -16620,6 +16871,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 892200939}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1760840375
 SpriteRenderer:
@@ -16723,6 +16975,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1380010416}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1788211977
 SpriteRenderer:
@@ -16826,6 +17079,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 600879728}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1789110240
 SpriteRenderer:
@@ -16929,6 +17183,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1095342654}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1796247566
 SpriteRenderer:
@@ -17134,6 +17389,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1846923412}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1806596959
 SpriteRenderer:
@@ -17312,6 +17568,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1609432948}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1827588697
 SpriteRenderer:
@@ -17494,6 +17751,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1855680278}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1846923413
 SpriteRenderer:
@@ -17597,6 +17855,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 373224361}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1853267431
 SpriteRenderer:
@@ -17700,6 +17959,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1048976259}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1855680279
 SpriteRenderer:
@@ -17803,6 +18063,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1029999962}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1867059071
 SpriteRenderer:
@@ -17906,6 +18167,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1989307956}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1870996472
 SpriteRenderer:
@@ -18009,6 +18271,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 2091929309}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1880972513
 SpriteRenderer:
@@ -18112,6 +18375,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 445981165}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1881572264
 SpriteRenderer:
@@ -18215,6 +18479,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1735708239}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1885434599
 SpriteRenderer:
@@ -18372,6 +18637,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1326063359}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1911911353
 SpriteRenderer:
@@ -18475,6 +18741,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 625650871}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1912955876
 SpriteRenderer:
@@ -18578,6 +18845,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1796247565}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1921220929
 SpriteRenderer:
@@ -18681,6 +18949,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 458332791}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1925345195
 SpriteRenderer:
@@ -18784,6 +19053,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1458686424}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1930578727
 SpriteRenderer:
@@ -18887,6 +19157,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 338072533}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1934539729
 SpriteRenderer:
@@ -19096,6 +19367,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1082053344}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1943480646
 SpriteRenderer:
@@ -19199,6 +19471,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1089816180}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1957252386
 SpriteRenderer:
@@ -19302,6 +19575,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1220529768}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1962205078
 SpriteRenderer:
@@ -19405,6 +19679,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1336538347}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1962813447
 SpriteRenderer:
@@ -19508,6 +19783,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1622410817}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1963572415
 SpriteRenderer:
@@ -19611,6 +19887,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 441066520}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &1966440351
 SpriteRenderer:
@@ -19715,6 +19992,7 @@ MonoBehaviour:
   - {fileID: 297794673}
   - {fileID: 1245452801}
   isCrossway: 1
+  isSpawnPoint: 0
   movementDirection: 0
 --- !u!212 &1967476577
 SpriteRenderer:
@@ -19818,6 +20096,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1473620658}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &1989307957
 SpriteRenderer:
@@ -20057,6 +20336,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1962205077}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &2006730382
 SpriteRenderer:
@@ -20254,6 +20534,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1881572263}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &2084131767
 SpriteRenderer:
@@ -20357,6 +20638,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1934539728}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 1
 --- !u!212 &2091929310
 SpriteRenderer:
@@ -20496,6 +20778,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2107582980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107582981}
+  - component: {fileID: 2107582984}
+  - component: {fileID: 2107582983}
+  - component: {fileID: 2107582982}
+  m_Layer: 5
+  m_Name: Dice2Anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2107582981
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107582980}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.63937}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259480280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -643.58997, y: 158.00006}
+  m_SizeDelta: {x: 92, y: 91.6257}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &2107582982
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107582980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e5459427a3420145b5997dff88538e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2107582983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107582980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fb7fdcaba48677242b2a5989b64c39c3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2107582984
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107582980}
+  m_CullTransparentMesh: 1
 --- !u!1 &2115764402
 GameObject:
   m_ObjectHideFlags: 0
@@ -20593,7 +20972,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ccebbd64752924abee959c7395e4d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rollDiceButton: {fileID: 1473776768}
   diceResultText: {fileID: 1752169634}
+  diceAnim: {fileID: 259480281}
 --- !u!4 &2130279075
 Transform:
   m_ObjectHideFlags: 0
@@ -20658,6 +21039,7 @@ MonoBehaviour:
   nextTiles:
   - {fileID: 1853267430}
   isCrossway: 0
+  isSpawnPoint: 0
   movementDirection: 2
 --- !u!212 &2142815766
 SpriteRenderer:
