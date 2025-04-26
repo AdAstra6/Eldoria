@@ -73,7 +73,7 @@ public class ProfileManager
                 currentProfiles.Add(updatedProfile);
             }
         }
-        SaveProfiles(updatedProfiles);
+        SaveProfiles(currentProfiles);
     }
     public void UpdateProfile(PlayerProfile updatedProfile)
     {

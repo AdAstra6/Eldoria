@@ -115,6 +115,16 @@ public static class EloSystemManager
            
         }
         profile.Elo = GetAverageElo(profile);
+
+        if (gameWin) profile.Games.Won++;
+        profile.Games.Played++;
+        UpdateWinRatio(profile);
+    }
+    public static void UpdateWinRatio(PlayerProfile profile)
+    {
+        if (profile == null) return;
+        if (profile.Games.Played == 0) return;
+        profile.Games.WinRatio = (float)profile.Games.Won / profile.Games.Played;
     }
 
 

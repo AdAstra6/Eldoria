@@ -160,14 +160,9 @@ public class GameplayManager : MonoBehaviour
         List<PlayerProfile> profiles = new List<PlayerProfile>();
         for (int i = 0; i < playersCount; i++)
         {
-            Debug.Log("AccumulatedElo Keys:");
-            foreach (string key in Players[i].AccumulatedElo.Keys)
-            {
-                Debug.Log($"Key: {key}");
-            }
-
             Debug.Log("Player acumulated : " + Players[i].AccumulatedElo.Keys.ToList());
             EloSystemManager.ApplyAccumulatedElo(Players[i], isWin);
+
             Debug.Log($"{Players[i].profileData.Name} has {Players[i].profileData.Elo} Elo points.");
             profiles.Add(Players[i].profileData);
 
