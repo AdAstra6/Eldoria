@@ -13,7 +13,7 @@ public class DiceRoll : MonoBehaviour
 
     public Player CurrentPlayer { get { return currentPlayer; } set { currentPlayer = value; } }
 
-    [SerializeField] private TMP_Text diceResultText; // Assign via Inspector
+    //[SerializeField] private TMP_Text diceResultText; 
     [SerializeField] private DiceAnimation diceAnim;
     private void Start()
     {
@@ -36,14 +36,15 @@ public class DiceRoll : MonoBehaviour
         }
         Debug.Log("Rolled: " + total);
 
-        if (diceResultText != null)
+        // This text was used before the dice animation was added
+        /*if (diceResultText != null)
         {
             diceResultText.text = total.ToString();
         }
         else
         {
             Debug.LogError("DiceResultText Text component not assigned in the Inspector.");
-        }
+        } */
 
         currentPlayer.Move(total);
         yield return new WaitUntil(() => currentPlayer.PlayerState == PlayerStats.END_MOVING); 
@@ -51,6 +52,7 @@ public class DiceRoll : MonoBehaviour
     }
     public void StartRollDiceCorroutine()
     {
+        rollDiceButton.SetActive(false);
         StartCoroutine(RollDice());
     }
     public void hideAfterAnim()

@@ -12,6 +12,7 @@ public class DiceAnimation : MonoBehaviour
     {
         dice1.SetTrigger("DoRoll");
         dice2.SetTrigger("DoRoll");
+
     }
     public void setResult(int result1,int result2)
     {
@@ -20,12 +21,10 @@ public class DiceAnimation : MonoBehaviour
     }
     public void hideDices()
     {
-        
         dice1.SetTrigger("Idle");
         dice2.SetTrigger("Idle");
         dice1.gameObject.SetActive(false);
         dice2.gameObject.SetActive(false);
-
     }
     public void showDices()
     {
