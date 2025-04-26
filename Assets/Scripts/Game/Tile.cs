@@ -8,6 +8,8 @@ public class Tile : MonoBehaviour
     
     public List<Tile> nextTiles; // List of possible paths from this tile
     public bool isCrossway = false; // Crossway is handled separately
+
+    public bool isSpawnPoint = false; // Spawn point is handled separately
     [SerializeField] private PlayerMovementDirection movementDirection;
     public PlayerMovementDirection MovementDirection
     {

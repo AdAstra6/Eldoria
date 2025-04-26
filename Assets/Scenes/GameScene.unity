@@ -7375,17 +7375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8599fd0fd80f9740988b8dd8f72be5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1176873440}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  mapContainer: {fileID: 275483717}
+  tiles: []
+  questionFrequency: 3
+  penaltyFrequency: 5
 --- !u!4 &719739035
 Transform:
   m_ObjectHideFlags: 0

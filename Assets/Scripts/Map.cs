@@ -20,7 +20,9 @@ public class Map : MonoBehaviour
         int step = spawnpointsCount / n;
         for (int i = 0; i < n; i++)
         {
-            result.Add(spawnPoints[index]);
+            Tile tile = spawnPoints[index];
+            tile.isSpawnPoint = true; // ✅ Mark as spawn tile
+            result.Add(tile);
             index = (index + Random.Range(1, step)) % this.spawnpointsCount;
         }
         return result;
