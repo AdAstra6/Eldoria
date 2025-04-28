@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,6 +27,7 @@ public class PuzzleGameManager : MonoBehaviour
     private Vector3 offset;
 
     private int piecesCorrect;
+    
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -34,9 +36,11 @@ public class PuzzleGameManager : MonoBehaviour
     }
     public void StartPuzzleGame()
     {
-        if (imageTextures == null || imageTextures.Count == 0)
+        if (imageTextures == null || imageTextures.Count == 0) { 
+            GameFiniched(true);
             return;
-
+    }
+        
         // Pick a random texture
         int randomIndex = Random.Range(0, imageTextures.Count);
         Texture2D randomTexture = imageTextures[randomIndex];
@@ -306,17 +310,22 @@ public class PuzzleGameManager : MonoBehaviour
                 piecesCorrect++;
                 if (piecesCorrect == pieces.Count)
                 {
-                    foreach (Transform piece in pieces)
-                    {
-                        Destroy(piece.gameObject);
-                    }
-                    pieces.Clear();
-               
-                    gameHolder.GetComponent<LineRenderer>().enabled = false;
-                    //zid hna cbh ykamal yamchi ki yarba7 w reward ta3ou w 3awad affichi ui te3 l elements 
-                    //kima ki yjawab 3la question s7i7
+                    GameFiniched(true); // puzzle completed
                 }
             }
         }
     }
+
+    private void GameFiniched(bool completed)
+    {
+        foreach (Transform piece in pieces)
+        {
+            Destroy(piece.gameObject);
+        }
+        pieces.Clear();
+
+        gameHolder.GetComponent<LineRenderer>().enabled = false;
+        GameplayManager.Instance.StartStrategicPhase();
+    }
+
 }

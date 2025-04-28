@@ -109,11 +109,12 @@ public class GameplayManager : MonoBehaviour
             case PlayerStats.ANSWERING_QUESTION:
                 Debug.Log("Player " + currentPlayerIndex + " is answering a question.");
                 break;
+            case PlayerStats.DOING_PUZZLE:
+                Debug.Log("Player " + currentPlayerIndex + " is doing puzzle.");
+                break;
             case PlayerStats.STRATEGIC_CHOICE:
                 Debug.Log("Player " + currentPlayerIndex + " is making a strategic choice.");
-                gameplayCameraController.SetType(CameraType.FREE); // TODO : move this line new method StartStrategicPhase
-                // HERE WHERE THE PLAYER SHOULD MAKE A STRATEGIC CHOICE AND HE CAN END HIS TURN
-                UIManager.Instance.EndTurnButtonShow(); // TODO : move this line new method StartStrategicPhase
+                
                 break;
             case PlayerStats.END_TURN:
                 Debug.Log("Player " + currentPlayerIndex + " has ended their turn.");
@@ -135,12 +136,7 @@ public class GameplayManager : MonoBehaviour
 
     public void QuestionAnswered()
     {
-        Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
-        itemInventoryUI.ShowItems(Players[currentPlayerIndex]); // TODO : move this line new method StartStrategicPhase
-        if (!givePanelUI.gameObject.activeSelf)
-        {
-            givePanelUI.Show(Players[currentPlayerIndex], Players); // TODO : move this line new method StartStrategicPhase
-        }
+        StartStrategicPhase();
     }
     public void QuestionStarted()
     {
@@ -172,5 +168,13 @@ public class GameplayManager : MonoBehaviour
         // Load the main menu scene
         SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
     
+    }
+
+    public void StartStrategicPhase() {
+        Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
+        GameplayManager.Instance.ItemInventoryUI.ShowItems(Players[currentPlayerIndex]);
+        GameplayManager.Instance.givePanelUI.Show(Players[currentPlayerIndex], GameplayManager.Instance.Players);
+        gameplayCameraController.SetType(CameraType.FREE);
+        UIManager.Instance.EndTurnButtonShow();
     }
 }

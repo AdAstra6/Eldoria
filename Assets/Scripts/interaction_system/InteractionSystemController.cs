@@ -27,6 +27,7 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             case TileType.PUZZLE:
                 Debug.Log(player.name + " landed on a Puzzle tile!");
+                player.PlayerState = PlayerStats.DOING_PUZZLE;
                 PuzzleGameManager.Instance.StartPuzzleGame();
                 break;
             case TileType.PENALTY:
@@ -35,10 +36,8 @@ public class InteractionSystemController : MonoBehaviour
                 StartCoroutine(TriggerPenaltyInteraction(player, stepsBack));
                 
                 player.MoveBackward(stepsBack);
-                
-                player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
-                GameplayManager.Instance.ItemInventoryUI.ShowItems(player);
-                GameplayManager.Instance.givePanelUI.Show(player, GameplayManager.Instance.Players);
+
+                GameplayManager.Instance.StartStrategicPhase();
 
                 break;
             case TileType.TELEPORT:
@@ -51,9 +50,7 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             default:
                 Debug.Log(player.name + " landed on a Normal tile.");
-                player.PlayerState = PlayerStats.STRATEGIC_CHOICE;// Temporary state until implement full interaction system
-                GameplayManager.Instance.ItemInventoryUI.ShowItems(player); // Show item inventory UI for normal tiles
-                GameplayManager.Instance.givePanelUI.Show(player, GameplayManager.Instance.Players);
+                GameplayManager.Instance.StartStrategicPhase();
                 break;
         }
     }
