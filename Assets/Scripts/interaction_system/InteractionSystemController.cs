@@ -27,7 +27,7 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             case TileType.PUZZLE:
                 Debug.Log(player.name + " landed on a Puzzle tile!");
-                // player.SolvePuzzle();
+                PuzzleGameManager.Instance.StartPuzzleGame();
                 break;
             case TileType.PENALTY:
                 Debug.Log(player.name + " landed on a Penalty tile!");
