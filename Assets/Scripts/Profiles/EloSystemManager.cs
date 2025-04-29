@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public static class EloSystemManager 
@@ -78,6 +79,17 @@ public static class EloSystemManager
             : 0;
     }
 
+    public static int CalculateAverageElo(PlayerProfile profile)
+    {
+        int newAverage = 0;
+        foreach (QuestionsCategories category in Enum.GetValues(typeof(QuestionsCategories)))
+        {
+            newAverage += profile.CategoriesElo[category.GetKey()];
+        }
+        newAverage /= Enum.GetValues(typeof(QuestionsCategories)).Length;
+        return newAverage;
+    }
+    
     public static void ApplyAccumulatedElo(Player player, bool gameWin)
     {
         if (player == null || player.profileData == null) return;
@@ -114,7 +126,7 @@ public static class EloSystemManager
             profile.CategoriesElo[category.GetKey()] = Math.Max(MinElo, profile.CategoriesElo[category.GetKey()] + changes[category.GetKey()]);
            
         }
-        profile.Elo = GetAverageElo(profile);
+        profile.Elo = CalculateAverageElo(profile);
 
         if (gameWin) profile.Games.Won++;
         profile.Games.Played++;

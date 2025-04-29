@@ -34,9 +34,8 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Penalty tile!");
                 int stepsBack = Random.Range(1, MAX_PERMITTED_STEPS);
                 StartCoroutine(TriggerPenaltyInteraction(player, stepsBack));
-                
-                player.MoveBackward(stepsBack);
 
+                player.MoveBackward(stepsBack);
                 GameplayManager.Instance.StartStrategicPhase();
 
                 break;
@@ -57,6 +56,7 @@ public class InteractionSystemController : MonoBehaviour
 
     public IEnumerator TriggerPenaltyInteraction(Player player ,int stepBack)
     {
+        player.PlayerState = PlayerStats.MOVING_BACK;
         Tile tile = player.currentTile;
         UIManager.Instance.ShowPenaltyText(player, stepBack);
         yield return new WaitForSeconds(2f);

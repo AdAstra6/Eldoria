@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,14 +33,16 @@ public class PuzzleGameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        
+
+        imageTextures = Resources.LoadAll<Texture2D>("JigsawTextures").ToList();
+
     }
     public void StartPuzzleGame()
     {
         if (imageTextures == null || imageTextures.Count == 0) { 
             GameFiniched(true);
             return;
-    }
+        }
         
         // Pick a random texture
         int randomIndex = Random.Range(0, imageTextures.Count);

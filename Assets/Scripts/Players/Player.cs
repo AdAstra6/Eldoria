@@ -119,8 +119,8 @@ public class Player : MonoBehaviour
         }
 
         isMoving = false;
-        this.playerState = PlayerStats.END_MOVING;
-        GameManager.Instance.EndTurn();
+        GameplayManager.Instance.StartStrategicPhase();
+        //GameManager.Instance.EndTurn();
     }
 
     private IEnumerator MoveAlongPath(int steps)
@@ -162,7 +162,7 @@ public class Player : MonoBehaviour
 
         isMoving = false;
         this.playerState = PlayerStats.END_MOVING;
-        if (remainingSteps <= 0) GameManager.Instance.EndTurn();
+        //if (remainingSteps <= 0) GameManager.Instance.EndTurn();
     }
 
     private IEnumerator MoveToTile(Vector3 targetPosition)
