@@ -209,7 +209,7 @@ public class PuzzleGameManager : MonoBehaviour
         if (draggingPiece && Input.GetMouseButtonUp(0))
         {
             SnapAndDisableIfCorrect();
-            draggingPiece.position += Vector3.forward;
+            draggingPiece.position += Vector3.back;
             draggingPiece = null;
         }
 
