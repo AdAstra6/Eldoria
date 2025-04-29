@@ -9,9 +9,9 @@ public class MapManager : MonoBehaviour
     [Header("Tile Configuration")]
     public List<Tile> tiles = new List<Tile>();
 
-    public int questionFrequency = 3;
-    public int penaltyFrequency = 5;
-    //public int puzzleFrequency = 7;
+    public int questionFrequency = 2;
+    public int penaltyFrequency = 3;
+    public int puzzleFrequency = 5;
 
     void Awake()
     {
@@ -36,13 +36,12 @@ public class MapManager : MonoBehaviour
             Tile currentTile = tiles[i];
             if (currentTile.type == TileType.TELEPORT || currentTile.type == TileType.FINISH || currentTile.isSpawnPoint )
                 continue; // Skip teleport and finish tiles and spawn points
-            if (i % questionFrequency == 0)
-                currentTile.type = TileType.MCQUESTION;
-            //else if (i % puzzleFrequency == 0)
-                //currentTile.type = TileType.PUZZLE;
+            if (i % puzzleFrequency == 0)
+                currentTile.type = TileType.PUZZLE;
             else if (i % penaltyFrequency == 0)
                 currentTile.type = TileType.PENALTY;
-
+            else if (i % questionFrequency == 0)
+                currentTile.type = TileType.MCQUESTION;
             else
                 currentTile.type = TileType.NORMAL;
         }
