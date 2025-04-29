@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 public class ProfilePanelManager : MonoBehaviour
 {
@@ -30,12 +31,13 @@ public class ProfilePanelManager : MonoBehaviour
         }
         // set up buttons listeners
         uimanager.nextButton.onClick.AddListener(() => StartNextProfile());
+        uimanager.prevButton.onClick.AddListener(() => StartPrevProfile());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void StartNextProfile()
     {
@@ -53,4 +55,23 @@ public class ProfilePanelManager : MonoBehaviour
         uimanager.LoadProfile(currentProfile);
         uimanager.startStatsFadeIn();
     }
+
+    public void StartPrevProfile()
+    {
+        StartCoroutine(PrevProfile());
+    }
+
+    public IEnumerator PrevProfile()
+    {
+        // update profiles
+        uimanager.startStatsFadeOut();
+        bookAnimator.SetTrigger("LeftFlipPage");
+        yield return new WaitForSeconds(animationDelay);
+        currentIndex = (currentIndex - 1) ;
+        if (currentIndex < 0) currentIndex = profiles.Count - 1;
+        PlayerProfile currentProfile = profiles[currentIndex];
+        uimanager.LoadProfile(currentProfile);
+        uimanager.startStatsFadeIn();
+    }
+
 }
