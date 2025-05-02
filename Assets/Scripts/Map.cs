@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-    private int spawnpointsCount=4;
+    public const int spawnpointsCount=6;
     [SerializeField] private List<Tile> spawnPoints;
     private void Start()
     {
-        spawnpointsCount = spawnPoints.Count;
+        //spawnpointsCount = spawnPoints.Count;
         Debug.Log($"number points spawn :{spawnpointsCount}");
     }
 
@@ -28,7 +28,7 @@ public class Map : MonoBehaviour
             Tile tile = spawnPoints[index];
             tile.isSpawnPoint = true; // ✅ Mark as spawn tile
             result.Add(tile);
-            index = (index + Random.Range(1, step)) % this.spawnpointsCount;
+            index = (index + Random.Range(1, step)) % Map.spawnpointsCount;
         }
         return result;
     }
