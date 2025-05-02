@@ -32,6 +32,7 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
+        UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
         Instance = this;
         gamePhase = GamePhase.FIRST_PHASE;
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
@@ -59,8 +60,8 @@ public class GameplayManager : MonoBehaviour
 
 
                 //temporary
-                Players[i].inventory.Add(new Item(ItemType.BONUS_DICE, "Bonus Dice", "Adds extra dice on next roll"));
-                Players[i].inventory.Add(new Item(ItemType.HEAL_POTION, "Heal Potion", "Restores 1 health point"));
+                Players[i].AddItem(ItemType.BONUS_DICE);
+                Players[i].AddItem(ItemType.HEAL_POTION);
                 averageElo += Players[i].profileData.Elo;
             }
             else
@@ -118,17 +119,6 @@ public class GameplayManager : MonoBehaviour
                 break;
             case PlayerStats.END_TURN:
                 Debug.Log("Player " + currentPlayerIndex + " has ended their turn.");
-                // HERE WHERE THE PLAYER TURN ENDED AND THE NEXT PLAYER TURN STARTS
-                Players[currentPlayerIndex].PlayerState = PlayerStats.IDLE;
-                UIManager.Instance.EndTurnButtonHide();
-                itemInventoryUI.Hide(); // Hide item inventory UI after turn ends
-                givePanelUI.Hide(); // Hide give panel UI after turn ends
-                currentPlayerIndex++;
-                if (currentPlayerIndex >= playersCount)
-                {
-                    currentPlayerIndex = 0;
-                }
-
                 //EndTurn();
                 break;
         }
@@ -147,6 +137,17 @@ public class GameplayManager : MonoBehaviour
     public void EndTurn()
     {
         Players[currentPlayerIndex].PlayerState = PlayerStats.END_TURN;
+        // HERE WHERE THE PLAYER TURN ENDED AND THE NEXT PLAYER TURN STARTS
+        Players[currentPlayerIndex].PlayerState = PlayerStats.IDLE;
+        UIManager.Instance.EndTurnButtonHide();
+        //itemInventoryUI.Hide(); // Hide item inventory UI after turn ends
+        ItemInventoryUI.Instance.Hide(); // Hide item inventory UI after turn ends  
+        givePanelUI.Hide(); // Hide give panel UI after turn ends
+        currentPlayerIndex++;
+        if (currentPlayerIndex >= playersCount)
+        {
+            currentPlayerIndex = 0;
+        }
     }
 
     public void GameOver(bool isWin)
@@ -172,9 +173,17 @@ public class GameplayManager : MonoBehaviour
 
     public void StartStrategicPhase() {
         Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
-        GameplayManager.Instance.ItemInventoryUI.ShowItems(Players[currentPlayerIndex]);
+        //GameplayManager.Instance.ItemInventoryUI.ShowItems(Players[currentPlayerIndex]);
         GameplayManager.Instance.givePanelUI.Show(Players[currentPlayerIndex], GameplayManager.Instance.Players);
         gameplayCameraController.SetType(CameraType.FREE);
         UIManager.Instance.EndTurnButtonShow();
+        // new item system
+        ItemInventoryUI.Instance.Refresh(Players[currentPlayerIndex].GetInventory());
+        ItemInventoryUI.Instance.Show(); // Show item inventory UI after answering the question
+    }
+    public void UseItem(ItemType item)
+    {
+        Players[currentPlayerIndex].UseItem(item);
+        ItemInventoryUI.Instance.Refresh(Players[currentPlayerIndex].GetInventory());
     }
 }

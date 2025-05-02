@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public PlayerProfile profileData;
     public Dictionary<string, int> AccumulatedElo;
 
-    public List<Item> inventory = new List<Item>(); // << Added for inventory management
+    private PlayerItemsManager inventory;
     public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
 
 
@@ -32,15 +32,13 @@ public class Player : MonoBehaviour
 
 
     public int MaxHealth { get; private set; } // << Added for health management
-    public int CurrentHealth { get; private set; }  // << Added for health management
+    public int CurrentHealth { get;  set; }  // << Added for health management
 
     public void SetInitialHealth(int health)  // << Added for setting initial health
     {
         MaxHealth = health;
         CurrentHealth = health;
     }
-
-
 
     public void Initialize(PlayerProfile profile)
     {
@@ -63,6 +61,30 @@ public class Player : MonoBehaviour
             Debug.Log($"Initializing key: {key}");
             AccumulatedElo.Add(key, 0);
         }
+        if (inventory == null)
+        {
+            inventory = GetComponent<PlayerItemsManager>();
+            if (inventory == null)
+            {
+                Debug.LogError("PlayerItemsManager component not found!");
+            }
+        }
+        inventory.Insitialize(this);
+    }
+    private void Awake()
+    {
+
+        playerVisual = GetComponent<PlayerVisual>();
+        if (playerVisual == null)
+        {
+            Debug.LogError("PlayerVisual component not found in children.");
+            return;
+        }
+        inventory = GetComponent<PlayerItemsManager>();
+        if (inventory == null)
+        {
+            Debug.LogError("PlayerItemsManager component not found!");
+        }
     }
 
     public PlayerStats PlayerState
@@ -73,16 +95,11 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-        playerVisual = GetComponent<PlayerVisual>();
-        if (playerVisual == null)
+        if (playerVisual != null)
         {
-            Debug.LogError("PlayerVisual component not found in children.");
-            return;
+            playerVisual.SetMoving(false);
+            playerVisual.SetMovementDirection(PlayerMovementDirection.NONE);
         }
-        playerVisual.SetMoving(false);
-        playerVisual.SetMovementDirection(PlayerMovementDirection.NONE);
-
     }
     private void Update()
     {
@@ -219,39 +236,32 @@ public class Player : MonoBehaviour
         Debug.Log($"{profileData.Name}'s Health is now {CurrentHealth}");
         UpdateNameAndHealthUI(); // Optional: refresh health display if you show HP
     }
-
-    public void UseItem(Item item) // << Added for using items
+    public void IncreaseHealth(int amount = 1) // << Added for increasing health
     {
-        switch (item.Type)
-        {
-            case ItemType.HEAL_POTION:
-                CurrentHealth++;
-                Debug.Log($"{profileData.Name} used a Heal Potion! HP is now {CurrentHealth}");
-                UpdateNameAndHealthUI();
-                break;
+        CurrentHealth++;
+        Debug.Log($"{profileData.Name}'s Health is now {CurrentHealth}");
+        UpdateNameAndHealthUI(); // Optional: refresh health display if you show HP
+    }
 
-            case ItemType.BONUS_DICE:
-                HasBonusDiceNextTurn = true;
-                Debug.Log($"{profileData.Name} used a Bonus Dice! They’ll roll 3 dice next turn.");
-                break;
-        }
 
-        inventory.Remove(item); // Remove after use
+    public void UseItem(ItemType item)
+    {
+        inventory.UseItem(item);
     }
 
     public void GiveItem(Player target, Item item)
     {
-        if (inventory.Contains(item))
+        /*if (inventory.Contains(item))
         {
             inventory.Remove(item);
             target.inventory.Add(item);
             Debug.Log($"{profileData.Name} gave {item.Name} to {target.profileData.Name}");
-        }
+        }*/
     }
 
     public void GiveHeart(Player target)
     {
-        if (CurrentHealth > 1 )
+        if (CurrentHealth > 1)
         {
             CurrentHealth--;
             target.CurrentHealth++;
@@ -264,6 +274,20 @@ public class Player : MonoBehaviour
             Debug.Log("Can't give heart (maybe not enough HP or target is full).");
         }
     }
+
+    public void AddItem(ItemType itemType)
+    {
+        inventory.AddItem(itemType);
+    }
+    public void RemoveItem(ItemType itemType)
+    {
+        inventory.RemoveItem(itemType);
+    }
+    public List<Item> GetInventory()
+    {
+        return inventory.inventory;
+    }
+
 
 
 

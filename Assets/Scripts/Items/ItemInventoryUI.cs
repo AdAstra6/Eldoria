@@ -5,53 +5,33 @@ using UnityEngine.UI;
 
 public class ItemInventoryUI : MonoBehaviour
 {
-    [SerializeField] private GameObject buttonPrefab;
-    [SerializeField] private Transform buttonParent;
-    [SerializeField] private TMP_Text titleText;
+    public static ItemInventoryUI Instance { get; private set; }
+    [SerializeField] private ItemButton[] itemButtons;
+    [SerializeField] private GameObject ItemsContainer; // Panel contains inventory UI
 
-    private Player currentPlayer;
-
-    public void ShowItems(Player player)
+    private void Start()
     {
-        currentPlayer = player;
+        Instance = this;
+        itemButtons = GetComponentsInChildren<ItemButton>();
+        Instance.Hide();
+    }
+    public void Refresh(List<Item> inventory)
+    {
         ClearButtons();
-
-        if (titleText != null)
-            titleText.text = player.profileData.Name + "'s Items";
-
-        if (player.inventory == null || player.inventory.Count == 0)
+        if (inventory == null || inventory.Count == 0)
         {
             Debug.Log("No items in inventory.");
             gameObject.SetActive(false);
             return;
         }
-
-        foreach (var item in player.inventory)
+        int index = 0;
+        foreach (Item item in inventory)
         {
-            GameObject buttonObj = Instantiate(buttonPrefab, buttonParent);
-            TMP_Text label = buttonObj.GetComponentInChildren<TMP_Text>();
-            Button button = buttonObj.GetComponent<Button>();
+            itemButtons[index].Initiate(item);
+            itemButtons[index].Show();
+            index++;
 
-            if (label != null)
-                label.text = item.Name;
-
-            if (button != null)
-            {
-                Item captured = item; // avoid closure bug
-                button.onClick.AddListener(() =>
-                {
-                    currentPlayer.UseItem(captured);
-                    Refresh(); // Refresh list after use
-                });
-            }
         }
-
-        gameObject.SetActive(true);
-    }
-
-    public void Refresh()
-    {
-        ShowItems(currentPlayer); // Refresh UI with updated inventory
     }
 
     public void Hide()
@@ -59,12 +39,19 @@ public class ItemInventoryUI : MonoBehaviour
         gameObject.SetActive(false);
         ClearButtons();
     }
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
 
     private void ClearButtons()
     {
-        foreach (Transform child in buttonParent)
+        foreach (ItemButton button in itemButtons)
         {
-            Destroy(child.gameObject);
+            if (button != null)
+            {
+                button.Hide();
+            }
         }
     }
 }

@@ -51,7 +51,7 @@ public class GivePanelUI : MonoBehaviour
             Hide();
         });
 
-        foreach (Item item in currentPlayer.inventory)
+        foreach (Item item in currentPlayer.GetInventory())
         {
             GameObject itemBtn = Instantiate(buttonPrefab, buttonContainer);
             itemBtn.GetComponentInChildren<TMP_Text>().text = $"🎁 Give {item.Name} to {target.profileData.Name}";
