@@ -14,6 +14,7 @@ public class ItemButton : MonoBehaviour
     // Start is called before the first frame update
     public void Initiate(Item item)
     {
+
         this.item = item;
         buttonImage = GetComponentInChildren<Image>();
         useButton = GetComponentInChildren<Button>();
@@ -41,6 +42,21 @@ public class ItemButton : MonoBehaviour
         if (quantity != null)
         {
             quantity.text = item.quantity.ToString();
+        }
+    }
+    public void Reset()
+    {
+        if (buttonImage != null)
+        {
+            buttonImage.sprite = Resources.Load<Sprite>("Sprites/ItemsIcons/Default");
+        }
+        if (useButton != null)
+        {
+            useButton.onClick.RemoveAllListeners();
+        }
+        if (quantity != null)
+        {
+            quantity.text = "0";
         }
     }
 

@@ -1,5 +1,6 @@
 public enum ItemType
 {
+    NONE = -1,
     HEAL_POTION,
     BONUS_DICE
 

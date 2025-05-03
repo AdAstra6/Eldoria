@@ -64,6 +64,7 @@ public class DiceRoll : MonoBehaviour
     }
     public void hideAfterAnim()
     {
+        
         diceAnim.hideDices();
         rollDiceButton.SetActive(false);
     }

@@ -34,6 +34,7 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
     }
     public void SetVolume (float volume)
     {

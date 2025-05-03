@@ -184,6 +184,7 @@ public class GameplayManager : MonoBehaviour
     public void UseItem(ItemType item)
     {
         Players[currentPlayerIndex].UseItem(item);
+        ItemInventoryUI.Instance.DisableButtons();
         ItemInventoryUI.Instance.Refresh(Players[currentPlayerIndex].GetInventory());
     }
 }
