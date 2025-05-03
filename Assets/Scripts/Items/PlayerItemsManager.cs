@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerItemsManager : MonoBehaviour
 {
-    public const int MAX_INVENTORY_SIZE = 8;
+    public const int MAX_INVENTORY_SIZE = 9;
     [SerializeField] public List<Item> inventory;
     private Player player;
     public Player Player
@@ -24,6 +24,7 @@ public class PlayerItemsManager : MonoBehaviour
     }
     public void UseItem(ItemType item)
     {
+
         switch (item)
         {
             case ItemType.HEAL_POTION:
@@ -32,7 +33,7 @@ public class PlayerItemsManager : MonoBehaviour
                 break;
 
             case ItemType.BONUS_DICE:
-                player.HasBonusDiceNextTurn = true;
+                player.Effects.HasBonusDiceNextTurn = true;
                 Debug.Log($"{player.profileData.Name} used a Bonus Dice! They?ll roll 3 dice next turn.");
                 break;
         }
@@ -83,5 +84,8 @@ public class PlayerItemsManager : MonoBehaviour
             Debug.Log($"{player.profileData.Name} does not have a {ItemsTypeExtensioin.GetName(itemType)} to remove.");
         }
     }
-
+    public void DisableButtons()
+    {
+        ItemInventoryUI.Instance.DisableButtons();
+    }
 }

@@ -23,7 +23,13 @@ public class Player : MonoBehaviour
     public Dictionary<string, int> AccumulatedElo;
 
     private PlayerItemsManager inventory;
-    public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
+    //public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
+    private PlayerEffects effects;
+    public PlayerEffects Effects
+    {
+        get { return effects; }
+        set { effects = value; }
+    }
 
 
     [SerializeField] private PlayerVisual playerVisual;
@@ -43,6 +49,7 @@ public class Player : MonoBehaviour
     public void Initialize(PlayerProfile profile)
     {
         this.profileData = profile;
+        this.effects = new PlayerEffects();
 
         // Find the TextMeshProUGUI in the children
         if (nameLabel == null)
@@ -287,8 +294,6 @@ public class Player : MonoBehaviour
     {
         return inventory.inventory;
     }
-
-
 
 
 }

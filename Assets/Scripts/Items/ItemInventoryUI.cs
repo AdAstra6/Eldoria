@@ -18,6 +18,7 @@ public class ItemInventoryUI : MonoBehaviour
     public void Refresh(List<Item> inventory)
     {
         ClearButtons();
+        EnableButtons();
         if (inventory == null || inventory.Count == 0)
         {
             Debug.Log("No items in inventory.");
@@ -30,7 +31,6 @@ public class ItemInventoryUI : MonoBehaviour
             itemButtons[index].Initiate(item);
             itemButtons[index].Show();
             index++;
-
         }
     }
 
@@ -51,6 +51,27 @@ public class ItemInventoryUI : MonoBehaviour
             if (button != null)
             {
                 button.Hide();
+            }
+        }
+    }
+
+    public void DisableButtons()
+    {
+        foreach (ItemButton button in itemButtons)
+        {
+            if (button != null)
+            {
+                button.GetComponentInChildren<Button>().interactable = false;
+            }
+        }
+    }
+    public void EnableButtons()
+    {
+        foreach (ItemButton button in itemButtons)
+        {
+            if (button != null)
+            {
+                button.GetComponentInChildren<Button>().interactable = true;
             }
         }
     }
