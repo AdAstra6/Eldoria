@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProfilePanelUImanager : MonoBehaviour
 {
@@ -21,22 +22,26 @@ public class ProfilePanelUImanager : MonoBehaviour
     [SerializeField] public Button prevButton;
     [SerializeField] public Button nextButton;
     [SerializeField] public Button backButton;
-    [SerializeField] public Button editProfileButton;
-    [SerializeField] public Button deleteProfileButton;
+    [SerializeField] public GameObject optionPanel;
+    [SerializeField] public GameObject addPanel;
+    [SerializeField] public GameObject editPanel;
+    [SerializeField] public GameObject removePanel;
+
 
 
     void Start()
     {
-       
+
         Book.StartStatsFadeIn += () => startStatsFadeIn();
         statsFadeIn.FadeInSpeed = 0.8f;
+        backButton.onClick.AddListener(OnBackButtonClicked);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadProfile(PlayerProfile profile)
@@ -68,10 +73,46 @@ public class ProfilePanelUImanager : MonoBehaviour
     public void startStatsFadeIn()
     {
         statsFadeIn.StartFadeIn();
-        
+
     }
     public void startStatsFadeOut()
     {
         statsFadeIn.StartFadeOut();
     }
+
+    public void OnBackButtonClicked()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void ShowAddPanel()
+    {
+        optionPanel.SetActive(true);
+        addPanel.SetActive(true);
+        editPanel.SetActive(false);
+        removePanel.SetActive(false);
+    }
+
+    public void ShowEditPanel()
+    {
+        optionPanel.SetActive(true);
+        addPanel.SetActive(false);
+        editPanel.SetActive(true);
+        removePanel.SetActive(false);
+    }
+
+    public void ShowRemovePanel()
+    {
+        optionPanel.SetActive(true);
+        addPanel.SetActive(false);
+        editPanel.SetActive(false);
+        removePanel.SetActive(true);
+    }
+    public void CloseOptionPanel()
+    {
+        optionPanel.SetActive(false);
+        addPanel.SetActive(false);
+        editPanel.SetActive(false);
+        removePanel.SetActive(false);
+    }
+    
 }

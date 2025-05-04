@@ -22,6 +22,12 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Options");
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting..."); 
+    }
+
     public void ShowMainMenu()
     {
         MainMenuPanel.SetActive(true);
