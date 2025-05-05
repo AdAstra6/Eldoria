@@ -2979,7 +2979,9 @@ MonoBehaviour:
   musicSource: {fileID: 661625933}
   sfxSource: {fileID: 802306405}
   menuTheme: {fileID: 8300000, guid: 312b1c218a3e8fa4aa857abb5d6c141b, type: 3}
+  gameTheme: {fileID: 8300000, guid: 290da0331b0792c44a2c7727bae826ca, type: 3}
   buttonClick: {fileID: 8300000, guid: e3595420cf80157429a03238c8c9d4f6, type: 3}
+  startGameSFX: {fileID: 8300000, guid: 5f8d8abb8fd92b744a8fe72e85817f24, type: 3}
 --- !u!4 &1787693903
 Transform:
   m_ObjectHideFlags: 0

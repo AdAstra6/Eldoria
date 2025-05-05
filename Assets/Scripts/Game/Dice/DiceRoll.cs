@@ -22,6 +22,8 @@ public class DiceRoll : MonoBehaviour
 
     public IEnumerator RollDice()
     {
+        // Play the dice roll sound
+        AudioManager.Instance.PlayDiceRoll();
         bool bonusDiceActive = currentPlayer.Effects.HasBonusDiceNextTurn;
         diceAnim.BonusDiceActive = bonusDiceActive; // Set bonus dice active if the player has it
         currentPlayer.Effects.HasBonusDiceNextTurn = false; // Reset bonus dice effect after use

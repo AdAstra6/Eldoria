@@ -321,6 +321,8 @@ public class PuzzleGameManager : MonoBehaviour
 
     private void GameFiniched(bool completed)
     {
+        // Play the victory sound
+        AudioManager.Instance.PlayCorrectAnswer();
         foreach (Transform piece in pieces)
         {
             Destroy(piece.gameObject);
