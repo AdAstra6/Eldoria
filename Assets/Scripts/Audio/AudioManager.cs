@@ -10,7 +10,18 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Clips")]
     public AudioClip menuTheme;
+    public AudioClip gameTheme;
     public AudioClip buttonClick;
+    public AudioClip startGameSFX;
+
+    [Header("Game SFX")]
+    public AudioClip correctAnswerSFX;
+    public AudioClip wrongAnswerSFX;
+    public AudioClip scrollOpenSFX;
+    public AudioClip diceRollSFX;
+    public AudioClip penaltySFX;
+
+
 
     void Awake()
     {
@@ -38,5 +49,35 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         sfxSource.PlayOneShot(clip);
+    }
+
+    public void PlayStartGameSFX()
+    {
+        if (startGameSFX != null)
+            sfxSource.PlayOneShot(startGameSFX);
+    }
+
+    public void PlayCorrectAnswer()
+    {
+        PlaySFX(correctAnswerSFX);
+    }
+
+    public void PlayWrongAnswer()
+    {
+        PlaySFX(wrongAnswerSFX);
+    }
+
+    public void PlayScrollOpen()
+    {
+        PlaySFX(scrollOpenSFX);
+    }
+    public void PlayDiceRoll()
+    {
+        PlaySFX(diceRollSFX);
+    }
+
+    public void PlayPenalty()
+    {
+        PlaySFX(penaltySFX);
     }
 }

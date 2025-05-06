@@ -56,6 +56,8 @@ public class InteractionSystemController : MonoBehaviour
 
     public IEnumerator TriggerPenaltyInteraction(Player player ,int stepBack)
     {
+        // Play the penalty sound
+        AudioManager.Instance.PlayPenalty();
         player.PlayerState = PlayerStats.MOVING_BACK;
         Tile tile = player.currentTile;
         UIManager.Instance.ShowPenaltyText(player, stepBack);

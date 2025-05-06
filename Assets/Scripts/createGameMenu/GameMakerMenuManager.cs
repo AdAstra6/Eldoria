@@ -120,6 +120,8 @@ public class GameMakerMenuManager : MonoBehaviour
         GameData.SelectedProfiles = selectedProfiles;
         // Load the game scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        // Play the start game sound effect
+        AudioManager.Instance.PlayStartGameSFX();
     }
     public void BackToMainMenu()
     {

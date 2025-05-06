@@ -110,6 +110,15 @@ public class QuestionUI : MonoBehaviour
             Image correctButtonImage = answerButtons[currentQuestion.correctAnswer].Image; // Update to new UI
             correctButtonImage.color = correctColor;
         }
+        // Play sound based on answer
+        if (isCorrect)
+        {
+            AudioManager.Instance.PlayCorrectAnswer();
+        }
+        else
+        {
+            AudioManager.Instance.PlayWrongAnswer();
+        }
 
         // Wait before hiding
         yield return new WaitForSeconds(2f);

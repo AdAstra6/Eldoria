@@ -23,6 +23,8 @@ public class GameQuestionManager : MonoBehaviour
 
     public void AskQuestion(Player player)
     {
+        // Play the Scroll sound
+        AudioManager.Instance.PlayScrollOpen();
         gameplayManager.QuestionStarted();
         this.timerCountDown.SetTotalTime(MCQTime);
         this.timerCountDown.Restart();
@@ -42,7 +44,7 @@ public class GameQuestionManager : MonoBehaviour
     private void RewardPlayer(Player player)
     {
         Debug.Log($"{player.name} answered correctly!");
-        EloSystemManager.AddEloBasedOnQuestionResult(player,currentQuestion.difficulty ,currentQuestion.category, gameAverageElo);
+        EloSystemManager.AddEloBasedOnQuestionResult(player, currentQuestion.difficulty, currentQuestion.category, gameAverageElo);
         // Add movement bonus or other rewards
     }
 
