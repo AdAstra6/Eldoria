@@ -3061,7 +3061,7 @@ MonoBehaviour:
   - {fileID: 776921627}
   isCrossway: 0
   isSpawnPoint: 0
-  movementDirection: 0
+  movementDirection: 3
 --- !u!212 &120669394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23988,7 +23988,7 @@ MonoBehaviour:
   - {fileID: 120736197}
   isCrossway: 0
   isSpawnPoint: 0
-  movementDirection: 0
+  movementDirection: 3
 --- !u!212 &776921628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24559,7 +24559,7 @@ MonoBehaviour:
   - {fileID: 120669393}
   isCrossway: 0
   isSpawnPoint: 0
-  movementDirection: 0
+  movementDirection: 3
 --- !u!212 &802375005
 SpriteRenderer:
   m_ObjectHideFlags: 0

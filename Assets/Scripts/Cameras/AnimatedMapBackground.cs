@@ -12,7 +12,7 @@ public class AnimatedMapBackground : MonoBehaviour
     {
         mapSprite.position = new Vector3(0, -1513,0);
         UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-        float randomTime = UnityEngine.Random.RandomRange(0.0f, ANIMATION_LENTH);
+        float randomTime = UnityEngine.Random.Range(0.0f, ANIMATION_LENTH);
         animator.Play(animationStateName, 0, randomTime / ANIMATION_LENTH);
     }
 
