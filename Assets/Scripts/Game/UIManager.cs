@@ -3,14 +3,15 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 using System.Collections;
+using System;
 
 public class UIManager : MonoBehaviour
 {
     
     [SerializeField] public static UIManager Instance;
     public GameObject pathSelectionPanel; // The panel that appears at crossways
-    public Transform buttonParent; // Where buttons will be placed
-    public Button pathButtonPrefab; // The prefab for each path choice
+    [SerializeField] private Button[] selectPathButtons = new Button[System.Enum.GetNames(typeof(PlayerMovementDirection)).Length]; // 4 possible Directions = 4 Buttons uss : PlayerMovementDIrections enum
+    private Image[] selectPathButtonsShadows = new Image[System.Enum.GetNames(typeof(PlayerMovementDirection)).Length];
     private Player currentPlayer;
 
     [SerializeField] DiceRoll dice;
@@ -46,28 +47,57 @@ public class UIManager : MonoBehaviour
     public void DisplayPathChoices(List<Tile> options, Player player)
     {
         if (pathSelectionPanel == null) { Debug.LogError("pathSelectionPanel is NULL!"); return; }
-        if (buttonParent == null) { Debug.LogError("buttonParent is NULL!"); return; }
-        if (pathButtonPrefab == null) { Debug.LogError("pathButtonPrefab is NULL!"); return; }
 
         Debug.Log("Path Options Available: " + options.Count);
 
+
+        SelectPathButtonsReset();
         pathSelectionPanel.SetActive(true);
         currentPlayer = player;
 
-        foreach (Transform child in buttonParent)
-        {
-            Destroy(child.gameObject);
-        }
+        
 
         foreach (Tile option in options)
         {
-            Debug.Log("Creating Button for: " + option.name);
-            Button btn = Instantiate(pathButtonPrefab, buttonParent);
-            btn.GetComponentInChildren<TMP_Text>().text = option.name;
+            Debug.Log("Button activated");
+            Button btn = selectPathButtons[(int) option.MovementDirection];
+            Image img = selectPathButtonsShadows[(int)option.MovementDirection]; // d l u r
+            Color color = img.color;
+            color.a = 0;
+            img.color = color;
+            //btn.GetComponentInChildren<TMP_Text>().text = option.name;
             btn.onClick.AddListener(() => SelectPath(option));
+            btn.onClick.AddListener(() => ButtonClicked());
+            btn.interactable = true;
+            
         }
     }
+    public void ButtonClicked()
+    {
+        Debug.Log("Clickkkkk");
+    }
+    private void Start()
+    {
+        for (int i = 0; i < System.Enum.GetNames(typeof(PlayerMovementDirection)).Length-1; i++)
+        {
+            UnityEngine.UI.Image img = selectPathButtons[i].GetComponent<Image>();
+            selectPathButtonsShadows[i] = img;
+        }
+        SelectPathButtonsReset();
+    }
 
+    private void SelectPathButtonsReset()
+    {
+
+        for (int i = 0; i < System.Enum.GetNames(typeof(PlayerMovementDirection)).Length-1; i++)
+        {
+            selectPathButtons[i].interactable = false;
+            selectPathButtons[i].onClick.RemoveAllListeners();
+            Color color = selectPathButtonsShadows[i].color;
+            color.a = 1;
+            selectPathButtonsShadows[i].color = color;
+        }
+    }
 
     public void SelectPath(Tile selectedTile)
     {

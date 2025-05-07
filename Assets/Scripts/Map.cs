@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-    public const int spawnpointsCount=2;
-    public const int BIOMS_COUNT = 1;
+    public const int spawnpointsCount=10;
+    public const int BIOMS_COUNT = 5;
     [SerializeField] private List<Tile> spawnPoints;
     private void Start()
     {
