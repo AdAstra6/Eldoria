@@ -9,6 +9,8 @@ public class MainMenuController : MonoBehaviour
     public GameObject TutorialPanel;
     public GameObject CreditsPanel;
 
+
+    [SerializeField] private Animator CameraRig;
     void Start()
     {
         ShowMainMenu();
