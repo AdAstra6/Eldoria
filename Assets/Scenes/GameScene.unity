@@ -22246,7 +22246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   nextTiles:
-  - {fileID: 0}
+  - {fileID: 1434668073}
   - {fileID: 1410292559}
   isCrossway: 1
   isSpawnPoint: 0
@@ -28613,7 +28613,7 @@ GameObject:
   - component: {fileID: 974197387}
   - component: {fileID: 974197386}
   m_Layer: 0
-  m_Name: Village1
+  m_Name: Village1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40487,6 +40487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints:
+  - {fileID: 428416492}
+  - {fileID: 800242175}
   - {fileID: 261560277}
   - {fileID: 332600312}
   - {fileID: 1847717371}
@@ -40495,8 +40497,6 @@ MonoBehaviour:
   - {fileID: 1231238814}
   - {fileID: 2122682782}
   - {fileID: 543370892}
-  - {fileID: 428416492}
-  - {fileID: 800242175}
 --- !u!4 &1275219772
 Transform:
   m_ObjectHideFlags: 0
@@ -41459,7 +41459,7 @@ GameObject:
   - component: {fileID: 1320463206}
   - component: {fileID: 1320463205}
   m_Layer: 0
-  m_Name: Village1
+  m_Name: Village1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43467,7 +43467,7 @@ GameObject:
   - component: {fileID: 1360352381}
   - component: {fileID: 1360352380}
   m_Layer: 0
-  m_Name: Village1
+  m_Name: Village1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52312,7 +52312,7 @@ Transform:
   m_GameObject: {fileID: 1648639013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.207971, y: -0.2128361, z: 0.062285233}
+  m_LocalPosition: {x: -3.25, y: -0.29, z: 0.062285233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -55281,7 +55281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   nextTiles:
-  - {fileID: 735714842}
+  - {fileID: 1329745188}
   isCrossway: 0
   isSpawnPoint: 0
   movementDirection: 3
@@ -63789,7 +63789,7 @@ GameObject:
   - component: {fileID: 1937097252}
   - component: {fileID: 1937097251}
   m_Layer: 0
-  m_Name: Village1
+  m_Name: Village1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66632,7 +66632,7 @@ GameObject:
   - component: {fileID: 1999711710}
   - component: {fileID: 1999711709}
   m_Layer: 0
-  m_Name: Village1
+  m_Name: Village1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

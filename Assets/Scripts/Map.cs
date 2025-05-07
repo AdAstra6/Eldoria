@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-    public const int spawnpointsCount=10;
+    public const int spawnpointsCount=2;
+    public const int BIOMS_COUNT = 1;
     [SerializeField] private List<Tile> spawnPoints;
     private void Start()
     {
@@ -20,17 +21,33 @@ public class Map : MonoBehaviour
             return null;
         }
 
+        List<int> availableBioms = new List<int>();
+        for (int i = 0; i < BIOMS_COUNT; i++) availableBioms.Add(i);
+        // Shuffle Bioms
+        for (int i = 0; i < availableBioms.Count; i++)
+        {
+            int randIndex = UnityEngine.Random.Range(i, availableBioms.Count);
+            int temp = availableBioms[i];
+            availableBioms[i] = availableBioms[randIndex];
+            availableBioms[randIndex] = temp;
+        }
+
         List<Tile> result = new List<Tile>();
-        int index = Random.Range(0, spawnpointsCount);
-        int step = spawnpointsCount / n;
-        if (spawnpointsCount % n != 0) step++;
+
         for (int i = 0; i < n; i++)
         {
-            Tile tile = spawnPoints[index];
-            tile.isSpawnPoint = true; // ✅ Mark as spawn tile
-            result.Add(tile);
-            index = (index + Random.Range(2, step)) % Map.spawnpointsCount;
+            int biomIndex;
+            if (i < availableBioms.Count) biomIndex = availableBioms[i];
+            else biomIndex = UnityEngine.Random.Range(0, BIOMS_COUNT); // if there is no empty biom just take a random one
+            int spawnIndex = biomIndex * 2 + UnityEngine.Random.Range(0, 2);
+            if (result.Contains(spawnPoints[spawnIndex]))
+            {
+                if (spawnIndex % 2 == 0) spawnIndex ++;
+                else spawnIndex--;
+            }
+            result.Add(spawnPoints[spawnIndex]);
         }
+        
         return result;
     }
 }
