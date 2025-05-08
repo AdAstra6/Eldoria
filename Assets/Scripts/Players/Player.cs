@@ -23,6 +23,11 @@ public class Player : MonoBehaviour
     public Dictionary<string, int> AccumulatedElo;
 
     private PlayerItemsManager inventory;
+    public PlayerItemsManager Inventory
+    {
+        get { return inventory; }
+        set { inventory = value; }
+    }
     //public bool HasBonusDiceNextTurn { get; set; } = false; // << Added for bonus dice management
     private PlayerEffects effects;
     public PlayerEffects Effects
@@ -186,6 +191,7 @@ public class Player : MonoBehaviour
 
         isMoving = false;
         this.playerState = PlayerStats.END_MOVING;
+        InteractionSystemController.Instance.TriggerTileInteraction(this);
         //if (remainingSteps <= 0) GameManager.Instance.EndTurn();
     }
 

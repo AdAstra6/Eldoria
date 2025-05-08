@@ -10,6 +10,7 @@ public class GameplayManager : MonoBehaviour
     public static GameplayManager Instance { get; private set; }
     [SerializeField] private Map map;
     [SerializeField] public List<Player> Players;
+    public List<Player> activePlayers;
     [SerializeField] private int playersCount;
     [SerializeField] private InteractionSystemController interactionSystemController;
     private int currentPlayerIndex;
@@ -63,6 +64,7 @@ public class GameplayManager : MonoBehaviour
                 Players[i].AddItem(ItemType.BONUS_DICE);
                 Players[i].AddItem(ItemType.HEAL_POTION);
                 averageElo += Players[i].profileData.Elo;
+                activePlayers.Add(Players[i]);
             }
             else
             {
@@ -104,8 +106,7 @@ public class GameplayManager : MonoBehaviour
             case PlayerStats.END_MOVING:
                 Debug.Log("Player " + currentPlayerIndex + " has ended moving.");
                 // HERE WHERE THE PLAYER SHOULD INTERACT WITH THE TILE
-                // NOW BECAUSE NO INTERACTION WITH THE TILE IS IMPLEMENTED THE PLAYER GO TO STRATEGIC CHOICE STATE
-                interactionSystemController.Instance.TriggerTileInteraction(Players[currentPlayerIndex]);
+                //InteractionSystemController.Instance.TriggerTileInteraction(Players[currentPlayerIndex]);
                 break;
             case PlayerStats.ANSWERING_QUESTION:
                 Debug.Log("Player " + currentPlayerIndex + " is answering a question.");
@@ -142,7 +143,7 @@ public class GameplayManager : MonoBehaviour
         UIManager.Instance.EndTurnButtonHide();
         //itemInventoryUI.Hide(); // Hide item inventory UI after turn ends
         ItemInventoryUI.Instance.Hide(); // Hide item inventory UI after turn ends  
-        givePanelUI.Hide(); // Hide give panel UI after turn ends
+        //givePanelUI.Hide(); // Hide give panel UI after turn ends
         currentPlayerIndex++;
         if (currentPlayerIndex >= playersCount)
         {
@@ -173,13 +174,12 @@ public class GameplayManager : MonoBehaviour
 
     public void StartStrategicPhase() {
         Players[currentPlayerIndex].PlayerState = PlayerStats.STRATEGIC_CHOICE;
-        //GameplayManager.Instance.ItemInventoryUI.ShowItems(Players[currentPlayerIndex]);
-        GameplayManager.Instance.givePanelUI.Show(Players[currentPlayerIndex], GameplayManager.Instance.Players);
         gameplayCameraController.SetType(CameraType.FREE);
         UIManager.Instance.EndTurnButtonShow();
         // new item system
         ItemInventoryUI.Instance.Refresh(Players[currentPlayerIndex].GetInventory());
         ItemInventoryUI.Instance.Show(); // Show item inventory UI after answering the question
+        GivePanelUI.Instance.Initiate(Players[currentPlayerIndex], activePlayers);
     }
     public void UseItem(ItemType item)
     {

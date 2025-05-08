@@ -40,13 +40,13 @@ public class PlayerItemsManager : MonoBehaviour
 
         RemoveItem(item);
     }
-    public void AddItem(ItemType itemType)
+    public void AddItem(ItemType itemType , int quantity=1)
     {
         // Check if the item already exists in the inventory  
         Item existingItem = inventory.Find(item => item.Type == itemType);
         if (existingItem != null)
         {
-            existingItem.quantity++;
+            existingItem.quantity+=quantity;
             Debug.Log($"{player.profileData.Name} now has {existingItem.quantity} {existingItem.Name}(s)!");
             return;
         }
@@ -60,15 +60,16 @@ public class PlayerItemsManager : MonoBehaviour
 
         // Add a new item with quantity 1  
         Item newItem = new Item(itemType, ItemsTypeExtensioin.GetName(itemType), ItemsTypeExtensioin.GetDescription(itemType));
+        newItem.quantity = quantity;
         inventory.Add(newItem);
         //Debug.Log($"{player.profileData.Name} received a {newItem.Name}!");
     }
-    public void RemoveItem(ItemType itemType)
+    public void RemoveItem(ItemType itemType , int quantity=1)
     {
         Item itemToRemove = inventory.Find(item => item.Type == itemType);
         if (itemToRemove != null)
         {
-            itemToRemove.quantity--;
+            itemToRemove.quantity-= quantity;
             if (itemToRemove.quantity <= 0)
             {
                 inventory.Remove(itemToRemove);
@@ -87,5 +88,27 @@ public class PlayerItemsManager : MonoBehaviour
     public void DisableButtons()
     {
         ItemInventoryUI.Instance.DisableButtons();
+    }
+    public void GiveItem(ItemType itemType ,Player target,int quantity)
+    {
+        Item itemToGive = inventory.Find(item => item.Type == itemType);
+        if (itemToGive != null)
+        {
+            if (itemToGive.quantity >= quantity)
+            {
+                itemToGive.quantity -= quantity;
+                target.Inventory.AddItem(itemType, quantity);
+                RemoveItem(itemType,quantity);
+                Debug.Log($"{player.profileData.Name} gave {quantity} {itemToGive.Name}(s) to {target.profileData.Name}!");
+            }
+            else
+            {
+                Debug.Log($"{player.profileData.Name} does not have enough {itemToGive.Name}(s) to give.");
+            }
+        }
+        else
+        {
+            Debug.Log($"{player.profileData.Name} does not have a {ItemsTypeExtensioin.GetName(itemType)} to give.");
+        }
     }
 }

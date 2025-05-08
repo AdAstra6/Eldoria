@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,15 +9,25 @@ public class ItemInventoryUI : MonoBehaviour
     public static ItemInventoryUI Instance { get; private set; }
     [SerializeField] private ItemButton[] itemButtons;
     [SerializeField] private GameObject ItemsContainer; // Panel contains inventory UI
+    private Button collapseAllButton;
 
     private void Start()
     {
         Instance = this;
         itemButtons = GetComponentsInChildren<ItemButton>();
+        collapseAllButton = GetComponent<Button>();
+        if (collapseAllButton != null)
+        {
+            collapseAllButton.onClick.AddListener(() =>
+            {
+                CollapseAll();
+            });
+        }
         Instance.Hide();
     }
     public void Refresh(List<Item> inventory)
     {
+        DisableButtons();
         ClearButtons();
         if (inventory == null || inventory.Count == 0)
         {
@@ -25,9 +36,9 @@ public class ItemInventoryUI : MonoBehaviour
             return;
         }
         int index = 0;
-        foreach (Item item in inventory)
+        for (int i = 0;i<inventory.Count;i++)
         {
-            itemButtons[index].Initiate(item);
+            itemButtons[index].Initiate(inventory[i],i);
             itemButtons[index].Show();
             index++;
         }
@@ -38,6 +49,7 @@ public class ItemInventoryUI : MonoBehaviour
     {
         gameObject.SetActive(false);
         ClearButtons();
+        GivePanelUI.Instance.Hide();
     }
     public void Show()
     {
@@ -62,7 +74,7 @@ public class ItemInventoryUI : MonoBehaviour
         {
             if (button != null)
             {
-                button.GetComponentInChildren<Button>().interactable = false;
+                button.DisableButtons();
             }
         }
     }
@@ -72,8 +84,21 @@ public class ItemInventoryUI : MonoBehaviour
         {
             if (button != null && button.gameObject.activeSelf)
             {
-                button.GetComponentInChildren<Button>().interactable = true;
+                button.EnableButtons();
             }
         }
     }
+    public void CollapseAll()
+    {
+        foreach (ItemButton button in itemButtons)
+        {
+            if (button != null && button.gameObject.activeSelf)
+            {
+                button.Collapse();
+            }
+        }
+    }
+
+
+
 }

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public enum ItemType
 {
     NONE = -1,
@@ -29,6 +31,18 @@ public static class ItemsTypeExtensioin
                 return "Bonus Dice";
             default:
                 return "Unknown item type";
+        }
+    }
+    public static Sprite GetIcon(this ItemType itemType)
+    {
+        switch (itemType)
+        {
+            case ItemType.HEAL_POTION:
+                return Resources.Load<Sprite>("Sprites/ItemsIcons/HealPotion");
+            case ItemType.BONUS_DICE:
+                return Resources.Load<Sprite>("Sprites/ItemsIcons/BonusDice");
+            default:
+                return Resources.Load<Sprite>("Sprites/ItemsIcons/Default");
         }
     }
 }
