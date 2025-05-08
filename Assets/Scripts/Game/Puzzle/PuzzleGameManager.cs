@@ -28,7 +28,8 @@ public class PuzzleGameManager : MonoBehaviour
     private Vector3 offset;
 
     private int piecesCorrect;
-    
+    public static int CurrentOrder = 0;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -161,7 +162,7 @@ public class PuzzleGameManager : MonoBehaviour
         {
             float x = Random.Range(camPos.x - orthoWidth, camPos.x + orthoWidth);
             float y = Random.Range(camPos.y - orthoHeight, camPos.y + orthoHeight);
-            piece.position = new Vector3(x, y, -9.9f); // Keep original z (or set to -1 if you prefer)
+            piece.position = new Vector3(x, y, -7f); // Keep original z (or set to -1 if you prefer)
         }
     }
 
@@ -177,7 +178,7 @@ public class PuzzleGameManager : MonoBehaviour
         float halfHeight = (height * dimensions.y) / 2f;
 
         // We want the border to be behind the pieces.
-        float borderZ = 0f;
+        float borderZ = 1f;
 
         // Set border vertices, starting top left, going clockwise.
         lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, borderZ));
@@ -201,18 +202,33 @@ public class PuzzleGameManager : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit)
             {
-                // Everything is moveable, so we don't need to check it's a Piece.
+                // Increment the global sorting order
+                CurrentOrder++;
+
+                // Set the dragging piece
                 draggingPiece = hit.transform;
+
+                // Bring it to the front by setting sorting order (for MeshRenderer)
+                Renderer renderer = draggingPiece.GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.sortingOrder = CurrentOrder;
+                    // Optional: Set the sorting layer if needed
+                    // renderer.sortingLayerName = "Default";
+                }
+
+                // Calculate drag offset
                 offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                offset += Vector3.forward;
+                
             }
         }
+
 
         // When we release the mouse button stop dragging.
         if (draggingPiece && Input.GetMouseButtonUp(0))
         {
             SnapAndDisableIfCorrect();
-            draggingPiece.position += Vector3.back;
+            
             draggingPiece = null;
         }
 
