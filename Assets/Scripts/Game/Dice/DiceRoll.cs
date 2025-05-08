@@ -8,6 +8,7 @@ using System;
 
 public class DiceRoll : MonoBehaviour
 {
+    public static DiceRoll Instance { get; private set; }
     private Player currentPlayer;
     [SerializeField] private GameObject rollDiceButton;
 
@@ -15,6 +16,12 @@ public class DiceRoll : MonoBehaviour
 
     //[SerializeField] private TMP_Text diceResultText; 
     [SerializeField] private DiceAnimation diceAnim;
+
+    private void Awake()
+    {
+        Instance = this;
+        currentPlayer = null;
+    }
     private void Start()
     {
         UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
@@ -56,8 +63,8 @@ public class DiceRoll : MonoBehaviour
         } */
 
         currentPlayer.Move(total);
-        yield return new WaitUntil(() => currentPlayer.PlayerState == PlayerStats.END_MOVING); 
-        hideAfterAnim();
+        //yield return new WaitUntil(() => currentPlayer.PlayerState == PlayerStats.END_MOVING); 
+        //hideAfterAnim();
     }
     public void StartRollDiceCorroutine()
     {

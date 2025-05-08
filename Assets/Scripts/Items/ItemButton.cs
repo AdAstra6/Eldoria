@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,42 +8,37 @@ using UnityEngine.UI;
 
 public class ItemButton : MonoBehaviour
 {
-    private Image buttonImage;
-    private Button useButton;
-    private TMP_Text quantity;
+    [SerializeField] private Image buttonImage;
+    [SerializeField]private Button itemButton;
+    [SerializeField]private TMP_Text quantity;
     private Item item;
+    private Boolean isExpanded = false;
+
+    [SerializeField]private Button useButton;
+    [SerializeField] private Button giveButton;
     // Start is called before the first frame update
-    public void Initiate(Item item)
+    public void Initiate(Item item , int index)
     {
 
         this.item = item;
-        buttonImage = GetComponentInChildren<Image>();
-        useButton = GetComponentInChildren<Button>();
-        quantity = GetComponentInChildren<TMP_Text>();
-        if (buttonImage != null)
+        buttonImage.sprite = ItemsTypeExtensioin.GetIcon(item.Type);
+        if (itemButton != null)
         {
-            // Set the image based on item type
-            switch (item.Type)
-            {
-                case ItemType.HEAL_POTION:
-                    buttonImage.sprite = Resources.Load<Sprite>("Sprites/ItemsIcons/HealPotion");
-                    break;
-                case ItemType.BONUS_DICE:
-                    buttonImage.sprite = Resources.Load<Sprite>("Sprites/ItemsIcons/BonusDice");
-                    break;
-                default:
-                    buttonImage.sprite = Resources.Load<Sprite>("Sprites/ItemsIcons/Default");
-                    break;
-            }
+            itemButton.onClick.AddListener(() => this.OnItemButtonClick());
+        }
+        if (giveButton != null)
+        {
+            giveButton.onClick.AddListener(() => this.OnGiveButtonClick());
         }
         if (useButton != null)
         {
-            useButton.onClick.AddListener(() => GameplayManager.Instance.UseItem(item.Type));
+            useButton.onClick.AddListener(() => OnUseButtonClick());
         }
         if (quantity != null)
         {
             quantity.text = item.quantity.ToString();
         }
+        Collapse();
     }
     public void Reset()
     {
@@ -50,8 +46,10 @@ public class ItemButton : MonoBehaviour
         {
             buttonImage.sprite = Resources.Load<Sprite>("Sprites/ItemsIcons/Default");
         }
-        if (useButton != null)
+        if (itemButton != null)
         {
+            itemButton.onClick.RemoveAllListeners();
+            giveButton.onClick.RemoveAllListeners();
             useButton.onClick.RemoveAllListeners();
         }
         if (quantity != null)
@@ -67,5 +65,86 @@ public class ItemButton : MonoBehaviour
     public void Show()
     {
         gameObject.SetActive(true);
+    }
+
+    public void Expand()
+    {
+        if (useButton != null)
+        {
+            useButton.gameObject.SetActive(true);
+        }
+        if (giveButton != null)
+        {
+            giveButton.gameObject.SetActive(true);
+
+        }
+        isExpanded = true;
+    }
+    public void Collapse()
+    {
+        if (useButton != null)
+        {
+            useButton.gameObject.SetActive(false);
+        }
+        if (giveButton != null)
+        {
+            giveButton.gameObject.SetActive(false);
+        }
+        isExpanded = false;
+    }
+
+    public void OnUseButtonClick()
+    {
+        GameplayManager.Instance.UseItem(item.Type);
+        Collapse();
+    }
+
+    public void OnGiveButtonClick()
+    {
+        ItemInventoryUI.Instance.DisableButtons();
+        GivePanelUI.Instance.Show(item);
+        Collapse();
+    }
+    public void OnItemButtonClick()
+    {
+        if (isExpanded)
+        {
+            Collapse();
+        }
+        else
+        {
+            ItemInventoryUI.Instance.CollapseAll();
+            Expand();
+        }
+    }
+    public void DisableButtons()
+    {
+        if (useButton != null)
+        {
+            useButton.interactable = false;
+        }
+        if (giveButton != null)
+        {
+            giveButton.interactable = false;
+        }
+        if (itemButton != null)
+        {
+            itemButton.interactable = false;
+        }
+    }
+    public void EnableButtons()
+    {
+        if (useButton != null)
+        {
+            useButton.interactable = true;
+        }
+        if (giveButton != null)
+        {
+            giveButton.interactable = true;
+        }
+        if (itemButton != null)
+        {
+            itemButton.interactable = true;
+        }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractionSystemController : MonoBehaviour
 {
-    public InteractionSystemController Instance;
+    public static InteractionSystemController Instance;
     public const int MAX_PERMITTED_STEPS = 6;
 
 
@@ -17,6 +17,7 @@ public class InteractionSystemController : MonoBehaviour
     }
     public void TriggerTileInteraction(Player player)
     {
+        DiceRoll.Instance.hideAfterAnim();
         Tile tile = player.currentTile;
         switch (tile.type)
         {
