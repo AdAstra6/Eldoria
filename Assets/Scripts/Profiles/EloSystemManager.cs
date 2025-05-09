@@ -8,6 +8,7 @@ using UnityEngine;
 public static class EloSystemManager 
 {
     public const int DefaultElo = 300;
+    public const int EstimatedMaxElo = 2500;
     private static readonly int CategoryCount = Enum.GetValues(typeof(QuestionsCategories)).Length;
 
     private const double KFactor = 25.0;

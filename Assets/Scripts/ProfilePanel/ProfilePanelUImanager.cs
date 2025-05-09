@@ -34,6 +34,8 @@ public class ProfilePanelUImanager : MonoBehaviour
     [SerializeField] public GameObject removePanel;
     [SerializeField] public TMP_InputField editNameInputField;
     [SerializeField] public Image editAvatar;
+    [Header("Radar Chart")]
+    [SerializeField] public UI_RadarChart radarChart;
 
 
 
@@ -61,6 +63,7 @@ public class ProfilePanelUImanager : MonoBehaviour
         eloText.text = profile.Elo.ToString();
         totalGamesText.text = profile.Games.Played.ToString();
         totalWonsText.text = profile.Games.Won.ToString();
+        radarChart.SetElo(profile.CategoriesElo);
 
     }
     public void SetErrorText(string text)

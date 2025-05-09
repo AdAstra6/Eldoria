@@ -1,10 +1,10 @@
 public enum QuestionsCategories
 {
+    GENERAL_KNOWLEDGE,
     MATH,
     GEOGRAPHY,
     BIOLOGY,
-    GENERAL_KNOWLEDGE,
-    ETHICS,
     ZOOLOGY,
     ASTRONOMY,
+    ETHICS,
 }
