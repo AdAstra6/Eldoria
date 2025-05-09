@@ -10,6 +10,18 @@ public class Tile : MonoBehaviour
     public bool isCrossway = false; // Crossway is handled separately
 
     public bool isSpawnPoint = false; // Spawn point is handled separately
+    
+    /// ///////////////////////////////////////////////////////////////////////////////
+    
+[SerializeField] private bool isEventTile = false; // events are handled separately 
+
+[SerializeField] private EventType eventType = EventType.None; // gonna make this a dropdown option in inspector in Unity to manually add
+
+// Added a public getter to use it in event manager 
+public EventType Event => eventType;
+    
+    /// ////////i edited here ///////////////////////////////////////////////////////////////
+   
     [SerializeField] private PlayerMovementDirection movementDirection;
     public PlayerMovementDirection MovementDirection
     {
@@ -60,7 +72,13 @@ public class Tile : MonoBehaviour
             Debug.Log("Crossway reached! The player must choose a direction.");
             return null; // Stop movement and wait for player choice
         }
-
+        if (isEventTile)
+        {
+            Debug.Log("Event tile reached! Triggering event.");
+            
+            return null; // Stop movement and wait for event resolution
+        }
+        
         return nextTiles.Count > 0 ? nextTiles[0] : null; // Default movement
     }
 }

@@ -302,4 +302,33 @@ public class Player : MonoBehaviour
     }
 
 
+    public void ResumeAfterEvent()
+{
+    Debug.Log("Resuming after event...");
+    StartCoroutine(MoveOneTileAfterEvent());
+}
+
+public IEnumerator MoveOneTileAfterEvent()
+{
+    Tile nextTile = currentTile.GetNextTile();
+    if (nextTile == null)
+    {
+        Debug.Log("No next tile found after event. Ending turn.");
+    }
+    else
+    {
+        Debug.Log("Moving one tile after event.");
+        yield return StartCoroutine(MoveToTile(nextTile.transform.position));
+        SavePathCrossed(currentTile);
+        currentTile = nextTile;
+    }
+
+    isMoving = false;
+    playerState = PlayerStats.END_MOVING;
+    Debug.Log("Finished moving after event. Ending turn.");
+    GameplayManager.Instance.StartStrategicPhase();
+}
+
+
+
 }

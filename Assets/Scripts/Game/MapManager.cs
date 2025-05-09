@@ -34,7 +34,7 @@ public class MapManager : MonoBehaviour
         for (int i = 0; i < tiles.Count; i++)
         {
             Tile currentTile = tiles[i];
-            if (currentTile.type == TileType.TELEPORT || currentTile.type == TileType.FINISH || currentTile.isSpawnPoint )
+            if (currentTile.type == TileType.TELEPORT || currentTile.type == TileType.FINISH || currentTile.isSpawnPoint ||currentTile.type == TileType.EVENT)
                 continue; // Skip teleport and finish tiles and spawn points
             if (i % penaltyFrequency == 0)
                 currentTile.type = TileType.PENALTY;
