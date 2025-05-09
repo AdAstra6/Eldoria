@@ -23,9 +23,18 @@ public class ProfilePanelUImanager : MonoBehaviour
     [SerializeField] public Button nextButton;
     [SerializeField] public Button backButton;
     [SerializeField] public GameObject optionPanel;
+    [Header("Add profile")]
     [SerializeField] public GameObject addPanel;
+    [SerializeField] public TMP_InputField newNameInputField;
+    [SerializeField] public Image newAvatar;
+    List<Sprite> availableAvatars;
+    private int currentAvatarIndex = 0;
+    [Header("Edit profile")]
     [SerializeField] public GameObject editPanel;
     [SerializeField] public GameObject removePanel;
+    [SerializeField] public TMP_InputField editNameInputField;
+    [SerializeField] public Image editAvatar;
+
 
 
 
@@ -90,7 +99,45 @@ public class ProfilePanelUImanager : MonoBehaviour
         addPanel.SetActive(true);
         editPanel.SetActive(false);
         removePanel.SetActive(false);
+        newNameInputField.SetTextWithoutNotify("");
+        newNameInputField.Select();
+        newNameInputField.ActivateInputField();
+        availableAvatars = new List<Sprite>(Resources.LoadAll<Sprite>(ProfileManager.IconsPath));
+        if (availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = 0;
+            newAvatar.sprite = availableAvatars[currentAvatarIndex];
+        }
+        else
+        {
+            Debug.LogError("No avatars found in Resources/Sprites/ProfilesIcons");
+        }
+        newAvatar.sprite = availableAvatars[currentAvatarIndex];
+        // Set the size of the newAvatar to a fixed size
+        newAvatar.SetNativeSize();
+        RectTransform rectTransform = newAvatar.GetComponent<RectTransform>();
+        float scaleFactor = 200f; // Desired size
+        rectTransform.sizeDelta = new Vector2(scaleFactor, scaleFactor);
     }
+    public void AddProfileNextAvatar()
+    {
+        if (availableAvatars != null && availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = (currentAvatarIndex + 1) % availableAvatars.Count;
+            newAvatar.sprite = availableAvatars[currentAvatarIndex];
+            
+        }
+    }
+    public void AddProfilePreviousAvatar()
+    {
+        if (availableAvatars != null && availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = (currentAvatarIndex - 1 + availableAvatars.Count) % availableAvatars.Count;
+            newAvatar.sprite = availableAvatars[currentAvatarIndex];
+            
+        }
+    }
+
 
     public void ShowEditPanel()
     {
@@ -98,7 +145,44 @@ public class ProfilePanelUImanager : MonoBehaviour
         addPanel.SetActive(false);
         editPanel.SetActive(true);
         removePanel.SetActive(false);
+        editNameInputField.SetTextWithoutNotify("");
+        editNameInputField.Select();
+        editNameInputField.ActivateInputField();
+        availableAvatars = new List<Sprite>(Resources.LoadAll<Sprite>(ProfileManager.IconsPath));
+        if (availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = 0;
+            editAvatar.sprite = availableAvatars[currentAvatarIndex];
+        }
+        else
+        {
+            Debug.LogError("No avatars found in Resources/Sprites/ProfilesIcons");
+        }
+        editAvatar.sprite = availableAvatars[currentAvatarIndex];
+        // Set the size of the newAvatar to a fixed size
+        editAvatar.SetNativeSize();
+        RectTransform rectTransform = editAvatar.GetComponent<RectTransform>();
+        float scaleFactor = 200f; // Desired size
+        rectTransform.sizeDelta = new Vector2(scaleFactor, scaleFactor);
     }
+    public void EditProfileNextAvatar()
+    {
+        if (availableAvatars != null && availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = (currentAvatarIndex + 1) % availableAvatars.Count;
+            editAvatar.sprite = availableAvatars[currentAvatarIndex];
+
+        }
+    }
+    public void EditProfilePreviousAvatar()
+    {
+        if (availableAvatars != null && availableAvatars.Count > 0)
+        {
+            currentAvatarIndex = (currentAvatarIndex - 1 + availableAvatars.Count) % availableAvatars.Count;
+            editAvatar.sprite = availableAvatars[currentAvatarIndex];
+        }
+    }
+
 
     public void ShowRemovePanel()
     {
