@@ -13,6 +13,10 @@ public class GameplayCameraController : MonoBehaviour
     public float strategyZoomMin = 5f;
     public float strategyZoomMax = 20f;
     public float moveSpeed = 5f;
+    public float mouseDragSpeed = 0.8f;
+    [SerializeField] public Texture2D dragCursor;
+    public Vector2 cursorHotspot = Vector2.zero;
+
 
     public CameraType currentPhase;
 
@@ -57,22 +61,38 @@ public class GameplayCameraController : MonoBehaviour
 
     void HandleFreeCamera()
     {
-
         // Panning with WASD or arrow keys
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        freeCameraRig.transform.position += new Vector3(h, v, 0) * Time.deltaTime * moveSpeed;
+        Vector3 keyboardMovement = new Vector3(h, v, 0) * Time.deltaTime * moveSpeed;
+
+        // Mouse drag panning
+        Vector3 mouseDragMovement = Vector3.zero;
+        if (Input.GetMouseButton(1)) // Right mouse button held
+        {
+            Cursor.SetCursor(dragCursor, cursorHotspot, CursorMode.Auto);
+            float dragX = -Input.GetAxis("Mouse X") * mouseDragSpeed;
+            float dragY = -Input.GetAxis("Mouse Y") * mouseDragSpeed;
+            mouseDragMovement = new Vector3(dragX, dragY, 0);
+        }
+        else
+        {
+            Cursor.SetCursor(null, cursorHotspot, CursorMode.Auto);
+        }
+        // Apply combined movement
+        freeCameraRig.transform.position += keyboardMovement + mouseDragMovement;
 
         // Zooming with scroll
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         virtualCam.m_Lens.OrthographicSize = Mathf.Clamp(
-        virtualCam.m_Lens.OrthographicSize - scroll * zoomSpeed,
-        strategyZoomMin,
-        strategyZoomMax
-);
-        Debug.Log("H: " + h + " | V: " + v + " | Scroll: " + scroll);
+            virtualCam.m_Lens.OrthographicSize - scroll * zoomSpeed,
+            strategyZoomMin,
+            strategyZoomMax
+        );
 
+        Debug.Log("H: " + h + " | V: " + v + " | Scroll: " + scroll);
     }
+
 
     public void SetType(CameraType type)
     {

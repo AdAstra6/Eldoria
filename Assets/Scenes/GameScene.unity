@@ -62625,10 +62625,12 @@ MonoBehaviour:
   strategyZoomMin: 5
   strategyZoomMax: 20
   moveSpeed: 5
+  mouseDragSpeed: 0.8
+  dragCursor: {fileID: 2800000, guid: 30c621089e10dba4c8fae9fd9a405177, type: 3}
+  cursorHotspot: {x: 0, y: 0}
   currentPhase: 0
   mainCam: {fileID: 0}
   freeCameraRig: {fileID: 508861592}
-  mapBounds: {fileID: 2102707134}
 --- !u!4 &1905836627
 Transform:
   m_ObjectHideFlags: 0
