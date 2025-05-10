@@ -37,7 +37,8 @@ public class Tile : MonoBehaviour
             this.isEventTile = true;
             this.eventType = EventType.COLLECT_ITEM;
         }
-        
+        if (this.isEventTile) this.type = TileType.EVENT;
+
     }
 
 

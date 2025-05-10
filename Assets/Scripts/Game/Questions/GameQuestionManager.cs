@@ -53,7 +53,8 @@ public class GameQuestionManager : MonoBehaviour
         Debug.Log($"{player.name} answered incorrectly!");
         EloSystemManager.SubtractEloBasedOnQuestionResult(player, currentQuestion.difficulty, currentQuestion.category, gameAverageElo);
         // Implement penalty logic
-        player.DecreaseHealth(1); // Decrease health by 1
+        if (!player.Effects.HasHealthProtection) player.DecreaseHealth(1); // Decrease health by 1
+        else Debug.Log($"{player.name} has health protection, no damage taken."); // this should be a visual effect
         if (player.CurrentHealth <= 0)
         {
             GameplayManager.Instance.GameOver(false);

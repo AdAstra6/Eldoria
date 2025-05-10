@@ -10,5 +10,11 @@ public class PlayerEffects
         get { return hasBonusDiceNextTurn; }
         set { hasBonusDiceNextTurn = value; }
     }
+    private bool healthProtection = false; // Set to false in gameplayManager in QuestionAnswered method
+    public bool HasHealthProtection
+    {
+        get { return healthProtection; }
+        set { healthProtection = value; }
+    }
 
 }
