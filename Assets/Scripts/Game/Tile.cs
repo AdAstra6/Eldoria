@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 
 public class Tile : MonoBehaviour
 {
@@ -19,9 +20,10 @@ public class Tile : MonoBehaviour
 
     //  Added a public getter to use it in event manager 
     public EventType Event => eventType;
-    
+    [SerializeField]public ItemType itemType = ItemType.NONE; // gonna make this a dropdown option in inspector in unity to manually add
+
     /// ////////i edited here ///////////////////////////////////////////////////////////////
-   
+
     [SerializeField] private PlayerMovementDirection movementDirection;
     public PlayerMovementDirection MovementDirection
     {
@@ -80,5 +82,9 @@ public class Tile : MonoBehaviour
         }
         
         return nextTiles.Count > 0 ? nextTiles[0] : null; // Default movement
+    }
+    public ItemType GetItem()
+    {
+        return itemType;
     }
 }

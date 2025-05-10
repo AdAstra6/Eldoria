@@ -49,6 +49,8 @@ public class EventManager : MonoBehaviour
             case EventType.Bookstore:
                 //LoadEventScene("TeleportScene");
                 break;
+            case EventType.COLLECT_ITEM:
+
             default:
                 Debug.LogWarning("Unhandled event type!");
                 break;
@@ -86,6 +88,18 @@ public class EventManager : MonoBehaviour
         {
             Debug.LogError("No player stored to resume after event!");
         }
+    }
+    private void StartPlayerCollectItem(Player player)
+    {
+        Tile tile = player.currentTile;
+        if (tile== null)
+        {
+            Debug.LogError("Player's current tile is null!");
+            return;
+        }
+        ItemType item = tile.GetItem();
+
+
     }
 
 
