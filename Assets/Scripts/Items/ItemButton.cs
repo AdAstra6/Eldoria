@@ -96,6 +96,7 @@ public class ItemButton : MonoBehaviour
     public void OnUseButtonClick()
     {
         GameplayManager.Instance.UseItem(item.Type);
+        AudioManager.Instance.PlayUseItem();
         Collapse();
     }
 
@@ -103,6 +104,7 @@ public class ItemButton : MonoBehaviour
     {
         ItemInventoryUI.Instance.DisableButtons();
         GivePanelUI.Instance.Show(item);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClick);
         Collapse();
     }
     public void OnItemButtonClick()
