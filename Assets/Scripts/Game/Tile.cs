@@ -13,7 +13,7 @@ public class Tile : MonoBehaviour
     
     /// ///////////////////////////////////////////////////////////////////////////////
     
-   [SerializeField] private bool isEventTile = false; // events are handled seperately 
+   [SerializeField] public bool isEventTile = false; // events are handled seperately 
 
    [SerializeField] private EventType eventType = EventType.None; // gonna make this a dropdown option in inspector in unity to manually add
 

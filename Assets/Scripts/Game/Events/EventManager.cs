@@ -79,7 +79,7 @@ public class EventManager : MonoBehaviour
 
         if (player != null)
         {
-            player.ResumeAfterEvent();
+            player.PlayerState = PlayerStats.FINISHED_EVENT;
             player = null;
         }
         else

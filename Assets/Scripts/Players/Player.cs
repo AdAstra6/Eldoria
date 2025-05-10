@@ -152,6 +152,7 @@ public class Player : MonoBehaviour
         //GameManager.Instance.EndTurn();
     }
 
+
     private IEnumerator MoveAlongPath(int steps)
     {
         isMoving = true;
@@ -170,6 +171,16 @@ public class Player : MonoBehaviour
                 isMoving = true;
                 nextTile = this.nextTile;
             }
+            else if (currentTile.isEventTile)
+            {
+                Debug.Log("Reached event tile. Triggering event.");
+                this.playerState = PlayerStats.DOING_EVENT;
+                EventManager.Instance.HandleEvent(currentTile.Event, this);
+                yield return new WaitUntil(() => this.playerState == PlayerStats.FINISHED_EVENT);
+
+
+              
+            }
             else
             {
                 nextTile = currentTile.GetNextTile();
@@ -180,10 +191,10 @@ public class Player : MonoBehaviour
                 Debug.Log("Path blocked. Stopping movement.");
                 break;
             }
-           
+
             isMoving = true;
             yield return StartCoroutine(MoveToTile(nextTile.transform.position));
-            //yield return new WaitUntil(() => nextTileReached);
+
             this.SavePathCrossed(currentTile);
             currentTile = nextTile;
             remainingSteps--;
@@ -192,7 +203,7 @@ public class Player : MonoBehaviour
         isMoving = false;
         this.playerState = PlayerStats.END_MOVING;
         InteractionSystemController.Instance.TriggerTileInteraction(this);
-        //if (remainingSteps <= 0) GameManager.Instance.EndTurn();
+        Debug.Log("Finished moving. Ending turn.");
     }
 
     private IEnumerator MoveToTile(Vector3 targetPosition)
@@ -302,32 +313,6 @@ public class Player : MonoBehaviour
     }
 
 
-    public void ResumeAfterEvent()
-{
-    Debug.Log("Resuming after event...");
-    StartCoroutine(MoveOneTileAfterEvent());
-}
-
-public IEnumerator MoveOneTileAfterEvent()
-{
-    Tile nextTile = currentTile.GetNextTile();
-    if (nextTile == null)
-    {
-        Debug.Log("No next tile found after event. Ending turn.");
-    }
-    else
-    {
-        Debug.Log("Moving one tile after event.");
-        yield return StartCoroutine(MoveToTile(nextTile.transform.position));
-        SavePathCrossed(currentTile);
-        currentTile = nextTile;
-    }
-
-    isMoving = false;
-    playerState = PlayerStats.END_MOVING;
-    Debug.Log("Finished moving after event. Ending turn.");
-    GameplayManager.Instance.StartStrategicPhase();
-}
 
 
 
