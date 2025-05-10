@@ -30,7 +30,7 @@ public class ItemButton : MonoBehaviour
         {
             giveButton.onClick.AddListener(() => this.OnGiveButtonClick());
         }
-        if (useButton != null)
+        if (useButton != null && ItemsTypeExtensioin.IsUsable(item.Type))
         {
             useButton.onClick.AddListener(() => OnUseButtonClick());
         }
@@ -69,7 +69,7 @@ public class ItemButton : MonoBehaviour
 
     public void Expand()
     {
-        if (useButton != null)
+        if (useButton != null && ItemsTypeExtensioin.IsUsable(this.item.Type))
         {
             useButton.gameObject.SetActive(true);
         }

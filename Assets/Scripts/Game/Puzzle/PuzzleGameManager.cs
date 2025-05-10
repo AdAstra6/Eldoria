@@ -15,6 +15,7 @@ public class PuzzleGameManager : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private List<Texture2D> imageTextures;
     [SerializeField] private Camera camera;
+    [SerializeField] private GameObject Background;
 
 
     private List<Transform> pieces;
@@ -55,8 +56,14 @@ public class PuzzleGameManager : MonoBehaviour
         // Remove it from the list so it won't be used again
         imageTextures.RemoveAt(randomIndex);
     }
-    public void StartGame(Texture2D jigsawTexture)//mazalt na9sa function bch tadi wa7ad m tsawar randomly
+    public void StartGame(Texture2D jigsawTexture)
     {
+        StartCoroutine(StartGameDelayed(jigsawTexture));
+    }
+
+    private IEnumerator StartGameDelayed(Texture2D jigsawTexture)
+    {
+        yield return new WaitForSeconds(0.3f);
 
         // We store a list of the transform for each jigsaw piece so we can track them later.
         pieces = new List<Transform>();
@@ -73,7 +80,7 @@ public class PuzzleGameManager : MonoBehaviour
         // Update the border to fit the chosen puzzle.
         UpdateBorder();
 
-        //The game start by 0 correct pieces.
+        // The game starts with 0 correct pieces.
         piecesCorrect = 0;
     }
 
@@ -185,11 +192,12 @@ public class PuzzleGameManager : MonoBehaviour
         lineRenderer.SetPosition(3, new Vector3(-halfWidth, -halfHeight, borderZ));
 
         // Set the thickness of the border line.
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
+        lineRenderer.startWidth = 0.2f;
+        lineRenderer.endWidth = 0.2f;
 
         // Show the border line.
         lineRenderer.enabled = true;
+        Background.SetActive(true);
     }
 
     // Update is called once per frame
@@ -344,6 +352,7 @@ public class PuzzleGameManager : MonoBehaviour
         pieces.Clear();
 
         gameHolder.GetComponent<LineRenderer>().enabled = false;
+        Background.SetActive(false);
         GameplayManager.Instance.StartStrategicPhase();
     }
 

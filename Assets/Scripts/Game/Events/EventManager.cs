@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class EventManager : MonoBehaviour
 {
@@ -22,7 +24,7 @@ public class EventManager : MonoBehaviour
     }
 
     // Main handler method
-    public void HandleEvent(EventType eventType, Player player)
+    public IEnumerator HandleEvent(EventType eventType, Player player)
     {
         Debug.Log($"Handling event of type: {eventType}");
 
@@ -50,12 +52,16 @@ public class EventManager : MonoBehaviour
                 //LoadEventScene("TeleportScene");
                 break;
             case EventType.COLLECT_ITEM:
+                StartPlayerCollectItem(player);
+                yield return new WaitUntil(() => CollectItemPanel.Instance.IsCollectingComplete);
+                break;
 
             default:
                 Debug.LogWarning("Unhandled event type!");
                 break;
         }
-        StartCoroutine(SimulateEventDuration(player));
+        //StartCoroutine(SimulateEventDuration(player));
+        FinishEvent(player);
     }
 
     private void LoadEventScene(string sceneName)
@@ -77,7 +83,7 @@ public class EventManager : MonoBehaviour
 
     public void FinishEvent(Player player)
     {
-        Debug.Log("Event finished, resuming player movement by 1 tile.");
+        //Debug.Log("Event finished, resuming player movement by 1 tile.");
 
         if (player != null)
         {
@@ -92,14 +98,28 @@ public class EventManager : MonoBehaviour
     private void StartPlayerCollectItem(Player player)
     {
         Tile tile = player.currentTile;
-        if (tile== null)
+        if (tile == null)
         {
             Debug.LogError("Player's current tile is null!");
-            return;
+            return;   
         }
+
         ItemType item = tile.GetItem();
+        if (item == ItemType.NONE)
+        {
+            Debug.Log("No item to collect on this tile.");
+            return; 
+        }
 
+        List<Item> inventoryItems = player.GetInventory();
+        if (player.Inventory.isFull() && !inventoryItems.Any(i => i.Type == item))
+        {
+            Debug.Log("inventory full");
+            return;  
+        }
 
+        int quantity = UnityEngine.Random.Range(1, 4);
+        CollectItemPanel.Instance.ShowCollectItemPanel(item, quantity);
     }
 
 
