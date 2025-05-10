@@ -20,6 +20,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip scrollOpenSFX;
     public AudioClip diceRollSFX;
     public AudioClip penaltySFX;
+    public AudioClip UseItemSFX;
+    public AudioClip GiveItemSFX;
 
 
 
@@ -79,5 +81,15 @@ public class AudioManager : MonoBehaviour
     public void PlayPenalty()
     {
         PlaySFX(penaltySFX);
+    }
+
+    public void PlayUseItem()
+    {
+        PlaySFX(UseItemSFX);
+    }
+
+    public void PlayGiveItem()
+    {
+        PlaySFX(GiveItemSFX);
     }
 }

@@ -118,6 +118,7 @@ public class GameMakerMenuManager : MonoBehaviour
         GameData.playersCount = playersCount;
         GameData.GameMode = gameMode;   
         GameData.SelectedProfiles = selectedProfiles;
+        GameData.averageElo = EloSystemManager.GetAverageEloForNewGame(selectedProfiles);
         // Load the game scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
         // Play the start game sound effect
@@ -128,7 +129,7 @@ public class GameMakerMenuManager : MonoBehaviour
         // Load the main menu scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
-
+    
 }
 
 

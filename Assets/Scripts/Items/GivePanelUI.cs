@@ -121,6 +121,7 @@ public class GivePanelUI : MonoBehaviour
         if (currentPlayer != null && targetPlayer != null)
         {
             currentPlayer.Inventory.GiveItem(currentItem.Type, targetPlayer, currentQuantity);
+            AudioManager.Instance.PlayGiveItem();
         }
         else
         {
