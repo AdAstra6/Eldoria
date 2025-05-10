@@ -175,11 +175,11 @@ public class Player : MonoBehaviour
             {
                 Debug.Log("Reached event tile. Triggering event.");
                 this.playerState = PlayerStats.DOING_EVENT;
-                EventManager.Instance.HandleEvent(currentTile.Event, this);
+                StartCoroutine( EventManager.Instance.HandleEvent(currentTile.Event, this));
                 yield return new WaitUntil(() => this.playerState == PlayerStats.FINISHED_EVENT);
+                nextTile = currentTile.GetNextTile();
 
 
-              
             }
             else
             {
@@ -188,7 +188,7 @@ public class Player : MonoBehaviour
 
             if (nextTile == null)
             {
-                Debug.Log("Path blocked. Stopping movement.");
+                Debug.LogError($"Path blocked. Stopping movement. Tile {currentTile.name} {nextTile}");
                 break;
             }
 

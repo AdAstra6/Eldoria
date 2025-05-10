@@ -41,6 +41,10 @@ public class GivePanelUI : MonoBehaviour
         targetPlayers.Remove(currentPlayer);
         targetPlayer = targetPlayers[0];
     }
+    public static void SetInstance()
+    {
+        GivePanelUI.Instance = FindAnyObjectByType<GivePanelUI>();
+    }
         
     public void Show(Item item)
     {
@@ -88,7 +92,6 @@ public class GivePanelUI : MonoBehaviour
     {
         gameObject.SetActive(false);
         ResetPanel();
-        ItemInventoryUI.Instance.Refresh(currentPlayer.GetInventory());
     }
 
     public void ResetPanel()

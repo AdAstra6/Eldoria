@@ -111,6 +111,7 @@ public class PlayerItemsManager : MonoBehaviour
         {
             Debug.Log($"{player.profileData.Name} does not have a {ItemsTypeExtensioin.GetName(itemType)} to give.");
         }
+        ItemInventoryUI.Instance.Refresh(this.inventory);
     }
     public bool isFull()
     {

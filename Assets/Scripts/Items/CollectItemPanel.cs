@@ -17,6 +17,14 @@ public class CollectItemPanel : MonoBehaviour
 
     private ItemType ItemType;
     private int quantity;
+    private bool isCollectingComplete = false; // Renamed to match the private field name convention
+
+    public bool IsCollectingComplete // Fixed duplicate definition issue
+    {
+        get { return isCollectingComplete; }
+        private set { isCollectingComplete = value; }
+    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -28,19 +36,23 @@ public class CollectItemPanel : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     void Start()
     {
         HideCollectItemPanel();
+        ignoreButton.onClick.AddListener(OnIgnoreButtonClicked);
+        collectButton.onClick.AddListener(OnCollidableClicked);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
-    public void ShowCollectItemPanel(ItemType item , int quantity)
+
+    public void ShowCollectItemPanel(ItemType item, int quantity)
     {
+        this.IsCollectingComplete = false; // Reset the collecting state
         collectItemPanel.SetActive(true);
         this.itemName.text = ItemsTypeExtensioin.GetName(item);
         this.quantityText.text = quantity.ToString();
@@ -52,6 +64,7 @@ public class CollectItemPanel : MonoBehaviour
     public void HideCollectItemPanel()
     {
         collectItemPanel.SetActive(false);
+        this.IsCollectingComplete = true; // Set the collecting state to complete
     }
     public void OnIgnoreButtonClicked()
     {
@@ -60,6 +73,6 @@ public class CollectItemPanel : MonoBehaviour
     public void OnCollidableClicked()
     {
         GameplayManager.Instance.AddItemToPlayer(this.ItemType, quantity);
+        HideCollectItemPanel();
     }
-
 }
