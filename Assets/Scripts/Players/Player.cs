@@ -299,9 +299,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddItem(ItemType itemType)
+    public void AddItem(ItemType itemType , int quantity=1)
     {
-        inventory.AddItem(itemType);
+        inventory.AddItem(itemType , quantity);
     }
     public void RemoveItem(ItemType itemType)
     {

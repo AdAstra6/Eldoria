@@ -172,6 +172,9 @@ MonoBehaviour:
   - {fileID: 983274082}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &12723433
 SpriteRenderer:
@@ -261,6 +264,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &13501559
 SpriteRenderer:
@@ -380,6 +386,9 @@ MonoBehaviour:
   - {fileID: 1514265072}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &14659319
 SpriteRenderer:
@@ -572,6 +581,9 @@ MonoBehaviour:
   - {fileID: 193695095}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &24276784
 SpriteRenderer:
@@ -653,7 +665,7 @@ Transform:
   m_GameObject: {fileID: 33957575}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.66, y: -10, z: 0}
+  m_LocalPosition: {x: 13.6, y: -10.1, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,6 +688,9 @@ MonoBehaviour:
   - {fileID: 1531272231}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &33957578
 SpriteRenderer:
@@ -780,6 +795,9 @@ MonoBehaviour:
   - {fileID: 877885060}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &40597724
 SpriteRenderer:
@@ -884,6 +902,9 @@ MonoBehaviour:
   - {fileID: 144941303}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &41950504
 SpriteRenderer:
@@ -988,6 +1009,9 @@ MonoBehaviour:
   - {fileID: 1111866318}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 1
 --- !u!212 &52646669
 SpriteRenderer:
@@ -1042,6 +1066,127 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &55811913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55811914}
+  - component: {fileID: 55811917}
+  - component: {fileID: 55811916}
+  - component: {fileID: 55811915}
+  m_Layer: 5
+  m_Name: ignoreButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &55811914
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55811913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1612188216}
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -102, y: -95}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &55811915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55811913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 55811916}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &55811916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55811913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.54905653, b: 0.54905653, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fa4475ad73578b74a9565fc9a6225475, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &55811917
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55811913}
+  m_CullTransparentMesh: 1
 --- !u!1 &57012315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1237,9 @@ MonoBehaviour:
   - {fileID: 1922920129}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &57012318
 SpriteRenderer:
@@ -1196,6 +1344,9 @@ MonoBehaviour:
   - {fileID: 1873761232}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &59647646
 SpriteRenderer:
@@ -1300,6 +1451,9 @@ MonoBehaviour:
   - {fileID: 1032308956}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &69042059
 SpriteRenderer:
@@ -1404,6 +1558,9 @@ MonoBehaviour:
   - {fileID: 567778134}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &71103192
 SpriteRenderer:
@@ -1508,6 +1665,9 @@ MonoBehaviour:
   - {fileID: 2006730381}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &76840367
 SpriteRenderer:
@@ -1612,6 +1772,9 @@ MonoBehaviour:
   - {fileID: 401549929}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &76923713
 SpriteRenderer:
@@ -1827,6 +1990,9 @@ MonoBehaviour:
   - {fileID: 578961152}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &86713119
 SpriteRenderer:
@@ -1931,6 +2097,9 @@ MonoBehaviour:
   - {fileID: 549927117}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &86963204
 SpriteRenderer:
@@ -2035,6 +2204,9 @@ MonoBehaviour:
   - {fileID: 1302015055}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &90141988
 SpriteRenderer:
@@ -2139,6 +2311,9 @@ MonoBehaviour:
   - {fileID: 1506227160}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &98753685
 SpriteRenderer:
@@ -2244,6 +2419,9 @@ MonoBehaviour:
   - {fileID: 625679050}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &101546747
 SpriteRenderer:
@@ -2495,6 +2673,9 @@ MonoBehaviour:
   - {fileID: 1388603824}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &102646964
 SpriteRenderer:
@@ -2584,6 +2765,9 @@ MonoBehaviour:
   - {fileID: 1147369926}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &104947672
 SpriteRenderer:
@@ -2822,6 +3006,9 @@ MonoBehaviour:
   - {fileID: 1213598921}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &110864976
 Transform:
@@ -3016,6 +3203,9 @@ MonoBehaviour:
   - {fileID: 2132591575}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &115841709
 SpriteRenderer:
@@ -3319,6 +3509,9 @@ MonoBehaviour:
   - {fileID: 776921627}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &120669394
 SpriteRenderer:
@@ -3423,6 +3616,9 @@ MonoBehaviour:
   - {fileID: 337091498}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 0
 --- !u!212 &120736198
 SpriteRenderer:
@@ -3527,6 +3723,9 @@ MonoBehaviour:
   - {fileID: 1152160539}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &120755985
 SpriteRenderer:
@@ -3631,6 +3830,9 @@ MonoBehaviour:
   - {fileID: 996471400}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &123767791
 SpriteRenderer:
@@ -3802,7 +4004,7 @@ Transform:
   m_GameObject: {fileID: 128800881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.69, y: -4.98, z: 0}
+  m_LocalPosition: {x: 29.73, y: -5.02, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3825,6 +4027,9 @@ MonoBehaviour:
   - {fileID: 845226419}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &128800884
 SpriteRenderer:
@@ -3914,6 +4119,9 @@ MonoBehaviour:
   - {fileID: 1511762542}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &129621016
 SpriteRenderer:
@@ -4033,6 +4241,9 @@ MonoBehaviour:
   - {fileID: 1695656549}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &133376642
 SpriteRenderer:
@@ -4137,6 +4348,9 @@ MonoBehaviour:
   - {fileID: 292768380}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &140092683
 SpriteRenderer:
@@ -4241,6 +4455,9 @@ MonoBehaviour:
   - {fileID: 565410329}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &144941304
 SpriteRenderer:
@@ -4345,6 +4562,9 @@ MonoBehaviour:
   - {fileID: 215832129}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &145372462
 SpriteRenderer:
@@ -4449,6 +4669,9 @@ MonoBehaviour:
   - {fileID: 145372461}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &154838341
 SpriteRenderer:
@@ -4653,6 +4876,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156711783}
+  m_CullTransparentMesh: 1
+--- !u!1 &158428882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158428883}
+  - component: {fileID: 158428885}
+  - component: {fileID: 158428884}
+  m_Layer: 5
+  m_Name: ItemName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &158428883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158428882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 60}
+  m_SizeDelta: {x: 270.6642, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &158428884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158428882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Lava Stone
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 542269b603878b940b672675e85e7d2a, type: 2}
+  m_sharedMaterial: {fileID: 5919924253933823417, guid: 542269b603878b940b672675e85e7d2a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &158428885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158428882}
   m_CullTransparentMesh: 1
 --- !u!1 &159815677
 GameObject:
@@ -4976,6 +5334,9 @@ MonoBehaviour:
   - {fileID: 1637395112}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &175778856
 SpriteRenderer:
@@ -5041,6 +5402,8 @@ GameObject:
   - component: {fileID: 176280665}
   - component: {fileID: 176280667}
   - component: {fileID: 176280666}
+  - component: {fileID: 176280669}
+  - component: {fileID: 176280668}
   m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
@@ -5105,6 +5468,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176280664}
   m_CullTransparentMesh: 1
+--- !u!114 &176280668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176280664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &176280669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176280664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 176280666}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &179264621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,6 +5574,9 @@ MonoBehaviour:
   - {fileID: 545908595}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 2
 --- !u!212 &179264624
 SpriteRenderer:
@@ -5259,6 +5681,9 @@ MonoBehaviour:
   - {fileID: 1720495356}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &185536141
 SpriteRenderer:
@@ -5348,6 +5773,9 @@ MonoBehaviour:
   - {fileID: 1013753263}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &186359770
 SpriteRenderer:
@@ -5678,6 +6106,9 @@ MonoBehaviour:
   - {fileID: 1048169489}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &192694383
 SpriteRenderer:
@@ -5782,6 +6213,9 @@ MonoBehaviour:
   - {fileID: 400749705}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &193695096
 SpriteRenderer:
@@ -5886,6 +6320,9 @@ MonoBehaviour:
   - {fileID: 1676928362}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 0
 --- !u!212 &198773194
 SpriteRenderer:
@@ -5990,6 +6427,9 @@ MonoBehaviour:
   - {fileID: 935737016}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &203329813
 SpriteRenderer:
@@ -6218,6 +6658,9 @@ MonoBehaviour:
   - {fileID: 469766742}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &215832130
 SpriteRenderer:
@@ -6308,6 +6751,9 @@ MonoBehaviour:
   - {fileID: 1093172343}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &217599783
 SpriteRenderer:
@@ -6428,6 +6874,9 @@ MonoBehaviour:
   - {fileID: 625679050}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &228716367
 SpriteRenderer:
@@ -6509,7 +6958,7 @@ Transform:
   m_GameObject: {fileID: 234902591}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.8, y: -9.05, z: 0}
+  m_LocalPosition: {x: 18.66, y: -9.06, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6532,6 +6981,9 @@ MonoBehaviour:
   - {fileID: 1051081464}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &234902594
 SpriteRenderer:
@@ -6720,110 +7172,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239625209}
   m_CullTransparentMesh: 1
---- !u!1 &239658304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 239658305}
-  - component: {fileID: 239658307}
-  - component: {fileID: 239658306}
-  m_Layer: 0
-  m_Name: forest22 (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &239658305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239658304}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.54, y: -5.04, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 275483717}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &239658306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239658304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  nextTiles:
-  - {fileID: 1967476576}
-  isCrossway: 0
-  isSpawnPoint: 0
-  movementDirection: 1
---- !u!212 &239658307
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239658304}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.13995194, g: 0.8018868, b: 0.16345981, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &245945491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6874,6 +7222,9 @@ MonoBehaviour:
   - {fileID: 1810112751}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &245945494
 SpriteRenderer:
@@ -7053,6 +7404,9 @@ MonoBehaviour:
   - {fileID: 847616670}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &249758871
 SpriteRenderer:
@@ -7157,6 +7511,9 @@ MonoBehaviour:
   - {fileID: 2072259151}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &251137535
 SpriteRenderer:
@@ -7261,6 +7618,9 @@ MonoBehaviour:
   - {fileID: 550326436}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &252036450
 SpriteRenderer:
@@ -7365,6 +7725,9 @@ MonoBehaviour:
   - {fileID: 937704544}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &256907105
 SpriteRenderer:
@@ -7525,6 +7888,9 @@ MonoBehaviour:
   - {fileID: 1843584104}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &261560278
 SpriteRenderer:
@@ -7614,6 +7980,9 @@ MonoBehaviour:
   - {fileID: 1181507537}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &261769065
 Transform:
@@ -7733,6 +8102,9 @@ MonoBehaviour:
   - {fileID: 1001111636}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &264806602
 SpriteRenderer:
@@ -7837,6 +8209,9 @@ MonoBehaviour:
   - {fileID: 1220084809}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &270236087
 SpriteRenderer:
@@ -7961,7 +8336,6 @@ Transform:
   - {fileID: 1827588695}
   - {fileID: 1609432947}
   - {fileID: 775437029}
-  - {fileID: 1447917329}
   - {fileID: 33957576}
   - {fileID: 1531272230}
   - {fileID: 723153656}
@@ -8033,7 +8407,6 @@ Transform:
   - {fileID: 485630475}
   - {fileID: 1133685402}
   - {fileID: 1618619491}
-  - {fileID: 239658305}
   - {fileID: 1967476575}
   - {fileID: 297794672}
   - {fileID: 1885434597}
@@ -8297,6 +8670,9 @@ MonoBehaviour:
   - {fileID: 807664110}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &281313611
 SpriteRenderer:
@@ -8401,6 +8777,9 @@ MonoBehaviour:
   - {fileID: 412397065}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &284707903
 SpriteRenderer:
@@ -8505,6 +8884,9 @@ MonoBehaviour:
   - {fileID: 1493004373}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &292768381
 SpriteRenderer:
@@ -8609,6 +8991,9 @@ MonoBehaviour:
   - {fileID: 1466719121}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &296767519
 SpriteRenderer:
@@ -8698,6 +9083,9 @@ MonoBehaviour:
   - {fileID: 1905688813}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &296999929
 SpriteRenderer:
@@ -8817,6 +9205,9 @@ MonoBehaviour:
   - {fileID: 1885434598}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 1
 --- !u!212 &297794674
 SpriteRenderer:
@@ -9042,6 +9433,9 @@ MonoBehaviour:
   - {fileID: 1381488302}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &302260274
 SpriteRenderer:
@@ -9146,6 +9540,9 @@ MonoBehaviour:
   - {fileID: 1149373914}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &305187603
 SpriteRenderer:
@@ -9251,6 +9648,9 @@ MonoBehaviour:
   - {fileID: 1169943628}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &310988413
 SpriteRenderer:
@@ -9526,6 +9926,9 @@ MonoBehaviour:
   - {fileID: 1003624456}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &320251926
 Transform:
@@ -9645,6 +10048,9 @@ MonoBehaviour:
   - {fileID: 1895096772}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &320397443
 SpriteRenderer:
@@ -9749,6 +10155,9 @@ MonoBehaviour:
   - {fileID: 115841708}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &327665092
 SpriteRenderer:
@@ -9853,6 +10262,9 @@ MonoBehaviour:
   - {fileID: 572250797}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &329537823
 SpriteRenderer:
@@ -9957,6 +10369,9 @@ MonoBehaviour:
   - {fileID: 1207088074}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &332600313
 SpriteRenderer:
@@ -10061,6 +10476,9 @@ MonoBehaviour:
   - {fileID: 1090332012}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &337091499
 SpriteRenderer:
@@ -10244,6 +10662,9 @@ MonoBehaviour:
   - {fileID: 234902593}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &338072534
 SpriteRenderer:
@@ -10348,6 +10769,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &362022920
 SpriteRenderer:
@@ -10453,6 +10877,9 @@ MonoBehaviour:
   - {fileID: 1710895037}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &363391733
 SpriteRenderer:
@@ -10557,6 +10984,9 @@ MonoBehaviour:
   - {fileID: 154838340}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &364151942
 SpriteRenderer:
@@ -10795,6 +11225,9 @@ MonoBehaviour:
   - {fileID: 579153710}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &365541791
 SpriteRenderer:
@@ -10899,6 +11332,9 @@ MonoBehaviour:
   - {fileID: 198773193}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &367487508
 SpriteRenderer:
@@ -11003,6 +11439,9 @@ MonoBehaviour:
   - {fileID: 12723432}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &368285702
 SpriteRenderer:
@@ -11107,6 +11546,9 @@ MonoBehaviour:
   - {fileID: 591793697}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &371719765
 SpriteRenderer:
@@ -11211,6 +11653,9 @@ MonoBehaviour:
   - {fileID: 1323440266}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &373224362
 SpriteRenderer:
@@ -11265,6 +11710,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &382144866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382144867}
+  - component: {fileID: 382144869}
+  - component: {fileID: 382144868}
+  m_Layer: 5
+  m_Name: itemIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &382144867
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382144866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &382144868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382144866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &382144869
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382144866}
+  m_CullTransparentMesh: 1
 --- !u!1 &382228152
 GameObject:
   m_ObjectHideFlags: 0
@@ -11414,6 +11934,7 @@ GameObject:
   - component: {fileID: 384951343}
   - component: {fileID: 384951344}
   - component: {fileID: 384951345}
+  - component: {fileID: 384951346}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -11534,6 +12055,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &384951346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384951339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &385704753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11708,6 +12241,9 @@ MonoBehaviour:
   - {fileID: 684833035}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &386863711
 SpriteRenderer:
@@ -11797,6 +12333,9 @@ MonoBehaviour:
   - {fileID: 320251925}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 2
 --- !u!4 &391001164
 Transform:
@@ -11916,6 +12455,9 @@ MonoBehaviour:
   - {fileID: 1921220928}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &392156350
 SpriteRenderer:
@@ -12020,6 +12562,9 @@ MonoBehaviour:
   - {fileID: 368285701}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &395888304
 SpriteRenderer:
@@ -12124,6 +12669,9 @@ MonoBehaviour:
   - {fileID: 1128156071}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &400749706
 SpriteRenderer:
@@ -12228,6 +12776,9 @@ MonoBehaviour:
   - {fileID: 386863710}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &401549930
 SpriteRenderer:
@@ -12332,6 +12883,9 @@ MonoBehaviour:
   - {fileID: 1748948834}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &404326167
 SpriteRenderer:
@@ -12436,6 +12990,9 @@ MonoBehaviour:
   - {fileID: 965758374}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &404637943
 SpriteRenderer:
@@ -12540,6 +13097,9 @@ MonoBehaviour:
   - {fileID: 1912955875}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &405374684
 SpriteRenderer:
@@ -12644,6 +13204,9 @@ MonoBehaviour:
   - {fileID: 101546746}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &407225442
 SpriteRenderer:
@@ -12748,6 +13311,9 @@ MonoBehaviour:
   - {fileID: 192694382}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &408930738
 SpriteRenderer:
@@ -12814,6 +13380,7 @@ GameObject:
   - component: {fileID: 410784775}
   - component: {fileID: 410784774}
   - component: {fileID: 410784773}
+  - component: {fileID: 410784776}
   m_Layer: 5
   m_Name: PlusButton
   m_TagString: Untagged
@@ -12922,6 +13489,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410784771}
   m_CullTransparentMesh: 1
+--- !u!114 &410784776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410784771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &411752831
 GameObject:
   m_ObjectHideFlags: 0
@@ -13123,6 +13702,9 @@ MonoBehaviour:
   - {fileID: 735714842}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &412397066
 SpriteRenderer:
@@ -13227,6 +13809,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &424559195
 SpriteRenderer:
@@ -13331,6 +13916,9 @@ MonoBehaviour:
   - {fileID: 1730722595}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &428416493
 SpriteRenderer:
@@ -13435,6 +14023,9 @@ MonoBehaviour:
   - {fileID: 1987923160}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &429956874
 SpriteRenderer:
@@ -13773,7 +14364,7 @@ Transform:
   m_GameObject: {fileID: 441066518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.81, y: -3.07, z: 0}
+  m_LocalPosition: {x: 16.64, y: -3.01, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13796,6 +14387,9 @@ MonoBehaviour:
   - {fileID: 392156349}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &441066521
 SpriteRenderer:
@@ -14007,6 +14601,9 @@ MonoBehaviour:
   - {fileID: 775710678}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &444055336
 SpriteRenderer:
@@ -14111,6 +14708,9 @@ MonoBehaviour:
   - {fileID: 559129866}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &445981166
 SpriteRenderer:
@@ -14215,6 +14815,9 @@ MonoBehaviour:
   - {fileID: 1073929058}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &448919356
 SpriteRenderer:
@@ -14280,6 +14883,7 @@ GameObject:
   - component: {fileID: 450186821}
   - component: {fileID: 450186823}
   - component: {fileID: 450186822}
+  - component: {fileID: 450186825}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -14344,6 +14948,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450186820}
   m_CullTransparentMesh: 1
+--- !u!114 &450186825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450186820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 450186822}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &454284343
 GameObject:
   m_ObjectHideFlags: 0
@@ -14394,6 +15042,9 @@ MonoBehaviour:
   - {fileID: 1199320073}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &454284346
 SpriteRenderer:
@@ -14498,6 +15149,9 @@ MonoBehaviour:
   - {fileID: 794933695}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &454915146
 SpriteRenderer:
@@ -14674,6 +15328,9 @@ MonoBehaviour:
   - {fileID: 1966440350}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &458332792
 SpriteRenderer:
@@ -14822,6 +15479,9 @@ MonoBehaviour:
   - {fileID: 915861742}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &469766743
 SpriteRenderer:
@@ -14926,6 +15586,9 @@ MonoBehaviour:
   - {fileID: 444055335}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &469916056
 SpriteRenderer:
@@ -15015,6 +15678,9 @@ MonoBehaviour:
   - {fileID: 1512291791}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 1
 --- !u!212 &472087479
 SpriteRenderer:
@@ -15397,7 +16063,7 @@ Transform:
   m_GameObject: {fileID: 485630474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.07, y: -5.04, z: 0}
+  m_LocalPosition: {x: 25.74, y: -5.02, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15420,6 +16086,9 @@ MonoBehaviour:
   - {fileID: 1133685403}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &485630477
 SpriteRenderer:
@@ -15524,6 +16193,9 @@ MonoBehaviour:
   - {fileID: 1104977187}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &494251206
 SpriteRenderer:
@@ -15644,6 +16316,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &516764419
 SpriteRenderer:
@@ -15935,6 +16610,9 @@ MonoBehaviour:
   - {fileID: 922800742}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &522294588
 SpriteRenderer:
@@ -16039,6 +16717,9 @@ MonoBehaviour:
   - {fileID: 1510698999}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &524279900
 SpriteRenderer:
@@ -16093,6 +16774,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &530052791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530052792}
+  - component: {fileID: 530052794}
+  - component: {fileID: 530052793}
+  m_Layer: 5
+  m_Name: quantity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &530052792
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530052791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 122, y: 113}
+  m_SizeDelta: {x: 27.4313, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &530052793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530052791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: xx
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 542269b603878b940b672675e85e7d2a, type: 2}
+  m_sharedMaterial: {fileID: 5919924253933823417, guid: 542269b603878b940b672675e85e7d2a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -38.764343, y: 0, z: -0.00024414062, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &530052794
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530052791}
+  m_CullTransparentMesh: 1
 --- !u!1 &538978512
 GameObject:
   m_ObjectHideFlags: 0
@@ -16143,6 +16959,9 @@ MonoBehaviour:
   - {fileID: 338072533}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &538978515
 SpriteRenderer:
@@ -16247,6 +17066,9 @@ MonoBehaviour:
   - {fileID: 1851886628}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &543370893
 SpriteRenderer:
@@ -16351,6 +17173,9 @@ MonoBehaviour:
   - {fileID: 1322995937}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &545908596
 SpriteRenderer:
@@ -16455,6 +17280,9 @@ MonoBehaviour:
   - {fileID: 1351143891}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &549927118
 SpriteRenderer:
@@ -16559,6 +17387,9 @@ MonoBehaviour:
   - {fileID: 791760628}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &550326437
 SpriteRenderer:
@@ -16663,6 +17494,9 @@ MonoBehaviour:
   - {fileID: 76923712}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &556346199
 SpriteRenderer:
@@ -16767,6 +17601,9 @@ MonoBehaviour:
   - {fileID: 1090096474}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &559129867
 SpriteRenderer:
@@ -16871,6 +17708,9 @@ MonoBehaviour:
   - {fileID: 1880972512}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &563484963
 SpriteRenderer:
@@ -16975,6 +17815,9 @@ MonoBehaviour:
   - {fileID: 797107259}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &565410330
 SpriteRenderer:
@@ -17079,6 +17922,9 @@ MonoBehaviour:
   - {fileID: 2142815765}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &566277943
 SpriteRenderer:
@@ -17234,6 +18080,9 @@ MonoBehaviour:
   - {fileID: 1547126594}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &567778135
 SpriteRenderer:
@@ -17338,6 +18187,9 @@ MonoBehaviour:
   - {fileID: 1196025262}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &572250798
 SpriteRenderer:
@@ -17427,6 +18279,9 @@ MonoBehaviour:
   - {fileID: 261769064}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!4 &573908902
 Transform:
@@ -17573,6 +18428,9 @@ MonoBehaviour:
   - {fileID: 693771630}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &576260071
 Transform:
@@ -17654,6 +18512,7 @@ GameObject:
   - component: {fileID: 577952548}
   - component: {fileID: 577952547}
   - component: {fileID: 577952546}
+  - component: {fileID: 577952549}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -17774,6 +18633,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577952544}
   m_CullTransparentMesh: 1
+--- !u!114 &577952549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577952544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &578525430
 GameObject:
   m_ObjectHideFlags: 0
@@ -17927,6 +18798,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &578961153
 SpriteRenderer:
@@ -18031,6 +18905,9 @@ MonoBehaviour:
   - {fileID: 203329812}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &579153711
 SpriteRenderer:
@@ -18135,6 +19012,9 @@ MonoBehaviour:
   - {fileID: 1972981506}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &582244995
 SpriteRenderer:
@@ -18239,6 +19119,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &591793698
 SpriteRenderer:
@@ -18343,6 +19226,9 @@ MonoBehaviour:
   - {fileID: 1589541161}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &599103713
 SpriteRenderer:
@@ -18447,6 +19333,9 @@ MonoBehaviour:
   - {fileID: 1915617681}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &600268437
 SpriteRenderer:
@@ -18551,6 +19440,9 @@ MonoBehaviour:
   - {fileID: 1493751553}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &600879729
 SpriteRenderer:
@@ -18655,6 +19547,9 @@ MonoBehaviour:
   - {fileID: 1056361999}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &602337215
 SpriteRenderer:
@@ -18736,7 +19631,7 @@ Transform:
   m_GameObject: {fileID: 602458663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.31, y: -3.07, z: 0}
+  m_LocalPosition: {x: 12.59, y: -3.01, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18759,6 +19654,9 @@ MonoBehaviour:
   - {fileID: 1509432899}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &602458666
 SpriteRenderer:
@@ -18863,6 +19761,9 @@ MonoBehaviour:
   - {fileID: 448919355}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &602939951
 SpriteRenderer:
@@ -18967,6 +19868,9 @@ MonoBehaviour:
   - {fileID: 1254363644}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &603723524
 SpriteRenderer:
@@ -19312,6 +20216,9 @@ MonoBehaviour:
   - {fileID: 1136531422}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &625650872
 SpriteRenderer:
@@ -19416,6 +20323,9 @@ MonoBehaviour:
   - {fileID: 90141987}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &625679051
 SpriteRenderer:
@@ -19608,6 +20518,9 @@ MonoBehaviour:
   - {fileID: 1389150760}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &631642864
 SpriteRenderer:
@@ -19697,6 +20610,9 @@ MonoBehaviour:
   - {fileID: 756161752}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &636401712
 SpriteRenderer:
@@ -19801,6 +20717,9 @@ MonoBehaviour:
   - {fileID: 1983024262}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 1
 --- !u!212 &647482136
 SpriteRenderer:
@@ -20052,6 +20971,9 @@ MonoBehaviour:
   - {fileID: 1698077723}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &649190308
 Transform:
@@ -20171,6 +21093,9 @@ MonoBehaviour:
   - {fileID: 563484962}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &649633652
 SpriteRenderer:
@@ -20373,6 +21298,9 @@ MonoBehaviour:
   - {fileID: 69042058}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &654655153
 SpriteRenderer:
@@ -20477,6 +21405,9 @@ MonoBehaviour:
   - {fileID: 251137534}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &656328009
 SpriteRenderer:
@@ -20581,6 +21512,9 @@ MonoBehaviour:
   - {fileID: 1717932207}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &657501172
 SpriteRenderer:
@@ -20819,6 +21753,9 @@ MonoBehaviour:
   - {fileID: 2104781717}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &662317709
 SpriteRenderer:
@@ -20923,6 +21860,9 @@ MonoBehaviour:
   - {fileID: 1057929095}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &662627966
 SpriteRenderer:
@@ -21012,6 +21952,9 @@ MonoBehaviour:
   - {fileID: 2007070287}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &664444477
 SpriteRenderer:
@@ -21301,6 +22244,9 @@ MonoBehaviour:
   - {fileID: 1889219263}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &676150070
 SpriteRenderer:
@@ -21539,6 +22485,9 @@ MonoBehaviour:
   - {fileID: 1996268216}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 3
 --- !u!212 &684833036
 SpriteRenderer:
@@ -21717,6 +22666,127 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 688275242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &689475700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689475701}
+  - component: {fileID: 689475704}
+  - component: {fileID: 689475703}
+  - component: {fileID: 689475702}
+  m_Layer: 5
+  m_Name: CollectButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &689475701
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689475700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1282978866}
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 102, y: -95}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &689475702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689475700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 689475703}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &689475703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689475700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.40259874, g: 0.9924528, b: 0.5217201, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fa4475ad73578b74a9565fc9a6225475, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &689475704
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689475700}
+  m_CullTransparentMesh: 1
 --- !u!1 &689982235
 GameObject:
   m_ObjectHideFlags: 0
@@ -21803,6 +22873,9 @@ MonoBehaviour:
   - {fileID: 1430381247}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &691306029
 SpriteRenderer:
@@ -21892,6 +22965,9 @@ MonoBehaviour:
   - {fileID: 1948700146}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &693771631
 Transform:
@@ -22011,6 +23087,9 @@ MonoBehaviour:
   - {fileID: 1573894559}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &701647240
 SpriteRenderer:
@@ -22100,6 +23179,9 @@ MonoBehaviour:
   - {fileID: 1517865613}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &702606528
 SpriteRenderer:
@@ -22294,6 +23376,9 @@ MonoBehaviour:
   - {fileID: 1510056752}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &711460312
 SpriteRenderer:
@@ -22433,6 +23518,9 @@ MonoBehaviour:
   - {fileID: 728541065}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &714674651
 SpriteRenderer:
@@ -22660,6 +23748,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &719598727
 SpriteRenderer:
@@ -22779,6 +23870,9 @@ MonoBehaviour:
   - {fileID: 228716366}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &719659144
 SpriteRenderer:
@@ -22932,6 +24026,9 @@ MonoBehaviour:
   - {fileID: 405374683}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &723153658
 SpriteRenderer:
@@ -23156,6 +24253,9 @@ MonoBehaviour:
   - {fileID: 2095228527}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &728541066
 SpriteRenderer:
@@ -23260,6 +24360,9 @@ MonoBehaviour:
   - {fileID: 1699264575}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &730979976
 SpriteRenderer:
@@ -23326,6 +24429,7 @@ GameObject:
   - component: {fileID: 732949276}
   - component: {fileID: 732949275}
   - component: {fileID: 732949277}
+  - component: {fileID: 732949278}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -23446,6 +24550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &732949278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732949272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735714841
 GameObject:
   m_ObjectHideFlags: 0
@@ -23482,6 +24598,9 @@ MonoBehaviour:
   - {fileID: 1410292559}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &735714843
 SpriteRenderer:
@@ -23601,6 +24720,9 @@ MonoBehaviour:
   - {fileID: 735714842}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &737071677
 SpriteRenderer:
@@ -23705,6 +24827,9 @@ MonoBehaviour:
   - {fileID: 737071676}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &739606992
 SpriteRenderer:
@@ -23912,6 +25037,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &750916613
 SpriteRenderer:
@@ -24148,6 +25276,9 @@ MonoBehaviour:
   - {fileID: 1644189882}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &751805117
 SpriteRenderer:
@@ -24252,6 +25383,9 @@ MonoBehaviour:
   - {fileID: 1951844050}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &756161753
 SpriteRenderer:
@@ -24371,6 +25505,9 @@ MonoBehaviour:
   - {fileID: 958511928}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &761106252
 SpriteRenderer:
@@ -24475,6 +25612,9 @@ MonoBehaviour:
   - {fileID: 1569730613}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &764246619
 SpriteRenderer:
@@ -24579,6 +25719,9 @@ MonoBehaviour:
   - {fileID: 662317708}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &766891364
 SpriteRenderer:
@@ -24683,6 +25826,9 @@ MonoBehaviour:
   - {fileID: 869155617}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &768935892
 SpriteRenderer:
@@ -24764,7 +25910,7 @@ Transform:
   m_GameObject: {fileID: 775437028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.54, y: -9.05, z: 0}
+  m_LocalPosition: {x: 13.629999, y: -9.05, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24784,9 +25930,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   nextTiles:
-  - {fileID: 1447917330}
+  - {fileID: 33957577}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &775437031
 SpriteRenderer:
@@ -24891,6 +26040,9 @@ MonoBehaviour:
   - {fileID: 1917554430}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &775710679
 SpriteRenderer:
@@ -24995,6 +26147,9 @@ MonoBehaviour:
   - {fileID: 1763501164}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &776007462
 SpriteRenderer:
@@ -25099,6 +26254,9 @@ MonoBehaviour:
   - {fileID: 120736197}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &776921628
 SpriteRenderer:
@@ -25182,7 +26340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b0a457446ffb146a8198541e153abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 2
   gameHolder: {fileID: 1862187897}
   piecePrefab: {fileID: 5142181990668469795, guid: 8d91ff89087d93744963570858a1898f,
     type: 3}
@@ -25253,6 +26410,9 @@ MonoBehaviour:
   - {fileID: 40597723}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &791760629
 SpriteRenderer:
@@ -25357,6 +26517,9 @@ MonoBehaviour:
   - {fileID: 1096316610}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &794933696
 SpriteRenderer:
@@ -25461,6 +26624,9 @@ MonoBehaviour:
   - {fileID: 851905987}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &797107260
 SpriteRenderer:
@@ -25565,6 +26731,9 @@ MonoBehaviour:
   - {fileID: 1018162274}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &800242176
 SpriteRenderer:
@@ -25669,6 +26838,9 @@ MonoBehaviour:
   - {fileID: 120669393}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &802375005
 SpriteRenderer:
@@ -25773,6 +26945,9 @@ MonoBehaviour:
   - {fileID: 24276783}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &807436232
 SpriteRenderer:
@@ -25877,6 +27052,9 @@ MonoBehaviour:
   - {fileID: 1838649492}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &807664111
 SpriteRenderer:
@@ -26016,6 +27194,9 @@ MonoBehaviour:
   - {fileID: 807436231}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &812049293
 SpriteRenderer:
@@ -26105,6 +27286,9 @@ MonoBehaviour:
   - {fileID: 1965579543}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 1
 --- !u!212 &813445825
 SpriteRenderer:
@@ -26260,6 +27444,9 @@ MonoBehaviour:
   - {fileID: 1817576947}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &824208903
 SpriteRenderer:
@@ -26485,6 +27672,9 @@ MonoBehaviour:
   - {fileID: 1166272748}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &838209805
 SpriteRenderer:
@@ -26574,6 +27764,9 @@ MonoBehaviour:
   - {fileID: 1533761738}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &844234109
 SpriteRenderer:
@@ -26693,6 +27886,9 @@ MonoBehaviour:
   - {fileID: 1685166534}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &845226420
 SpriteRenderer:
@@ -26797,6 +27993,9 @@ MonoBehaviour:
   - {fileID: 1209070488}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &845824017
 SpriteRenderer:
@@ -26902,6 +28101,9 @@ MonoBehaviour:
   - {fileID: 711460311}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &846094249
 SpriteRenderer:
@@ -27006,6 +28208,9 @@ MonoBehaviour:
   - {fileID: 1624154903}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &847616671
 SpriteRenderer:
@@ -27110,6 +28315,9 @@ MonoBehaviour:
   - {fileID: 776007461}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &851905988
 SpriteRenderer:
@@ -27176,6 +28384,7 @@ GameObject:
   - component: {fileID: 856614321}
   - component: {fileID: 856614320}
   - component: {fileID: 856614319}
+  - component: {fileID: 856614322}
   m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
@@ -27284,6 +28493,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856614317}
   m_CullTransparentMesh: 1
+--- !u!114 &856614322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856614317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &869155615
 GameObject:
   m_ObjectHideFlags: 0
@@ -27334,6 +28555,9 @@ MonoBehaviour:
   - {fileID: 1395795649}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &869155618
 SpriteRenderer:
@@ -27438,6 +28662,9 @@ MonoBehaviour:
   - {fileID: 1933460646}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &872746499
 SpriteRenderer:
@@ -27542,6 +28769,9 @@ MonoBehaviour:
   - {fileID: 1783548956}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &876087862
 SpriteRenderer:
@@ -27646,6 +28876,9 @@ MonoBehaviour:
   - {fileID: 599103712}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &877885061
 SpriteRenderer:
@@ -27945,6 +29178,9 @@ MonoBehaviour:
   - {fileID: 1510905715}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &889216873
 SpriteRenderer:
@@ -28049,6 +29285,9 @@ MonoBehaviour:
   - {fileID: 2096999690}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &889982859
 SpriteRenderer:
@@ -28138,6 +29377,9 @@ MonoBehaviour:
   - {fileID: 110864975}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &892200940
 Transform:
@@ -28257,6 +29499,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &893132888
 SpriteRenderer:
@@ -28361,6 +29606,9 @@ MonoBehaviour:
   - {fileID: 1610309920}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &915861743
 SpriteRenderer:
@@ -28540,6 +29788,9 @@ MonoBehaviour:
   - {fileID: 305187602}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &920227437
 SpriteRenderer:
@@ -28644,6 +29895,9 @@ MonoBehaviour:
   - {fileID: 98753684}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &922800743
 SpriteRenderer:
@@ -28951,6 +30205,9 @@ MonoBehaviour:
   - {fileID: 1943480645}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &933799738
 SpriteRenderer:
@@ -29055,6 +30312,9 @@ MonoBehaviour:
   - {fileID: 1872456845}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &935737017
 SpriteRenderer:
@@ -29227,6 +30487,9 @@ MonoBehaviour:
   - {fileID: 1597408661}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &937704545
 SpriteRenderer:
@@ -29532,6 +30795,9 @@ MonoBehaviour:
   - {fileID: 872746498}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &951474364
 SpriteRenderer:
@@ -29621,6 +30887,9 @@ MonoBehaviour:
   - {fileID: 844234108}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &957680331
 SpriteRenderer:
@@ -29740,6 +31009,9 @@ MonoBehaviour:
   - {fileID: 1838778258}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &958511929
 SpriteRenderer:
@@ -29977,6 +31249,9 @@ MonoBehaviour:
   - {fileID: 1930578726}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &965758375
 SpriteRenderer:
@@ -30081,6 +31356,9 @@ MonoBehaviour:
   - {fileID: 1925345194}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &971218805
 SpriteRenderer:
@@ -30185,6 +31463,9 @@ MonoBehaviour:
   - {fileID: 1360352380}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &974197387
 SpriteRenderer:
@@ -30289,6 +31570,9 @@ MonoBehaviour:
   - {fileID: 41950503}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &983274083
 SpriteRenderer:
@@ -30393,6 +31677,9 @@ MonoBehaviour:
   - {fileID: 1337146099}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 0
 --- !u!212 &985300277
 SpriteRenderer:
@@ -30482,6 +31769,9 @@ MonoBehaviour:
   - {fileID: 1550628260}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &988161538
 Transform:
@@ -30586,6 +31876,9 @@ MonoBehaviour:
   - {fileID: 104947671}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &990383983
 SpriteRenderer:
@@ -30749,6 +32042,9 @@ MonoBehaviour:
   - {fileID: 52646668}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &996471401
 SpriteRenderer:
@@ -30853,6 +32149,9 @@ MonoBehaviour:
   - {fileID: 1637427890}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &996485872
 SpriteRenderer:
@@ -30957,6 +32256,9 @@ MonoBehaviour:
   - {fileID: 2040530010}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &996528656
 SpriteRenderer:
@@ -31061,6 +32363,9 @@ MonoBehaviour:
   - {fileID: 889216872}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &998172396
 SpriteRenderer:
@@ -31127,6 +32432,7 @@ GameObject:
   - component: {fileID: 998448187}
   - component: {fileID: 998448186}
   - component: {fileID: 998448185}
+  - component: {fileID: 998448188}
   m_Layer: 5
   m_Name: MusicButton
   m_TagString: Untagged
@@ -31249,6 +32555,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998448183}
   m_CullTransparentMesh: 1
+--- !u!114 &998448188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998448183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &999058593
 GameObject:
   m_ObjectHideFlags: 0
@@ -31299,6 +32617,9 @@ MonoBehaviour:
   - {fileID: 1232078708}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &999058596
 SpriteRenderer:
@@ -31403,6 +32724,9 @@ MonoBehaviour:
   - {fileID: 2060366376}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1001111637
 SpriteRenderer:
@@ -31492,6 +32816,9 @@ MonoBehaviour:
   - {fileID: 1783996188}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1003624457
 Transform:
@@ -31596,6 +32923,9 @@ MonoBehaviour:
   - {fileID: 1059011365}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1013753264
 SpriteRenderer:
@@ -31715,6 +33045,9 @@ MonoBehaviour:
   - {fileID: 999058595}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1018162275
 SpriteRenderer:
@@ -31819,6 +33152,9 @@ MonoBehaviour:
   - {fileID: 1106593077}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1028726979
 SpriteRenderer:
@@ -31923,6 +33259,9 @@ MonoBehaviour:
   - {fileID: 538978514}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1029999963
 SpriteRenderer:
@@ -32027,6 +33366,9 @@ MonoBehaviour:
   - {fileID: 691306028}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1031755904
 SpriteRenderer:
@@ -32131,6 +33473,9 @@ MonoBehaviour:
   - {fileID: 998172395}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1032308957
 SpriteRenderer:
@@ -32235,6 +33580,9 @@ MonoBehaviour:
   - {fileID: 1326803100}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1037907232
 SpriteRenderer:
@@ -32425,6 +33773,9 @@ MonoBehaviour:
   - {fileID: 1584631297}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1048169490
 SpriteRenderer:
@@ -32529,6 +33880,9 @@ MonoBehaviour:
   - {fileID: 1722839280}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1048699392
 SpriteRenderer:
@@ -32749,6 +34103,9 @@ MonoBehaviour:
   - {fileID: 1962813446}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1048976260
 SpriteRenderer:
@@ -32830,7 +34187,7 @@ Transform:
   m_GameObject: {fileID: 1051081462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.94, y: -9.05, z: 0}
+  m_LocalPosition: {x: 17.64, y: -9.04, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32853,6 +34210,9 @@ MonoBehaviour:
   - {fileID: 1361499438}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1051081465
 SpriteRenderer:
@@ -32957,6 +34317,9 @@ MonoBehaviour:
   - {fileID: 281313610}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1054261701
 SpriteRenderer:
@@ -33061,6 +34424,9 @@ MonoBehaviour:
   - {fileID: 133376641}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1054688120
 SpriteRenderer:
@@ -33165,6 +34531,9 @@ MonoBehaviour:
   - {fileID: 1486724891}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1056362000
 SpriteRenderer:
@@ -33246,7 +34615,7 @@ Transform:
   m_GameObject: {fileID: 1057929093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.78, y: -4.08, z: 0}
+  m_LocalPosition: {x: 29.75, y: -4.02, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33266,9 +34635,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   nextTiles:
-  - {fileID: 845226419}
+  - {fileID: 128800883}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1057929096
 SpriteRenderer:
@@ -33358,6 +34730,9 @@ MonoBehaviour:
   - {fileID: 813445824}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1059011366
 SpriteRenderer:
@@ -33477,6 +34852,9 @@ MonoBehaviour:
   - {fileID: 656328008}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1069824973
 SpriteRenderer:
@@ -33581,6 +34959,9 @@ MonoBehaviour:
   - {fileID: 566277942}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1073929059
 SpriteRenderer:
@@ -33685,6 +35066,9 @@ MonoBehaviour:
   - {fileID: 1221522275}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1078295978
 SpriteRenderer:
@@ -33789,6 +35173,9 @@ MonoBehaviour:
   - {fileID: 1863632268}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1079491872
 SpriteRenderer:
@@ -33893,6 +35280,9 @@ MonoBehaviour:
   - {fileID: 2084131766}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1082053345
 SpriteRenderer:
@@ -33998,6 +35388,9 @@ MonoBehaviour:
   - {fileID: 1187938829}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1084591368
 SpriteRenderer:
@@ -34102,6 +35495,9 @@ MonoBehaviour:
   - {fileID: 719659143}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1084926831
 SpriteRenderer:
@@ -34206,6 +35602,9 @@ MonoBehaviour:
   - {fileID: 602337214}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1085213522
 SpriteRenderer:
@@ -34295,6 +35694,9 @@ MonoBehaviour:
   - {fileID: 296999928}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1085827330
 SpriteRenderer:
@@ -34489,6 +35891,9 @@ MonoBehaviour:
   - {fileID: 1789110239}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1089816181
 SpriteRenderer:
@@ -34593,6 +35998,9 @@ MonoBehaviour:
   - {fileID: 404637942}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1090096475
 SpriteRenderer:
@@ -34697,6 +36105,9 @@ MonoBehaviour:
   - {fileID: 371719764}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 3
 --- !u!212 &1090332013
 SpriteRenderer:
@@ -34956,6 +36367,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1093172344
 SpriteRenderer:
@@ -35132,7 +36546,7 @@ Transform:
   m_GameObject: {fileID: 1095342652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.21, y: -3.07, z: 0}
+  m_LocalPosition: {x: 13.62, y: -3.03, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35155,6 +36569,9 @@ MonoBehaviour:
   - {fileID: 602458665}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1095342655
 SpriteRenderer:
@@ -35259,6 +36676,9 @@ MonoBehaviour:
   - {fileID: 1185265455}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1096316611
 SpriteRenderer:
@@ -35363,6 +36783,9 @@ MonoBehaviour:
   - {fileID: 1113606214}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1098748855
 SpriteRenderer:
@@ -35467,6 +36890,9 @@ MonoBehaviour:
   - {fileID: 1726695139}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 3
 --- !u!212 &1104977188
 SpriteRenderer:
@@ -35705,6 +37131,9 @@ MonoBehaviour:
   - {fileID: 367487507}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1106593078
 SpriteRenderer:
@@ -35809,6 +37238,9 @@ MonoBehaviour:
   - {fileID: 1980323378}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1111866319
 SpriteRenderer:
@@ -35913,6 +37345,9 @@ MonoBehaviour:
   - {fileID: 876087861}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1113606215
 SpriteRenderer:
@@ -36071,6 +37506,9 @@ MonoBehaviour:
   - {fileID: 1084591367}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1120992098
 SpriteRenderer:
@@ -36175,6 +37613,9 @@ MonoBehaviour:
   - {fileID: 951474363}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1128156072
 SpriteRenderer:
@@ -36571,7 +38012,7 @@ Transform:
   m_GameObject: {fileID: 1133685401}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.25, y: -5.04, z: 0}
+  m_LocalPosition: {x: 24.7, y: -5.02, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36594,6 +38035,9 @@ MonoBehaviour:
   - {fileID: 1618619492}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1133685404
 SpriteRenderer:
@@ -36887,6 +38331,9 @@ MonoBehaviour:
   - {fileID: 1992994345}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1136531423
 SpriteRenderer:
@@ -36976,6 +38423,9 @@ MonoBehaviour:
   - {fileID: 1384152867}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1137861883
 SpriteRenderer:
@@ -37234,6 +38684,9 @@ MonoBehaviour:
   - {fileID: 1361201729}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 2
 --- !u!212 &1146033952
 SpriteRenderer:
@@ -37323,6 +38776,9 @@ MonoBehaviour:
   - {fileID: 636401711}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1147369927
 SpriteRenderer:
@@ -37442,6 +38898,9 @@ MonoBehaviour:
   - {fileID: 175778855}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1149373915
 SpriteRenderer:
@@ -37546,6 +39005,9 @@ MonoBehaviour:
   - {fileID: 245945493}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1152160540
 SpriteRenderer:
@@ -37650,6 +39112,9 @@ MonoBehaviour:
   - {fileID: 320397442}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1153652233
 SpriteRenderer:
@@ -37754,6 +39219,9 @@ MonoBehaviour:
   - {fileID: 1693480109}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 201
   movementDirection: 2
 --- !u!212 &1155117403
 SpriteRenderer:
@@ -37858,6 +39326,9 @@ MonoBehaviour:
   - {fileID: 1764755093}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1157482549
 SpriteRenderer:
@@ -37962,6 +39433,9 @@ MonoBehaviour:
   - {fileID: 1911911352}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1159479903
 SpriteRenderer:
@@ -38066,6 +39540,9 @@ MonoBehaviour:
   - {fileID: 1573597951}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1166272749
 SpriteRenderer:
@@ -38170,6 +39647,9 @@ MonoBehaviour:
   - {fileID: 2020659533}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1169943629
 SpriteRenderer:
@@ -38259,6 +39739,9 @@ MonoBehaviour:
   - {fileID: 988161537}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1172002697
 Transform:
@@ -38363,6 +39846,9 @@ MonoBehaviour:
   - {fileID: 1191806709}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1175712215
 SpriteRenderer:
@@ -38482,6 +39968,9 @@ MonoBehaviour:
   - {fileID: 1760840374}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1176873442
 SpriteRenderer:
@@ -38571,6 +40060,9 @@ MonoBehaviour:
   - {fileID: 1973485281}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1181507538
 Transform:
@@ -38690,6 +40182,9 @@ MonoBehaviour:
   - {fileID: 1976049672}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1185265456
 SpriteRenderer:
@@ -38794,6 +40289,9 @@ MonoBehaviour:
   - {fileID: 59647645}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1187065785
 SpriteRenderer:
@@ -38898,6 +40396,9 @@ MonoBehaviour:
   - {fileID: 764246618}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1187938830
 SpriteRenderer:
@@ -39003,6 +40504,9 @@ MonoBehaviour:
   - {fileID: 364151941}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1190669190
 SpriteRenderer:
@@ -39092,6 +40596,9 @@ MonoBehaviour:
   - {fileID: 1982370863}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1191806710
 SpriteRenderer:
@@ -39211,6 +40718,9 @@ MonoBehaviour:
   - {fileID: 2098120355}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1196025263
 SpriteRenderer:
@@ -39315,6 +40825,9 @@ MonoBehaviour:
   - {fileID: 1949997490}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1199320074
 SpriteRenderer:
@@ -39527,6 +41040,9 @@ MonoBehaviour:
   - {fileID: 600268436}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1207088075
 SpriteRenderer:
@@ -39729,6 +41245,9 @@ MonoBehaviour:
   - {fileID: 1870996471}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1209070489
 SpriteRenderer:
@@ -39818,6 +41337,9 @@ MonoBehaviour:
   - {fileID: 1788211976}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1213598922
 SpriteRenderer:
@@ -39937,6 +41459,9 @@ MonoBehaviour:
   - {fileID: 1383758848}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1220084810
 SpriteRenderer:
@@ -40042,6 +41567,9 @@ MonoBehaviour:
   - {fileID: 602939950}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1220529769
 SpriteRenderer:
@@ -40146,6 +41674,9 @@ MonoBehaviour:
   - {fileID: 1370409406}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1221522276
 SpriteRenderer:
@@ -40250,6 +41781,9 @@ MonoBehaviour:
   - {fileID: 86713118}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1222960813
 SpriteRenderer:
@@ -40501,6 +42035,9 @@ MonoBehaviour:
   - {fileID: 363391732}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1231238815
 SpriteRenderer:
@@ -40605,6 +42142,9 @@ MonoBehaviour:
   - {fileID: 1349024982}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1232078709
 SpriteRenderer:
@@ -40967,6 +42507,9 @@ MonoBehaviour:
   - {fileID: 1397875863}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1243648217
 SpriteRenderer:
@@ -41071,6 +42614,9 @@ MonoBehaviour:
   - {fileID: 649633651}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1245452802
 SpriteRenderer:
@@ -41216,6 +42762,9 @@ MonoBehaviour:
   - {fileID: 714674650}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1254363645
 SpriteRenderer:
@@ -41320,6 +42869,9 @@ MonoBehaviour:
   - {fileID: 1870504281}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1257053199
 SpriteRenderer:
@@ -41526,6 +43078,9 @@ MonoBehaviour:
   - {fileID: 1694871863}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1266566131
 SpriteRenderer:
@@ -41615,6 +43170,9 @@ MonoBehaviour:
   - {fileID: 702606527}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1272187813
 SpriteRenderer:
@@ -41904,6 +43462,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282370903}
   m_CullTransparentMesh: 1
+--- !u!1 &1282978865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282978866}
+  - component: {fileID: 1282978868}
+  - component: {fileID: 1282978867}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1282978866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282978865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 689475701}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1282978867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282978865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Collect
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1282978868
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282978865}
+  m_CullTransparentMesh: 1
 --- !u!1 &1286007854
 GameObject:
   m_ObjectHideFlags: 0
@@ -42092,6 +43784,9 @@ MonoBehaviour:
   - {fileID: 654655152}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1292463816
 SpriteRenderer:
@@ -42181,6 +43876,9 @@ MonoBehaviour:
   - {fileID: 1175712214}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1297655184
 SpriteRenderer:
@@ -42300,6 +43998,9 @@ MonoBehaviour:
   - {fileID: 120755984}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1302015056
 SpriteRenderer:
@@ -42479,6 +44180,9 @@ MonoBehaviour:
   - {fileID: 1571775924}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1320463206
 SpriteRenderer:
@@ -42583,6 +44287,9 @@ MonoBehaviour:
   - {fileID: 556346198}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 3
 --- !u!212 &1322995938
 SpriteRenderer:
@@ -42687,6 +44394,9 @@ MonoBehaviour:
   - {fileID: 563484962}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1323440267
 SpriteRenderer:
@@ -42791,6 +44501,9 @@ MonoBehaviour:
   - {fileID: 631642863}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1326063360
 SpriteRenderer:
@@ -42895,6 +44608,9 @@ MonoBehaviour:
   - {fileID: 1521578275}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 201
   movementDirection: 1
 --- !u!212 &1326803101
 SpriteRenderer:
@@ -42984,6 +44700,9 @@ MonoBehaviour:
   - {fileID: 933799737}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1328782047
 SpriteRenderer:
@@ -43104,6 +44823,9 @@ MonoBehaviour:
   - {fileID: 329537822}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1329745189
 SpriteRenderer:
@@ -43208,6 +44930,9 @@ MonoBehaviour:
   - {fileID: 662627965}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1336538348
 SpriteRenderer:
@@ -43298,6 +45023,9 @@ MonoBehaviour:
   - {fileID: 802375004}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1337146100
 SpriteRenderer:
@@ -43402,6 +45130,9 @@ MonoBehaviour:
   - {fileID: 573908901}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1343265534
 Transform:
@@ -43631,6 +45362,9 @@ MonoBehaviour:
   - {fileID: 1190669189}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1349024983
 SpriteRenderer:
@@ -43855,6 +45589,9 @@ MonoBehaviour:
   - {fileID: 1921393263}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1351143892
 SpriteRenderer:
@@ -43959,6 +45696,9 @@ MonoBehaviour:
   - {fileID: 1753187359}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1353850673
 SpriteRenderer:
@@ -44063,6 +45803,9 @@ MonoBehaviour:
   - {fileID: 1159479902}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1358453091
 SpriteRenderer:
@@ -44167,6 +45910,9 @@ MonoBehaviour:
   - {fileID: 1999711709}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1360352381
 SpriteRenderer:
@@ -44271,6 +46017,9 @@ MonoBehaviour:
   - {fileID: 1525099322}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1361104692
 SpriteRenderer:
@@ -44375,6 +46124,9 @@ MonoBehaviour:
   - {fileID: 128800883}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1361201730
 SpriteRenderer:
@@ -44456,7 +46208,7 @@ Transform:
   m_GameObject: {fileID: 1361499436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.07, y: -9.05, z: 0}
+  m_LocalPosition: {x: 16.66, y: -9.05, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44479,6 +46231,9 @@ MonoBehaviour:
   - {fileID: 1827588696}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1361499439
 SpriteRenderer:
@@ -44545,6 +46300,7 @@ GameObject:
   - component: {fileID: 1362801580}
   - component: {fileID: 1362801579}
   - component: {fileID: 1362801578}
+  - component: {fileID: 1362801581}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -44665,6 +46421,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362801576}
   m_CullTransparentMesh: 1
+--- !u!114 &1362801581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362801576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1369824511
 GameObject:
   m_ObjectHideFlags: 0
@@ -44700,6 +46468,9 @@ MonoBehaviour:
   - {fileID: 391001163}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &1369824513
 Transform:
@@ -44819,6 +46590,9 @@ MonoBehaviour:
   - {fileID: 1084926830}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1370409407
 SpriteRenderer:
@@ -44998,6 +46772,9 @@ MonoBehaviour:
   - {fileID: 302260273}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1380010417
 SpriteRenderer:
@@ -45102,6 +46879,9 @@ MonoBehaviour:
   - {fileID: 1963572414}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1381488303
 SpriteRenderer:
@@ -45206,6 +46986,9 @@ MonoBehaviour:
   - {fileID: 310988412}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1383758849
 SpriteRenderer:
@@ -45295,6 +47078,9 @@ MonoBehaviour:
   - {fileID: 1862794653}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1384152868
 SpriteRenderer:
@@ -45414,6 +47200,9 @@ MonoBehaviour:
   - {fileID: 1404787860}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 201
   movementDirection: 2
 --- !u!212 &1388603825
 SpriteRenderer:
@@ -45518,6 +47307,9 @@ MonoBehaviour:
   - {fileID: 1957252385}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1389150761
 SpriteRenderer:
@@ -45607,6 +47399,9 @@ MonoBehaviour:
   - {fileID: 1272187812}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1392748214
 SpriteRenderer:
@@ -45726,6 +47521,9 @@ MonoBehaviour:
   - {fileID: 494251205}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1394424222
 SpriteRenderer:
@@ -45830,6 +47628,9 @@ MonoBehaviour:
   - {fileID: 404326166}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1395795650
 SpriteRenderer:
@@ -45934,6 +47735,9 @@ MonoBehaviour:
   - {fileID: 2007631692}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1397875864
 SpriteRenderer:
@@ -46038,6 +47842,9 @@ MonoBehaviour:
   - {fileID: 14659318}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1404787861
 SpriteRenderer:
@@ -46127,6 +47934,9 @@ MonoBehaviour:
   - {fileID: 129621015}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1410292560
 SpriteRenderer:
@@ -46246,6 +48056,9 @@ MonoBehaviour:
   - {fileID: 1949151307}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1417298024
 SpriteRenderer:
@@ -46509,6 +48322,9 @@ MonoBehaviour:
   - {fileID: 1353850672}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1430381248
 SpriteRenderer:
@@ -46590,7 +48406,7 @@ Transform:
   m_GameObject: {fileID: 1431938609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.95, y: -5.04, z: 0}
+  m_LocalPosition: {x: 26.73, y: -5.03, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46613,6 +48429,9 @@ MonoBehaviour:
   - {fileID: 485630476}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1431938612
 SpriteRenderer:
@@ -46702,6 +48521,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1434668074
 SpriteRenderer:
@@ -46771,110 +48593,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1344068544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1447917328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1447917329}
-  - component: {fileID: 1447917331}
-  - component: {fileID: 1447917330}
-  m_Layer: 0
-  m_Name: forest121 (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1447917329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447917328}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.66, y: -9.05, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 275483717}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447917330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447917328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aeb3ad4da2cab947ab61a1939093b76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  nextTiles:
-  - {fileID: 33957577}
-  isCrossway: 0
-  isSpawnPoint: 0
-  movementDirection: 0
---- !u!212 &1447917331
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447917328}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
-  m_Color: {r: 0.13995194, g: 0.8018868, b: 0.16345981, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1450267285
 GameObject:
   m_ObjectHideFlags: 0
@@ -47001,6 +48719,9 @@ MonoBehaviour:
   - {fileID: 252036449}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1458686425
 SpriteRenderer:
@@ -47105,6 +48826,9 @@ MonoBehaviour:
   - {fileID: 845824016}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1466719122
 SpriteRenderer:
@@ -47245,6 +48969,9 @@ MonoBehaviour:
   - {fileID: 761106251}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1468919385
 SpriteRenderer:
@@ -47349,6 +49076,9 @@ MonoBehaviour:
   - {fileID: 1867059070}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1473620659
 SpriteRenderer:
@@ -47587,6 +49317,9 @@ MonoBehaviour:
   - {fileID: 71103191}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1486724892
 SpriteRenderer:
@@ -47752,6 +49485,9 @@ MonoBehaviour:
   - {fileID: 1172002696}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!4 &1493004374
 Transform:
@@ -48005,6 +49741,9 @@ MonoBehaviour:
   - {fileID: 256907104}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1493751554
 SpriteRenderer:
@@ -48196,6 +49935,9 @@ MonoBehaviour:
   - {fileID: 365541790}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1498170869
 SpriteRenderer:
@@ -48300,6 +50042,9 @@ MonoBehaviour:
   - {fileID: 2072666231}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1506227161
 SpriteRenderer:
@@ -48381,7 +50126,7 @@ Transform:
   m_GameObject: {fileID: 1509432897}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.44, y: -3.07, z: 0}
+  m_LocalPosition: {x: 11.59, y: -3.01, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48404,6 +50149,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1509432900
 SpriteRenderer:
@@ -48508,6 +50256,9 @@ MonoBehaviour:
   - {fileID: 408930737}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1510056753
 SpriteRenderer:
@@ -48612,6 +50363,9 @@ MonoBehaviour:
   - {fileID: 1549222920}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1510699000
 SpriteRenderer:
@@ -48716,6 +50470,9 @@ MonoBehaviour:
   - {fileID: 1498170868}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1510905716
 SpriteRenderer:
@@ -48805,6 +50562,9 @@ MonoBehaviour:
   - {fileID: 1623452964}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1511762543
 SpriteRenderer:
@@ -48909,6 +50669,9 @@ MonoBehaviour:
   - {fileID: 186359769}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 0
 --- !u!212 &1512291792
 SpriteRenderer:
@@ -49028,6 +50791,9 @@ MonoBehaviour:
   - {fileID: 838209804}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1514265073
 SpriteRenderer:
@@ -49117,6 +50883,9 @@ MonoBehaviour:
   - {fileID: 647482135}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 1
 --- !u!212 &1517865614
 SpriteRenderer:
@@ -49236,6 +51005,9 @@ MonoBehaviour:
   - {fileID: 1187065784}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1521578276
 SpriteRenderer:
@@ -49340,6 +51112,9 @@ MonoBehaviour:
   - {fileID: 140092682}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1525099323
 SpriteRenderer:
@@ -49444,6 +51219,9 @@ MonoBehaviour:
   - {fileID: 723153657}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1531272232
 SpriteRenderer:
@@ -49533,6 +51311,9 @@ MonoBehaviour:
   - {fileID: 1856448979}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1533761739
 SpriteRenderer:
@@ -49637,6 +51418,9 @@ MonoBehaviour:
   - {fileID: 751805116}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1542314266
 SpriteRenderer:
@@ -49718,6 +51502,7 @@ GameObject:
   - component: {fileID: 1544272754}
   - component: {fileID: 1544272753}
   - component: {fileID: 1544272752}
+  - component: {fileID: 1544272755}
   m_Layer: 5
   m_Name: MinusButton
   m_TagString: Untagged
@@ -49826,6 +51611,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544272750}
   m_CullTransparentMesh: 1
+--- !u!114 &1544272755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544272750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1547126592
 GameObject:
   m_ObjectHideFlags: 0
@@ -49876,6 +51673,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1547126595
 SpriteRenderer:
@@ -49980,6 +51780,9 @@ MonoBehaviour:
   - {fileID: 996485871}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1549222921
 SpriteRenderer:
@@ -50069,6 +51872,9 @@ MonoBehaviour:
   - {fileID: 2057102573}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &1550628261
 Transform:
@@ -50188,6 +51994,9 @@ MonoBehaviour:
   - {fileID: 264806601}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1561577942
 SpriteRenderer:
@@ -50292,6 +52101,9 @@ MonoBehaviour:
   - {fileID: 1688698655}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1569730614
 SpriteRenderer:
@@ -50396,6 +52208,9 @@ MonoBehaviour:
   - {fileID: 1825178124}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1570228793
 SpriteRenderer:
@@ -50500,6 +52315,9 @@ MonoBehaviour:
   - {fileID: 1812797863}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1571775925
 SpriteRenderer:
@@ -50589,6 +52407,9 @@ MonoBehaviour:
   - {fileID: 649190307}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &1573597952
 Transform:
@@ -50708,6 +52529,9 @@ MonoBehaviour:
   - {fileID: 1098748854}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1573894560
 SpriteRenderer:
@@ -50936,6 +52760,9 @@ MonoBehaviour:
   - {fileID: 1266566130}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1577651372
 SpriteRenderer:
@@ -51040,6 +52867,9 @@ MonoBehaviour:
   - {fileID: 296767518}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1584631298
 SpriteRenderer:
@@ -51182,6 +53012,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1589541162
 SpriteRenderer:
@@ -51286,6 +53119,9 @@ MonoBehaviour:
   - {fileID: 270236086}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1597408662
 SpriteRenderer:
@@ -51465,6 +53301,9 @@ MonoBehaviour:
   - {fileID: 1699153347}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1607459084
 SpriteRenderer:
@@ -51546,7 +53385,7 @@ Transform:
   m_GameObject: {fileID: 1609432946}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.34, y: -9.05, z: 0}
+  m_LocalPosition: {x: 14.61, y: -9.05, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51569,6 +53408,9 @@ MonoBehaviour:
   - {fileID: 775437030}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1609432949
 SpriteRenderer:
@@ -51673,6 +53515,9 @@ MonoBehaviour:
   - {fileID: 1692303971}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1610309921
 SpriteRenderer:
@@ -51727,6 +53572,140 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1612188215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612188216}
+  - component: {fileID: 1612188218}
+  - component: {fileID: 1612188217}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1612188216
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612188215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 55811914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1612188217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612188215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Ignore
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1612188218
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612188215}
+  m_CullTransparentMesh: 1
 --- !u!1 &1618619490
 GameObject:
   m_ObjectHideFlags: 0
@@ -51754,7 +53733,7 @@ Transform:
   m_GameObject: {fileID: 1618619490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.42, y: -5.04, z: 0}
+  m_LocalPosition: {x: 23.69, y: -5, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51774,9 +53753,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   nextTiles:
-  - {fileID: 239658306}
+  - {fileID: 1967476576}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1618619493
 SpriteRenderer:
@@ -51881,6 +53863,9 @@ MonoBehaviour:
   - {fileID: 1911971502}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1619173731
 SpriteRenderer:
@@ -51985,6 +53970,9 @@ MonoBehaviour:
   - {fileID: 846094248}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1622410818
 SpriteRenderer:
@@ -52074,6 +54062,9 @@ MonoBehaviour:
   - {fileID: 1328782046}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1623452965
 SpriteRenderer:
@@ -52178,6 +54169,9 @@ MonoBehaviour:
   - {fileID: 516764418}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1623802652
 SpriteRenderer:
@@ -52297,6 +54291,9 @@ MonoBehaviour:
   - {fileID: 1570228792}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1624154904
 SpriteRenderer:
@@ -52401,6 +54398,9 @@ MonoBehaviour:
   - {fileID: 1120992097}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1627361912
 SpriteRenderer:
@@ -52658,6 +54658,9 @@ MonoBehaviour:
   - {fileID: 1337146099}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1637395113
 SpriteRenderer:
@@ -52762,6 +54765,9 @@ MonoBehaviour:
   - {fileID: 1155117402}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1637427891
 SpriteRenderer:
@@ -52851,6 +54857,9 @@ MonoBehaviour:
   - {fileID: 1623802651}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1644189883
 SpriteRenderer:
@@ -52970,6 +54979,9 @@ MonoBehaviour:
   - {fileID: 179264623}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1647621610
 SpriteRenderer:
@@ -53216,6 +55228,9 @@ MonoBehaviour:
   - {fileID: 1468919384}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1650979479
 SpriteRenderer:
@@ -53341,6 +55356,9 @@ MonoBehaviour:
   - {fileID: 985300276}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1673338456
 SpriteRenderer:
@@ -53548,6 +55566,9 @@ MonoBehaviour:
   - {fileID: 1054688119}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1676928363
 SpriteRenderer:
@@ -53661,7 +55682,7 @@ Transform:
   m_GameObject: {fileID: 1685166532}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.83, y: -5.04, z: 0}
+  m_LocalPosition: {x: 27.73, y: -5.03, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53684,6 +55705,9 @@ MonoBehaviour:
   - {fileID: 1431938611}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1685166535
 SpriteRenderer:
@@ -53824,6 +55848,9 @@ MonoBehaviour:
   - {fileID: 1078295977}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1688698656
 SpriteRenderer:
@@ -53928,6 +55955,9 @@ MonoBehaviour:
   - {fileID: 1157482548}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1692303972
 SpriteRenderer:
@@ -54032,6 +56062,9 @@ MonoBehaviour:
   - {fileID: 469916055}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1693241886
 SpriteRenderer:
@@ -54136,6 +56169,9 @@ MonoBehaviour:
   - {fileID: 2054425158}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1693480110
 SpriteRenderer:
@@ -54240,6 +56276,9 @@ MonoBehaviour:
   - {fileID: 739606991}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1694871864
 SpriteRenderer:
@@ -54431,6 +56470,9 @@ MonoBehaviour:
   - {fileID: 1650979478}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 3
 --- !u!212 &1695656550
 SpriteRenderer:
@@ -54613,6 +56655,9 @@ MonoBehaviour:
   - {fileID: 13501558}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &1698077724
 Transform:
@@ -54732,6 +56777,9 @@ MonoBehaviour:
   - {fileID: 2086433782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1699153348
 SpriteRenderer:
@@ -54836,6 +56884,9 @@ MonoBehaviour:
   - {fileID: 1069824972}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1699264576
 SpriteRenderer:
@@ -55093,6 +57144,7 @@ RectTransform:
   m_Children:
   - {fileID: 382228153}
   - {fileID: 578525431}
+  - {fileID: 1885649266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -55261,6 +57313,9 @@ MonoBehaviour:
   - {fileID: 1806596958}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1710895038
 SpriteRenderer:
@@ -55365,6 +57420,9 @@ MonoBehaviour:
   - {fileID: 2022009268}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1716145479
 SpriteRenderer:
@@ -55469,6 +57527,9 @@ MonoBehaviour:
   - {fileID: 1329745188}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1717932208
 SpriteRenderer:
@@ -55573,6 +57634,9 @@ MonoBehaviour:
   - {fileID: 1146033951}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1720495357
 SpriteRenderer:
@@ -55677,6 +57741,9 @@ MonoBehaviour:
   - {fileID: 1811415019}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1722839281
 SpriteRenderer:
@@ -55781,6 +57848,9 @@ MonoBehaviour:
   - {fileID: 1243648216}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 2
 --- !u!212 &1726695140
 SpriteRenderer:
@@ -55885,6 +57955,9 @@ MonoBehaviour:
   - {fileID: 974197386}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1730722596
 SpriteRenderer:
@@ -56104,6 +58177,9 @@ MonoBehaviour:
   - {fileID: 971218804}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1735708240
 SpriteRenderer:
@@ -56208,6 +58284,9 @@ MonoBehaviour:
   - {fileID: 812049292}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1741762777
 SpriteRenderer:
@@ -56312,6 +58391,9 @@ MonoBehaviour:
   - {fileID: 1858198455}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1748948835
 SpriteRenderer:
@@ -56588,6 +58670,9 @@ MonoBehaviour:
   - {fileID: 2087722786}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1753187360
 SpriteRenderer:
@@ -56692,6 +58777,9 @@ MonoBehaviour:
   - {fileID: 123767790}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1754581786
 SpriteRenderer:
@@ -56796,6 +58884,9 @@ MonoBehaviour:
   - {fileID: 892200939}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1760840375
 SpriteRenderer:
@@ -56900,6 +58991,9 @@ MonoBehaviour:
   - {fileID: 429956873}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1763501165
 SpriteRenderer:
@@ -57004,6 +59098,9 @@ MonoBehaviour:
   - {fileID: 701647239}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1764755094
 SpriteRenderer:
@@ -57109,6 +59206,9 @@ MonoBehaviour:
   - {fileID: 1619173730}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1765281526
 SpriteRenderer:
@@ -57334,6 +59434,9 @@ MonoBehaviour:
   - {fileID: 766891363}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1783548957
 SpriteRenderer:
@@ -57423,6 +59526,9 @@ MonoBehaviour:
   - {fileID: 1573597951}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1783996189
 Transform:
@@ -57504,6 +59610,7 @@ GameObject:
   - component: {fileID: 1784769091}
   - component: {fileID: 1784769090}
   - component: {fileID: 1784769089}
+  - component: {fileID: 1784769092}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -57624,6 +59731,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784769087}
   m_CullTransparentMesh: 1
+--- !u!114 &1784769092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784769087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258125d29f59cad4ab00a9b2f0214854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1788211974
 GameObject:
   m_ObjectHideFlags: 0
@@ -57674,6 +59793,9 @@ MonoBehaviour:
   - {fileID: 1380010416}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1788211977
 SpriteRenderer:
@@ -57778,6 +59900,9 @@ MonoBehaviour:
   - {fileID: 600879728}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1789110240
 SpriteRenderer:
@@ -57867,6 +59992,9 @@ MonoBehaviour:
   - {fileID: 0}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!4 &1792605013
 Transform:
@@ -57963,7 +60091,7 @@ Transform:
   m_GameObject: {fileID: 1796247563}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.13, y: -3.07, z: 0}
+  m_LocalPosition: {x: 14.61, y: -3.01, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57986,6 +60114,9 @@ MonoBehaviour:
   - {fileID: 1095342654}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1796247566
 SpriteRenderer:
@@ -58192,6 +60323,9 @@ MonoBehaviour:
   - {fileID: 1846923412}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1806596959
 SpriteRenderer:
@@ -58296,6 +60430,9 @@ MonoBehaviour:
   - {fileID: 1561577941}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1810112752
 SpriteRenderer:
@@ -58385,6 +60522,9 @@ MonoBehaviour:
   - {fileID: 990383982}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1811415020
 SpriteRenderer:
@@ -58504,6 +60644,9 @@ MonoBehaviour:
   - {fileID: 2140691594}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1812797864
 SpriteRenderer:
@@ -58696,6 +60839,9 @@ MonoBehaviour:
   - {fileID: 657501171}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1817576948
 SpriteRenderer:
@@ -58800,6 +60946,9 @@ MonoBehaviour:
   - {fileID: 284707902}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1825178125
 SpriteRenderer:
@@ -58881,7 +61030,7 @@ Transform:
   m_GameObject: {fileID: 1827588694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.2, y: -9.05, z: 0}
+  m_LocalPosition: {x: 15.62, y: -9.06, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58904,6 +61053,9 @@ MonoBehaviour:
   - {fileID: 1609432948}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1827588697
 SpriteRenderer:
@@ -59008,6 +61160,9 @@ MonoBehaviour:
   - {fileID: 249758870}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1833351431
 SpriteRenderer:
@@ -59112,6 +61267,9 @@ MonoBehaviour:
   - {fileID: 1899396622}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1834829201
 SpriteRenderer:
@@ -59295,6 +61453,9 @@ MonoBehaviour:
   - {fileID: 1917554430}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1838649493
 SpriteRenderer:
@@ -59399,6 +61560,9 @@ MonoBehaviour:
   - {fileID: 920227436}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1838778259
 SpriteRenderer:
@@ -59503,6 +61667,9 @@ MonoBehaviour:
   - {fileID: 603723523}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1843584105
 SpriteRenderer:
@@ -59607,6 +61774,9 @@ MonoBehaviour:
   - {fileID: 1855680278}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1846923413
 SpriteRenderer:
@@ -59711,6 +61881,9 @@ MonoBehaviour:
   - {fileID: 1923397154}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &1847717372
 SpriteRenderer:
@@ -59800,6 +61973,9 @@ MonoBehaviour:
   - {fileID: 957680330}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1848331650
 SpriteRenderer:
@@ -59919,6 +62095,9 @@ MonoBehaviour:
   - {fileID: 1834829200}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1851886629
 SpriteRenderer:
@@ -60023,6 +62202,9 @@ MonoBehaviour:
   - {fileID: 373224361}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1853267431
 SpriteRenderer:
@@ -60127,6 +62309,9 @@ MonoBehaviour:
   - {fileID: 1048976259}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1855680279
 SpriteRenderer:
@@ -60216,6 +62401,9 @@ MonoBehaviour:
   - {fileID: 1673338455}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1856448980
 SpriteRenderer:
@@ -60461,6 +62649,9 @@ MonoBehaviour:
   - {fileID: 2012709628}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1858198456
 SpriteRenderer:
@@ -60699,6 +62890,9 @@ MonoBehaviour:
   - {fileID: 1848331649}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1862794654
 SpriteRenderer:
@@ -60818,6 +63012,9 @@ MonoBehaviour:
   - {fileID: 1054261700}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1863632269
 SpriteRenderer:
@@ -60922,6 +63119,9 @@ MonoBehaviour:
   - {fileID: 1029999962}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1867059071
 SpriteRenderer:
@@ -61026,6 +63226,9 @@ MonoBehaviour:
   - {fileID: 1394424221}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1870504282
 SpriteRenderer:
@@ -61130,6 +63333,9 @@ MonoBehaviour:
   - {fileID: 1989307956}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1870996472
 SpriteRenderer:
@@ -61234,6 +63440,9 @@ MonoBehaviour:
   - {fileID: 1693241885}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1872456846
 SpriteRenderer:
@@ -61338,6 +63547,9 @@ MonoBehaviour:
   - {fileID: 1627361911}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1873761233
 SpriteRenderer:
@@ -61442,6 +63654,9 @@ MonoBehaviour:
   - {fileID: 2091929309}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1880972513
 SpriteRenderer:
@@ -61546,6 +63761,9 @@ MonoBehaviour:
   - {fileID: 445981165}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1881572264
 SpriteRenderer:
@@ -61650,6 +63868,9 @@ MonoBehaviour:
   - {fileID: 1735708239}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1885434599
 SpriteRenderer:
@@ -61704,6 +63925,106 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1885649265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885649266}
+  - component: {fileID: 1885649268}
+  - component: {fileID: 1885649267}
+  - component: {fileID: 1885649269}
+  m_Layer: 5
+  m_Name: CollectItemPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1885649266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885649265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1927368194}
+  - {fileID: 530052792}
+  - {fileID: 382144867}
+  - {fileID: 158428883}
+  - {fileID: 689475701}
+  - {fileID: 55811914}
+  m_Father: {fileID: 1705547994}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 45, y: -20.059021}
+  m_SizeDelta: {x: -1355.5226, y: -705.6255}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1885649267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885649265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 28ee4d8efe55a114e96f49fc57b68742, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1885649268
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885649265}
+  m_CullTransparentMesh: 1
+--- !u!114 &1885649269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885649265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75089e7ded33bc040b210019a2f9ffa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectItemPanel: {fileID: 1885649265}
+  itemName: {fileID: 158428884}
+  quantityText: {fileID: 530052793}
+  itemIcon: {fileID: 382144868}
+  ignoreButton: {fileID: 55811915}
+  collectButton: {fileID: 689475702}
 --- !u!1 &1886041302
 GameObject:
   m_ObjectHideFlags: 0
@@ -61754,6 +64075,9 @@ MonoBehaviour:
   - {fileID: 454915145}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1886041305
 SpriteRenderer:
@@ -61858,6 +64182,9 @@ MonoBehaviour:
   - {fileID: 1716145478}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1889219264
 SpriteRenderer:
@@ -61962,6 +64289,9 @@ MonoBehaviour:
   - {fileID: 2000214630}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1895096773
 SpriteRenderer:
@@ -62066,6 +64396,9 @@ MonoBehaviour:
   - {fileID: 1754581785}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1899396623
 SpriteRenderer:
@@ -62170,6 +64503,9 @@ MonoBehaviour:
   - {fileID: 407225441}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1900433800
 SpriteRenderer:
@@ -62259,6 +64595,9 @@ MonoBehaviour:
   - {fileID: 1542314265}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 1
 --- !u!212 &1905688814
 SpriteRenderer:
@@ -62435,6 +64774,9 @@ MonoBehaviour:
   - {fileID: 1326063359}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1911911353
 SpriteRenderer:
@@ -62539,6 +64881,9 @@ MonoBehaviour:
   - {fileID: 395888303}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1911971503
 SpriteRenderer:
@@ -62643,6 +64988,9 @@ MonoBehaviour:
   - {fileID: 625650871}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1912955876
 SpriteRenderer:
@@ -62747,6 +65095,9 @@ MonoBehaviour:
   - {fileID: 1037907231}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1915617682
 SpriteRenderer:
@@ -62851,6 +65202,9 @@ MonoBehaviour:
   - {fileID: 1607459083}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1917554431
 SpriteRenderer:
@@ -62932,7 +65286,7 @@ Transform:
   m_GameObject: {fileID: 1921220926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.05, y: -3.07, z: 0}
+  m_LocalPosition: {x: 15.63, y: -3, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62955,6 +65309,9 @@ MonoBehaviour:
   - {fileID: 1796247565}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!212 &1921220929
 SpriteRenderer:
@@ -63059,6 +65416,9 @@ MonoBehaviour:
   - {fileID: 1886041304}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1921393264
 SpriteRenderer:
@@ -63163,6 +65523,9 @@ MonoBehaviour:
   - {fileID: 2068570762}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1922920130
 SpriteRenderer:
@@ -63267,6 +65630,9 @@ MonoBehaviour:
   - {fileID: 1900433799}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1923397155
 SpriteRenderer:
@@ -63371,6 +65737,9 @@ MonoBehaviour:
   - {fileID: 1417298023}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1925202684
 SpriteRenderer:
@@ -63475,6 +65844,9 @@ MonoBehaviour:
   - {fileID: 458332791}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1925345195
 SpriteRenderer:
@@ -63529,6 +65901,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1927368193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927368194}
+  - component: {fileID: 1927368196}
+  - component: {fileID: 1927368195}
+  m_Layer: 5
+  m_Name: prompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1927368194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927368193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1885649266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -25, y: 110}
+  m_SizeDelta: {x: 196.35, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1927368195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927368193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You've found
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 542269b603878b940b672675e85e7d2a, type: 2}
+  m_sharedMaterial: {fileID: 5919924253933823417, guid: 542269b603878b940b672675e85e7d2a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -38.764343, y: 0, z: -0.00024414062, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1927368196
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927368193}
+  m_CullTransparentMesh: 1
 --- !u!1 &1930578724
 GameObject:
   m_ObjectHideFlags: 0
@@ -63579,6 +66086,9 @@ MonoBehaviour:
   - {fileID: 1458686424}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1930578727
 SpriteRenderer:
@@ -63683,6 +66193,9 @@ MonoBehaviour:
   - {fileID: 1811415019}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1933460647
 SpriteRenderer:
@@ -63787,6 +66300,9 @@ MonoBehaviour:
   - {fileID: 338072533}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1934539729
 SpriteRenderer:
@@ -63891,6 +66407,9 @@ MonoBehaviour:
   - {fileID: 1320463205}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1937097252
 SpriteRenderer:
@@ -64222,6 +66741,9 @@ MonoBehaviour:
   - {fileID: 1082053344}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1943480646
 SpriteRenderer:
@@ -64311,6 +66833,9 @@ MonoBehaviour:
   - {fileID: 1343265533}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &1948700147
 Transform:
@@ -64430,6 +66955,9 @@ MonoBehaviour:
   - {fileID: 1079491871}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1949149857
 SpriteRenderer:
@@ -64534,6 +67062,9 @@ MonoBehaviour:
   - {fileID: 454284345}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1949151308
 SpriteRenderer:
@@ -64638,6 +67169,9 @@ MonoBehaviour:
   - {fileID: 1222960812}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1949997491
 SpriteRenderer:
@@ -64727,6 +67261,9 @@ MonoBehaviour:
   - {fileID: 2137244144}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1951844051
 SpriteRenderer:
@@ -64846,6 +67383,9 @@ MonoBehaviour:
   - {fileID: 1089816180}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1957252386
 SpriteRenderer:
@@ -64950,6 +67490,9 @@ MonoBehaviour:
   - {fileID: 1220529768}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1962205078
 SpriteRenderer:
@@ -65054,6 +67597,9 @@ MonoBehaviour:
   - {fileID: 1336538347}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1962813447
 SpriteRenderer:
@@ -65158,6 +67704,9 @@ MonoBehaviour:
   - {fileID: 1085213521}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1962815767
 SpriteRenderer:
@@ -65262,6 +67811,9 @@ MonoBehaviour:
   - {fileID: 1622410817}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1963572415
 SpriteRenderer:
@@ -65351,6 +67903,9 @@ MonoBehaviour:
   - {fileID: 1085827329}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 204
   movementDirection: 1
 --- !u!212 &1965579544
 SpriteRenderer:
@@ -65447,7 +68002,7 @@ Transform:
   m_GameObject: {fileID: 1966440348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.69, y: -3.1, z: 0}
+  m_LocalPosition: {x: 17.63, y: -3.02, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65470,6 +68025,9 @@ MonoBehaviour:
   - {fileID: 441066520}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1966440351
 SpriteRenderer:
@@ -65575,6 +68133,9 @@ MonoBehaviour:
   - {fileID: 1245452801}
   isCrossway: 1
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1967476577
 SpriteRenderer:
@@ -65679,6 +68240,9 @@ MonoBehaviour:
   - {fileID: 1153652232}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1972981507
 SpriteRenderer:
@@ -65768,6 +68332,9 @@ MonoBehaviour:
   - {fileID: 1792605012}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 203
   movementDirection: 1
 --- !u!4 &1973485282
 Transform:
@@ -65887,6 +68454,9 @@ MonoBehaviour:
   - {fileID: 1741762776}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1976049673
 SpriteRenderer:
@@ -65991,6 +68561,9 @@ MonoBehaviour:
   - {fileID: 1468919384}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &1980323379
 SpriteRenderer:
@@ -66080,6 +68653,9 @@ MonoBehaviour:
   - {fileID: 719598726}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1982370864
 SpriteRenderer:
@@ -66184,6 +68760,9 @@ MonoBehaviour:
   - {fileID: 664444476}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1983024263
 SpriteRenderer:
@@ -66303,6 +68882,9 @@ MonoBehaviour:
   - {fileID: 1647621609}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1987923161
 SpriteRenderer:
@@ -66407,6 +68989,9 @@ MonoBehaviour:
   - {fileID: 1473620658}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &1989307957
 SpriteRenderer:
@@ -66496,6 +69081,9 @@ MonoBehaviour:
   - {fileID: 576260070}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!4 &1992994346
 Transform:
@@ -66615,6 +69203,9 @@ MonoBehaviour:
   - {fileID: 582244994}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &1996268217
 SpriteRenderer:
@@ -66719,6 +69310,9 @@ MonoBehaviour:
   - {fileID: 1937097251}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &1999711710
 SpriteRenderer:
@@ -66823,6 +69417,9 @@ MonoBehaviour:
   - {fileID: 297794673}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2000214631
 SpriteRenderer:
@@ -66927,6 +69524,9 @@ MonoBehaviour:
   - {fileID: 1962205077}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2006730382
 SpriteRenderer:
@@ -67016,6 +69616,9 @@ MonoBehaviour:
   - {fileID: 1137861882}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2007070288
 SpriteRenderer:
@@ -67135,6 +69738,9 @@ MonoBehaviour:
   - {fileID: 57012317}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2007631693
 SpriteRenderer:
@@ -67239,6 +69845,9 @@ MonoBehaviour:
   - {fileID: 1925202683}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2012709629
 SpriteRenderer:
@@ -67343,6 +69952,9 @@ MonoBehaviour:
   - {fileID: 472087478}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2020659534
 SpriteRenderer:
@@ -67447,6 +70059,9 @@ MonoBehaviour:
   - {fileID: 1833351430}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &2022009269
 SpriteRenderer:
@@ -67551,6 +70166,9 @@ MonoBehaviour:
   - {fileID: 768935891}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2040530011
 SpriteRenderer:
@@ -67843,6 +70461,9 @@ MonoBehaviour:
   - {fileID: 996528655}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2054334664
 SpriteRenderer:
@@ -67947,6 +70568,9 @@ MonoBehaviour:
   - {fileID: 730979975}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2054425159
 SpriteRenderer:
@@ -68036,6 +70660,9 @@ MonoBehaviour:
   - {fileID: 1369824512}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!4 &2057102574
 Transform:
@@ -68155,6 +70782,9 @@ MonoBehaviour:
   - {fileID: 1257053198}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2060366377
 SpriteRenderer:
@@ -68259,6 +70889,9 @@ MonoBehaviour:
   - {fileID: 102646963}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2068570763
 SpriteRenderer:
@@ -68363,6 +70996,9 @@ MonoBehaviour:
   - {fileID: 1361104691}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2072259152
 SpriteRenderer:
@@ -68467,6 +71103,9 @@ MonoBehaviour:
   - {fileID: 824208902}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2072666232
 SpriteRenderer:
@@ -68571,6 +71210,9 @@ MonoBehaviour:
   - {fileID: 676150069}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &2077630324
 SpriteRenderer:
@@ -68675,6 +71317,9 @@ MonoBehaviour:
   - {fileID: 1881572263}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2084131767
 SpriteRenderer:
@@ -68779,6 +71424,9 @@ MonoBehaviour:
   - {fileID: 327665091}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2086433783
 SpriteRenderer:
@@ -68883,6 +71531,9 @@ MonoBehaviour:
   - {fileID: 1962815766}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2087722787
 SpriteRenderer:
@@ -68987,6 +71638,9 @@ MonoBehaviour:
   - {fileID: 1934539728}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2091929310
 SpriteRenderer:
@@ -69091,6 +71745,9 @@ MonoBehaviour:
   - {fileID: 524279899}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2095228528
 SpriteRenderer:
@@ -69195,6 +71852,9 @@ MonoBehaviour:
   - {fileID: 1949149856}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2096999691
 SpriteRenderer:
@@ -69299,6 +71959,9 @@ MonoBehaviour:
   - {fileID: 1048699391}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2098120356
 SpriteRenderer:
@@ -69488,6 +72151,9 @@ MonoBehaviour:
   - {fileID: 1031755903}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 1
 --- !u!212 &2104781718
 SpriteRenderer:
@@ -69757,6 +72423,9 @@ MonoBehaviour:
   - {fileID: 217599782}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: 202
   movementDirection: 2
 --- !u!212 &2120551740
 SpriteRenderer:
@@ -69861,6 +72530,9 @@ MonoBehaviour:
   - {fileID: 1028726978}
   isCrossway: 0
   isSpawnPoint: 1
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 4
 --- !u!212 &2122682783
 SpriteRenderer:
@@ -70011,6 +72683,9 @@ MonoBehaviour:
   - {fileID: 2054334663}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2132591576
 SpriteRenderer:
@@ -70100,6 +72775,9 @@ MonoBehaviour:
   - {fileID: 1297655183}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 3
 --- !u!212 &2137244145
 SpriteRenderer:
@@ -70219,6 +72897,9 @@ MonoBehaviour:
   - {fileID: 522294587}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 0
 --- !u!212 &2140691595
 SpriteRenderer:
@@ -70323,6 +73004,9 @@ MonoBehaviour:
   - {fileID: 1853267430}
   isCrossway: 0
   isSpawnPoint: 0
+  isEventTile: 0
+  eventType: 0
+  itemType: -1
   movementDirection: 2
 --- !u!212 &2142815766
 SpriteRenderer:

@@ -7,5 +7,6 @@ public enum EventType
     SandCastle,
     Blacksmith,
     Shop, 
-    Bookstore
+    Bookstore,
+    COLLECT_ITEM
 }

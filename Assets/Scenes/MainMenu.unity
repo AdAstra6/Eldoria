@@ -3472,6 +3472,8 @@ MonoBehaviour:
   scrollOpenSFX: {fileID: 8300000, guid: 5a5beeeb10520de418adeb5996c3b046, type: 3}
   diceRollSFX: {fileID: 8300000, guid: cc562cb1cafdd444989f120c12be8f80, type: 3}
   penaltySFX: {fileID: 8300000, guid: 152b0644ae52173409ac9569921007d7, type: 3}
+  UseItemSFX: {fileID: 8300000, guid: bbc1e6d14b857e04e9929d93cd4e7e8e, type: 3}
+  GiveItemSFX: {fileID: 8300000, guid: 32ce38eaf9075954da41814953c38b3f, type: 3}
 --- !u!4 &1787693903
 Transform:
   m_ObjectHideFlags: 0
@@ -3550,12 +3552,12 @@ MonoBehaviour:
     Developers Manager, Game Mechanics, Map Design\r\n\r\n-Khiter Nourelimene \u2013
     Team Leader, Character Designer, Asset and Art, Documentation\r\n\r\n-Bouba Yacine
     \u2013 Game's Lore, Game Logic, Developer's Team\r\n\r\n-Bouhoum Adlen \u2013
-    UI/UX Designer, Developer's Team\r\n\r\n-Bouhoum Anes \u2013 Map Designer, Movement's
-    Logic\r\n\r\n-Belloul Zinnedine \u2013 Sound Engineer, Developer's Team\r\n\r\nTools
-    Used:\r\n\r\n-Development: Visual Studio Code, Visual Studio, Unity\r\n\r\n-Design:
-    Aseprite, Figma, Adobe Illustrator\r\n\r\nSupervision & Affiliation:\r\n\r\n-Supervised
-    by Mr. Zouana and Mr. Boudi\r\n\r\n-Developed at ESI (\xC9cole Nationale Sup\xE9rieure
-    d'Informatique)"
+    UI/UX Designer, Developer's Team\r\n\r\n-Bouhoum Anes \u2013 UI/UX Designer,
+    Developer's Team\r\r\n\r\n-Belloul Zinnedine \u2013 Sound Engineer, Developer's
+    Team\r\n\r\nTools Used:\r\n\r\n-Development: Visual Studio Code, Visual Studio,
+    Unity\r\n\r\n-Design: Aseprite, Figma, Adobe Illustrator\r\n\r\nSupervision &
+    Affiliation:\r\n\r\n-Supervised by Mr. Zouana and Mr. Boudi\r\n\r\n-Developed
+    at ESI (\xC9cole Nationale Sup\xE9rieure d'Informatique)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 750cadef0f08efa4191e7c15f4bb4713, type: 2}
   m_sharedMaterial: {fileID: -3844770887086051574, guid: 750cadef0f08efa4191e7c15f4bb4713,

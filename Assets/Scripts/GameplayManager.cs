@@ -187,4 +187,8 @@ public class GameplayManager : MonoBehaviour
         ItemInventoryUI.Instance.DisableButtons();
         ItemInventoryUI.Instance.Refresh(Players[currentPlayerIndex].GetInventory());
     }
+    public void AddItemToPlayer(ItemType type,int quantity)
+    {
+        Players[currentPlayerIndex].AddItem(type,quantity);
+    }
 }
