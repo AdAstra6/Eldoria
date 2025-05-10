@@ -18663,7 +18663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &578525431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26340,7 +26340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b0a457446ffb146a8198541e153abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 2
   gameHolder: {fileID: 1862187897}
   piecePrefab: {fileID: 5142181990668469795, guid: 8d91ff89087d93744963570858a1898f,
     type: 3}
