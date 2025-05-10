@@ -185,8 +185,8 @@ public class PuzzleGameManager : MonoBehaviour
         lineRenderer.SetPosition(3, new Vector3(-halfWidth, -halfHeight, borderZ));
 
         // Set the thickness of the border line.
-        lineRenderer.startWidth = 0.3f;
-        lineRenderer.endWidth = 0.3f;
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
 
         // Show the border line.
         lineRenderer.enabled = true;
