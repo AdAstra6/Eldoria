@@ -34,11 +34,11 @@ public class UI_RadarChart : MonoBehaviour {
     {
         Mesh mesh = new Mesh();
 
-        Vector3[] vertices = new Vector3[6];
-        Vector2[] uv = new Vector2[6];
-        int[] triangles = new int[3 * 5];
+        Vector3[] vertices = new Vector3[7];
+        Vector2[] uv = new Vector2[7];
+        int[] triangles = new int[3 * 6];
 
-        float angleIncrement = 360f / 5;
+        float angleIncrement = 360f / 6;
         float radarChartSize = 217f;
         QuestionsCategories[] questionsCategories = (QuestionsCategories[])Enum.GetValues(typeof(QuestionsCategories));
         vertices[0] = Vector3.zero;
@@ -46,11 +46,11 @@ public class UI_RadarChart : MonoBehaviour {
 
         for (int i = 1; i < vertices.Length; i++)
         {
-            categoriesText[i - 1].text = questionsCategories[i].GetKey();
+            categoriesText[i-1].text = questionsCategories[i].GetKey();
             int value;
-            if (CategoriesElo.TryGetValue(questionsCategories[i - 1].GetKey(), out value))
+            if (CategoriesElo.TryGetValue(questionsCategories[i].GetKey(), out value))
             {
-                value = CategoriesElo[questionsCategories[i - 1].GetKey()];
+                value = CategoriesElo[questionsCategories[i].GetKey()];
             }
             else
             {

@@ -130,7 +130,11 @@ public class ProfilePanelManager : MonoBehaviour
         {
             profileManager.UpdateProfile(profiles[currentIndex].Id, name, icon);
         }
-        RefreshProfiles();
+        else
+        {
+            profileManager.UpdateProfile(profiles[currentIndex].Id, profiles[currentIndex].Name, icon);
+        }
+            RefreshProfiles();
         uimanager.CloseOptionPanel();
     }
 }
