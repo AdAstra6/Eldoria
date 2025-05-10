@@ -96,6 +96,7 @@ public class ItemButton : MonoBehaviour
     public void OnUseButtonClick()
     {
         GameplayManager.Instance.UseItem(item.Type);
+        AudioManager.Instance.PlayUseItem();
         Collapse();
     }
 
