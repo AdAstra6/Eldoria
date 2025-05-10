@@ -136,6 +136,7 @@ public class GivePanelUI : MonoBehaviour
     private void OnCancelButtonClick()
     {
         Hide();
+        ItemInventoryUI.Instance.EnableButtons();
     }
 
 }
