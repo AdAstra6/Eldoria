@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip diceRollSFX;
     public AudioClip penaltySFX;
     public AudioClip UseItemSFX;
+    public AudioClip GiveItemSFX;
 
 
 
@@ -85,5 +86,10 @@ public class AudioManager : MonoBehaviour
     public void PlayUseItem()
     {
         PlaySFX(UseItemSFX);
+    }
+
+    public void PlayGiveItem()
+    {
+        PlaySFX(GiveItemSFX);
     }
 }

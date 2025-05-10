@@ -104,6 +104,7 @@ public class ItemButton : MonoBehaviour
     {
         ItemInventoryUI.Instance.DisableButtons();
         GivePanelUI.Instance.Show(item);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonClick);
         Collapse();
     }
     public void OnItemButtonClick()
