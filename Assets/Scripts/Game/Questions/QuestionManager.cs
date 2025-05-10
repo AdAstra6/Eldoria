@@ -42,7 +42,7 @@ public class QuestionManager : MonoBehaviour
     }
 
    
-    public Question GetRandomQuestion(string difficulty, string category)
+    public Question GetRandomQuestion(string difficulty)
     {
         if (questionDB == null || questionDB.questions.Count == 0)
             return null;
@@ -52,10 +52,9 @@ public class QuestionManager : MonoBehaviour
         // Filter questions
         foreach (Question q in questionDB.questions)
         {
-            bool categoryMatch = string.IsNullOrEmpty(category) || q.category == category;
             bool difficultyMatch = string.IsNullOrEmpty(difficulty) || q.difficulty == difficulty;
 
-            if (categoryMatch && difficultyMatch)
+            if (difficultyMatch)
             {
                 filteredQuestions.Add(q);
             }

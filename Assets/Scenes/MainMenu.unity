@@ -3550,12 +3550,12 @@ MonoBehaviour:
     Developers Manager, Game Mechanics, Map Design\r\n\r\n-Khiter Nourelimene \u2013
     Team Leader, Character Designer, Asset and Art, Documentation\r\n\r\n-Bouba Yacine
     \u2013 Game's Lore, Game Logic, Developer's Team\r\n\r\n-Bouhoum Adlen \u2013
-    UI/UX Designer, Developer's Team\r\n\r\n-Bouhoum Anes \u2013 Map Designer, Movement's
-    Logic\r\n\r\n-Belloul Zinnedine \u2013 Sound Engineer, Developer's Team\r\n\r\nTools
-    Used:\r\n\r\n-Development: Visual Studio Code, Visual Studio, Unity\r\n\r\n-Design:
-    Aseprite, Figma, Adobe Illustrator\r\n\r\nSupervision & Affiliation:\r\n\r\n-Supervised
-    by Mr. Zouana and Mr. Boudi\r\n\r\n-Developed at ESI (\xC9cole Nationale Sup\xE9rieure
-    d'Informatique)"
+    UI/UX Designer, Developer's Team\r\n\r\n-Bouhoum Anes \u2013 UI/UX Designer,
+    Developer's Team\r\r\n\r\n-Belloul Zinnedine \u2013 Sound Engineer, Developer's
+    Team\r\n\r\nTools Used:\r\n\r\n-Development: Visual Studio Code, Visual Studio,
+    Unity\r\n\r\n-Design: Aseprite, Figma, Adobe Illustrator\r\n\r\nSupervision &
+    Affiliation:\r\n\r\n-Supervised by Mr. Zouana and Mr. Boudi\r\n\r\n-Developed
+    at ESI (\xC9cole Nationale Sup\xE9rieure d'Informatique)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 750cadef0f08efa4191e7c15f4bb4713, type: 2}
   m_sharedMaterial: {fileID: -3844770887086051574, guid: 750cadef0f08efa4191e7c15f4bb4713,

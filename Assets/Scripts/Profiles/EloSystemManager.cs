@@ -139,6 +139,28 @@ public static class EloSystemManager
         if (profile.Games.Played == 0) return;
         profile.Games.WinRatio = (float)profile.Games.Won / profile.Games.Played;
     }
-
-
+    public static int GetAverageEloForNewGame(List<PlayerProfile> players)
+    {
+        if (players == null || players.Count == 0) return DefaultElo;
+        int totalElo = 0;
+        foreach (PlayerProfile player in players)
+        {
+            totalElo += player.Elo;
+        }
+        return totalElo / players.Count;
+    }
+    public static string GetDifficultyLabel(int elo)
+    {
+        if (elo > 0 && elo < 600) return "easy";
+        else if (elo >= 600 && elo < 1200) return "medium";
+        else if (elo >= 1200) return "hard";
+        else return "unknown";
+    }
+    public static int GetDifficultyValue(int elo)
+    {
+        if (elo > 0 && elo < 600) return 2;
+        else if (elo >= 600 && elo < 1200) return 3;
+        else if (elo >= 1200) return 4;
+        else return 0;
+    }
 }

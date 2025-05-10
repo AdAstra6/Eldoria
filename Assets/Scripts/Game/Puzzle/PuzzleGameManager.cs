@@ -9,8 +9,6 @@ public class PuzzleGameManager : MonoBehaviour
 {
     public static PuzzleGameManager Instance;
     [Header("Game Elements")]
-    [Range(2, 6)]
-    [SerializeField] private int difficulty = 4;
     [SerializeField] private Transform gameHolder;
     [SerializeField] private Transform piecePrefab;
 
@@ -64,7 +62,7 @@ public class PuzzleGameManager : MonoBehaviour
         pieces = new List<Transform>();
 
         // Calculate the size of each jigsaw piece, based on a difficulty setting.
-        dimensions = GetDimensions(jigsawTexture, difficulty);
+        dimensions = GetDimensions(jigsawTexture, EloSystemManager.GetDifficultyValue(GameData.averageElo));
 
         // Create the pieces of the correct size with the correct texture.
         CreateJigsawPieces(jigsawTexture);
