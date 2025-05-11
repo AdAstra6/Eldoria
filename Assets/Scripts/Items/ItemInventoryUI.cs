@@ -11,6 +11,17 @@ public class ItemInventoryUI : MonoBehaviour
     [SerializeField] private GameObject ItemsContainer; // Panel contains inventory UI
     private Button collapseAllButton;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         Instance = this;
@@ -49,6 +60,7 @@ public class ItemInventoryUI : MonoBehaviour
     {
         gameObject.SetActive(false);
         ClearButtons();
+        if (GivePanelUI.Instance == null) GivePanelUI.SetInstance();
         GivePanelUI.Instance.Hide();
     }
     public void Show()

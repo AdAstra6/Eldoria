@@ -127,6 +127,7 @@ public class GameplayManager : MonoBehaviour
 
     public void QuestionAnswered()
     {
+        Players[currentPlayerIndex].Effects.HasHealthProtection = false;
         StartStrategicPhase();
     }
     public void QuestionStarted()

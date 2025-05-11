@@ -30,6 +30,17 @@ public class Tile : MonoBehaviour
         get { return movementDirection; }
         set { movementDirection = value; }
     }
+    private void Start()
+    {
+        if (itemType != ItemType.NONE)
+        {
+            this.isEventTile = true;
+            this.eventType = EventType.COLLECT_ITEM;
+        }
+        if (this.isEventTile) this.type = TileType.EVENT;
+
+    }
+
 
     /* public void TriggerEffect(Player player)
      {
@@ -74,12 +85,12 @@ public class Tile : MonoBehaviour
             Debug.Log("Crossway reached! The player must choose a direction.");
             return null; // Stop movement and wait for player choice
         }
-        if (isEventTile)
+        /**if (isEventTile)
         {
             Debug.Log("Event tile reached! Triggering event.");
             
             return null; // Stop movement and wait for event resolution
-        }
+        } ????????? what is this ?????   */  
         
         return nextTiles.Count > 0 ? nextTiles[0] : null; // Default movement
     }

@@ -25,10 +25,15 @@ public class PlayerItemsManager : MonoBehaviour
     }
     public void UseItem(ItemType item)
     {
-
+        if (!ItemsTypeExtensioin.IsUsable(item))
+        {
+            Debug.Log($"{player.profileData.Name} tried to use an item that is not usable.");
+            return;
+        }
         switch (item)
         {
             case ItemType.HEAL_POTION:
+            case ItemType.HEALING_HERB:
                 player.IncreaseHealth();
                 Debug.Log($"{player.profileData.Name} used a Heal Potion! HP is now {player.CurrentHealth}");
                 break;
@@ -36,6 +41,10 @@ public class PlayerItemsManager : MonoBehaviour
             case ItemType.BONUS_DICE:
                 player.Effects.HasBonusDiceNextTurn = true;
                 Debug.Log($"{player.profileData.Name} used a Bonus Dice! They?ll roll 3 dice next turn.");
+                break;
+            case ItemType.STURDY_SWORD:
+                player.Effects.HasHealthProtection = true;
+                Debug.Log($"{player.profileData.Name} used a Sturdy Sword! They?ll have a sturdy sword next turn.");
                 break;
         }
 
@@ -111,6 +120,7 @@ public class PlayerItemsManager : MonoBehaviour
         {
             Debug.Log($"{player.profileData.Name} does not have a {ItemsTypeExtensioin.GetName(itemType)} to give.");
         }
+        ItemInventoryUI.Instance.Refresh(this.inventory);
     }
     public bool isFull()
     {

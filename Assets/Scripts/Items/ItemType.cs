@@ -6,6 +6,9 @@ public enum ItemType
     NONE = -1,
     HEAL_POTION,
     BONUS_DICE,
+    STURDY_SWORD,
+    HEALING_HERB,
+    
     // Collectable items starts here from 200
     LAVA_STONE = 200,
     COCONUTS,
@@ -86,5 +89,24 @@ public static class ItemsTypeExtensioin
         }
         return sprite;
 
+    }
+    public static bool IsUsable(ItemType itemType)
+    {
+        switch (itemType)
+        {
+            case ItemType.HEAL_POTION:
+            case ItemType.BONUS_DICE:
+            case ItemType.STURDY_SWORD:
+            case ItemType.HEALING_HERB:
+                return true;
+            case ItemType.LAVA_STONE:
+            case ItemType.COCONUTS:
+            case ItemType.LOG:
+            case ItemType.FLOWER:
+            case ItemType.SNOW_MUSHROOM:
+                return false;
+            default:
+                return false;
+        }
     }
 }
