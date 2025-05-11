@@ -28,6 +28,10 @@ public class GivePanelUI : MonoBehaviour
     {
 
         Instance = this;
+        plusButton.onClick.RemoveAllListeners();
+        minusButton.onClick.RemoveAllListeners();
+        giveButton.onClick.RemoveAllListeners();
+        cancelButton.onClick.RemoveAllListeners();
         plusButton.onClick.AddListener(OnPlusButtonClick);
         minusButton.onClick.AddListener(OnMinusButtonClick);
         giveButton.onClick.AddListener(OnGiveButtonClick);
@@ -71,6 +75,8 @@ public class GivePanelUI : MonoBehaviour
             playerNames.Add(player.profileData.Name);
         }
         PlayersDropDown.AddOptions(playerNames);
+        PlayersDropDown.onValueChanged.RemoveAllListeners(); 
+        PlayersDropDown.value = 0; 
         PlayersDropDown.onValueChanged.AddListener(delegate { OnPlayerSelected(PlayersDropDown); });
     }
 
@@ -124,6 +130,7 @@ public class GivePanelUI : MonoBehaviour
         if (currentPlayer != null && targetPlayer != null)
         {
             currentPlayer.Inventory.GiveItem(currentItem.Type, targetPlayer, currentQuantity);
+            //Debug.Log($"{currentPlayer.profileData.Name} gave {currentQuantity} {currentItem.Name}(s) to {targetPlayer.profileData.Name}!");
             AudioManager.Instance.PlayGiveItem();
         }
         else

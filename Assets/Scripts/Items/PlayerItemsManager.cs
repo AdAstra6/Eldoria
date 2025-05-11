@@ -106,7 +106,6 @@ public class PlayerItemsManager : MonoBehaviour
         {
             if (itemToGive.quantity >= quantity)
             {
-                itemToGive.quantity -= quantity;
                 target.Inventory.AddItem(itemType, quantity);
                 RemoveItem(itemType,quantity);
                 Debug.Log($"{player.profileData.Name} gave {quantity} {itemToGive.Name}(s) to {target.profileData.Name}!");
