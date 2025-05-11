@@ -37,7 +37,8 @@ public class EventManager : MonoBehaviour
                 //LoadEventScene("TrapScene");
                 break;
             case EventType.XO_game:
-                //LoadEventScene("HealScene");
+
+                LoadEventScene("XO");
                 break;
             case EventType.SandCastle:
                 //LoadEventScene("TeleportScene");
