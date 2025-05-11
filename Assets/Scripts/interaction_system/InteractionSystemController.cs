@@ -30,6 +30,7 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Puzzle tile!");
                 player.PlayerState = PlayerStats.DOING_PUZZLE;
                 PuzzleGameManager.Instance.StartPuzzleGame();
+                
                 break;
             case TileType.PENALTY:
                 Debug.Log(player.name + " landed on a Penalty tile!");

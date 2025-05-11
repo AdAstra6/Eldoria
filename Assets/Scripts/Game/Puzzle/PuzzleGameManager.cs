@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PuzzleGameManager : MonoBehaviour
 {
     public static PuzzleGameManager Instance;
+    private const float puzzleTime =30.0f;
     [Header("Game Elements")]
     [SerializeField] private Transform gameHolder;
     [SerializeField] private Transform piecePrefab;
@@ -16,6 +17,7 @@ public class PuzzleGameManager : MonoBehaviour
     [SerializeField] private List<Texture2D> imageTextures;
     [SerializeField] private Camera camera;
     [SerializeField] private GameObject Background;
+    [SerializeField] TimerCountDown timerCountDown;
 
 
     private List<Transform> pieces;
@@ -35,6 +37,9 @@ public class PuzzleGameManager : MonoBehaviour
         else Destroy(gameObject);
 
         imageTextures = Resources.LoadAll<Texture2D>("JigsawTextures").ToList();
+        timerCountDown.TimerEnd += () => OnTimeOut();
+        timerCountDown.gameObject.SetActive(false);
+
 
     }
     public void StartPuzzleGame()
@@ -42,8 +47,7 @@ public class PuzzleGameManager : MonoBehaviour
         if (imageTextures == null || imageTextures.Count == 0) { 
             GameFiniched(true);
             return;
-        }
-        
+        }        
         // Pick a random texture
         int randomIndex = Random.Range(0, imageTextures.Count);
         Texture2D randomTexture = imageTextures[randomIndex];
@@ -82,6 +86,11 @@ public class PuzzleGameManager : MonoBehaviour
 
         // The game starts with 0 correct pieces.
         piecesCorrect = 0;
+        // Start the timer
+        timerCountDown.SetTotalTime(puzzleTime);
+        timerCountDown.Restart();
+        timerCountDown.gameObject.SetActive(true);
+
     }
 
     Vector2Int GetDimensions(Texture2D jigsawTexture, int difficulty)
@@ -335,16 +344,26 @@ public class PuzzleGameManager : MonoBehaviour
                 piecesCorrect++;
                 if (piecesCorrect == pieces.Count)
                 {
-                    GameFiniched(true); // puzzle completed
+                    StartCoroutine( GameFiniched(true)); // puzzle completed
                 }
             }
         }
     }
 
-    private void GameFiniched(bool completed)
+    private IEnumerator GameFiniched(bool completed)
     {
-        // Play the victory sound
-        AudioManager.Instance.PlayCorrectAnswer();
+
+        if (completed)
+        {
+            // Play the victory sound
+            AudioManager.Instance.PlayCorrectAnswer();
+        }
+        else
+        {
+            // Play the failure sound
+            AudioManager.Instance.PlayWrongAnswer();
+        }
+        yield return new WaitForSeconds(0.8f);
         foreach (Transform piece in pieces)
         {
             Destroy(piece.gameObject);
@@ -353,7 +372,12 @@ public class PuzzleGameManager : MonoBehaviour
 
         gameHolder.GetComponent<LineRenderer>().enabled = false;
         Background.SetActive(false);
-        GameplayManager.Instance.StartStrategicPhase();
+        GameplayManager.Instance.PuzzleTerminated(completed);
+        timerCountDown.gameObject.SetActive(false);
+    }
+    private void OnTimeOut()
+    {
+        StartCoroutine( GameFiniched(false)); // time up
     }
 
 }
