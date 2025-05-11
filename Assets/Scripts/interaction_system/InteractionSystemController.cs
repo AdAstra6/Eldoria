@@ -30,6 +30,7 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Puzzle tile!");
                 player.PlayerState = PlayerStats.DOING_PUZZLE;
                 PuzzleGameManager.Instance.StartPuzzleGame();
+                
                 break;
             case TileType.PENALTY:
                 Debug.Log(player.name + " landed on a Penalty tile!");
@@ -48,16 +49,9 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Finish tile!");
                 GameplayManager.Instance.GameOver(true); // Players won the game
                 break;
-                case TileType.EVENT:
-                Debug.Log(" landed on an Event tile!");
-                // Handle event tile logic here
-                 player.PlayerState = PlayerStats.DOING_EVENT;
-                EventManager.Instance.HandleEvent(tile.Event, player);
-                ///// here i need to add the event manager logic and work 
-                /// ///////////////////////
-                //
-                break;
+            case TileType.EVENT: // Event tiles are managed by the EventManager
             default:
+                Debug.Log(" landed on an Event tile! OR");
                 Debug.Log(player.name + " landed on a Normal tile.");
                 GameplayManager.Instance.StartStrategicPhase();
                 break;

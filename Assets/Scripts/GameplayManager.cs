@@ -192,4 +192,17 @@ public class GameplayManager : MonoBehaviour
     {
         Players[currentPlayerIndex].AddItem(type,quantity);
     }
+    public void PuzzleTerminated(bool correct)
+    {
+        if (correct)
+        {
+            // handle correct puzzle
+        }
+        else
+        {
+            // handle incorrect puzzle
+        }
+        StartStrategicPhase();
+    }
 }
+
