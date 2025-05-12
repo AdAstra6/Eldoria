@@ -23,6 +23,7 @@ public class MainMenuController : MonoBehaviour
     public void optionsPanel()
     {
         SceneManager.LoadScene("Options");
+        AudioManager.Instance.PlayScrollOpen();
     }
     public void ExitGame()
     {
