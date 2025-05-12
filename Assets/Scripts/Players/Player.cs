@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Player : MonoBehaviour
     public Tile currentTile;
     private Tile nextTile;
     private bool pathChosen = false;
-   
+
 
     public float moveSpeed = 0.5f;
     [SerializeField] private bool isMoving = false;
@@ -23,6 +24,14 @@ public class Player : MonoBehaviour
     public Dictionary<string, int> AccumulatedElo;
 
     private PlayerItemsManager inventory;
+
+    public GameObject heartPrefab;
+
+    public Transform heartsContainer;
+
+    [SerializeField] public Image avatar;
+
+    [SerializeField] public TextMeshProUGUI playerNameText; // << Added for player name display
     public PlayerItemsManager Inventory
     {
         get { return inventory; }
@@ -43,7 +52,7 @@ public class Player : MonoBehaviour
 
 
     public int MaxHealth { get; private set; } // << Added for health management
-    public int CurrentHealth { get;  set; }  // << Added for health management
+    public int CurrentHealth { get; set; }  // << Added for health management
 
     public void SetInitialHealth(int health)  // << Added for setting initial health
     {
@@ -175,7 +184,7 @@ public class Player : MonoBehaviour
             {
                 Debug.Log("Reached event tile. Triggering event.");
                 this.playerState = PlayerStats.DOING_EVENT;
-                StartCoroutine( EventManager.Instance.HandleEvent(currentTile.Event, this));
+                StartCoroutine(EventManager.Instance.HandleEvent(currentTile.Event, this));
                 yield return new WaitUntil(() => this.playerState == PlayerStats.FINISHED_EVENT);
                 nextTile = currentTile.GetNextTile();
 
@@ -217,7 +226,7 @@ public class Player : MonoBehaviour
             );
             yield return null;
         }
-       
+
 
     }
 
@@ -245,13 +254,23 @@ public class Player : MonoBehaviour
         return null;
     }
 
-    private void UpdateNameAndHealthUI() // << Added for updating name and health UI
+    private void UpdateNameAndHealthUI() // << Updated for fixing CS0029
     {
         if (nameLabel == null) return;
 
         int hearts = CurrentHealth;
 
         nameLabel.text = $"{profileData.Name}\nHP: {hearts}";
+        UpdateHearts(hearts);
+        if (avatar != null)
+        {
+            avatar.sprite = Resources.Load<Sprite>(profileData.Icon);
+        }
+
+        if (playerNameText != null)
+        {
+            playerNameText.text = profileData.Name;
+        }
     }
 
     public void DecreaseHealth(int amount = 1) // << Added for decreasing health
@@ -299,9 +318,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddItem(ItemType itemType , int quantity=1)
+    public void AddItem(ItemType itemType, int quantity = 1)
     {
-        inventory.AddItem(itemType , quantity);
+        inventory.AddItem(itemType, quantity);
     }
     public void RemoveItem(ItemType itemType)
     {
@@ -312,8 +331,21 @@ public class Player : MonoBehaviour
         return inventory.inventory;
     }
 
+    public void UpdateHearts(int heartCount)
+    {
+        // Clear existing hearts
+        foreach (Transform child in heartsContainer)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Add new hearts
+        for (int i = 0; i < heartCount; i++)
+        {
+            Instantiate(heartPrefab, heartsContainer);
+        }
 
 
 
-
+    }
 }
