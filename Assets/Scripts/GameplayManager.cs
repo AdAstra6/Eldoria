@@ -204,5 +204,12 @@ public class GameplayManager : MonoBehaviour
         }
         StartStrategicPhase();
     }
+    public void askRiddle()
+    {
+
+    }
+
+
+
 }
 

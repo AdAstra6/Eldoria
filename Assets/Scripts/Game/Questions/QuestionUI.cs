@@ -42,7 +42,7 @@ public class QuestionUI : MonoBehaviour
         {
             Instance = this;
             InitializeButtons();
-            timerCountDown.TimerEnd += () => StartCoroutine(this.TimeFinished());
+           
             questionPanel.SetActive(false);
             timeFinished.SetActive(false);
         }
@@ -59,13 +59,18 @@ public class QuestionUI : MonoBehaviour
         }
     }
 
+    public void RemoveTimerEndListeners()
+    {
+        timerCountDown.TimerEnd = null;
+    }
+
     public void ShowQuestion(Player player)
     {
+        RemoveTimerEndListeners(); // Remove all existing listeners before adding a new one  
+        timerCountDown.TimerEnd += () => StartCoroutine(this.TimeFinished());
         currentPlayer = player;
-        //questionPanel.SetActive(true);
         LoadQuestion();
         questionPanel.SetActive(true);
-        // Fade in the question panel
         fadeScroll.StartFadeIn();
     }
 
@@ -90,7 +95,10 @@ public class QuestionUI : MonoBehaviour
             }
         }
     }
-
+    public  void ShowRiddle()
+    {
+        
+    }
     IEnumerator ProcessAnswerVisuals(int selectedIndex, bool isCorrect)
     {
         foreach (AnswerButton button in answerButtons)
