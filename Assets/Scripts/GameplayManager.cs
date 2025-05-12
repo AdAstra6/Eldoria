@@ -225,13 +225,27 @@ public class GameplayManager : MonoBehaviour
         } else
         {
             UIManager.Instance.ShowInfoText("You Lost The Game!");
-            StartCoroutine(EndGameAfterWait(false, 1.0f));
+            StartCoroutine(EndGameAfterWait(false,1.0f));
         }
     }
     private IEnumerator EndGameAfterWait(bool win , float waitTIme)
     {
         yield return new WaitForSeconds(waitTIme);
         GameOver(win);
+    }
+    public void StartCapitalPhase()
+    {
+        UIManager.Instance.ShowInfoText("Capital phase started!");
+        currentPlayerIndex = 0;
+        List<Tile> capitalStartPoints = map.GetCapitalStartPoints().ToList();
+        for (int i = 0; i < activePlayers.Count; i++)
+        {
+            int index = UnityEngine.Random.Range(0, capitalStartPoints.Count);
+            activePlayers[i].currentTile = capitalStartPoints[index];
+            activePlayers[i].transform.position = capitalStartPoints[index].transform.position;
+            capitalStartPoints.RemoveAt(index);
+            activePlayers[i].PlayerState = PlayerStats.IDLE;
+        }
     }
 
 

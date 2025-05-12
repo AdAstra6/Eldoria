@@ -135,7 +135,7 @@ public class UIManager : MonoBehaviour
     {
         infoText.text = msg;
         infoTextGameObject.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         infoTextGameObject.SetActive(false);
     }
     public void HidePenaltyText()

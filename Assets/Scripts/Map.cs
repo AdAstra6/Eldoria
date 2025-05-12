@@ -6,7 +6,9 @@ public class Map : MonoBehaviour
 {
     public const int spawnpointsCount=10;
     public const int BIOMS_COUNT = 5;
+    public const int CAPITA_START_POINTS_COUNT = 4;
     [SerializeField] private List<Tile> spawnPoints;
+    [SerializeField] private List<Tile> capitalStartPoints;
     private void Start()
     {
         //spawnpointsCount = spawnPoints.Count;
@@ -49,6 +51,10 @@ public class Map : MonoBehaviour
         }
         
         return result;
+    }
+    public List<Tile> GetCapitalStartPoints()
+    {
+        return capitalStartPoints;
     }
 
 

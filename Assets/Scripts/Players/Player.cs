@@ -197,7 +197,7 @@ public class Player : MonoBehaviour
 
             if (nextTile == null)
             {
-                Debug.LogError($"Path blocked. Stopping movement. Tile {currentTile.name} {nextTile}");
+                Debug.Log($"Path blocked. Stopping movement. Tile {currentTile.name} {nextTile}");
                 break;
             }
 

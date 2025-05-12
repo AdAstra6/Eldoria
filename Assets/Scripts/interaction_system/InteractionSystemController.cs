@@ -48,15 +48,10 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             case TileType.FINISH:
                 Debug.Log(player.name + " landed on a Finish tile!");
-                // Save player runtime data
-                GameData.CapitalTransitionData.Clear();
-                foreach (Player p in GameplayManager.Instance.Players)
-                {
-                    GameData.CapitalTransitionData.Add(new PlayerRuntimeData(p));
-                }
-
-                // Load capital scene
-                SceneManager.LoadScene("Capital");
+                GameplayManager.Instance.StartCapitalPhase();
+                break;
+            case TileType.CAPITAL_END_TILE:
+                GameplayManager.Instance.GameOver(true);
                 break;
             case TileType.RIDDLE:
                 Debug.Log(player.name + " landed on a Riddle tile!");
