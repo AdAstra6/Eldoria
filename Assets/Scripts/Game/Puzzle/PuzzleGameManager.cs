@@ -339,6 +339,7 @@ public class PuzzleGameManager : MonoBehaviour
             {
                 draggingPiece.GetComponent<BoxCollider2D>().enabled = false;
                 draggingPiece.position += Vector3.forward;
+                AudioManager.Instance.PlayCorrectAnswer();
 
                 // Increase the number of correct pieces, and check for puzzle completion.
                 piecesCorrect++;
