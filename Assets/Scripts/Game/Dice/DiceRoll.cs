@@ -70,6 +70,8 @@ public class DiceRoll : MonoBehaviour
     {
         rollDiceButton.SetActive(false);
         StartCoroutine(RollDice());
+        //return cursor to null
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
     public void hideAfterAnim()
     {
