@@ -18,6 +18,7 @@ public class ProfilePanelUImanager : MonoBehaviour
     [SerializeField] public TMP_Text totalWonsText;
     [SerializeField] public TMP_Text errorText;
     [SerializeField] public GameObject[] stars;
+    [SerializeField] public TMP_Text titleText;
 
     [SerializeField] public Button prevButton;
     [SerializeField] public Button nextButton;
@@ -64,6 +65,19 @@ public class ProfilePanelUImanager : MonoBehaviour
         totalGamesText.text = profile.Games.Played.ToString();
         totalWonsText.text = profile.Games.Won.ToString();
         radarChart.SetElo(profile.CategoriesElo);
+        titleText.text = EloSystemManager.GetTitle(profile);
+        int starsCount = EloSystemManager.GetNumberOfStars(profile);
+        for (int i = 0; i < stars.Length; i++)
+        {
+            if (i < starsCount)
+            {
+                stars[i].SetActive(true);
+            }
+            else
+            {
+                stars[i].SetActive(false);
+            }
+        }
 
     }
     public void SetErrorText(string text)

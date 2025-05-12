@@ -163,4 +163,22 @@ public static class EloSystemManager
         else if (elo >= 1200) return 4;
         else return 0;
     }
+    public static int GetNumberOfStars(PlayerProfile profile)
+    {
+        int elo = profile.Elo;
+        if (elo < 1000) return 0;
+        if (elo < 2000) return 1;
+        if (elo < 3000) return 2;
+        return 3;
+    }
+    public static string GetTitle(PlayerProfile profile)
+    {
+        int elo = profile.Elo;
+        if (elo < 500) return "newbie";
+        if (elo < 1000) return "Thinker";
+        if (elo < 1500) return "Scholar";
+        if (elo < 2000) return "Sage";
+        if (elo < 2500) return "Mastermind";
+        return "Legendary";
+    }
 }
