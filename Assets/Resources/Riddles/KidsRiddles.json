@@ -1,0 +1,364 @@
+{
+  "riddles": [
+    {
+      "id": 1,
+      "text": "Built of stone, I tower high,\nWhere lords and ladies safely lie.\nMy walls keep foes far away,\nWhat am I, strong by day?",
+      "options": ["A barn", "A castle", "A tent", "A shop"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "text": "I’m metal worn from head to knee,\nProtecting knights so they fight free.\nI clank with steps, I’m tough and bright,\nWhat am I in battle’s light?",
+      "options": ["A cloak", "Armor", "A hat", "A belt"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "text": "Long and sharp, I’m held on horse,\nI charge with speed and mighty force.\nKnights use me to win the fray,\nWhat am I in joust’s display?",
+      "options": ["A lance", "A fork", "A spoon", "A brush"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "text": "Small and round, I’m traded fast,\nFor bread or cloth, my worth will last.\nIn markets, I’m the key to buy,\nWhat am I beneath the sky?",
+      "options": ["A button", "A coin", "A ring", "A plate"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "text": "I wave above where soldiers stand,\nWith colors bright from lordly hand.\nNo bird am I, though high I soar,\nWhat am I in times of war?",
+      "options": ["A blanket", "A banner", "A towel", "A curtain"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "text": "Curved and sharp, I sweep through stalks,\nIn fields where farmers take their walks.\nI help to gather crops with ease,\nWhat am I in autumn’s breeze?",
+      "options": ["A sickle", "A hammer", "A saw", "A shovel"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "text": "I carry brave knights far and wide,\nWith hooves that thunder as I stride.\nMy mane flows free in battle’s race,\nWhat am I with speedy pace?",
+      "options": ["A donkey", "A horse", "A cow", "A goat"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "text": "Big and black, I hang o’er flame,\nBubbling soups that have no name.\nIn kitchens, I’m the cook’s delight,\nWhat am I that heats the night?",
+      "options": ["A cauldron", "A basket", "A bucket", "A bowl"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "text": "With wheels that creak on dusty track,\nI carry goods and bring them back.\nPulled by beasts to market fair,\nWhat am I that travels there?",
+      "options": ["A sled", "A wagon", "A boat", "A chair"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "text": "I twist and turn to make a thread,\nFrom wool that’s pulled from sheep’s soft bed.\nSpinners use me, round I go,\nWhat am I that helps cloth grow?",
+      "options": ["A spindle", "A needle", "A comb", "A knife"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "text": "Strong and tough, I lift high loads,\nHelping build on castle roads.\nWith ropes I pull stones to the sky,\nWhat am I that reaches high?",
+      "options": ["A chain", "A ladder", "A pulley", "A net"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "text": "Carved with care, I’m grand and tall,\nWhere lords give laws in mighty hall.\nA seat for rulers, proud and fine,\nWhat am I where kings recline?",
+      "options": ["A throne", "A table", "A bench", "A bed"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "text": "I’m sharp and long, with gleaming edge,\nIn knight’s strong hand, I make a pledge.\nI clash in fights to guard the land,\nWhat am I held in warrior’s hand?",
+      "options": ["A spoon", "A sword", "A fork", "A pen"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "text": "Where fire roars and hammers sing,\nI shape the tools that workers bring.\nA smoky place for iron’s art,\nWhat am I with fiery heart?",
+      "options": ["A kitchen", "A forge", "A mill", "A stable"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "text": "Stuffed with straw, I’m soft and wide,\nWhere tired folks at night abide.\nI’m not a chair, but help you rest,\nWhat am I for sleeping best?",
+      "options": ["A pillow", "A mattress", "A rug", "A cloak"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "text": "Locked with keys, I guard what’s dear,\nGold and gems stay safe in here.\nMade of wood with iron bands,\nWhat am I in treasure’s hands?",
+      "options": ["A chest", "A barrel", "A crate", "A shelf"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "text": "I clack and move to weave fine cloth,\nWith threads that cross like wings of moth.\nWeavers use me day by day,\nWhat am I that makes their way?",
+      "options": ["A loom", "A wheel", "A brush", "A rake"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "text": "Strong and slow, I tread the field,\nPulling tools to boost the yield.\nWith horns I’m crowned, no horse am I,\nWhat am I beneath the sky?",
+      "options": ["A sheep", "An ox", "A pig", "A dog"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "text": "I’m metal hung where riders sit,\nHelping feet stay firm and fit.\nOn horses, I help knights stay strong,\nWhat am I where spurs belong?",
+      "options": ["A belt", "A rein", "A stirrup", "A rope"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "text": "High I stand with walls of stone,\nWatching lands where winds have blown.\nGuards climb me to spot the foe,\nWhat am I where watchers go?",
+      "options": ["A barn", "A turret", "A gate", "A bridge"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 21,
+      "text": "I’m bent and strung to shoot a dart,\nAiming true with hunter’s art.\nNo spear am I, but arrows fly,\nWhat am I that arches high?",
+      "options": ["A bow", "A spear", "A club", "A staff"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "text": "Fluffy and soft, I roam the hill,\nMy wool makes clothes to ward off chill.\nI bleat and graze in fields so wide,\nWhat am I with fleece inside?",
+      "options": ["A cow", "A sheep", "A horse", "A cat"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "text": "I’m iron bars that block the way,\nDropped at night to keep foes at bay.\nAt castle’s gate, I stand so tall,\nWhat am I that guards the hall?",
+      "options": ["A door", "A portcullis", "A window", "A fence"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "text": "Tiny and sharp, I pierce with care,\nJoining cloth with stitches fair.\nTailors use me, thread in tow,\nWhat am I that helps to sew?",
+      "options": ["A needle", "A pin", "A hook", "A nail"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "text": "With turning stones, I grind the wheat,\nMaking flour for bread to eat.\nBy water or wind, I work all day,\nWhat am I that helps this way?",
+      "options": ["A forge", "A mill", "A barn", "A shop"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "text": "Bound in leather, I hold tales grand,\nOf knights and quests in far-off land.\nPages turn in scholar’s keep,\nWhat am I where stories sleep?",
+      "options": ["A scroll", "A codex", "A letter", "A sign"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "text": "Curved and strong, I guard the hoof,\nNailed to horses, tough and aloof.\nI help them run on rocky ground,\nWhat am I that makes no sound?",
+      "options": ["A spur", "A horseshoe", "A bit", "A buckle"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "text": "Tables groan with food galore,\nWhere lords and knights eat more and more.\nA feast so grand with music’s tune,\nWhat am I beneath the moon?",
+      "options": ["A market", "A banquet", "A kitchen", "A garden"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "text": "I’m swung with might to drive a spike,\nIn wood or stone, I strike alike.\nBuilders use me, loud and strong,\nWhat am I that bangs along?",
+      "options": ["A saw", "A hammer", "A chisel", "A drill"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "text": "Over armor, I’m worn with pride,\nMy colors show the lord’s true side.\nA cloth with crest for all to see,\nWhat am I on knight’s body?",
+      "options": ["A tabard", "A scarf", "A cape", "A vest"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "text": "I’m a wooden bridge that lifts over a moat. What am I?",
+      "options": ["A ladder", "A drawbridge", "A gate", "A ramp"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "text": "I’m a small boat that rows across rivers. What am I?",
+      "options": ["A raft", "A ship", "A canoe", "A barge"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 33,
+      "text": "I’m a tool that cuts wood for building houses. What am I?",
+      "options": ["A saw", "A shovel", "A rake", "A hoe"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 34,
+      "text": "I’m a furry animal that gives milk for cheese. What am I?",
+      "options": ["A goat", "A pig", "A dog", "A rabbit"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 35,
+      "text": "I’m a big barrel that holds ale or water. What am I?",
+      "options": ["A jug", "A barrel", "A cup", "A sack"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "text": "I’m a person who makes shoes for villagers. What am I?",
+      "options": ["A baker", "A cobbler", "A tailor", "A farmer"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "text": "I’m a pile of straw that feeds animals in winter. What am I?",
+      "options": ["A haystack", "A mattress", "A blanket", "A basket"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 38,
+      "text": "I’m a tool that digs dirt for planting crops. What am I?",
+      "options": ["A shovel", "A fork", "A broom", "A pick"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 39,
+      "text": "I’m a cloth that catches fish in rivers. What am I?",
+      "options": ["A sail", "A net", "A towel", "A sheet"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "text": "I’m a person who guards the castle gates. What am I?",
+      "options": ["A knight", "A guard", "A cook", "A jester"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 41,
+      "text": "I’m a small pin that holds cloth together. What am I?",
+      "options": ["A button", "A pin", "A hook", "A clip"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 42,
+      "text": "I’m a place where horses sleep at night. What am I?",
+      "options": ["A barn", "A stable", "A shed", "A pen"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 43,
+      "text": "I’m a tool that measures land for farmers. What am I?",
+      "options": ["A ruler", "A chain", "A rod", "A scale"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 44,
+      "text": "I’m a person who tells stories in the lord’s hall. What am I?",
+      "options": ["A bard", "A scribe", "A merchant", "A smith"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 45,
+      "text": "I’m a wooden pole that marks a field’s edge. What am I?",
+      "options": ["A fence", "A post", "A stick", "A beam"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 46,
+      "text": "I’m a clay pot that holds soup for dinner. What am I?",
+      "options": ["A bowl", "A jug", "A cup", "A dish"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 47,
+      "text": "I’m a person who sells goods in the market. What am I?",
+      "options": ["A farmer", "A merchant", "A baker", "A weaver"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 48,
+      "text": "I’m a tool that smooths wood for tables. What am I?",
+      "options": ["A plane", "A file", "A brush", "A chisel"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 49,
+      "text": "I’m a big animal that gives meat for feasts. What am I?",
+      "options": ["A pig", "A deer", "A horse", "A sheep"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 50,
+      "text": "I’m a leather strap that controls a horse. What am I?",
+      "options": ["A rein", "A belt", "A whip", "A chain"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 51,
+      "text": "I’m a place where knights practice fighting. What am I?",
+      "options": ["A field", "A courtyard", "A hall", "A tower"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 52,
+      "text": "I’m a tool that carves stone for castles. What am I?",
+      "options": ["A chisel", "A hammer", "A saw", "A trowel"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 53,
+      "text": "I’m a person who bakes bread for the village. What am I?",
+      "options": ["A cook", "A baker", "A butcher", "A miller"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 54,
+      "text": "I’m a cloth that covers tables at feasts. What am I?",
+      "options": ["A blanket", "A tablecloth", "A rug", "A curtain"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 55,
+      "text": "I’m a tool that spins a wheel to make pots. What am I?",
+      "options": ["A loom", "A potter’s wheel", "A spindle", "A mill"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 56,
+      "text": "I’m a person who makes arrows for archers. What am I?",
+      "options": ["A fletcher", "A smith", "A carpenter", "A tailor"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 57,
+      "text": "I’m a wooden frame that holds a knight’s shield. What am I?",
+      "options": ["A rack", "A stand", "A hook", "A shelf"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 58,
+      "text": "I’m a place where villagers store grain. What am I?",
+      "options": ["A barn", "A silo", "A shed", "A cellar"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 59,
+      "text": "I’m a tool that presses grapes for juice. What am I?",
+      "options": ["A mill", "A press", "A grinder", "A sieve"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 60,
+      "text": "I’m a person who trains hawks for hunting. What am I?",
+      "options": ["A hunter", "A falconer", "A shepherd", "A groom"],
+      "correctAnswer": 1
+    }
+  ]
+}
