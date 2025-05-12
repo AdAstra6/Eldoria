@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractionSystemController : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class InteractionSystemController : MonoBehaviour
                 Debug.Log(player.name + " landed on a Puzzle tile!");
                 player.PlayerState = PlayerStats.DOING_PUZZLE;
                 PuzzleGameManager.Instance.StartPuzzleGame();
-                
+
                 break;
             case TileType.PENALTY:
                 Debug.Log(player.name + " landed on a Penalty tile!");
@@ -47,7 +48,15 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             case TileType.FINISH:
                 Debug.Log(player.name + " landed on a Finish tile!");
-                GameplayManager.Instance.GameOver(true); // Players won the game
+                // Save player runtime data
+                GameData.CapitalTransitionData.Clear();
+                foreach (Player p in GameplayManager.Instance.Players)
+                {
+                    GameData.CapitalTransitionData.Add(new PlayerRuntimeData(p));
+                }
+
+                // Load capital scene
+                SceneManager.LoadScene("Capital");
                 break;
             case TileType.EVENT: // Event tiles are managed by the EventManager
             default:
@@ -58,7 +67,7 @@ public class InteractionSystemController : MonoBehaviour
         }
     }
 
-    public IEnumerator TriggerPenaltyInteraction(Player player ,int stepBack)
+    public IEnumerator TriggerPenaltyInteraction(Player player, int stepBack)
     {
         // Play the penalty sound
         AudioManager.Instance.PlayPenalty();
