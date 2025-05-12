@@ -28,6 +28,7 @@ public class GameQuestionManager : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
         timerCountDown.criticalTime = MSCQcriticalTIme;
+        riddleDifficulty = GameData.GameMode;
     }
 
     public void AskQuestion(Player player)
