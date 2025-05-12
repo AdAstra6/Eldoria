@@ -11,6 +11,15 @@ public class GameQuestionManager : MonoBehaviour
     [SerializeField] private TimerCountDown timerCountDown;
     [SerializeField] private GameplayManager gameplayManager;
     [SerializeField] private Question currentQuestion;
+
+    // riddles 
+
+    [Header("Riddles")]
+    [SerializeField] private RiddleManager riddleManager;
+    [SerializeField] private bool useRiddle = false; // Toggle this based on game context
+    [SerializeField] private GameModes riddleDifficulty = GameData.GameMode; // or "adult"
+    [SerializeField] private Riddle currentRiddle;
+
     public const float MCQTime = 60f; // Time for multiple choice question 
     private const float MSCQcriticalTIme = 15f;
 
@@ -33,6 +42,20 @@ public class GameQuestionManager : MonoBehaviour
         QuestionUI.Instance.ShowQuestion(player);
 
     }
+
+    public void AskRiddle(Player player)
+    {
+        AudioManager.Instance.PlayScrollOpen();
+        gameplayManager.QuestionStarted();
+        timerCountDown.SetTotalTime(MCQTime);
+        timerCountDown.Restart();
+
+        currentRiddle = riddleManager.GetRandomRiddle(riddleDifficulty);
+        QuestionUI.Instance.SetRiddle(currentRiddle);
+        QuestionUI.Instance.ShowRiddle(player); // Correct method call
+    }
+
+
 
     public void HandleAnswer(Player player, bool isCorrect)
     {

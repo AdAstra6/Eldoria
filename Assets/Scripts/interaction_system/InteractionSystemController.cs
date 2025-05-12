@@ -58,6 +58,10 @@ public class InteractionSystemController : MonoBehaviour
                 // Load capital scene
                 SceneManager.LoadScene("Capital");
                 break;
+            case TileType.RIDDLE:
+                Debug.Log(player.name + " landed on a Riddle tile!");
+                GameQuestionManager.Instance.AskRiddle(player);
+                break;
             case TileType.EVENT: // Event tiles are managed by the EventManager
             default:
                 Debug.Log(" landed on an Event tile! OR");

@@ -36,13 +36,20 @@ public class QuestionUI : MonoBehaviour
     [SerializeField] private FadeScript fadeScroll;
     [SerializeField] private TimerCountDown timerCountDown;
 
+
+    [Header("Riddles")]
+    [SerializeField] private RiddleManager riddleManager;
+    private Riddle currentRiddle;
+
+
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             InitializeButtons();
-           
+
             questionPanel.SetActive(false);
             timeFinished.SetActive(false);
         }
@@ -94,10 +101,6 @@ public class QuestionUI : MonoBehaviour
 
             }
         }
-    }
-    public  void ShowRiddle()
-    {
-        
     }
     IEnumerator ProcessAnswerVisuals(int selectedIndex, bool isCorrect)
     {
@@ -179,6 +182,94 @@ public class QuestionUI : MonoBehaviour
             Image correctButtonImage = answerButtons[currentQuestion.correctAnswer].Image; // Update to new UI
             correctButtonImage.color = correctColor;
         }
+        yield return new WaitForSeconds(3f);
+        GameQuestionManager.Instance.HandleAnswer(currentPlayer, false);
+        HideQuestion();
+    }
+
+
+    public void SetRiddle(Riddle riddle)
+    {
+        currentRiddle = riddle;
+    }
+
+    public void ShowRiddle(Player player)
+    {
+        RemoveTimerEndListeners();
+        timerCountDown.TimerEnd += () => StartCoroutine(TimeFinishedRiddle());
+        currentPlayer = player;
+
+        if (currentRiddle == null)
+        {
+            Debug.LogError("No riddle assigned!");
+            return;
+        }
+
+        questionPanel.SetActive(true);
+        fadeScroll.StartFadeIn();
+
+        LoadRiddle();
+    }
+    private void LoadRiddle()
+    {
+        questionText.text = currentRiddle.text;
+
+        // Assign riddle answers to buttons
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            if (i < currentRiddle.options.Length)
+            {
+                answerButtons[i].TextAnswer.text = currentRiddle.options[i];
+                int index = i;
+                answerButtons[i].Button.onClick.RemoveAllListeners(); // Clear previous listeners
+                answerButtons[i].Button.onClick.AddListener(() =>
+                {
+                    bool isCorrect = index == currentRiddle.correctAnswer;
+                    StartCoroutine(ProcessRiddleAnswerVisuals(index, isCorrect));
+                });
+            }
+        }
+    }
+    IEnumerator ProcessRiddleAnswerVisuals(int selectedIndex, bool isCorrect)
+    {
+        foreach (AnswerButton button in answerButtons)
+        {
+            button.Button.interactable = false;
+        }
+
+        var selectedButtonImage = answerButtons[selectedIndex].Image;
+        selectedButtonImage.color = isCorrect ? correctColor : wrongColor;
+
+        if (!isCorrect)
+        {
+            var correctButtonImage = answerButtons[currentRiddle.correctAnswer].Image;
+            correctButtonImage.color = correctColor;
+        }
+
+        if (isCorrect)
+            AudioManager.Instance.PlayCorrectAnswer();
+        else
+            AudioManager.Instance.PlayWrongAnswer();
+
+        yield return new WaitForSeconds(2f);
+
+        GameQuestionManager.Instance.HandleAnswer(currentPlayer, isCorrect);
+        HideQuestion(); // reuse existing hide logic
+    }
+    public IEnumerator TimeFinishedRiddle()
+    {
+        if (currentRiddle != null)
+        {
+            timeFinished.SetActive(true);
+            foreach (AnswerButton button in answerButtons)
+            {
+                button.Button.interactable = false;
+            }
+
+            var correctButtonImage = answerButtons[currentRiddle.correctAnswer].Image;
+            correctButtonImage.color = correctColor;
+        }
+
         yield return new WaitForSeconds(3f);
         GameQuestionManager.Instance.HandleAnswer(currentPlayer, false);
         HideQuestion();
