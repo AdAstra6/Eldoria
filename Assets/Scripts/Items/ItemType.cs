@@ -8,7 +8,6 @@ public enum ItemType
     HEAL_POTION,
     BONUS_DICE,
     STURDY_SWORD,
-    HEALING_HERB,
     TOTME_OF_UNDYING,
     
     // Collectable items starts here from 200
@@ -61,8 +60,6 @@ public static class ItemsTypeExtensioin
                 return "Snow Mushroom";
             case ItemType.STURDY_SWORD:
                 return "Sturdy Sword";
-            case ItemType.HEALING_HERB:
-                return "Healing Herb";
             case ItemType.TOTME_OF_UNDYING:
                 return "Totem of Undying";
             default:
@@ -111,7 +108,6 @@ public static class ItemsTypeExtensioin
             case ItemType.HEAL_POTION:
             case ItemType.BONUS_DICE:
             case ItemType.STURDY_SWORD:
-            case ItemType.HEALING_HERB:
                 return true;
             case ItemType.LAVA_STONE:
             case ItemType.COCONUTS:

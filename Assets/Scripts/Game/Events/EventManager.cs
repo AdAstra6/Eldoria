@@ -8,6 +8,7 @@ public class EventManager : MonoBehaviour
 {
     //  Static instance
     public static EventManager Instance { get; private set; }
+    private const float GET_ITEM_CHANCE = 0.3f; 
 
     private void Awake()
     {
@@ -121,8 +122,21 @@ public class EventManager : MonoBehaviour
             return;  
         }
 
-        int quantity = UnityEngine.Random.Range(1, 4);
-        CollectItemPanel.Instance.ShowCollectItemPanel(item, quantity);
+        //int quantity = UnityEngine.Random.Range(1, 4);
+        int quantity = 1;
+        float chance = UnityEngine.Random.Range(0f, 1f);
+        if (chance < GET_ITEM_CHANCE)
+        {
+            Debug.Log($"Player {player.name} collected {quantity} of item: {item}");
+            ItemType randomItem = (ItemType)UnityEngine.Random.Range(0, 4);
+            CollectItemPanel.Instance.ShowCollectItemPanel(randomItem, quantity);
+        }
+        else
+        {
+            Debug.Log($"Player {player.name} failed to collect item: {item}");
+            return;
+        }
+
     }
 
 

@@ -33,7 +33,6 @@ public class PlayerItemsManager : MonoBehaviour
         switch (item)
         {
             case ItemType.HEAL_POTION:
-            case ItemType.HEALING_HERB:
                 player.IncreaseHealth();
                 Debug.Log($"{player.profileData.Name} used a Heal Potion! HP is now {player.CurrentHealth}");
                 break;
