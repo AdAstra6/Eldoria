@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class QuestionUI : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class QuestionUI : MonoBehaviour
     }
     private Player currentPlayer;
 
+    public bool isMotherTree = false; // allah ghalb 5/12/2025
     /*
         integrate new ui by Adlen
      */
@@ -65,7 +67,15 @@ public class QuestionUI : MonoBehaviour
             answerButtons[i].Button.onClick.AddListener(() => OnAnswerSelected(index));
         }
     }
-
+    void SetButtonsListnersForQuestions()
+    {
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            int index = i;
+            answerButtons[i].Button.onClick.RemoveAllListeners();
+            answerButtons[i].Button.onClick.AddListener(() => OnAnswerSelected(index));
+        }
+    }
     public void RemoveTimerEndListeners()
     {
         timerCountDown.TimerEnd = null;
@@ -73,6 +83,7 @@ public class QuestionUI : MonoBehaviour
 
     public void ShowQuestion(Player player)
     {
+        SetButtonsListnersForQuestions();
         RemoveTimerEndListeners(); // Remove all existing listeners before adding a new one  
         timerCountDown.TimerEnd += () => StartCoroutine(this.TimeFinished());
         currentPlayer = player;
@@ -252,8 +263,14 @@ public class QuestionUI : MonoBehaviour
             AudioManager.Instance.PlayWrongAnswer();
 
         yield return new WaitForSeconds(2f);
-
-        GameQuestionManager.Instance.HandleAnswer(currentPlayer, isCorrect);
+        if (isMotherTree)
+        {
+            MotherTreeManager.instance.EndMotherTreeEvent(isCorrect);
+        }
+        else
+        {
+            GameQuestionManager.Instance.HandleAnswer(currentPlayer, isCorrect);
+        }
         HideQuestion(); // reuse existing hide logic
     }
     public IEnumerator TimeFinishedRiddle()
@@ -271,7 +288,14 @@ public class QuestionUI : MonoBehaviour
         }
 
         yield return new WaitForSeconds(3f);
-        GameQuestionManager.Instance.HandleAnswer(currentPlayer, false);
+        if (!isMotherTree)
+        {
+            GameQuestionManager.Instance.HandleAnswer(currentPlayer, false);
+        }
+        else
+        {
+            MotherTreeManager.instance.EndMotherTreeEvent(false);
+        }
         HideQuestion();
     }
 }

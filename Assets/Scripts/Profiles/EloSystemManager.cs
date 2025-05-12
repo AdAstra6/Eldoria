@@ -11,8 +11,8 @@ public static class EloSystemManager
     public const int EstimatedMaxElo = 2500;
     private static readonly int CategoryCount = Enum.GetValues(typeof(QuestionsCategories)).Length;
 
-    private const double KFactor = 25.0;
-    private const double LossKFactor = 18.0;
+    private const double KFactor = 25.0 * 5; // *5 because number of questions in each game is not big
+    private const double LossKFactor = 18.0 *5;
     private const int MaxGain = 20;
     private const int MaxLoss = 15;
     private const int CategoriesCount = 6;

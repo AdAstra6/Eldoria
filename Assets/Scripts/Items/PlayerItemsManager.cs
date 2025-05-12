@@ -125,4 +125,12 @@ public class PlayerItemsManager : MonoBehaviour
     {
         return inventory.Count >= MAX_INVENTORY_SIZE;
     }
+    public bool HasItemOfType(ItemType type)
+    {
+        foreach (Item item in inventory)
+        {
+            if (item.Type == type) return true;
+        }
+        return false;
+    }
 }

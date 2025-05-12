@@ -204,9 +204,34 @@ public class GameplayManager : MonoBehaviour
         }
         StartStrategicPhase();
     }
-    public void askRiddle()
+    public void OnPlayerDeath(Player player)
     {
-
+        UIManager.Instance.ShowInfoText($"{Players[currentPlayerIndex].profileData.Name} has died!");
+        bool haveTotoem = false;
+        Player saver = null;
+        foreach (Player pl in activePlayers)
+        {
+            if (pl.Inventory.HasItemOfType(ItemType.TOTME_OF_UNDYING))
+            {
+                haveTotoem = true;
+                saver = pl;
+            }
+        }
+        if (haveTotoem)
+        {
+            UIManager.Instance.ShowInfoText("You have been saved by the Totem Of Undying!");
+            player.IncreaseHealth();
+            saver.Inventory.RemoveItem(ItemType.TOTME_OF_UNDYING);
+        } else
+        {
+            UIManager.Instance.ShowInfoText("You Lost The Game!");
+            StartCoroutine(EndGameAfterWait(false, 1.0f));
+        }
+    }
+    private IEnumerator EndGameAfterWait(bool win , float waitTIme)
+    {
+        yield return new WaitForSeconds(waitTIme);
+        GameOver(win);
     }
 
 

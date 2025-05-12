@@ -58,6 +58,7 @@ public class ProfilePanelUImanager : MonoBehaviour
 
     public void LoadProfile(PlayerProfile profile)
     {
+        if (profile == null) return;
         avatar.sprite = profile.Icon != null ? Resources.Load<Sprite>(profile.Icon) : null;
         usernameText.text = profile.Name;
         idText.text = profile.Id.ToString();

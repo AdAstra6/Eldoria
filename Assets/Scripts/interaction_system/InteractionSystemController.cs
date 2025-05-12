@@ -60,6 +60,8 @@ public class InteractionSystemController : MonoBehaviour
                 break;
             case TileType.RIDDLE:
                 Debug.Log(player.name + " landed on a Riddle tile!");
+                GameplayManager.Instance.QuestionStarted();
+                QuestionUI.Instance.isMotherTree = false;
                 GameQuestionManager.Instance.AskRiddle(player);
                 break;
             case TileType.EVENT: // Event tiles are managed by the EventManager

@@ -31,6 +31,8 @@ public class ProfilePanelManager : MonoBehaviour
             uimanager.EnableErrorMessage();
         }
         // set up buttons listeners
+        uimanager.nextButton.onClick.RemoveAllListeners();
+        uimanager.prevButton.onClick.RemoveAllListeners();
         uimanager.nextButton.onClick.AddListener(() => StartNextProfile());
         uimanager.prevButton.onClick.AddListener(() => StartPrevProfile());
     }
@@ -51,7 +53,8 @@ public class ProfilePanelManager : MonoBehaviour
         uimanager.startStatsFadeOut();
         bookAnimator.SetTrigger("RightFlipPage");
         yield return new WaitForSeconds(animationDelay);
-        currentIndex = (currentIndex + 1) % profiles.Count;
+        currentIndex = (currentIndex + 1);
+        if (currentIndex > profiles.Count - 1) currentIndex = 0;
         PlayerProfile currentProfile = profiles[currentIndex];
         uimanager.LoadProfile(currentProfile);
         uimanager.startStatsFadeIn();

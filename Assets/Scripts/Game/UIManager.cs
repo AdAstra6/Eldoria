@@ -18,8 +18,8 @@ public class UIManager : MonoBehaviour
     private Button rollDiceButton;
     private Button endTurnButton;
 
-    [SerializeField] private TMP_Text penaltyText;
-    [SerializeField] private GameObject penaltyTileEffects;
+    [SerializeField] private TMP_Text infoText;
+    [SerializeField] private GameObject infoTextGameObject;
 
     private void Awake()
     {
@@ -128,12 +128,19 @@ public class UIManager : MonoBehaviour
     public void ShowPenaltyText(Player player , int stepBack)
     {
         string message = player.profileData.Name + " felt in penalty tyle! \n has to go back " + stepBack + " steps!";
-        penaltyText.text = message;
-        penaltyTileEffects.SetActive(true);
+        infoText.text = message;
+        infoTextGameObject.SetActive(true);
+    }
+    public IEnumerator ShowInfoText(String msg)
+    {
+        infoText.text = msg;
+        infoTextGameObject.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        infoTextGameObject.SetActive(false);
     }
     public void HidePenaltyText()
     {
-       penaltyTileEffects.SetActive(false);
+        infoTextGameObject.SetActive(false);
 
     }
 

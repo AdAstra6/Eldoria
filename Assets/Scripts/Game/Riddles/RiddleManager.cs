@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class RiddleManager : MonoBehaviour
 {
+    public static RiddleManager instance;
     public TextAsset kidsRiddleJson;
     public TextAsset adultRiddleJson;
 
@@ -13,6 +14,7 @@ public class RiddleManager : MonoBehaviour
 
     void Awake()
     {
+        instance = this;
         LoadRiddles();
     }
 
@@ -27,7 +29,10 @@ public class RiddleManager : MonoBehaviour
     public Riddle GetRandomRiddle(GameModes difficulty)
     {
         List<Riddle> sourceList = difficulty == GameModes.ADULTS? adultRiddles.riddles : kidsRiddles.riddles;
-
+        if ( sourceList .Count == 0)
+        {
+            LoadRiddles();
+        }
         if (sourceList == null || sourceList.Count == 0)
         {
             Debug.LogWarning($"No riddles found for difficulty: {difficulty}");
@@ -36,4 +41,15 @@ public class RiddleManager : MonoBehaviour
 
         return sourceList[random.Next(0, sourceList.Count)];
     }
+    public void RemoveRiddel(Riddle riddle , GameModes difficulty)
+    {
+        List<Riddle> sourceList = difficulty == GameModes.ADULTS ? adultRiddles.riddles : kidsRiddles.riddles;
+        if (sourceList == null || sourceList.Count == 0)
+        {
+            Debug.LogWarning($"No riddles found for difficulty: {difficulty}");
+            return;
+        }
+        sourceList.Remove(riddle);
+    }
+    
 }

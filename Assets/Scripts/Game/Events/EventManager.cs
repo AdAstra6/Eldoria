@@ -31,7 +31,9 @@ public class EventManager : MonoBehaviour
         switch (eventType)
         {
             case EventType.MotherTree:
-                LoadEventScene("Mothertree");
+                //LoadEventScene("Mothertree");
+                MotherTreeManager.instance.StartMotherTreeEvent(player);
+                yield return new WaitUntil(() => player.PlayerState == PlayerStats.FINISHED_EVENT);
                 break;
             case EventType.DeadendChest:
                 //LoadEventScene("TrapScene");

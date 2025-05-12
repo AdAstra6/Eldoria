@@ -1,5 +1,6 @@
 using System.IO;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public enum ItemType
 {
@@ -8,6 +9,7 @@ public enum ItemType
     BONUS_DICE,
     STURDY_SWORD,
     HEALING_HERB,
+    TOTME_OF_UNDYING,
     
     // Collectable items starts here from 200
     LAVA_STONE = 200,
@@ -31,6 +33,10 @@ public static class ItemsTypeExtensioin
                 return "Restores 1 HP";
             case ItemType.BONUS_DICE:
                 return "Roll 3 dice next turn";
+            case ItemType.STURDY_SWORD:
+                return "Protect you from penality in next question";
+            case ItemType.TOTME_OF_UNDYING:
+                return "A second chance for the team";
             default:
                 return "Unknown item type";
         }
@@ -53,6 +59,12 @@ public static class ItemsTypeExtensioin
                 return "Flower";
             case ItemType.SNOW_MUSHROOM:
                 return "Snow Mushroom";
+            case ItemType.STURDY_SWORD:
+                return "Sturdy Sword";
+            case ItemType.HEALING_HERB:
+                return "Healing Herb";
+            case ItemType.TOTME_OF_UNDYING:
+                return "Totem of Undying";
             default:
                 return "Unknown item type";
         }
@@ -75,6 +87,8 @@ public static class ItemsTypeExtensioin
                 return Path.Combine(itemsIconsPath, "Flower");
             case ItemType.SNOW_MUSHROOM:
                 return Path.Combine(itemsIconsPath, "SnowMushroom");
+            case ItemType.TOTME_OF_UNDYING:
+                return Path.Combine(itemsIconsPath, "TotemOfUndying");
             default:
                 return Path.Combine(itemsIconsPath, "Default");
         }
@@ -104,6 +118,7 @@ public static class ItemsTypeExtensioin
             case ItemType.LOG:
             case ItemType.FLOWER:
             case ItemType.SNOW_MUSHROOM:
+            case ItemType.TOTME_OF_UNDYING:
                 return false;
             default:
                 return false;
