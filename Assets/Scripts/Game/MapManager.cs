@@ -44,6 +44,10 @@ public class MapManager : MonoBehaviour
                 currentTile.type = TileType.PUZZLE;
             else
                 currentTile.type = TileType.MCQUESTION;
+            
+
+            // testing riddle
+            //currentTile.type = TileType.RIDDLE;
         }
 
         Debug.Log($"Dispatched {tiles.Count} tiles across the map.");
