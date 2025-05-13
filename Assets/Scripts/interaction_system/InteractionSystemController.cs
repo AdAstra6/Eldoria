@@ -51,7 +51,7 @@ public class InteractionSystemController : MonoBehaviour
                 GameplayManager.Instance.StartCapitalPhase();
                 break;
             case TileType.CAPITAL_END_TILE:
-                GameplayManager.Instance.GameOver(true);
+                StartCoroutine( GameplayManager.Instance.EndGameAfterWait(true,3.0f));
                 break;
             case TileType.RIDDLE:
                 Debug.Log(player.name + " landed on a Riddle tile!");

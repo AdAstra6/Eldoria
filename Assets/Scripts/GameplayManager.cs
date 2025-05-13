@@ -232,12 +232,12 @@ public class GameplayManager : MonoBehaviour
             saver.Inventory.RemoveItem(ItemType.TOTME_OF_UNDYING);
         } else
         {
-            UIManager.Instance.ShowInfoText("You Lost The Game!");
-            StartCoroutine(EndGameAfterWait(false,1.0f));
+            StartCoroutine(EndGameAfterWait(false,2.0f));
         }
     }
-    private IEnumerator EndGameAfterWait(bool win , float waitTIme)
+    public IEnumerator EndGameAfterWait(bool win , float waitTIme)
     {
+        UIManager.Instance.ShowGameoverText(win);
         yield return new WaitForSeconds(waitTIme);
         GameOver(win);
     }

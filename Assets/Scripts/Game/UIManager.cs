@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text infoText;
     [SerializeField] private GameObject infoTextGameObject;
     [SerializeField] private List<GameObject> playersHuds;
+    [SerializeField] private TMP_Text GameOverText;
 
     private void Awake()
     {
@@ -41,6 +42,7 @@ public class UIManager : MonoBehaviour
         endTurnButton.gameObject.SetActive(false);
 
         pathSelectionPanel.SetActive(false); // Hide the panel at start
+        HideGameoverText();
 
     }
 
@@ -160,6 +162,26 @@ public class UIManager : MonoBehaviour
                 hud.SetActive(false);
             }
         }
+    }
+
+    public void ShowGameoverText(bool isWinner)
+    {
+        GameOverText.gameObject.SetActive(true);
+        if (isWinner)
+        {
+            GameOverText.text = "Game Over \nYou Won!";
+            GameOverText.color = Color.green;
+        }
+        else
+        {
+            GameOverText.color = Color.red;
+            GameOverText.text = "Game Over\nYou Lost";
+        }
+        GameOverText.gameObject.SetActive(true);
+    }
+    public void HideGameoverText()
+    {
+        GameOverText.gameObject.SetActive(false);
     }
 
 }

@@ -260,7 +260,7 @@ public class Player : MonoBehaviour
 
         int hearts = CurrentHealth;
 
-        nameLabel.text = $"{profileData.Name}\nHP: {hearts}";
+        nameLabel.text = $"{profileData.Name}";
         UpdateHearts(hearts);
         if (avatar != null)
         {

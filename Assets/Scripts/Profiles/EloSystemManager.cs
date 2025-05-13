@@ -77,6 +77,7 @@ public static class EloSystemManager
         player.AccumulatedElo[categoryName] = player.AccumulatedElo.TryGetValue(categoryName, out int currentValue)
             ? currentValue - (int)Math.Round(loss)
             : 0;
+        Debug.Log($"Subtracting Elo: {categoryName} - {loss}");
     }
 
     public static int CalculateAverageElo(PlayerProfile profile)
@@ -165,19 +166,19 @@ public static class EloSystemManager
     public static int GetNumberOfStars(PlayerProfile profile)
     {
         int elo = profile.Elo;
-        if (elo < 1000) return 0;
-        if (elo < 2000) return 1;
-        if (elo < 3000) return 2;
+        if (elo < 500) return 0;
+        if (elo < 1000) return 1;
+        if (elo < 1500) return 2;
         return 3;
     }
     public static string GetTitle(PlayerProfile profile)
     {
         int elo = profile.Elo;
-        if (elo < 500) return "newbie";
-        if (elo < 1000) return "Thinker";
-        if (elo < 1500) return "Scholar";
-        if (elo < 2000) return "Sage";
-        if (elo < 2500) return "Mastermind";
+        if (elo < 300) return "newbie";
+        if (elo < 600) return "Thinker";
+        if (elo < 900) return "Scholar";
+        if (elo < 1200) return "Sage";
+        if (elo < 1500) return "Mastermind";
         return "Legendary";
     }
 }
