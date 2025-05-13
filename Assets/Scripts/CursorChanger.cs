@@ -6,6 +6,7 @@ public class CursorChanger : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
     public Texture2D newCursorTexture;
     public static Texture2D defaultCursorTexture;
+    public static Texture2D typingCursor;
     public Vector2 hotSpot = Vector2.zero;
 
     // Call this method to load the default cursor from the specified path
@@ -14,6 +15,7 @@ public class CursorChanger : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         // The path is relative to the Resources folder, so move your cursor image to Assets/Resources/Sprites/Cursors/DefaultCursor.png
         defaultCursorTexture = Resources.Load<Texture2D>(Path.Combine("Sprites","Cursors", "DefaultCursor"));
+        typingCursor = Resources.Load<Texture2D>(Path.Combine("Sprites", "Cursors", "TypingCursor"));
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -29,5 +31,8 @@ public class CursorChanger : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public static void SetDefaultCursor()
     {
         Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto); // Reset to default
+    }
+    public static void SetTypingCursor(PointerEventData eventData) {
+        Cursor.SetCursor(typingCursor, Vector2.zero, CursorMode.Auto); // Set to typing cursor
     }
 }
