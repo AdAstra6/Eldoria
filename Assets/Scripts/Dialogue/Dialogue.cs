@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
 
     private int index;
     public Action onDialogueEnd; // Action to be called when dialogue ends
+    private bool dialogueFinished = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // Allow skipping to the next line
+        if (Input.GetKeyDown(KeyCode.Space) && !dialogueFinished) // Allow skipping to the next line
         {
             if (textComponent.text == lines[index])
             {
@@ -32,7 +33,7 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
-                StopCoroutine(TypeLine()); 
+                //StopCoroutine(TypeLine()); 
                 textComponent.text = lines[index];
             }
         }
@@ -41,6 +42,7 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue()
     {
         index = 0;
+        dialogueFinished = false;
         StartCoroutine(TypeLine());
     }
 
@@ -48,6 +50,11 @@ public class Dialogue : MonoBehaviour
     {
         foreach (char c in lines[index].ToCharArray())
         {
+            if (textComponent.text == lines[index])
+            {
+                StartCoroutine(AutoNextLine());
+                yield break; // Stop typing if the text is already complete
+            }
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
@@ -65,12 +72,14 @@ public class Dialogue : MonoBehaviour
         else
         {
             textComponent.text = string.Empty; // Clear text when dialogue ends
-            onDialogueEnd?.Invoke(); // Invoke the action if it's set
+            StopAllCoroutines(); 
+            onDialogueEnd.Invoke(); // Invoke the action if it's set
+            dialogueFinished = true;
         }
     }
     private IEnumerator AutoNextLine()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         NextLine();
     }
 }

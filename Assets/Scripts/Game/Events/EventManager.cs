@@ -8,7 +8,7 @@ public class EventManager : MonoBehaviour
 {
     //  Static instance
     public static EventManager Instance { get; private set; }
-    private const float GET_ITEM_CHANCE = 0.3f; 
+    private const float GET_ITEM_CHANCE = 0.1f; 
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class EventManager : MonoBehaviour
                 break;
             case EventType.XO_game:
 
-                LoadEventScene("XO");
+                //LoadEventScene("XO");
                 break;
             case EventType.SandCastle:
                 //LoadEventScene("TeleportScene");
@@ -128,7 +128,7 @@ public class EventManager : MonoBehaviour
         if (chance < GET_ITEM_CHANCE)
         {
             Debug.Log($"Player {player.name} collected {quantity} of item: {item}");
-            ItemType randomItem = (ItemType)UnityEngine.Random.Range(0, 4);
+            ItemType randomItem = (ItemType)UnityEngine.Random.Range(0, 3);
             CollectItemPanel.Instance.ShowCollectItemPanel(randomItem, quantity);
         }
         else

@@ -27,9 +27,18 @@ public class CursorChanger : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         Cursor.SetCursor(defaultCursorTexture, hotSpot, CursorMode.Auto); // Reset to default
     }
+    public void OnDisable()
+    {
+        Cursor.SetCursor(defaultCursorTexture, hotSpot, CursorMode.Auto); 
+    }
+
 
     public static void SetDefaultCursor()
     {
+        if (defaultCursorTexture == null)
+        {
+            LoadDefaultCursor();
+        }
         Cursor.SetCursor(defaultCursorTexture, Vector2.zero, CursorMode.Auto); // Reset to default
     }
     public static void SetTypingCursor(PointerEventData eventData) {

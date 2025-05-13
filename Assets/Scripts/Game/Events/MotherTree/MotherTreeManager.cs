@@ -51,7 +51,7 @@ public class MotherTreeManager : MonoBehaviour
             currentPlayer.Inventory.AddItem(ItemType.TOTME_OF_UNDYING, 1);
             StartCoroutine(ShowRewardPanel());
         }
-        HideMotherTreePanel();
+        //HideMotherTreePanel(); // The Panel is hided after the reward panel is shown
         currentPlayer.PlayerState = PlayerStats.FINISHED_EVENT;
     }
     private IEnumerator ShowRewardPanel()
@@ -61,7 +61,8 @@ public class MotherTreeManager : MonoBehaviour
         rewardLowerText.text = "You have received a Tome of Undying";
         rewardImage.sprite = ItemsTypeExtensioin.GetIcon(ItemType.TOTME_OF_UNDYING);
         yield return new WaitForSeconds(2.0f);
-        rewardPanel.SetActive(false);
+        HideRewardPanel();
+        HideMotherTreePanel();
     }
     public void HideRewardPanel()
     {

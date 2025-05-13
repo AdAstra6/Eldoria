@@ -208,7 +208,7 @@ public class GameplayManager : MonoBehaviour
         }
         else
         {
-            // handle incorrect puzzle
+            Players[currentPlayerIndex].DecreaseHealth(1);
         }
         StartStrategicPhase();
     }

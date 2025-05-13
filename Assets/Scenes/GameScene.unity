@@ -7685,7 +7685,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &191482913
 RectTransform:
@@ -7705,11 +7705,11 @@ RectTransform:
   - {fileID: 1093425388}
   - {fileID: 1684504127}
   - {fileID: 1362801577}
-  - {fileID: 1696976888}
   - {fileID: 775615040}
   - {fileID: 1143227234}
   - {fileID: 1152180686}
   - {fileID: 1733262778}
+  - {fileID: 1696976888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -59728,7 +59728,7 @@ SpriteRenderer:
   m_Size: {x: 60.000004, y: 60.000004}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1422251502
@@ -61078,7 +61078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea90f5a2f838344facf19fcdc906b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newCursorTexture: {fileID: 2800000, guid: 4983aa2046a6e424ea7face8b05324fa, type: 3}
+  newCursorTexture: {fileID: 2800000, guid: 7e997d903d070504d8aabf7f6ecf5862, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!1 &1481325348
 GameObject:
@@ -88193,7 +88193,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+  m_Sprite: {fileID: -6594154871855215068, guid: 92b692fd5b9108f4aab2e150d371ad97,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -88213,13 +88213,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102707134}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.886, y: -2.7, z: 0}
-  m_LocalScale: {x: 88.17646, y: 69.27848, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0015303293, w: 0.99999887}
+  m_LocalPosition: {x: -128.2, y: -9.3, z: 0}
+  m_LocalScale: {x: 13.002309, y: 13.233599, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.175}
 --- !u!1 &2104781715
 GameObject:
   m_ObjectHideFlags: 0
@@ -89891,6 +89891,6 @@ SceneRoots:
   - {fileID: 479623467}
   - {fileID: 991215554}
   - {fileID: 925901546}
-  - {fileID: 191482913}
   - {fileID: 1705547994}
+  - {fileID: 191482913}
   - {fileID: 1835903954}

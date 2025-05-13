@@ -29,6 +29,7 @@ public class DiceRoll : MonoBehaviour
 
     public IEnumerator RollDice()
     {
+        CursorChanger.SetDefaultCursor(); // Reset cursor to default
         // Play the dice roll sound
         AudioManager.Instance.PlayDiceRoll();
         bool bonusDiceActive = currentPlayer.Effects.HasBonusDiceNextTurn;
