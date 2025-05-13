@@ -10,7 +10,7 @@ public class AnimatedMapBackground : MonoBehaviour
     [SerializeField] Transform mapSprite;
     void Start()
     {
-        mapSprite.position = new Vector3(0, -1513,0);
+        mapSprite.position = new Vector3(0, 0,0);
         UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
         float randomTime = UnityEngine.Random.Range(0.0f, ANIMATION_LENTH);
         animator.Play(animationStateName, 0, randomTime / ANIMATION_LENTH);
