@@ -1,88 +1,151 @@
 {
-    "players": [
-      {
-        "name": "Anes",
-        "id": 1,
-        "elo": 0,
-        "categoriesElo": {
-          "geography": 0,
-          "ethics": 0,
-          "math": 0,
-          "biology": 0,
-          "zoology": 0,
-          "astronomy": 0,
-          "general_knowledge": 0
-        },
-        "games": {
-          "played": 0,
-          "won": 0,
-          "winRatio": 0.0
-        },
-        "age": 19,
-        "icon": "ProfileIcons/anes"
+  "players": [
+    {
+      "id": 1,
+      "name": "Anes",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
       },
-      {
-        "name": "Adlene",
-        "id": 2,
-        "elo": 0,
-        "categoriesElo": {
-          "geography": 0,
-          "ethics": 0,
-          "math": 0,
-          "biology": 0,
-          "zoology": 0,
-          "astronomy": 0,
-          "general_knowledge": 0
-        },
-        "games": {
-          "played": 0,
-          "won": 0,
-          "winRatio": 0.0
-        },
-        "age": 19,
-        "icon": "ProfileIcons/adlene"
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
       },
-      {
-        "name": "Ousama",
-        "id": 3,
-        "elo": 0,
-        "categoriesElo": {
-          "geography": 0,
-          "ethics": 0,
-          "math": 0,
-          "biology": 0,
-          "zoology": 0,
-          "astronomy": 0,
-          "general_knowledge": 0
-        },
-        "games": {
-          "played": 0,
-          "won": 0,
-          "winRatio": 0.0
-        },
-        "age": 19,
-        "icon": "ProfileIcons/ousama"
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\icon13"
+    },
+    {
+      "id": 2,
+      "name": "Adlene",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
       },
-      {
-        "name": "Zinou",
-        "id": 4,
-        "elo": 0,
-        "categoriesElo": {
-          "geography": 0,
-          "ethics": 0,
-          "math": 0,
-          "biology": 0,
-          "zoology": 0,
-          "astronomy": 0,
-          "general_knowledge": 0
-        },
-        "games": {
-          "played": 0,
-          "won": 0,
-          "winRatio": 0.0
-        },
-        "age": 19,
-        "icon": "ProfileIcons/zinou"
-      }
-    ]
-  }
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\icon18"
+    },
+    {
+      "id": 3,
+      "name": "Ousama",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
+      },
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\icon19"
+    },
+    {
+      "id": 4,
+      "name": "Zinou",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
+      },
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\16Artboard_44x"
+    },
+    {
+      "id": 3,
+      "name": "Ousama",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
+      },
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "ProfileIcons/ousama"
+    },
+    {
+      "id": 5,
+      "name": "Nour",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
+      },
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\21Artboard_44x"
+    },
+    {
+      "id": 5,
+      "name": "Nour",
+      "elo": 300,
+      "categoriesElo": {
+        "geography": 300,
+        "ethics": 300,
+        "math": 300,
+        "biology": 300,
+        "zoology": 300,
+        "astronomy": 300,
+        "general_knowledge": 300
+      },
+      "games": {
+        "played": 0,
+        "won": 0,
+        "winRatio": 0.0
+      },
+      "age": 19,
+      "icon": "Sprites\\ProfilesIcons\\23Artboard_44x"
+    }
+  ]
+}
