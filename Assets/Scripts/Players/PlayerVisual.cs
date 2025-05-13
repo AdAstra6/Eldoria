@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class PlayerVisual : MonoBehaviour
@@ -43,5 +44,12 @@ public class PlayerVisual : MonoBehaviour
     public void SetMoving(bool isMoving)
     {
         animator.SetBool("IsMoving", isMoving);
+    }
+    public Sprite GetVisual(int n)
+    { 
+        string path = Path.Combine("Sprites", "bigCharacter", "Player"+n.ToString() );
+        return Resources.Load<Sprite>(path);
+
+
     }
 }

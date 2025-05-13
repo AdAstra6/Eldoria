@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private TMP_Text infoText;
     [SerializeField] private GameObject infoTextGameObject;
+    [SerializeField] private List<GameObject> playersHuds;
 
     private void Awake()
     {
@@ -142,6 +143,23 @@ public class UIManager : MonoBehaviour
     {
         infoTextGameObject.SetActive(false);
 
+    }
+
+    public void initiatePlayersHud(int n)
+    {
+        int i = 0;
+        foreach (GameObject hud in playersHuds)
+        {
+            if (i < n)
+            {
+                hud.SetActive(true);
+                i++;
+            }
+            else
+            {
+                hud.SetActive(false);
+            }
+        }
     }
 
 }

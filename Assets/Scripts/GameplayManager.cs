@@ -74,6 +74,7 @@ public class GameplayManager : MonoBehaviour
         GameQuestionManager.gameAverageElo = averageElo / playersCount;
         this.currentPlayerIndex = 0;
         gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
+        UIManager.Instance.initiatePlayersHud(GameData.SelectedProfiles.Count);
     }
 
 
