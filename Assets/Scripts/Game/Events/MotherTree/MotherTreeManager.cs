@@ -61,7 +61,7 @@ public class MotherTreeManager : MonoBehaviour
         rewardUpperText.text = "Now not even death can stop you";
         rewardLowerText.text = "You have received a Tome of Undying";
         rewardImage.sprite = ItemsTypeExtensioin.GetIcon(ItemType.TOTME_OF_UNDYING);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.0f);
         rewardPanel.SetActive(false);
     }
     public void HideRewardPanel()
