@@ -8,7 +8,7 @@ public class MainMenuController : MonoBehaviour
     public GameObject SubMenuPanel;
     public GameObject TutorialPanel;
     public GameObject CreditsPanel;
-
+    public GameObject HowToPlayPanel;
 
     [SerializeField] private Animator CameraRig;
     void Start()
@@ -36,6 +36,7 @@ public class MainMenuController : MonoBehaviour
     {
         MainMenuPanel.SetActive(true);
         SubMenuPanel.SetActive(false);
+        HowToPlayPanel.SetActive(false);
     }
     public void ShowSubMenu()
     {
@@ -43,6 +44,7 @@ public class MainMenuController : MonoBehaviour
         SubMenuPanel.SetActive(true);
         TutorialPanel.SetActive(false);
         CreditsPanel.SetActive(false);
+        HowToPlayPanel.SetActive(false);
     }
     public void ShowTutorial()
     {
@@ -55,4 +57,10 @@ public class MainMenuController : MonoBehaviour
         SubMenuPanel.SetActive(false);
         CreditsPanel.SetActive(true);
     }
+    public void ShowHowToPlayPanel()
+    {
+        SubMenuPanel.SetActive(false);
+        HowToPlayPanel.SetActive(true);
+    }
+    
 }
