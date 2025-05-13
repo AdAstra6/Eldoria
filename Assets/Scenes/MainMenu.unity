@@ -765,8 +765,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255323840}
   m_CullTransparentMesh: 1
---- !u!4 &258118193 stripped
-Transform:
+--- !u!224 &258118193 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 3889491499513744111, guid: be6859bb842f69a4db3bc6a05ce8e0a7,
     type: 3}
   m_PrefabInstance: {fileID: 8770013473208657041}
@@ -1309,7 +1309,7 @@ Transform:
   m_GameObject: {fileID: 560119668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 623.9099, y: -504.89487, z: 0.06000328}
+  m_LocalPosition: {x: 1183, y: -729, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2917,7 +2917,7 @@ Transform:
   m_GameObject: {fileID: 1461603432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 623.9099, y: -504.89487, z: 0.06000328}
+  m_LocalPosition: {x: 1183, y: -729, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4266,6 +4266,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AnimatedBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985278592593294047, guid: be6859bb842f69a4db3bc6a05ce8e0a7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985278592593294047, guid: be6859bb842f69a4db3bc6a05ce8e0a7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -163
       objectReference: {fileID: 0}
     - target: {fileID: 7705280302344118076, guid: be6859bb842f69a4db3bc6a05ce8e0a7,
         type: 3}
