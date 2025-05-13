@@ -52,7 +52,6 @@ public class MotherTreeManager : MonoBehaviour
             StartCoroutine(ShowRewardPanel());
         }
         HideMotherTreePanel();
-        HideRewardPanel() ;
         currentPlayer.PlayerState = PlayerStats.FINISHED_EVENT;
     }
     private IEnumerator ShowRewardPanel()
