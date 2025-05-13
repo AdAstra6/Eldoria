@@ -176,6 +176,7 @@ public class GameplayManager : MonoBehaviour
         profileManager.UpdateProfiles(profiles);
         Debug.Log("Game Over. Elo points saved.");
         // Load the main menu scene
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.menuTheme);
         SceneManager.LoadScene("MainMenu"); // temporary TODO : add a statistics scene after game over
     
     }
