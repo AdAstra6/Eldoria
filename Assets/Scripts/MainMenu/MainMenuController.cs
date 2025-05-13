@@ -14,6 +14,7 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         ShowMainMenu();
+        CursorChanger.SetDefaultCursor();
     }
     public void PlayGame()
     {

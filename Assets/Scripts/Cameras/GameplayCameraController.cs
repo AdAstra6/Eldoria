@@ -77,7 +77,8 @@ public class GameplayCameraController : MonoBehaviour
         }
         else
         {
-            Cursor.SetCursor(null, cursorHotspot, CursorMode.Auto);
+            //Cursor.SetCursor(null, cursorHotspot, CursorMode.Auto);
+            CursorChanger.SetDefaultCursor();
         }
         // Apply combined movement
         freeCameraRig.transform.position += keyboardMovement + mouseDragMovement;

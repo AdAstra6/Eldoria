@@ -1,0 +1,1208 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is 4 + 15?",
+      "options": ["18", "22", "19", "25"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 2,
+      "text": "What is 8 + 5?",
+      "options": ["11", "12", "13", "14"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 3,
+      "text": "What is 7 × 6?",
+      "options": ["42", "36", "48", "40"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 4,
+      "text": "What is 15 ÷ 3?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 5,
+      "text": "What is 9 − 4?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 6,
+      "text": "What is 5²?",
+      "options": ["10", "15", "20", "25"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 7,
+      "text": "What is half of 20?",
+      "options": ["8", "9", "10", "12"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 8,
+      "text": "What is the square root of 36?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    
+    {
+      "id": 9,
+      "text": "What is the value of 3x + 5 = 20?",
+      "options": ["5", "10", "15", "20"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 10,
+      "text": "What is the derivative of x²?",
+      "options": ["x", "2x", "x²", "2"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 11,
+      "text": "What is the area of a triangle with base 10 and height 5?",
+      "options": ["25", "30", "35", "40"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 12,
+      "text": "Solve for y: 2y − 3 = 7",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 13,
+      "text": "What is the integral of 2x dx?",
+      "options": ["x² + C", "2x + C", "x + C", "2x² + C"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 14,
+      "text": "What is the value of cos(60°)?",
+      "options": ["0", "0.5", "0.866", "1"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 15,
+      "text": "If a circle has radius 7, what is its circumference? (Use π ≈ 3.14)",
+      "options": ["21.98", "43.96", "28", "14"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    
+    {
+      "id": 16,
+      "text": "What is the solution set of x² − 5x + 6 = 0?",
+      "options": ["{2, 3}", "{−2, −3}", "{1, 6}", "{−1, −6}"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 17,
+      "text": "Evaluate the limit: limₓ→0 (sin x) / x",
+      "options": ["0", "1", "Undefined", "∞"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 18,
+      "text": "What is the second derivative of x³?",
+      "options": ["3x²", "6x", "x³", "3"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 19,
+      "text": "What is the solution to the differential equation dy/dx = 3y?",
+      "options": ["y = Ce^{3x}", "y = 3x + C", "y = 3e^{x}", "y = Cx³"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 20,
+      "text": "What is the sum of the infinite geometric series 5 + 2.5 + 1.25 + ... ?",
+      "options": ["7.5", "10", "12.5", "15"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 21,
+      "text": "Compute the binomial coefficient: C(10, 3).",
+      "options": ["120", "210", "720", "1000"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 22,
+      "text": "What is the probability of rolling a sum of 7 with two fair dice?",
+      "options": ["1/6", "1/5", "1/8", "1/12"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    
+    {
+      "id": 23,
+      "text": "Which is the largest continent by area?",
+      "options": ["Africa", "Asia", "Europe", "Antarctica"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 24,
+      "text": "Which country has the Great Barrier Reef?",
+      "options": ["Australia", "Brazil", "Mexico", "South Africa"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 25,
+      "text": "Which ocean is the deepest?",
+      "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 26,
+      "text": "In which country is Mount Kilimanjaro?",
+      "options": ["Kenya", "Tanzania", "Uganda", "Ethiopia"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 27,
+      "text": "What river runs through Cairo?",
+      "options": ["Nile", "Amazon", "Mississippi", "Yangtze"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 28,
+      "text": "Which desert is the largest hot desert?",
+      "options": ["Sahara", "Gobi", "Kalahari", "Mojave"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 29,
+      "text": "What is the capital of Canada?",
+      "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    
+    {
+      "id": 30,
+      "text": "Which country has the most time zones?",
+      "options": ["Russia", "USA", "France", "China"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 31,
+      "text": "Which is the longest river in the world?",
+      "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 32,
+      "text": "Which mountain range separates Europe and Asia?",
+      "options": ["Alps", "Andes", "Ural", "Rockies"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 33,
+      "text": "What is the capital of New Zealand?",
+      "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 34,
+      "text": "Which US state is the Grand Canyon located in?",
+      "options": ["California", "Utah", "Arizona", "Nevada"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 35,
+      "text": "Which city is known as the “City of a Hundred Spires”?",
+      "options": ["Vienna", "Prague", "Budapest", "Brussels"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 36,
+      "text": "Which sea is shrinking due to diversion of rivers for irrigation?",
+      "options": ["Caspian Sea", "Aral Sea", "Dead Sea", "Black Sea"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    
+    {
+      "id": 37,
+      "text": "Which country’s territory includes the Danakil Depression, one of the hottest places on Earth?",
+      "options": ["Ethiopia", "Somalia", "Djibouti", "Eritrea"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 38,
+      "text": "What is the name of the world’s largest salt flat located in Bolivia?",
+      "options": ["Salar de Uyuni", "Badwater Basin", "Etosha Pan", "Makgadikgadi Pan"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 39,
+      "text": "Which remote island is known as the loneliest in the world, located in the southern Pacific?",
+      "options": ["Easter Island", "Pitcairn Island", "Tristan da Cunha", "Bouvet Island"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 40,
+      "text": "Which is the highest capital city by elevation?",
+      "options": ["La Paz", "Quito", "Bogotá", "Thimphu"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 41,
+      "text": "Which African country has the most UNESCO World Heritage Sites?",
+      "options": ["Egypt", "South Africa", "Morocco", "Ethiopia"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 42,
+      "text": "Which river flows through Baghdad?",
+      "options": ["Tigris", "Euphrates", "Nile", "Jordan"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 43,
+      "text": "Which strait separates Europe from Asia between Turkey and Greece?",
+      "options": ["Bosporus", "Gibraltar", "Hormuz", "Malacca"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    
+    {
+      "id": 44,
+      "text": "What is the powerhouse of the cell?",
+      "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 45,
+      "text": "What blood type is known as the universal donor?",
+      "options": ["A", "B", "AB", "O"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 46,
+      "text": "What gas do plants absorb during photosynthesis?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 47,
+      "text": "How many chambers are in the human heart?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 48,
+      "text": "What is the basic unit of life?",
+      "options": ["Atom", "Molecule", "Cell", "Organ"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 49,
+      "text": "Which vitamin is produced when skin is exposed to sunlight?",
+      "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 50,
+      "text": "What is the largest organ in the human body?",
+      "options": ["Heart", "Liver", "Skin", "Lungs"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    
+    {
+      "id": 51,
+      "text": "Which macromolecule is composed of amino acids?",
+      "options": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 52,
+      "text": "What structure regulates the passage of substances into and out of a cell?",
+      "options": ["Cell wall", "Cytoplasm", "Cell membrane", "Nucleus"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 53,
+      "text": "What is the process by which DNA is copied into RNA?",
+      "options": ["Translation", "Replication", "Transcription", "Translocation"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 54,
+      "text": "Which organ in mammals produces insulin?",
+      "options": ["Liver", "Pancreas", "Thyroid", "Adrenal gland"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 55,
+      "text": "What type of bond holds complementary DNA strands together?",
+      "options": ["Covalent", "Ionic", "Hydrogen", "Peptide"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 56,
+      "text": "What is the term for a reaction that absorbs energy?",
+      "options": ["Exergonic", "Endergonic", "Exothermic", "Oxidation"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 57,
+      "text": "Which process generates the most ATP in cellular respiration?",
+      "options": ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    
+    {
+      "id": 58,
+      "text": "What structure in eukaryotic cells is responsible for protein synthesis?",
+      "options": ["Ribosome", "Nucleolus", "Endoplasmic reticulum", "Golgi apparatus"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 59,
+      "text": "Which cycle describes the oxidation of acetyl-CoA to CO₂?",
+      "options": ["Calvin cycle", "Krebs cycle", "Urea cycle", "Pentose phosphate pathway"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 60,
+      "text": "What enzyme unwinds DNA during replication?",
+      "options": ["Polymerase", "Ligase", "Helicase", "Topoisomerase"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 61,
+      "text": "Which organelle is involved in intracellular digestion?",
+      "options": ["Lysosome", "Mitochondrion", "Peroxisome", "Chloroplast"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 62,
+      "text": "What term describes organisms that obtain energy from light?",
+      "options": ["Chemotrophs", "Autotrophs", "Phototrophs", "Heterotrophs"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 63,
+      "text": "What is the primary function of microtubules in cells?",
+      "options": ["Protein synthesis", "Energy production", "Structural support and transport", "Genetic information storage"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 64,
+      "text": "Which process in chloroplasts produces O₂ as a byproduct?",
+      "options": ["Calvin cycle", "Light-dependent reactions", "Photorespiration", "Dark reactions"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    
+    {
+      "id": 65,
+      "text": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "Mark Twain", "William Shakespeare", "Jane Austen"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 66,
+      "text": "What is the chemical symbol for water?",
+      "options": ["WO", "H₂O", "O₂", "HO₂"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 67,
+      "text": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 68,
+      "text": "How many continents are there on Earth?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 69,
+      "text": "What currency is used in Japan?",
+      "options": ["Yen", "Dollar", "Euro", "Won"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 70,
+      "text": "Which famous scientist developed the theory of relativity?",
+      "options": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Galileo Galilei"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 71,
+      "text": "Which color do you get by mixing blue and yellow?",
+      "options": ["Green", "Purple", "Orange", "Brown"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    
+    {
+      "id": 72,
+      "text": "Who painted the Mona Lisa?",
+      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 73,
+      "text": "In what year did the Titanic sink?",
+      "options": ["1910", "1912", "1914", "1916"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 74,
+      "text": "What is the tallest mountain in North America?",
+      "options": ["Mount Kilimanjaro", "Mount McKinley (Denali)", "Mount Everest", "Mount Elbert"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 75,
+      "text": "Which Shakespeare play features the line 'To be, or not to be'?",
+      "options": ["Hamlet", "Macbeth", "Othello", "King Lear"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 76,
+      "text": "Which element has the atomic number 6?",
+      "options": ["Carbon", "Nitrogen", "Oxygen", "Helium"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 77,
+      "text": "What is the largest mammal in the world?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 78,
+      "text": "Who is known as the 'Father of Computers'?",
+      "options": ["Alan Turing", "Charles Babbage", "Steve Jobs", "Bill Gates"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    
+    {
+      "id": 79,
+      "text": "Which philosopher wrote 'Critique of Pure Reason'?",
+      "options": ["Immanuel Kant", "Friedrich Nietzsche", "John Locke", "David Hume"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 80,
+      "text": "Which year did the Berlin Wall fall?",
+      "options": ["1987", "1988", "1989", "1990"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 81,
+      "text": "Who formulated the laws of planetary motion?",
+      "options": ["Isaac Newton", "Johannes Kepler", "Galileo Galilei", "Tycho Brahe"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 82,
+      "text": "What is the main language spoken in Brazil?",
+      "options": ["Spanish", "Portuguese", "French", "English"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 83,
+      "text": "Which treaty ended World War I?",
+      "options": ["Treaty of Versailles", "Treaty of Paris", "Treaty of Ghent", "Treaty of Utrecht"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 84,
+      "text": "What is the heaviest naturally occurring element?",
+      "options": ["Uranium", "Plutonium", "Osmium", "Lead"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 85,
+      "text": "Which ancient civilization built Machu Picchu?",
+      "options": ["Aztec", "Maya", "Inca", "Olmec"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    
+    {
+      "id": 86,
+      "text": "Which philosopher is known for the categorical imperative?",
+      "options": ["Aristotle", "Immanuel Kant", "John Stuart Mill", "Plato"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 87,
+      "text": "Which theory focuses on the greatest good for the greatest number?",
+      "options": ["Deontology", "Utilitarianism", "Virtue ethics", "Ethical egoism"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 88,
+      "text": "Who wrote 'The Republic'?",
+      "options": ["Aristotle", "Plato", "Socrates", "Epicurus"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 89,
+      "text": "Which concept is associated with moral character and virtues?",
+      "options": ["Deontology", "Virtue ethics", "Consequentialism", "Nihilism"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 90,
+      "text": "Which term describes the duty-based ethics approach?",
+      "options": ["Teleology", "Deontology", "Utilitarianism", "Relativism"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 91,
+      "text": "Who is known for the theory of social contract?",
+      "options": ["Thomas Hobbes", "Karl Marx", "David Hume", "Sigmund Freud"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 92,
+      "text": "In ethics, what does 'autonomy' refer to?",
+      "options": ["Collective decision-making", "Self-governance", "Charity", "Obedience"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 93,
+      "text": "Which philosopher argued that 'the unexamined life is not worth living'?",
+      "options": ["Socrates", "Plato", "Aristotle", "Descartes"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 94,
+      "text": "What is 'prima facie' duty in Ross's ethics?",
+      "options": ["Absolute duty", "Conditional duty", "Moral illusion", "Consequential duty"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 95,
+      "text": "Which concept focuses on ethical decision-making based on roles?",
+      "options": ["Role ethics", "Virtue ethics", "Divine command", "Utilitarianism"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 96,
+      "text": "Which ethical theory emphasizes rights over outcomes?",
+      "options": ["Consequentialism", "Deontology", "Utilitarianism", "Relativism"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 97,
+      "text": "What does 'ethical relativism' assert?",
+      "options": ["Universal moral truths", "Morals based on culture", "Ends justify means", "Duty above all"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 98,
+      "text": "Which thinker developed the idea of justice as fairness?",
+      "options": ["Rawls", "Nozick", "Mill", "Kant"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 99,
+      "text": "What is the Trolley Problem meant to illustrate?",
+      "options": ["Economic trade-offs", "Moral dilemmas", "Legal issues", "Political debates"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 100,
+      "text": "Which philosopher critiqued utilitarianism in 'On Liberty'?",
+      "options": ["John Stuart Mill", "Jeremy Bentham", "Immanuel Kant", "Thomas Hobbes"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 101,
+      "text": "What is the 'is-ought' problem?",
+      "options": ["Link between facts and values", "Subjective moral views", "Moral absolutism", "Moral relativism"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 102,
+      "text": "Which ethicist proposed the principle of double effect?",
+      "options": ["Aquinas", "Aristotle", "Kant", "Rawls"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 103,
+      "text": "Which approach integrates ethical concerns into business decisions?",
+      "options": ["Corporate social responsibility", "Profit maximization", "Divestment", "Monopolization"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 104,
+      "text": "Which theory argues distribution should follow individual contributions?",
+      "options": ["Egalitarianism", "Libertarianism", "Marxism", "Utilitarianism"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 105,
+      "text": "Who argued for the veil of ignorance as a decision-making tool?",
+      "options": ["Rawls", "Nozick", "Scanlon", "Habermas"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 106,
+      "text": "What ethical framework prioritizes care and relationships?",
+      "options": ["Justice ethics", "Care ethics", "Rights-based ethics", "Duty ethics"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 107,
+      "text": "Which animal is known as the King of the Jungle?",
+      "options": ["Tiger", "Lion", "Elephant", "Gorilla"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 108,
+      "text": "What is the fastest land animal?",
+      "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 109,
+      "text": "Which mammal lays eggs?",
+      "options": ["Platypus", "Kangaroo", "Whale", "Elephant"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 110,
+      "text": "Which bird is a universal symbol of peace?",
+      "options": ["Eagle", "Owl", "Dove", "Sparrow"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 111,
+      "text": "Which insect has a life cycle including metamorphosis?",
+      "options": ["Ant", "Butterfly", "Bee", "All of the above"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 112,
+      "text": "Which aquatic animal has eight arms?",
+      "options": ["Squid", "Octopus", "Shrimp", "Crab"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 113,
+      "text": "Which animal is known for changing color for camouflage?",
+      "options": ["Chameleon", "Frog", "Snake", "Lizard"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    
+    {
+      "id": 114,
+      "text": "What is the largest species of shark?",
+      "options": ["Great White Shark", "Tiger Shark", "Whale Shark", "Hammerhead Shark"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 115,
+      "text": "Which mammal is capable of true flight?",
+      "options": ["Flying squirrel", "Bat", "Flying fish", "Sugar glider"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 116,
+      "text": "Which primate is closest to humans genetically?",
+      "options": ["Chimpanzee", "Gorilla", "Orangutan", "Bonobo"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 117,
+      "text": "What term describes animals that eat both plants and meat?",
+      "options": ["Herbivore", "Carnivore", "Omnivore", "Detritivore"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 118,
+      "text": "Which bird can mimic human speech?",
+      "options": ["Parrot", "Eagle", "Hawk", "Falcon"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 119,
+      "text": "Which marine mammal is known for echolocation?",
+      "options": ["Dolphin", "Seal", "Whale", "Manatee"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 120,
+      "text": "Which arthropod has two body segments and eight legs?",
+      "options": ["Insect", "Spider", "Centipede", "Millipede"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    
+    {
+      "id": 121,
+      "text": "Which animal exhibits parthenogenesis in the wild?",
+      "options": ["Komodo dragon", "Kangaroo", "Platypus", "Echidna"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 122,
+      "text": "What is the function of the duodenum in some fish?",
+      "options": ["Oxygen exchange", "Digestion", "Reproduction", "Hearing"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 123,
+      "text": "Which mammal has the longest gestation period?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 124,
+      "text": "Which bird migrates from Antarctica to the Arctic and back each year?",
+      "options": ["Arctic tern", "Penguin", "Albatross", "Petrel"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 125,
+      "text": "Which amphibian secretes toxins through its skin?",
+      "options": ["Salamander", "Frog", "Newt", "All of the above"],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 126,
+      "text": "Which reptile has a four-chambered heart like birds and mammals?",
+      "options": ["Snakes", "Lizards", "Crocodilians", "Turtles"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 127,
+      "text": "Which insect undergoes incomplete metamorphosis?",
+      "options": ["Butterfly", "Beetle", "Dragonfly", "Moth"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    
+    {
+      "id": 128,
+      "text": "Which planet is closest to the Sun?",
+      "options": ["Venus", "Mercury", "Earth", "Mars"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 129,
+      "text": "What is the name of our galaxy?",
+      "options": ["Andromeda Galaxy", "Milky Way", "Whirlpool Galaxy", "Sombrero Galaxy"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 130,
+      "text": "What is the brightest object in the night sky after the Moon?",
+      "options": ["Venus", "Mars", "Jupiter", "Sirius"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 131,
+      "text": "What do we call a rock from space that lands on Earth?",
+      "options": ["Asteroid", "Meteor", "Meteorite", "Comet"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 132,
+      "text": "Which planet is known for its rings?",
+      "options": ["Saturn", "Jupiter", "Uranus", "Neptune"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 133,
+      "text": "What is a lunar eclipse?",
+      "options": ["When Earth passes between the Sun and Moon", "When Moon passes between Sun and Earth", "When Sun passes between Earth and Mars", "When Earth’s shadow falls on the Sun"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 134,
+      "text": "What force keeps planets in orbit around the Sun?",
+      "options": ["Magnetism", "Electromagnetism", "Gravity", "Nuclear force"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    
+    {
+      "id": 135,
+      "text": "What is the approximate age of the universe?",
+      "options": ["4.5 billion years", "13.8 billion years", "10 billion years", "20 billion years"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 136,
+      "text": "What type of galaxy is the Milky Way?",
+      "options": ["Elliptical", "Spiral", "Irregular", "Lenticular"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 137,
+      "text": "Which is the largest planet in our solar system?",
+      "options": ["Saturn", "Jupiter", "Uranus", "Neptune"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 138,
+      "text": "What phenomenon causes the Sun’s light to bend around the Sun during an eclipse?",
+      "options": ["Refraction", "Diffraction", "Gravitational lensing", "Scattering"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 139,
+      "text": "What is the name of the boundary beyond which nothing can escape a black hole?",
+      "options": ["Photon sphere", "Event horizon", "Singularity", "Accretion disk"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 140,
+      "text": "Which mission first landed humans on the Moon?",
+      "options": ["Apollo 10", "Apollo 11", "Apollo 12", "Apollo 13"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 141,
+      "text": "What is a supernova?",
+      "options": ["A white dwarf", "An exploding star", "A neutron star", "A black hole"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    
+    {
+      "id": 142,
+      "text": "What is Hubble’s Law concerned with?",
+      "options": ["Age of stars", "Expansion of the universe", "Orbit of planets", "Formation of galaxies"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 143,
+      "text": "What particle is theorized to mediate the gravitational force?",
+      "options": ["Photon", "Gluon", "Graviton", "W boson"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 144,
+      "text": "Which element was formed during Big Bang nucleosynthesis?",
+      "options": ["Iron", "Uranium", "Helium", "Gold"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 145,
+      "text": "What defines the Schwarzschild radius of a mass?",
+      "options": ["Its spin rate", "Its charge", "The radius of its event horizon", "Its luminosity"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 146,
+      "text": "What are the cosmic microwave background radiation remnants of?",
+      "options": ["Supernovae", "Black hole evaporation", "Early universe after the Big Bang", "Stellar fusion"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 147,
+      "text": "Which class of stars ends their life cycle as white dwarfs?",
+      "options": ["Massive stars", "Medium-mass stars", "Brown dwarfs", "Neutron stars"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 148,
+      "text": "What is the term for a galaxy with no coherent structure?",
+      "options": ["Elliptical galaxy", "Spiral galaxy", "Irregular galaxy", "Lenticular galaxy"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    }
+  ]
+}
