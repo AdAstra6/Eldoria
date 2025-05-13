@@ -50,9 +50,13 @@ public class MotherTreeManager : MonoBehaviour
         {
             currentPlayer.Inventory.AddItem(ItemType.TOTME_OF_UNDYING, 1);
             StartCoroutine(ShowRewardPanel());
+        } else
+        {
+            HideRewardPanel();
+            HideMotherTreePanel();
         }
-        //HideMotherTreePanel(); // The Panel is hided after the reward panel is shown
-        currentPlayer.PlayerState = PlayerStats.FINISHED_EVENT;
+            //HideMotherTreePanel(); // The Panel is hided after the reward panel is shown
+            currentPlayer.PlayerState = PlayerStats.FINISHED_EVENT;
     }
     private IEnumerator ShowRewardPanel()
     {
