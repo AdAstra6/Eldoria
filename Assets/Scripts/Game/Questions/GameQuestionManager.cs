@@ -39,6 +39,7 @@ public class GameQuestionManager : MonoBehaviour
         this.timerCountDown.SetTotalTime(MCQTime);
         this.timerCountDown.Restart();
         currentQuestion = QuestionManager.GetRandomQuestion(EloSystemManager.GetDifficultyLabel(GameData.averageElo));
+        QuestionManager.RemoveQuestion(currentQuestion);  
         QuestionUI.Instance.CurrentQuestion = currentQuestion;
         QuestionUI.Instance.ShowQuestion(player);
 

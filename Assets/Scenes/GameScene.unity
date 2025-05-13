@@ -30302,7 +30302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16511cfd64abd8547a33717c26be32f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionsJsonFile: {fileID: 4900000, guid: 8047e512ef3f9474caeda25caa75ab60, type: 3}
 --- !u!1 &751428953
 GameObject:
   m_ObjectHideFlags: 0

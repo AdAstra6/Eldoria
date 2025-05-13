@@ -5,7 +5,9 @@ using System;
 
 public class QuestionManager : MonoBehaviour
 {
-    public TextAsset questionsJsonFile;
+    private readonly string KidsQuestionsPath = Path.Combine("MultipleChoiceQuestions", "kids_quiz_questions");
+    private readonly string AdultQuestionsPath = Path.Combine("MultipleChoiceQuestions", "adult_quiz_questions");
+    private TextAsset questionsJsonFile;
     private QuestionDatabase questionDB;
     private System.Random random;
 
@@ -17,6 +19,14 @@ public class QuestionManager : MonoBehaviour
 
     void LoadQuestions()
     {
+        if (GameData.GameMode == GameModes.KIDS)
+        {
+            questionsJsonFile = Resources.Load<TextAsset>(KidsQuestionsPath);
+        }
+        else if (GameData.GameMode == GameModes.ADULTS)
+        {
+            questionsJsonFile = Resources.Load<TextAsset>(AdultQuestionsPath);
+        }
         if (questionsJsonFile != null)
         {
             // Parse the JSON data
@@ -45,7 +55,14 @@ public class QuestionManager : MonoBehaviour
     public Question GetRandomQuestion(string difficulty)
     {
         if (questionDB == null || questionDB.questions.Count == 0)
+        {
+            LoadQuestions();
+        }
+        if (questionDB == null || questionDB.questions.Count == 0)
+        {
+            Debug.LogWarning("No questions available!");
             return null;
+        }
 
         List<Question> filteredQuestions = new List<Question>();
 
@@ -63,10 +80,17 @@ public class QuestionManager : MonoBehaviour
         if (filteredQuestions.Count == 0)
         {
             Debug.LogWarning("No questions match the specified criteria!");
-            return null;
+            return GetRandomQuestion(); // Fallback to any question
         }
 
         int randomIndex = random.Next(0, filteredQuestions.Count);
         return filteredQuestions[randomIndex];
+    }
+    public void RemoveQuestion(Question question)
+    {
+        if (questionDB == null || questionDB.questions.Count == 0)
+            return;
+        questionDB.questions.Remove(question);
+        Debug.Log($"Removed question: {question.text}");
     }
 }
