@@ -45,7 +45,7 @@ public class PlayerVisual : MonoBehaviour
     {
         animator.SetBool("IsMoving", isMoving);
     }
-    public Sprite GetVisual(int n)
+    public static Sprite GetVisual(int n)
     { 
         string path = Path.Combine("Sprites", "bigCharacter", "Player"+n.ToString() );
         return Resources.Load<Sprite>(path);

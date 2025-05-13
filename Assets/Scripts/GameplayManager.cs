@@ -14,6 +14,10 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private int playersCount;
     [SerializeField] private InteractionSystemController interactionSystemController;
     private int currentPlayerIndex;
+    public int CurrentPlayerIndex
+    {
+        get { return currentPlayerIndex; }
+    }
     [SerializeField] private DiceRoll diceRoll;
 
     private UIManager uiManager;
@@ -74,6 +78,7 @@ public class GameplayManager : MonoBehaviour
         GameQuestionManager.gameAverageElo = averageElo / playersCount;
         this.currentPlayerIndex = 0;
         gameplayCameraController.SetPlayer(Players[currentPlayerIndex].gameObject.transform);
+        ItemInventoryUI.Instance.SetPlayerSkinImage(PlayerVisual.GetVisual(1));
         UIManager.Instance.initiatePlayersHud(GameData.SelectedProfiles.Count);
     }
 
@@ -151,6 +156,7 @@ public class GameplayManager : MonoBehaviour
         {
             currentPlayerIndex = 0;
         }
+        ItemInventoryUI.Instance.SetPlayerSkinImage(PlayerVisual.GetVisual(currentPlayerIndex+1));
     }
 
     public void GameOver(bool isWin)

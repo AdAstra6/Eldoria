@@ -10,6 +10,7 @@ public class ItemInventoryUI : MonoBehaviour
     [SerializeField] private ItemButton[] itemButtons;
     [SerializeField] private GameObject ItemsContainer; // Panel contains inventory UI
     private Button collapseAllButton;
+    [SerializeField] private Image playerSkinImage;
 
     private void Awake()
     {
@@ -110,7 +111,10 @@ public class ItemInventoryUI : MonoBehaviour
             }
         }
     }
-
+    public void SetPlayerSkinImage(Sprite sprite)
+    {
+        playerSkinImage.sprite = sprite;
+    }
 
 
 }
