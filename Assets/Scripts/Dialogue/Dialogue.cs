@@ -26,16 +26,7 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && !dialogueFinished) // Allow skipping to the next line
         {
-            if (textComponent.text == lines[index])
-            {
-                StopCoroutine(AutoNextLine());
-                NextLine();
-            }
-            else
-            {
-                //StopCoroutine(TypeLine()); 
-                textComponent.text = lines[index];
-            }
+            SkipToNextLine();
         }
     }
 
@@ -81,5 +72,19 @@ public class Dialogue : MonoBehaviour
     {
         yield return new WaitForSeconds(0.8f);
         NextLine();
+    }
+    public void SkipToNextLine()
+    {
+        if (dialogueFinished) return; // Prevent skipping if dialogue is finished
+        if (textComponent.text == lines[index])
+        {
+            StopCoroutine(AutoNextLine());
+            NextLine();
+        }
+        else
+        {
+            //StopCoroutine(TypeLine()); 
+            textComponent.text = lines[index];
+        }
     }
 }
