@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Assets/Branding/Eldoria_Logo.png" alt="Eldoria Logo" width="240"/>
+  <img src=".github/eldoria_logo.png" alt="Eldoria Logo" width="240"/>
 </div>
 
 # ✨ Eldoria
