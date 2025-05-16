@@ -1,0 +1,1209 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is 2 × 3?",
+      "options": ["6", "5", "8", "4"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    
+    {
+      "id": 2,
+      "text": "What is 2 + 3?",
+      "options": ["4", "5", "6", "3"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 3,
+      "text": "What is 5 − 2?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 4,
+      "text": "What is 4 × 2?",
+      "options": ["6", "8", "4", "10"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 5,
+      "text": "What is 6 ÷ 2?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 6,
+      "text": "Which number comes after 7?",
+      "options": ["6", "8", "9", "10"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 7,
+      "text": "What is half of 10?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 8,
+      "text": "What is 3 + 4?",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    
+    {
+      "id": 9,
+      "text": "What is 12 − 5?",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 10,
+      "text": "What is 3 × 4?",
+      "options": ["7", "10", "12", "14"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 11,
+      "text": "What is 18 ÷ 3?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 12,
+      "text": "What is 9 + 6?",
+      "options": ["13", "14", "15", "16"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 13,
+      "text": "What is 5 × 5?",
+      "options": ["10", "20", "25", "30"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 14,
+      "text": "What is 20 − 7?",
+      "options": ["11", "12", "13", "14"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 15,
+      "text": "If you have 3 groups of 4, how many is that?",
+      "options": ["7", "10", "12", "14"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    
+    {
+      "id": 16,
+      "text": "What is the missing number: 5, __, 15 (increasing by 5)?",
+      "options": ["8", "10", "12", "20"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 17,
+      "text": "What is 7 × 6?",
+      "options": ["42", "36", "48", "40"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 18,
+      "text": "What is 49 ÷ 7?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 19,
+      "text": "Add 25 + 17:",
+      "options": ["42", "43", "44", "45"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 20,
+      "text": "What is double 13?",
+      "options": ["24", "25", "26", "27"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 21,
+      "text": "What is 100 − 37?",
+      "options": ["62", "63", "64", "65"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 22,
+      "text": "Which is bigger: 5² or 3³?",
+      "options": ["5²", "3³", "They’re equal", "None"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+   
+    {
+      "id": 23,
+      "text": "Which continent do we live on?",
+      "options": ["Africa", "Asia", "Europe", "Depends where you live"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 24,
+      "text": "Which ocean is on the west coast of the USA?",
+      "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 25,
+      "text": "What is the largest country by area?",
+      "options": ["Canada", "China", "Russia", "USA"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 26,
+      "text": "In which country is the Eiffel Tower?",
+      "options": ["Italy", "Spain", "France", "Germany"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 27,
+      "text": "Which is the smallest continent?",
+      "options": ["Europe", "Australia", "Antarctica", "South America"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 28,
+      "text": "What is the capital of England?",
+      "options": ["London", "Paris", "Berlin", "Rome"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 29,
+      "text": "Which river flows through Egypt?",
+      "options": ["Amazon", "Mississippi", "Nile", "Yangtze"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    
+    {
+      "id": 30,
+      "text": "Which desert is the largest hot desert?",
+      "options": ["Sahara", "Gobi", "Kalahari", "Mojave"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 31,
+      "text": "What is the capital city of Japan?",
+      "options": ["Osaka", "Tokyo", "Kyoto", "Hiroshima"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 32,
+      "text": "Which country has the most people?",
+      "options": ["India", "USA", "Brazil", "China"],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 33,
+      "text": "Which mountain is the tallest in the world?",
+      "options": ["K2", "Kangchenjunga", "Everest", "Lhotse"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 34,
+      "text": "Which US state is known as the Sunshine State?",
+      "options": ["California", "Florida", "Texas", "Hawaii"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 35,
+      "text": "Which sea is between Europe and Africa?",
+      "options": ["Black Sea", "Mediterranean Sea", "Red Sea", "Baltic Sea"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 36,
+      "text": "What island country is southeast of India?",
+      "options": ["Sri Lanka", "Madagascar", "Japan", "Philippines"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+   
+    {
+      "id": 37,
+      "text": "Which country has a maple leaf on its flag?",
+      "options": ["Canada", "UK", "USA", "Australia"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 38,
+      "text": "Which ocean is deepest?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 39,
+      "text": "Which country is also a continent?",
+      "options": ["Australia", "Greenland", "Iceland", "Madagascar"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 40,
+      "text": "Which river is the longest in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 41,
+      "text": "Mount Fuji is in which country?",
+      "options": ["China", "Japan", "South Korea", "Thailand"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 42,
+      "text": "The Amazon Rainforest is mostly in which country?",
+      "options": ["Peru", "Brazil", "Colombia", "Venezuela"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 43,
+      "text": "Which continent has no deserts?",
+      "options": ["Asia", "Europe", "Africa", "Australia"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    
+    {
+      "id": 44,
+      "text": "What do plants make during photosynthesis?",
+      "options": ["Sugar", "Salt", "Stone", "Plastic"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 45,
+      "text": "What do bees make?",
+      "options": ["Milk", "Honey", "Bread", "Cheese"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 46,
+      "text": "What part of you pumps blood?",
+      "options": ["Lungs", "Brain", "Heart", "Stomach"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 47,
+      "text": "Which animal says 'moo'?",
+      "options": ["Dog", "Cat", "Cow", "Sheep"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 48,
+      "text": "What do you call a baby frog?",
+      "options": ["Chick", "Cub", "Fawn", "Tadpole"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 49,
+      "text": "Where do fish live?",
+      "options": ["Water", "Trees", "Sky", "Desert"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 50,
+      "text": "What do birds use to fly?",
+      "options": ["Legs", "Wings", "Fins", "Antlers"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    
+    {
+      "id": 51,
+      "text": "Which part of a plant absorbs water from soil?",
+      "options": ["Leaf", "Root", "Flower", "Fruit"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 52,
+      "text": "Humans have how many lungs?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 53,
+      "text": "Which animal is a mammal?",
+      "options": ["Shark", "Dolphin", "Penguin", "Frog"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 54,
+      "text": "What do herbivores eat?",
+      "options": ["Meat", "Plants", "Rocks", "Insects"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 55,
+      "text": "What gas do humans exhale?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 56,
+      "text": "Which creature lives in a shell and moves very slowly?",
+      "options": ["Snail", "Ant", "Butterfly", "Bird"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 57,
+      "text": "Which organ filters blood in your body?",
+      "options": ["Kidney", "Lung", "Heart", "Brain"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+   
+    {
+      "id": 58,
+      "text": "What is the largest organ in the human body?",
+      "options": ["Heart", "Skin", "Liver", "Lungs"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 59,
+      "text": "Which blood cells help fight sickness?",
+      "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 60,
+      "text": "What is a baby kangaroo called?",
+      "options": ["Cub", "Pup", "Joey", "Calf"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 61,
+      "text": "Where does photosynthesis occur in plant cells?",
+      "options": ["Chloroplast", "Nucleus", "Mitochondria", "Ribosome"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 62,
+      "text": "What do you call the baby of an eagle?",
+      "options": ["Eaglet", "Chick", "Cub", "Larva"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 63,
+      "text": "Which fish has glowing light under its body?",
+      "options": ["Anglerfish", "Clownfish", "Goldfish", "Salmon"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 64,
+      "text": "How many bones are in the adult human body?",
+      "options": ["206", "208", "210", "212"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+   
+    {
+      "id": 65,
+      "text": "Which color do you get when you mix red and yellow?",
+      "options": ["Green", "Purple", "Orange", "Brown"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 66,
+      "text": "How many days are in a week?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 67,
+      "text": "Which animal is known as man's best friend?",
+      "options": ["Cat", "Dog", "Bird", "Fish"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 68,
+      "text": "What is the name of Mickey Mouse’s dog?",
+      "options": ["Goofy", "Pluto", "Donald", "Scrooge"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 69,
+      "text": "What do you call frozen water?",
+      "options": ["Steam", "Ice", "Rain", "Cloud"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 70,
+      "text": "What is the opposite of 'up'?",
+      "options": ["Over", "Down", "Left", "Right"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 71,
+      "text": "What sound does a cat make?",
+      "options": ["Bark", "Moo", "Meow", "Roar"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    
+    {
+      "id": 72,
+      "text": "Which holiday involves hunting for colored eggs?",
+      "options": ["Christmas", "Easter", "Halloween", "Thanksgiving"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 73,
+      "text": "What is the name of the fairy in Peter Pan?",
+      "options": ["Tinker Bell", "Cinderella", "Ariel", "Snow White"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 74,
+      "text": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 75,
+      "text": "What is the tallest mammal?",
+      "options": ["Elephant", "Giraffe", "Kangaroo", "Horse"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 76,
+      "text": "What do you call a group of fish?",
+      "options": ["School", "Herd", "Pack", "Flock"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 77,
+      "text": "Which superhero wears a red cape and flies?",
+      "options": ["Batman", "Spider-Man", "Superman", "Iron Man"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 78,
+      "text": "What do we call the day after today?",
+      "options": ["Yesterday", "Tomorrow", "Next week", "Last week"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+   
+    {
+      "id": 79,
+      "text": "Which instrument has black and white keys?",
+      "options": ["Guitar", "Drums", "Piano", "Violin"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 80,
+      "text": "Which is the largest ocean on Earth?",
+      "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 81,
+      "text": "What language do they speak in Spain?",
+      "options": ["French", "Spanish", "English", "German"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 82,
+      "text": "Which shape has three sides?",
+      "options": ["Square", "Circle", "Triangle", "Rectangle"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 83,
+      "text": "Which fairy tale features a glass slipper?",
+      "options": ["Snow White", "Cinderella", "Sleeping Beauty", "Rapunzel"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 84,
+      "text": "What is the name of the hungry caterpillar in the famous children’s book?",
+      "options": ["Pete", "Eric", "Eric Carle’s Caterpillar", "The Very Hungry Caterpillar"],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 85,
+      "text": "Which animal builds dams in rivers?",
+      "options": ["Beaver", "Otter", "Duck", "Frog"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    
+    {
+      "id": 86,
+      "text": "Is it good to share your toys with friends?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 87,
+      "text": "Is it okay to take something that isn’t yours?",
+      "options": ["Yes", "No", "Maybe", "Sometimes"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 88,
+      "text": "Should you tell the truth or lie?",
+      "options": ["Lie", "Truth", "Depends", "Never tell"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 89,
+      "text": "Is it kind to help someone who fell down?",
+      "options": ["Yes", "No", "Maybe", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 90,
+      "text": "Should you say 'please' and 'thank you'?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 91,
+      "text": "Is it polite to interrupt someone talking?",
+      "options": ["Yes", "No", "Maybe", "Sometimes"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 92,
+      "text": "Should you listen to your parents and teachers?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 93,
+      "text": "If a friend is sad, should you ignore them or help cheer them up?",
+      "options": ["Ignore", "Help cheer them up", "Walk away", "Laugh"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 94,
+      "text": "Is it fair to take turns?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 95,
+      "text": "If you break something by accident, should you hide it or tell an adult?",
+      "options": ["Hide it", "Tell an adult", "Blame someone else", "Leave it"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 96,
+      "text": "Is it right to cheat on a game to win?",
+      "options": ["Yes", "No", "Sometimes", "Depends"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 97,
+      "text": "Should you pick up trash you see on the ground?",
+      "options": ["Yes", "No", "Sometimes", "Always leave it"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 98,
+      "text": "Is it okay to lie to protect someone’s feelings?",
+      "options": ["Yes", "No", "Maybe", "Always"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 99,
+      "text": "If you see someone bullying, should you join in or tell someone?",
+      "options": ["Join in", "Tell someone", "Ignore", "Walk away quietly"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 100,
+      "text": "Is it ever okay to break a small promise?",
+      "options": ["Yes", "No", "Depends", "Always"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 101,
+      "text": "If you find money on the ground, should you keep it or try to return it?",
+      "options": ["Keep it", "Try to return it", "Spend it", "Ignore it"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 102,
+      "text": "Is it better to speak up if you see something wrong, or stay silent?",
+      "options": ["Stay silent", "Speak up", "Walk away", "Laugh"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 103,
+      "text": "If you promised your friend you wouldn’t tell a secret but someone is in danger, what do you do?",
+      "options": ["Keep the secret", "Tell an adult", "Tell someone else", "Walk away"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 104,
+      "text": "Is it okay to treat everyone the same, even if they are different from you?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 105,
+      "text": "What should you do if you see someone alone and sad at recess?",
+      "options": ["Ignore them", "Invite them to play", "Laugh", "Run away"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 106,
+      "text": "Is it better to help a lost pet find its owner or leave it?",
+      "options": ["Leave it", "Help find owner", "Scare it away", "Take it home"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    
+    {
+      "id": 107,
+      "text": "Which animal says ‘quack’?",
+      "options": ["Duck", "Dog", "Cat", "Cow"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 108,
+      "text": "Which animal has a long trunk?",
+      "options": ["Lion", "Elephant", "Giraffe", "Monkey"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 109,
+      "text": "Which bird can’t fly but swims?",
+      "options": ["Penguin", "Eagle", "Parrot", "Ostrich"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 110,
+      "text": "Which insect makes honey?",
+      "options": ["Butterfly", "Bee", "Ant", "Grasshopper"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 111,
+      "text": "Which animal lives in a shell and walks slowly?",
+      "options": ["Snail", "Rabbit", "Frog", "Bird"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 112,
+      "text": "Which animal hops and has a pouch?",
+      "options": ["Kangaroo", "Tiger", "Bear", "Horse"],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 113,
+      "text": "Which pet says ‘meow’?",
+      "options": ["Dog", "Cat", "Bird", "Fish"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    
+    {
+      "id": 114,
+      "text": "Which sea creature has eight arms?",
+      "options": ["Squid", "Octopus", "Crab", "Fish"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 115,
+      "text": "Which bird is known for its colorful tail and dance?",
+      "options": ["Penguin", "Peacock", "Parrot", "Swan"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 116,
+      "text": "Which animal is known for its black-and-white stripes?",
+      "options": ["Tiger", "Zebra", "Leopard", "Hyena"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 117,
+      "text": "Which mammal can glide but not truly fly?",
+      "options": ["Bat", "Flying squirrel", "Eagle", "Parrot"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 118,
+      "text": "Which animal is the largest land mammal?",
+      "options": ["Whale", "Hippo", "Elephant", "Rhino"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 119,
+      "text": "Which bird lays the largest egg?",
+      "options": ["Ostrich", "Eagle", "Chicken", "Duck"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 120,
+      "text": "Which insect has two wings and makes buzzing sounds?",
+      "options": ["Fly", "Butterfly", "Beetle", "Ant"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+  
+    {
+      "id": 121,
+      "text": "Which reptile can change its skin color?",
+      "options": ["Snake", "Lizard", "Chameleon", "Turtle"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 122,
+      "text": "Which mammal is known for laying eggs?",
+      "options": ["Kangaroo", "Platypus", "Cow", "Elephant"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 123,
+      "text": "Which fish swims upstream to lay eggs?",
+      "options": ["Salmon", "Tuna", "Shark", "Clownfish"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 124,
+      "text": "Which bird is known for its mimicry of sounds?",
+      "options": ["Crow", "Parrot", "Sparrow", "Robin"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 125,
+      "text": "Which mammal uses echolocation to navigate?",
+      "options": ["Dolphin", "Elephant", "Giraffe", "Lion"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 126,
+      "text": "Which arthropod has three body parts and six legs?",
+      "options": ["Spider", "Insect", "Crab", "Centipede"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 127,
+      "text": "Which marine animal has a hard shell and claws?",
+      "options": ["Octopus", "Crab", "Jellyfish", "Starfish"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    
+    {
+      "id": 128,
+      "text": "What is the name of our planet?",
+      "options": ["Mars", "Venus", "Earth", "Jupiter"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 129,
+      "text": "What do we call the star at the center of our solar system?",
+      "options": ["Moon", "Sun", "Polaris", "Sirius"],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 130,
+      "text": "Which moon orbits Earth?",
+      "options": ["Phobos", "Europa", "Titan", "The Moon"],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 131,
+      "text": "What shape is the moon when we see only half of it?",
+      "options": ["Full", "Half", "Crescent", "New"],  
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 132,
+      "text": "Which planet is known for its rings?",
+      "options": ["Earth", "Jupiter", "Saturn", "Neptune"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 133,
+      "text": "What do you call a rock that falls from space?",
+      "options": ["Asteroid", "Comet", "Meteor", "Satellite"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 134,
+      "text": "What force keeps us on the ground?",
+      "options": ["Magnetism", "Friction", "Gravity", "Energy"],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    
+    {
+      "id": 135,
+      "text": "Which planet is the biggest in our solar system?",
+      "options": ["Jupiter", "Saturn", "Earth", "Mars"],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 136,
+      "text": "What galaxy is our solar system in?",
+      "options": ["Andromeda", "Whirlpool", "Milky Way", "Sombrero"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 137,
+      "text": "What is it called when the moon blocks the sun?",
+      "options": ["Lunar eclipse", "Solar eclipse", "Meteor shower", "Comet sighting"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 138,
+      "text": "What is the name of Earth's natural satellite?",
+      "options": ["Phobos", "Titan", "The Moon", "Ganymede"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 139,
+      "text": "Which planet is red and dusty?",
+      "options": ["Earth", "Venus", "Mars", "Mercury"],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 140,
+      "text": "What do we call a large group of stars held together by gravity?",
+      "options": ["Comet", "Galaxy", "Asteroid", "Planet"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 141,
+      "text": "What is the twinkling light in the night sky called?",
+      "options": ["Asteroid", "Star", "Moon", "Satellite"],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+   
+    {
+      "id": 142,
+      "text": "What is the name of the first human to walk on the moon?",
+      "options": ["Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "Michael Collins"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 143,
+      "text": "Which planet is closest to the Sun?",
+      "options": ["Mercury", "Venus", "Earth", "Mars"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 144,
+      "text": "What is the name of the galaxy nearest to us?",
+      "options": ["Andromeda", "Triangulum", "Whirlpool", "Sombrero"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 145,
+      "text": "What is the name for a star that suddenly becomes much brighter?",
+      "options": ["Planet", "Nebula", "Supernova", "Comet"],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 146,
+      "text": "What do we call the path a planet takes around the sun?",
+      "options": ["Orbit", "Axis", "Rotation", "Gravity"],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 147,
+      "text": "Which object is made of ice, dust, and has a tail when near the sun?",
+      "options": ["Asteroid", "Comet", "Meteor", "Moon"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 148,
+      "text": "What do you call a small rocky body orbiting the sun?",
+      "options": ["Comet", "Asteroid", "Meteor", "Satellite"],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    }
+  ]
+}

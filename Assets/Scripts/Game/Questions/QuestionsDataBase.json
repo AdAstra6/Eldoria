@@ -1,0 +1,5464 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is 8 + 3?",
+      "options": [
+        "15",
+        "11",
+        "7",
+        "6"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 2,
+      "text": "What is 2 + 6?",
+      "options": [
+        "8",
+        "13",
+        "12",
+        "6"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 3,
+      "text": "What is 9 + 16?",
+      "options": [
+        "25",
+        "23",
+        "24",
+        "21"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 4,
+      "text": "What is 15 + 14?",
+      "options": [
+        "26",
+        "31",
+        "25",
+        "29"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 5,
+      "text": "What is 13 + 10?",
+      "options": [
+        "24",
+        "18",
+        "20",
+        "23"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 6,
+      "text": "What is 5 + 20?",
+      "options": [
+        "21",
+        "22",
+        "24",
+        "25"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 7,
+      "text": "What is 18 + 4?",
+      "options": [
+        "25",
+        "22",
+        "23",
+        "17"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 8,
+      "text": "What is 4 + 8?",
+      "options": [
+        "15",
+        "10",
+        "7",
+        "12"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 9,
+      "text": "What is 5 + 5?",
+      "options": [
+        "9",
+        "10",
+        "6",
+        "15"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 10,
+      "text": "What is 19 + 3?",
+      "options": [
+        "20",
+        "24",
+        "22",
+        "21"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 11,
+      "text": "What is 15 + 12?",
+      "options": [
+        "26",
+        "30",
+        "27",
+        "29"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 12,
+      "text": "What is 9 + 5?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "14"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 13,
+      "text": "What is 1 + 16?",
+      "options": [
+        "17",
+        "14",
+        "19",
+        "13"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 14,
+      "text": "What is 2 + 19?",
+      "options": [
+        "17",
+        "21",
+        "22",
+        "16"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 15,
+      "text": "What is 19 + 7?",
+      "options": [
+        "29",
+        "26",
+        "28",
+        "24"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 16,
+      "text": "What is 14 + 9?",
+      "options": [
+        "25",
+        "18",
+        "19",
+        "23"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 17,
+      "text": "What is 13 + 3?",
+      "options": [
+        "18",
+        "16",
+        "14",
+        "21"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 18,
+      "text": "What is 7 + 8?",
+      "options": [
+        "19",
+        "11",
+        "15",
+        "10"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 19,
+      "text": "What is 15 + 3?",
+      "options": [
+        "15",
+        "19",
+        "16",
+        "18"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 20,
+      "text": "What is 7 + 9?",
+      "options": [
+        "18",
+        "12",
+        "19",
+        "16"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "math"
+    },
+    {
+      "id": 21,
+      "text": "What is 6 \u00d7 6?",
+      "options": [
+        "55",
+        "21",
+        "45",
+        "36"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 22,
+      "text": "What is 12 \u00d7 1?",
+      "options": [
+        "4",
+        "11",
+        "21",
+        "12"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 23,
+      "text": "What is 14 \u00d7 9?",
+      "options": [
+        "126",
+        "122",
+        "137",
+        "131"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 24,
+      "text": "What is 13 \u00d7 4?",
+      "options": [
+        "52",
+        "40",
+        "71",
+        "46"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 25,
+      "text": "What is 12 \u00d7 3?",
+      "options": [
+        "22",
+        "36",
+        "45",
+        "29"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 26,
+      "text": "What is 13 \u00d7 1?",
+      "options": [
+        "12",
+        "25",
+        "13",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 27,
+      "text": "What is 15 \u00d7 9?",
+      "options": [
+        "125",
+        "155",
+        "135",
+        "152"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 28,
+      "text": "What is 14 \u00d7 6?",
+      "options": [
+        "94",
+        "86",
+        "100",
+        "84"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 29,
+      "text": "What is 15 \u00d7 11?",
+      "options": [
+        "151",
+        "165",
+        "150",
+        "168"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 30,
+      "text": "What is 6 \u00d7 2?",
+      "options": [
+        "20",
+        "27",
+        "32",
+        "12"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 31,
+      "text": "What is 6 \u00d7 9?",
+      "options": [
+        "68",
+        "54",
+        "48",
+        "64"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 32,
+      "text": "What is 12 \u00d7 9?",
+      "options": [
+        "108",
+        "94",
+        "124",
+        "106"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 33,
+      "text": "What is 6 \u00d7 7?",
+      "options": [
+        "43",
+        "36",
+        "34",
+        "42"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 34,
+      "text": "What is 7 \u00d7 8?",
+      "options": [
+        "38",
+        "64",
+        "56",
+        "50"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 35,
+      "text": "What is 11 \u00d7 7?",
+      "options": [
+        "64",
+        "77",
+        "59",
+        "75"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 36,
+      "text": "What is 11 \u00d7 10?",
+      "options": [
+        "110",
+        "96",
+        "98",
+        "104"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 37,
+      "text": "What is 13 \u00d7 10?",
+      "options": [
+        "114",
+        "136",
+        "130",
+        "145"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 38,
+      "text": "What is 5 \u00d7 7?",
+      "options": [
+        "25",
+        "48",
+        "47",
+        "35"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 39,
+      "text": "What is 8 \u00d7 3?",
+      "options": [
+        "24",
+        "27",
+        "42",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 40,
+      "text": "What is 10 \u00d7 11?",
+      "options": [
+        "105",
+        "113",
+        "110",
+        "104"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "math"
+    },
+    {
+      "id": 41,
+      "text": "Solve for x: 5x + 10 = 45",
+      "options": [
+        "6",
+        "2",
+        "7",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 42,
+      "text": "Solve for x: 3x + 17 = 26",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "6"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 43,
+      "text": "Solve for x: 9x + 3 = 66",
+      "options": [
+        "7",
+        "19",
+        "16",
+        "9"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 44,
+      "text": "Solve for x: 2x + 7 = 11",
+      "options": [
+        "13",
+        "2",
+        "16",
+        "7"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 45,
+      "text": "Solve for x: 2x + 13 = 19",
+      "options": [
+        "0",
+        "7",
+        "19",
+        "3"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 46,
+      "text": "Solve for x: 9x + 19 = 109",
+      "options": [
+        "10",
+        "9",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 47,
+      "text": "Solve for x: 8x + 5 = 21",
+      "options": [
+        "9",
+        "10",
+        "17",
+        "2"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 48,
+      "text": "Solve for x: 2x + 2 = 6",
+      "options": [
+        "11",
+        "12",
+        "2",
+        "15"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 49,
+      "text": "Solve for x: 5x + 19 = 59",
+      "options": [
+        "14",
+        "8",
+        "7",
+        "19"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 50,
+      "text": "Solve for x: 10x + 9 = 89",
+      "options": [
+        "8",
+        "0",
+        "18",
+        "16"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 51,
+      "text": "Solve for x: 8x + 19 = 91",
+      "options": [
+        "5",
+        "6",
+        "12",
+        "9"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 52,
+      "text": "Solve for x: 6x + 19 = 49",
+      "options": [
+        "4",
+        "5",
+        "2",
+        "19"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 53,
+      "text": "Solve for x: 4x + 17 = 29",
+      "options": [
+        "11",
+        "19",
+        "10",
+        "3"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 54,
+      "text": "Solve for x: 10x + 3 = 73",
+      "options": [
+        "3",
+        "7",
+        "14",
+        "6"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 55,
+      "text": "Solve for x: 6x + 13 = 19",
+      "options": [
+        "8",
+        "3",
+        "10",
+        "1"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 56,
+      "text": "Solve for x: 1x + 1 = 2",
+      "options": [
+        "1",
+        "7",
+        "15",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 57,
+      "text": "Solve for x: 1x + 2 = 5",
+      "options": [
+        "3",
+        "19",
+        "10",
+        "9"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 58,
+      "text": "Solve for x: 4x + 17 = 33",
+      "options": [
+        "13",
+        "12",
+        "14",
+        "4"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 59,
+      "text": "Solve for x: 1x + 19 = 23",
+      "options": [
+        "5",
+        "4",
+        "19",
+        "8"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 60,
+      "text": "Solve for x: 2x + 16 = 22",
+      "options": [
+        "7",
+        "10",
+        "3",
+        "2"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "math"
+    },
+    {
+      "id": 61,
+      "text": "What is the capital of Argentina?",
+      "options": [
+        "Mexico City",
+        "Buenos Aires",
+        "Beijing",
+        "Canberra"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 62,
+      "text": "What is the capital of Australia?",
+      "options": [
+        "Mexico City",
+        "Beijing",
+        "Paris",
+        "Canberra"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 63,
+      "text": "What is the capital of Brazil?",
+      "options": [
+        "Paris",
+        "Cairo",
+        "Bras\u00edlia",
+        "Washington, D.C."
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 64,
+      "text": "What is the capital of Canada?",
+      "options": [
+        "Moscow",
+        "Abuja",
+        "Ottawa",
+        "Madrid"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 65,
+      "text": "What is the capital of China?",
+      "options": [
+        "Berlin",
+        "Beijing",
+        "Buenos Aires",
+        "Moscow"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 66,
+      "text": "What is the capital of Egypt?",
+      "options": [
+        "Ankara",
+        "Cairo",
+        "Moscow",
+        "Madrid"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 67,
+      "text": "What is the capital of France?",
+      "options": [
+        "Beijing",
+        "Paris",
+        "Canberra",
+        "Berlin"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 68,
+      "text": "What is the capital of Germany?",
+      "options": [
+        "Berlin",
+        "Madrid",
+        "Pretoria",
+        "Moscow"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 69,
+      "text": "What is the capital of India?",
+      "options": [
+        "Beijing",
+        "New Delhi",
+        "Cairo",
+        "Tokyo"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 70,
+      "text": "What is the capital of Italy?",
+      "options": [
+        "Abuja",
+        "Madrid",
+        "Rome",
+        "Buenos Aires"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 71,
+      "text": "What is the capital of Japan?",
+      "options": [
+        "New Delhi",
+        "Tokyo",
+        "Beijing",
+        "Madrid"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 72,
+      "text": "What is the capital of Mexico?",
+      "options": [
+        "Beijing",
+        "London",
+        "Mexico City",
+        "Washington, D.C."
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 73,
+      "text": "What is the capital of Nigeria?",
+      "options": [
+        "Abuja",
+        "Cairo",
+        "Pretoria",
+        "London"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 74,
+      "text": "What is the capital of Russia?",
+      "options": [
+        "Beijing",
+        "Cairo",
+        "Moscow",
+        "Buenos Aires"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 75,
+      "text": "What is the capital of South Africa?",
+      "options": [
+        "New Delhi",
+        "Abuja",
+        "Buenos Aires",
+        "Pretoria"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 76,
+      "text": "What is the capital of Spain?",
+      "options": [
+        "Beijing",
+        "Rome",
+        "Mexico City",
+        "Madrid"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 77,
+      "text": "What is the capital of Turkey?",
+      "options": [
+        "Ankara",
+        "Mexico City",
+        "Tokyo",
+        "Madrid"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 78,
+      "text": "What is the capital of United Kingdom?",
+      "options": [
+        "Ankara",
+        "Rome",
+        "London",
+        "Berlin"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 79,
+      "text": "What is the capital of United States?",
+      "options": [
+        "Bras\u00edlia",
+        "Washington, D.C.",
+        "Pretoria",
+        "New Delhi"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 80,
+      "text": "What is the capital of Vietnam?",
+      "options": [
+        "Canberra",
+        "Hanoi",
+        "Cairo",
+        "London"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "geography"
+    },
+    {
+      "id": 81,
+      "text": "Which country does the Nile River flow through?",
+      "options": [
+        "United States",
+        "India",
+        "Egypt",
+        "Iraq"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 82,
+      "text": "Which country does the Amazon River flow through?",
+      "options": [
+        "Brazil",
+        "Zambia",
+        "Russia",
+        "United States"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 83,
+      "text": "Which country does the Mississippi River flow through?",
+      "options": [
+        "Egypt",
+        "United Kingdom",
+        "China",
+        "United States"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 84,
+      "text": "Which country does the Yangtze River flow through?",
+      "options": [
+        "United Kingdom",
+        "DRC",
+        "Russia",
+        "China"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 85,
+      "text": "Which country does the Danube River flow through?",
+      "options": [
+        "Netherlands",
+        "Germany",
+        "Zambia",
+        "Vietnam"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 86,
+      "text": "Which country does the Volga River flow through?",
+      "options": [
+        "Russia",
+        "France",
+        "United States",
+        "Egypt"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 87,
+      "text": "Which country does the Ganges River flow through?",
+      "options": [
+        "United Kingdom",
+        "Iraq",
+        "India",
+        "Iraq"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 88,
+      "text": "Which country does the Mekong River flow through?",
+      "options": [
+        "Vietnam",
+        "Egypt",
+        "France",
+        "China"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 89,
+      "text": "Which country does the Thames River flow through?",
+      "options": [
+        "Netherlands",
+        "United Kingdom",
+        "Zambia",
+        "DRC"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 90,
+      "text": "Which country does the Seine River flow through?",
+      "options": [
+        "Ukraine",
+        "India",
+        "France",
+        "Egypt"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 91,
+      "text": "Which country does the Indus River flow through?",
+      "options": [
+        "Egypt",
+        "Netherlands",
+        "Ukraine",
+        "Pakistan"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 92,
+      "text": "Which country does the Rhine River flow through?",
+      "options": [
+        "Netherlands",
+        "Vietnam",
+        "France",
+        "Zambia"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 93,
+      "text": "Which country does the Congo River flow through?",
+      "options": [
+        "Iraq",
+        "France",
+        "DRC",
+        "Iraq"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 94,
+      "text": "Which country does the Yellow River flow through?",
+      "options": [
+        "India",
+        "United States",
+        "China",
+        "Vietnam"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 95,
+      "text": "Which country does the Dnieper River flow through?",
+      "options": [
+        "Russia",
+        "Ukraine",
+        "Germany",
+        "Italy"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 96,
+      "text": "Which country does the Tigris River flow through?",
+      "options": [
+        "Vietnam",
+        "Netherlands",
+        "Iraq",
+        "China"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 97,
+      "text": "Which country does the Euphrates River flow through?",
+      "options": [
+        "China",
+        "Brazil",
+        "Iraq",
+        "Egypt"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 98,
+      "text": "Which country does the Loire River flow through?",
+      "options": [
+        "United Kingdom",
+        "France",
+        "Pakistan",
+        "India"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 99,
+      "text": "Which country does the Zambezi River flow through?",
+      "options": [
+        "Pakistan",
+        "China",
+        "Zambia",
+        "Brazil"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 100,
+      "text": "Which country does the Po River flow through?",
+      "options": [
+        "Iraq",
+        "Italy",
+        "Ukraine",
+        "United States"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "geography"
+    },
+    {
+      "id": 101,
+      "text": "What is the height in meters of Mount Everest?",
+      "options": [
+        "7885",
+        "8848",
+        "8091",
+        "8485"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 102,
+      "text": "What is the height in meters of K2?",
+      "options": [
+        "7852",
+        "8091",
+        "8611",
+        "8167"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 103,
+      "text": "What is the height in meters of Kangchenjunga?",
+      "options": [
+        "8027",
+        "7952",
+        "8586",
+        "8611"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 104,
+      "text": "What is the height in meters of Lhotse?",
+      "options": [
+        "8611",
+        "8516",
+        "8485",
+        "7952"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 105,
+      "text": "What is the height in meters of Makalu?",
+      "options": [
+        "7893",
+        "8485",
+        "7937",
+        "7861"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 106,
+      "text": "What is the height in meters of Cho Oyu?",
+      "options": [
+        "8188",
+        "8051",
+        "7952",
+        "8080"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 107,
+      "text": "What is the height in meters of Dhaulagiri?",
+      "options": [
+        "8611",
+        "7893",
+        "8167",
+        "8188"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 108,
+      "text": "What is the height in meters of Manaslu?",
+      "options": [
+        "8848",
+        "8163",
+        "8611",
+        "8027"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 109,
+      "text": "What is the height in meters of Nanga Parbat?",
+      "options": [
+        "8080",
+        "8126",
+        "7852",
+        "8485"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 110,
+      "text": "What is the height in meters of Annapurna?",
+      "options": [
+        "8051",
+        "8091",
+        "7861",
+        "8848"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 111,
+      "text": "What is the height in meters of Gasherbrum I?",
+      "options": [
+        "7893",
+        "8080",
+        "7852",
+        "8586"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 112,
+      "text": "What is the height in meters of Broad Peak?",
+      "options": [
+        "8586",
+        "8051",
+        "7852",
+        "8080"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 113,
+      "text": "What is the height in meters of Gasherbrum II?",
+      "options": [
+        "8188",
+        "8126",
+        "8035",
+        "8167"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 114,
+      "text": "What is the height in meters of Shishapangma?",
+      "options": [
+        "8167",
+        "8126",
+        "8080",
+        "8027"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 115,
+      "text": "What is the height in meters of Gyachung Kang?",
+      "options": [
+        "7952",
+        "8848",
+        "8167",
+        "8516"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 116,
+      "text": "What is the height in meters of Annapurna II?",
+      "options": [
+        "8848",
+        "8126",
+        "7937",
+        "8091"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 117,
+      "text": "What is the height in meters of Himalchuli?",
+      "options": [
+        "7893",
+        "8080",
+        "7937",
+        "8516"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 118,
+      "text": "What is the height in meters of Distaghil Sar?",
+      "options": [
+        "8051",
+        "7885",
+        "8167",
+        "7952"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 119,
+      "text": "What is the height in meters of Nuptse?",
+      "options": [
+        "7861",
+        "8126",
+        "7893",
+        "7937"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 120,
+      "text": "What is the height in meters of Khunyang Chhish?",
+      "options": [
+        "7893",
+        "8080",
+        "7852",
+        "7937"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "geography"
+    },
+    {
+      "id": 121,
+      "text": "Which organelle is responsible for stores genetic information?",
+      "options": [
+        "Ribosome",
+        "Mitochondrion",
+        "Nucleus",
+        "Cell wall"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 122,
+      "text": "Which organelle is responsible for produces energy (ATP)?",
+      "options": [
+        "Centriole",
+        "Mitochondrion",
+        "Plastid",
+        "Endoplasmic reticulum"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 123,
+      "text": "Which organelle is responsible for synthesizes proteins?",
+      "options": [
+        "Cytoskeleton",
+        "Ribosome",
+        "Lysosome",
+        "Nucleus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 124,
+      "text": "Which organelle is responsible for conducts photosynthesis?",
+      "options": [
+        "Ribosome",
+        "Endoplasmic reticulum",
+        "Chloroplast",
+        "Chromatin"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 125,
+      "text": "Which organelle is responsible for modifies and packages proteins?",
+      "options": [
+        "Flagellum",
+        "Golgi apparatus",
+        "Peroxisome",
+        "Mitochondrion"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 126,
+      "text": "Which organelle is responsible for synthesizes proteins and lipids?",
+      "options": [
+        "Endoplasmic reticulum",
+        "Plastid",
+        "Cell wall",
+        "Centriole"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 127,
+      "text": "Which organelle is responsible for digests waste materials?",
+      "options": [
+        "Peroxisome",
+        "Lysosome",
+        "Nucleolus",
+        "Golgi apparatus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 128,
+      "text": "Which organelle is responsible for stores substances?",
+      "options": [
+        "Plastid",
+        "Vacuole",
+        "Chloroplast",
+        "Cilia"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 129,
+      "text": "Which organelle is responsible for regulates entry and exit of substances?",
+      "options": [
+        "Cytoskeleton",
+        "Cell membrane",
+        "Cytoplasm",
+        "Mitochondrion"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 130,
+      "text": "Which organelle is responsible for site of cellular reactions?",
+      "options": [
+        "Flagellum",
+        "Centriole",
+        "Ribosome",
+        "Cytoplasm"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 131,
+      "text": "Which organelle is responsible for involved in cell division?",
+      "options": [
+        "Chromatin",
+        "Centriole",
+        "Cilia",
+        "Lysosome"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 132,
+      "text": "Which organelle is responsible for provides structure?",
+      "options": [
+        "Nucleolus",
+        "Cell wall",
+        "Mitochondrion",
+        "Golgi apparatus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 133,
+      "text": "Which organelle is responsible for assembles ribosomes?",
+      "options": [
+        "Nucleolus",
+        "Plastid",
+        "Flagellum",
+        "Golgi apparatus"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 134,
+      "text": "Which organelle is responsible for breaks down fatty acids?",
+      "options": [
+        "Lysosome",
+        "Peroxisome",
+        "Cell wall",
+        "Cytoskeleton"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 135,
+      "text": "Which organelle is responsible for provides cell support?",
+      "options": [
+        "Cytoskeleton",
+        "Cell membrane",
+        "Nucleus",
+        "Vesicle"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 136,
+      "text": "Which organelle is responsible for stores pigments?",
+      "options": [
+        "Ribosome",
+        "Golgi apparatus",
+        "Plastid",
+        "Nucleus"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 137,
+      "text": "Which organelle is responsible for packages DNA?",
+      "options": [
+        "Cytoskeleton",
+        "Chromatin",
+        "Cilia",
+        "Ribosome"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 138,
+      "text": "Which organelle is responsible for enables cell movement?",
+      "options": [
+        "Chloroplast",
+        "Vacuole",
+        "Vesicle",
+        "Flagellum"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 139,
+      "text": "Which organelle is responsible for moves fluids across cell surface?",
+      "options": [
+        "Cilia",
+        "Vacuole",
+        "Peroxisome",
+        "Endoplasmic reticulum"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 140,
+      "text": "Which organelle is responsible for transports materials?",
+      "options": [
+        "Cytoskeleton",
+        "Flagellum",
+        "Vesicle",
+        "Cell wall"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "biology"
+    },
+    {
+      "id": 141,
+      "text": "What is Osmosis?",
+      "options": [
+        "sugar or starch molecule",
+        "infectious agent made of genetic material",
+        "change in DNA sequence",
+        "movement of water across a semipermeable membrane"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 142,
+      "text": "What is Diffusion?",
+      "options": [
+        "fat molecule",
+        "trait that increases survival",
+        "movement of particles from high to low concentration",
+        "change in DNA sequence"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 143,
+      "text": "What is Photosynthesis?",
+      "options": [
+        "trait that increases survival",
+        "process of producing ATP from glucose",
+        "process by which plants make food using sunlight",
+        "protein that speeds up chemical reactions"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 144,
+      "text": "What is Cellular respiration?",
+      "options": [
+        "cell division producing two identical daughter cells",
+        "process of producing ATP from glucose",
+        "protein that neutralizes antigens",
+        "maintenance of stable internal conditions"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 145,
+      "text": "What is Mitosis?",
+      "options": [
+        "process of producing ATP from glucose",
+        "cell division producing two identical daughter cells",
+        "protein that neutralizes antigens",
+        "single-celled prokaryotic organism"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 146,
+      "text": "What is Meiosis?",
+      "options": [
+        "trait that increases survival",
+        "cell division producing gametes",
+        "cell division producing two identical daughter cells",
+        "protein that speeds up chemical reactions"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 147,
+      "text": "What is Mutation?",
+      "options": [
+        "polymer of amino acids",
+        "protein that speeds up chemical reactions",
+        "sugar or starch molecule",
+        "change in DNA sequence"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 148,
+      "text": "What is Enzyme?",
+      "options": [
+        "protein that speeds up chemical reactions",
+        "sugar or starch molecule",
+        "trait that increases survival",
+        "single-celled prokaryotic organism"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 149,
+      "text": "What is Homeostasis?",
+      "options": [
+        "cell division producing two identical daughter cells",
+        "maintenance of stable internal conditions",
+        "single-celled prokaryotic organism",
+        "change in DNA sequence"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 150,
+      "text": "What is Evolution?",
+      "options": [
+        "sugar or starch molecule",
+        "unit of heredity",
+        "infectious agent made of genetic material",
+        "change in species over time"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 151,
+      "text": "What is Adaptation?",
+      "options": [
+        "unit of heredity",
+        "cell division producing two identical daughter cells",
+        "structure of DNA and protein",
+        "trait that increases survival"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 152,
+      "text": "What is Gene?",
+      "options": [
+        "unit of heredity",
+        "change in species over time",
+        "polymer of amino acids",
+        "process of producing ATP from glucose"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 153,
+      "text": "What is Chromosome?",
+      "options": [
+        "cell division producing gametes",
+        "structure of DNA and protein",
+        "change in species over time",
+        "change in DNA sequence"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 154,
+      "text": "What is Protein?",
+      "options": [
+        "polymer of amino acids",
+        "unit of heredity",
+        "cell division producing two identical daughter cells",
+        "maintenance of stable internal conditions"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 155,
+      "text": "What is Lipid?",
+      "options": [
+        "process by which plants make food using sunlight",
+        "movement of water across a semipermeable membrane",
+        "single-celled prokaryotic organism",
+        "fat molecule"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 156,
+      "text": "What is Carbohydrate?",
+      "options": [
+        "movement of water across a semipermeable membrane",
+        "change in species over time",
+        "polymer of amino acids",
+        "sugar or starch molecule"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 157,
+      "text": "What is Antigen?",
+      "options": [
+        "process of producing ATP from glucose",
+        "substance that triggers immune response",
+        "maintenance of stable internal conditions",
+        "movement of particles from high to low concentration"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 158,
+      "text": "What is Antibody?",
+      "options": [
+        "protein that speeds up chemical reactions",
+        "maintenance of stable internal conditions",
+        "protein that neutralizes antigens",
+        "single-celled prokaryotic organism"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 159,
+      "text": "What is Virus?",
+      "options": [
+        "infectious agent made of genetic material",
+        "change in DNA sequence",
+        "process by which plants make food using sunlight",
+        "protein that neutralizes antigens"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 160,
+      "text": "What is Bacteria?",
+      "options": [
+        "substance that triggers immune response",
+        "change in species over time",
+        "change in DNA sequence",
+        "single-celled prokaryotic organism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "biology"
+    },
+    {
+      "id": 161,
+      "text": "What is Glycolysis?",
+      "options": [
+        "breakdown of glucose into pyruvate",
+        "correction of DNA damage",
+        "display of antigen on cell surface",
+        "one organism living inside another"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 162,
+      "text": "What is Krebs cycle?",
+      "options": [
+        "carbon fixation in photosynthesis",
+        "series of reactions producing ATP in mitochondria",
+        "use of proton gradient to synthesize ATP",
+        "synthesis of RNA from DNA template"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 163,
+      "text": "What is Electron transport chain?",
+      "options": [
+        "transmission of molecular signals",
+        "series of reactions producing ATP in mitochondria",
+        "synthesis of RNA from DNA template",
+        "transfer of electrons to produce ATP"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 164,
+      "text": "What is Calvin cycle?",
+      "options": [
+        "reduction division producing gametes",
+        "carbon fixation in photosynthesis",
+        "one organism living inside another",
+        "correction of DNA damage"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 165,
+      "text": "What is Photolysis?",
+      "options": [
+        "carbon fixation in photosynthesis",
+        "one organism living inside another",
+        "transmission of molecular signals",
+        "splitting of water during photosynthesis"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 166,
+      "text": "What is Chemiosmosis?",
+      "options": [
+        "carbon fixation in photosynthesis",
+        "display of antigen on cell surface",
+        "use of proton gradient to synthesize ATP",
+        "synthesis of RNA from DNA template"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 167,
+      "text": "What is Transcription?",
+      "options": [
+        "correction of DNA damage",
+        "splitting of water during photosynthesis",
+        "carbon fixation in photosynthesis",
+        "synthesis of RNA from DNA template"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 168,
+      "text": "What is Translation?",
+      "options": [
+        "copying of DNA before cell division",
+        "transmission of molecular signals",
+        "study of heritable phenotype changes",
+        "protein synthesis from mRNA"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 169,
+      "text": "What is DNA replication?",
+      "options": [
+        "carbon fixation in photosynthesis",
+        "copying of DNA before cell division",
+        "synthesis of RNA from DNA template",
+        "series of reactions producing ATP in mitochondria"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 170,
+      "text": "What is Meiosis?",
+      "options": [
+        "reduction division producing gametes",
+        "display of antigen on cell surface",
+        "use of proton gradient to synthesize ATP",
+        "transfer of electrons to produce ATP"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 171,
+      "text": "What is Mitosis?",
+      "options": [
+        "splitting of water during photosynthesis",
+        "correction of DNA damage",
+        "division producing two identical cells",
+        "study of heritable phenotype changes"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 172,
+      "text": "What is Apoptosis?",
+      "options": [
+        "programmed cell death",
+        "use of proton gradient to synthesize ATP",
+        "reduction division producing gametes",
+        "protein synthesis from mRNA"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 173,
+      "text": "What is Signal transduction?",
+      "options": [
+        "protein synthesis from mRNA",
+        "division producing two identical cells",
+        "transmission of molecular signals",
+        "series of reactions producing ATP in mitochondria"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 174,
+      "text": "What is Endosymbiosis?",
+      "options": [
+        "use of proton gradient to synthesize ATP",
+        "study of heritable phenotype changes",
+        "control of gene expression",
+        "one organism living inside another"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 175,
+      "text": "What is Gene regulation?",
+      "options": [
+        "control of gene expression",
+        "synthesis of RNA from DNA template",
+        "carbon fixation in photosynthesis",
+        "protein synthesis from mRNA"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 176,
+      "text": "What is Epigenetics?",
+      "options": [
+        "carbon fixation in photosynthesis",
+        "transfer of genes between organisms",
+        "programmed cell death",
+        "study of heritable phenotype changes"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 177,
+      "text": "What is Telomerase activity?",
+      "options": [
+        "protein synthesis from mRNA",
+        "transfer of electrons to produce ATP",
+        "reduction division producing gametes",
+        "enzyme extending telomeres"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 178,
+      "text": "What is DNA repair?",
+      "options": [
+        "display of antigen on cell surface",
+        "breakdown of glucose into pyruvate",
+        "correction of DNA damage",
+        "programmed cell death"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 179,
+      "text": "What is Horizontal gene transfer?",
+      "options": [
+        "protein synthesis from mRNA",
+        "transmission of molecular signals",
+        "control of gene expression",
+        "transfer of genes between organisms"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 180,
+      "text": "What is Antigen presentation?",
+      "options": [
+        "study of heritable phenotype changes",
+        "transfer of electrons to produce ATP",
+        "display of antigen on cell surface",
+        "series of reactions producing ATP in mitochondria"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "biology"
+    },
+    {
+      "id": 181,
+      "text": "What is the largest ocean on Earth?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 182,
+      "text": "Who wrote 'Pride and Prejudice'?",
+      "options": [
+        "Jane Austen",
+        "Mary Shelley",
+        "Charles Dickens",
+        "Charlotte Bront\u00eb"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 183,
+      "text": "What is the boiling point of water at sea level in Celsius?",
+      "options": [
+        "80\u00b0C",
+        "120\u00b0C",
+        "100\u00b0C",
+        "90\u00b0C"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 184,
+      "text": "Which language has the most native speakers?",
+      "options": [
+        "Hindi",
+        "English",
+        "Spanish",
+        "Mandarin Chinese"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 185,
+      "text": "What currency is used in Japan?",
+      "options": [
+        "Yen",
+        "Dollar",
+        "Euro",
+        "Won"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 186,
+      "text": "How many continents are there?",
+      "options": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 187,
+      "text": "What is the chemical symbol for gold?",
+      "options": [
+        "G",
+        "Au",
+        "Gt",
+        "Ag"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 188,
+      "text": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Pablo Picasso",
+        "Michelangelo"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 189,
+      "text": "In which city is the Statue of Liberty located?",
+      "options": [
+        "Los Angeles",
+        "Washington, D.C.",
+        "Chicago",
+        "New York City"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 190,
+      "text": "What is the primary language spoken in Brazil?",
+      "options": [
+        "English",
+        "Portuguese",
+        "French",
+        "Spanish"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 191,
+      "text": "What is H2O commonly known as?",
+      "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Hydrogen Peroxide",
+        "Water"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 192,
+      "text": "What planet is known as the Red Planet?",
+      "options": [
+        "Mars",
+        "Saturn",
+        "Jupiter",
+        "Venus"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 193,
+      "text": "What is the hardest natural substance on Earth?",
+      "options": [
+        "Diamond",
+        "Iron",
+        "Quartz",
+        "Gold"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 194,
+      "text": "Who developed the theory of relativity?",
+      "options": [
+        "Galileo Galilei",
+        "Isaac Newton",
+        "Nikola Tesla",
+        "Albert Einstein"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 195,
+      "text": "Which instrument measures atmospheric pressure?",
+      "options": [
+        "Anemometer",
+        "Hygrometer",
+        "Barometer",
+        "Thermometer"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 196,
+      "text": "What is the tallest mountain in the world?",
+      "options": [
+        "Mount Everest",
+        "K2",
+        "Lhotse",
+        "Kangchenjunga"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 197,
+      "text": "Which animal is known as the King of the Jungle?",
+      "options": [
+        "Gorilla",
+        "Elephant",
+        "Tiger",
+        "Lion"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 198,
+      "text": "What organ pumps blood through the body?",
+      "options": [
+        "Kidneys",
+        "Heart",
+        "Liver",
+        "Lungs"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 199,
+      "text": "What gas do plants absorb from the atmosphere?",
+      "options": [
+        "Helium",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Oxygen"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 200,
+      "text": "How many sides does a hexagon have?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 201,
+      "text": "In which year did World War I begin?",
+      "options": [
+        "1912",
+        "1916",
+        "1914",
+        "1920"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 202,
+      "text": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "options": [
+        "Harriet Quimby",
+        "Amelia Earhart",
+        "Bessie Coleman",
+        "Jacqueline Cochran"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 203,
+      "text": "What is the smallest prime number greater than 50?",
+      "options": [
+        "51",
+        "55",
+        "57",
+        "53"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 204,
+      "text": "Which element has the atomic number 26?",
+      "options": [
+        "Copper",
+        "Gold",
+        "Zinc",
+        "Iron"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 205,
+      "text": "Who is the author of '1984'?",
+      "options": [
+        "Jules Verne",
+        "George Orwell",
+        "Ray Bradbury",
+        "Aldous Huxley"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 206,
+      "text": "What is the capital city of Australia?",
+      "options": [
+        "Canberra",
+        "Melbourne",
+        "Sydney",
+        "Brisbane"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 207,
+      "text": "Which war was ended by the Treaty of Versailles?",
+      "options": [
+        "World War II",
+        "Crimean War",
+        "World War I",
+        "Vietnam War"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 208,
+      "text": "What is the value of pi to two decimal places?",
+      "options": [
+        "3.12",
+        "3.14",
+        "3.15",
+        "3.18"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 209,
+      "text": "Who painted The Starry Night?",
+      "options": [
+        "Vincent van Gogh",
+        "Paul C\u00e9zanne",
+        "Pablo Picasso",
+        "Claude Monet"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 210,
+      "text": "What is the largest desert in the world?",
+      "options": [
+        "Arabian",
+        "Kalahari",
+        "Gobi",
+        "Sahara"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 211,
+      "text": "Which Shakespeare play features the characters Rosencrantz and Guildenstern?",
+      "options": [
+        "King Lear",
+        "Hamlet",
+        "Macbeth",
+        "Othello"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 212,
+      "text": "What is the powerhouse of the cell?",
+      "options": [
+        "Ribosome",
+        "Chloroplast",
+        "Mitochondrion",
+        "Nucleus"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 213,
+      "text": "Who discovered penicillin?",
+      "options": [
+        "Joseph Lister",
+        "Robert Koch",
+        "Louis Pasteur",
+        "Alexander Fleming"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 214,
+      "text": "What is the currency of Switzerland?",
+      "options": [
+        "Dollar",
+        "Euro",
+        "Swiss Franc",
+        "Pound"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 215,
+      "text": "Which planet has the most moons?",
+      "options": [
+        "Neptune",
+        "Saturn",
+        "Jupiter",
+        "Uranus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 216,
+      "text": "Who wrote the national anthem of the United States?",
+      "options": [
+        "Thomas Jefferson",
+        "James Madison",
+        "John Stafford Smith",
+        "Francis Scott Key"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 217,
+      "text": "What is the chemical formula for table salt?",
+      "options": [
+        "MgCl2",
+        "KCl",
+        "NaF",
+        "NaCl"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 218,
+      "text": "Who was the first person to reach the South Pole?",
+      "options": [
+        "Robert Scott",
+        "Fridtjof Nansen",
+        "Roald Amundsen",
+        "Ernest Shackleton"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 219,
+      "text": "Which country hosted the 2016 Summer Olympics?",
+      "options": [
+        "Russia",
+        "UK",
+        "China",
+        "Brazil"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 220,
+      "text": "What is the heaviest naturally occurring element?",
+      "options": [
+        "Lead",
+        "Uranium",
+        "Mercury",
+        "Plutonium"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 221,
+      "text": "Who invented the telephone?",
+      "options": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Guglielmo Marconi"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 222,
+      "text": "What is the rarest blood type?",
+      "options": [
+        "A+",
+        "B-",
+        "AB-",
+        "O-"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 223,
+      "text": "Which organ in the human body produces bile?",
+      "options": [
+        "Gallbladder",
+        "Liver",
+        "Pancreas",
+        "Stomach"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 224,
+      "text": "What is the capital of Mongolia?",
+      "options": [
+        "Bishkek",
+        "Astana",
+        "Ulaanbaatar",
+        "Tashkent"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 225,
+      "text": "Which metal has the highest melting point?",
+      "options": [
+        "Tungsten",
+        "Platinum",
+        "Iron",
+        "Osmium"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 226,
+      "text": "What is the main ingredient in traditional Japanese miso soup?",
+      "options": [
+        "Soybeans",
+        "Rice",
+        "Seaweed",
+        "Fish"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 227,
+      "text": "Who proposed the law of planetary motion?",
+      "options": [
+        "Isaac Newton",
+        "Tycho Brahe",
+        "Johannes Kepler",
+        "Galileo Galilei"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 228,
+      "text": "What is the lightest noble gas?",
+      "options": [
+        "Krypton",
+        "Neon",
+        "Argon",
+        "Helium"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 229,
+      "text": "Which ancient civilization built Machu Picchu?",
+      "options": [
+        "Olmec",
+        "Aztec",
+        "Inca",
+        "Maya"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 230,
+      "text": "What is the speed of sound at sea level in m/s (approx)?",
+      "options": [
+        "343",
+        "500",
+        "300",
+        "400"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 231,
+      "text": "Who painted the ceiling of the Sistine Chapel?",
+      "options": [
+        "Raphael",
+        "Donatello",
+        "Michelangelo",
+        "Leonardo da Vinci"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 232,
+      "text": "What is the chemical symbol for tungsten?",
+      "options": [
+        "Wt",
+        "Tu",
+        "Tg",
+        "W"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 233,
+      "text": "Which element is named after the planet Uranus?",
+      "options": [
+        "Mercury",
+        "Plutonium",
+        "Neptunium",
+        "Uranium"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 234,
+      "text": "Who is known as the father of modern nursing?",
+      "options": [
+        "Dorothea Dix",
+        "Clara Barton",
+        "Mary Seacole",
+        "Florence Nightingale"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 235,
+      "text": "Which country has the longest coastline?",
+      "options": [
+        "Russia",
+        "Australia",
+        "USA",
+        "Canada"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 236,
+      "text": "What is the deepest point in the world's oceans?",
+      "options": [
+        "Challenger Deep",
+        "Java Trench",
+        "Mariana Trench",
+        "Tonga Trench"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 237,
+      "text": "Who discovered the structure of DNA?",
+      "options": [
+        "Darwin",
+        "Mendel",
+        "Watson and Crick",
+        "Rosalind Franklin"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 238,
+      "text": "Which is the only bird known to fly backwards?",
+      "options": [
+        "Sparrow",
+        "Pigeon",
+        "Eagle",
+        "Hummingbird"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 239,
+      "text": "What is the term for a group of crows?",
+      "options": [
+        "Colony",
+        "Pack",
+        "Murder",
+        "Flock"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 240,
+      "text": "What is the study of fungi called?",
+      "options": [
+        "Mythology",
+        "Mycology",
+        "Microbiology",
+        "Phycology"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "general_knowledge"
+    },
+    {
+      "id": 241,
+      "text": "What is Utilitarianism?",
+      "options": [
+        "act only on universalizable maxims",
+        "entitlements or permissions",
+        "self-governance",
+        "actions are right if they benefit the majority"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 242,
+      "text": "What is Deontology?",
+      "options": [
+        "desire to do good",
+        "selfless concern for others",
+        "judges actions by their outcomes",
+        "study of duty and moral obligation"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 243,
+      "text": "What is Consequentialism?",
+      "options": [
+        "self-governance",
+        "duty to not inflict harm",
+        "judges actions by their outcomes",
+        "fairness in protection of rights"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 244,
+      "text": "What is Virtue Ethics?",
+      "options": [
+        "moral or legal obligations",
+        "actions are right if they benefit the majority",
+        "focuses on character traits",
+        "judges actions by their outcomes"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 245,
+      "text": "What is Egoism?",
+      "options": [
+        "morality varies between cultures",
+        "desire to do good",
+        "self-interest as the basis of morality",
+        "judges actions by their outcomes"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 246,
+      "text": "What is Altruism?",
+      "options": [
+        "focuses on character traits",
+        "universal moral principles",
+        "study of ethical action",
+        "selfless concern for others"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 247,
+      "text": "What is Moral Relativism?",
+      "options": [
+        "morality varies between cultures",
+        "study of duty and moral obligation",
+        "act only on universalizable maxims",
+        "fairness in protection of rights"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 248,
+      "text": "What is Moral Absolutism?",
+      "options": [
+        "universal moral principles",
+        "focuses on character traits",
+        "study of nature of moral judgments",
+        "self-interest as the basis of morality"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 249,
+      "text": "What is Normative Ethics?",
+      "options": [
+        "morality varies between cultures",
+        "study of ethical action",
+        "study of duty and moral obligation",
+        "self-interest as the basis of morality"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 250,
+      "text": "What is Metaethics?",
+      "options": [
+        "choice between equally undesirable options",
+        "study of nature of moral judgments",
+        "focuses on character traits",
+        "morality varies between cultures"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 251,
+      "text": "What is Applied Ethics?",
+      "options": [
+        "moral or legal obligations",
+        "act only on universalizable maxims",
+        "universal moral principles",
+        "practical application of moral considerations"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 252,
+      "text": "What is Rights?",
+      "options": [
+        "entitlements or permissions",
+        "morality varies between cultures",
+        "universal moral principles",
+        "fairness in protection of rights"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 253,
+      "text": "What is Duties?",
+      "options": [
+        "study of duty and moral obligation",
+        "moral or legal obligations",
+        "study of ethical action",
+        "focuses on character traits"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 254,
+      "text": "What is Justice?",
+      "options": [
+        "choice between equally undesirable options",
+        "fairness in protection of rights",
+        "entitlements or permissions",
+        "self-interest as the basis of morality"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 255,
+      "text": "What is Autonomy?",
+      "options": [
+        "entitlements or permissions",
+        "focuses on character traits",
+        "self-governance",
+        "actions are right if they benefit the majority"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 256,
+      "text": "What is Benevolence?",
+      "options": [
+        "self-governance",
+        "judges actions by their outcomes",
+        "desire to do good",
+        "focuses on character traits"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 257,
+      "text": "What is Nonmaleficence?",
+      "options": [
+        "duty to not inflict harm",
+        "study of duty and moral obligation",
+        "focuses on character traits",
+        "practical application of moral considerations"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 258,
+      "text": "What is Fiduciary Duty?",
+      "options": [
+        "selfless concern for others",
+        "obligation to act in another's interest",
+        "focuses on character traits",
+        "moral or legal obligations"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 259,
+      "text": "What is Moral Dilemma?",
+      "options": [
+        "focuses on character traits",
+        "universal moral principles",
+        "choice between equally undesirable options",
+        "practical application of moral considerations"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 260,
+      "text": "What is Categorical Imperative?",
+      "options": [
+        "choice between equally undesirable options",
+        "act only on universalizable maxims",
+        "study of nature of moral judgments",
+        "self-interest as the basis of morality"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "ethics"
+    },
+    {
+      "id": 261,
+      "text": "Who proposed the theory of Categorical Imperative?",
+      "options": [
+        "Ethics of Care",
+        "Communism",
+        "Social Contract",
+        "Categorical Imperative"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 262,
+      "text": "Who proposed the theory of Utilitarianism?",
+      "options": [
+        "Virtue Ethics",
+        "Sentimentalism",
+        "General Will",
+        "Utilitarianism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 263,
+      "text": "Who proposed the theory of Virtue Ethics?",
+      "options": [
+        "Existentialism",
+        "Land Ethic",
+        "Virtue Ethics",
+        "Utilitarianism"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 264,
+      "text": "Who proposed the theory of Hedonistic Utilitarianism?",
+      "options": [
+        "Preference Utilitarianism",
+        "Socratic Method",
+        "Social Contract",
+        "Hedonistic Utilitarianism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 265,
+      "text": "Who proposed the theory of Theory of Justice?",
+      "options": [
+        "Virtue Ethics",
+        "Theory of Justice",
+        "Cyrenaicism",
+        "Hedonistic Utilitarianism"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 266,
+      "text": "Who proposed the theory of Sentimentalism?",
+      "options": [
+        "Ren Ethics",
+        "Sentimentalism",
+        "Existentialism",
+        "Social Contract"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 267,
+      "text": "Who proposed the theory of Will to Power?",
+      "options": [
+        "Natural Rights",
+        "Ethics of Care",
+        "Land Ethic",
+        "Will to Power"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 268,
+      "text": "Who proposed the theory of Socratic Method?",
+      "options": [
+        "Socratic Method",
+        "General Will",
+        "Categorical Imperative",
+        "Utilitarianism"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 269,
+      "text": "Who proposed the theory of Theory of Forms?",
+      "options": [
+        "General Will",
+        "Theory of Justice",
+        "Preference Utilitarianism",
+        "Theory of Forms"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 270,
+      "text": "Who proposed the theory of Ren Ethics?",
+      "options": [
+        "Social Contract",
+        "Preference Utilitarianism",
+        "Ren Ethics",
+        "Sentimentalism"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 271,
+      "text": "Who proposed the theory of Social Contract?",
+      "options": [
+        "Social Contract",
+        "Ethics of Care",
+        "Existentialism",
+        "Cyrenaicism"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 272,
+      "text": "Who proposed the theory of Natural Rights?",
+      "options": [
+        "Land Ethic",
+        "Ethics of Care",
+        "Theory of Forms",
+        "Natural Rights"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 273,
+      "text": "Who proposed the theory of General Will?",
+      "options": [
+        "Utilitarianism",
+        "General Will",
+        "Existentialism",
+        "Cyrenaicism"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 274,
+      "text": "Who proposed the theory of Communism?",
+      "options": [
+        "Theory of Forms",
+        "Cyrenaicism",
+        "Sentimentalism",
+        "Communism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 275,
+      "text": "Who proposed the theory of Entitlement Theory?",
+      "options": [
+        "Entitlement Theory",
+        "Will to Power",
+        "Virtue Ethics",
+        "Sentimentalism"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 276,
+      "text": "Who proposed the theory of Preference Utilitarianism?",
+      "options": [
+        "Theory of Forms",
+        "Utilitarianism",
+        "Categorical Imperative",
+        "Preference Utilitarianism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 277,
+      "text": "Who proposed the theory of Cyrenaicism?",
+      "options": [
+        "Communism",
+        "Preference Utilitarianism",
+        "Entitlement Theory",
+        "Cyrenaicism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 278,
+      "text": "Who proposed the theory of Existentialism?",
+      "options": [
+        "Entitlement Theory",
+        "General Will",
+        "Preference Utilitarianism",
+        "Existentialism"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 279,
+      "text": "Who proposed the theory of Land Ethic?",
+      "options": [
+        "Land Ethic",
+        "Theory of Justice",
+        "Theory of Forms",
+        "Cyrenaicism"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 280,
+      "text": "Who proposed the theory of Ethics of Care?",
+      "options": [
+        "Theory of Forms",
+        "Ethics of Care",
+        "Entitlement Theory",
+        "Cyrenaicism"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "ethics"
+    },
+    {
+      "id": 281,
+      "text": "Who said: \"The ends justify the means.\"?",
+      "options": [
+        "Immanuel Kant",
+        "Thrasymachus",
+        "Niccol\u00f2 Machiavelli",
+        "Michel Foucault"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 282,
+      "text": "Who said: \"Act only according to that maxim whereby you can at the same time will that it should become a universal law.\"?",
+      "options": [
+        "Heraclitus",
+        "Mahatma Gandhi",
+        "Thrasymachus",
+        "Immanuel Kant"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 283,
+      "text": "Who said: \"One cannot step twice in the same river.\"?",
+      "options": [
+        "Edmund Burke",
+        "Jean-Jacques Rousseau",
+        "Friedrich Nietzsche",
+        "Heraclitus"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 284,
+      "text": "Who said: \"Happiness is the highest good.\"?",
+      "options": [
+        "Aristotle",
+        "Francis Bacon",
+        "Edmund Burke",
+        "Friedrich Nietzsche"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 285,
+      "text": "Who said: \"Knowledge is power.\"?",
+      "options": [
+        "Immanuel Kant",
+        "Francis Bacon",
+        "Aristotle",
+        "Michel Foucault"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 286,
+      "text": "Who said: \"The life unexamined is not worth living.\"?",
+      "options": [
+        "Jean-Paul Sartre",
+        "Thrasymachus",
+        "Socrates",
+        "Albert Einstein"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 287,
+      "text": "Who said: \"No man is an island.\"?",
+      "options": [
+        "Francis Bacon",
+        "John Stuart Mill",
+        "John Donne",
+        "Jean-Paul Sartre"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 288,
+      "text": "Who said: \"Hell is other people.\"?",
+      "options": [
+        "Mahatma Gandhi",
+        "Niccol\u00f2 Machiavelli",
+        "Friedrich Nietzsche",
+        "Jean-Paul Sartre"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 289,
+      "text": "Who said: \"Man is born free, and everywhere he is in chains.\"?",
+      "options": [
+        "John Locke",
+        "Francis Bacon",
+        "Jean-Jacques Rousseau",
+        "Heraclitus"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 290,
+      "text": "Who said: \"God is dead.\"?",
+      "options": [
+        "Immanuel Kant",
+        "John Donne",
+        "Friedrich Nietzsche",
+        "Edmund Burke"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 291,
+      "text": "Who said: \"Might makes right.\"?",
+      "options": [
+        "Desmond Tutu",
+        "Friedrich Nietzsche",
+        "Thrasymachus",
+        "John Stuart Mill"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 292,
+      "text": "Who said: \"Injustice anywhere is a threat to justice everywhere.\"?",
+      "options": [
+        "Lord Acton",
+        "Martin Luther King Jr.",
+        "John Locke",
+        "Jean-Paul Sartre"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 293,
+      "text": "Who said: \"Power tends to corrupt, and absolute power corrupts absolutely.\"?",
+      "options": [
+        "Lord Acton",
+        "Jean-Paul Sartre",
+        "Thrasymachus",
+        "Edmund Burke"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 294,
+      "text": "Who said: \"If you are neutral in situations of injustice, you have chosen the side of the oppressor.\"?",
+      "options": [
+        "Albert Einstein",
+        "Edmund Burke",
+        "Jean-Paul Sartre",
+        "Desmond Tutu"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 295,
+      "text": "Who said: \"The only thing necessary for the triumph of evil is for good men to do nothing.\"?",
+      "options": [
+        "Jean-Jacques Rousseau",
+        "Albert Einstein",
+        "Edmund Burke",
+        "Michel Foucault"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 296,
+      "text": "Who said: \"Liberty consists in doing what one desires.\"?",
+      "options": [
+        "John Stuart Mill",
+        "Aristotle",
+        "Immanuel Kant",
+        "Albert Einstein"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 297,
+      "text": "Who said: \"You must be the change you wish to see in the world.\"?",
+      "options": [
+        "Albert Einstein",
+        "Mahatma Gandhi",
+        "John Donne",
+        "Desmond Tutu"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 298,
+      "text": "Who said: \"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.\"?",
+      "options": [
+        "Jean-Jacques Rousseau",
+        "Immanuel Kant",
+        "Albert Einstein",
+        "Lord Acton"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 299,
+      "text": "Who said: \"It is one thing to show a man that he is in an error, and another to put him in possession of the truth.\"?",
+      "options": [
+        "Albert Einstein",
+        "Friedrich Nietzsche",
+        "Aristotle",
+        "John Locke"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 300,
+      "text": "Who said: \"Where there is power, there is resistance.\"?",
+      "options": [
+        "Heraclitus",
+        "Thrasymachus",
+        "John Stuart Mill",
+        "Michel Foucault"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "ethics"
+    },
+    {
+      "id": 301,
+      "text": "What class does the lion belong to?",
+      "options": [
+        "Chondrichthyes",
+        "Mammalia",
+        "Reptilia",
+        "Gastropoda"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 302,
+      "text": "What class does the eagle belong to?",
+      "options": [
+        "Aves",
+        "Insecta",
+        "Amphibia",
+        "Arachnida"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 303,
+      "text": "What class does the shark belong to?",
+      "options": [
+        "Amphibia",
+        "Reptilia",
+        "Chondrichthyes",
+        "Mammalia"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 304,
+      "text": "What class does the frog belong to?",
+      "options": [
+        "Reptilia",
+        "Aves",
+        "Actinopterygii",
+        "Amphibia"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 305,
+      "text": "What class does the butterfly belong to?",
+      "options": [
+        "Actinopterygii",
+        "Mammalia",
+        "Insecta",
+        "Amphibia"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 306,
+      "text": "What class does the spider belong to?",
+      "options": [
+        "Gastropoda",
+        "Arachnida",
+        "Actinopterygii",
+        "Aves"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 307,
+      "text": "What class does the salmon belong to?",
+      "options": [
+        "Chondrichthyes",
+        "Actinopterygii",
+        "Mammalia",
+        "Arachnida"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 308,
+      "text": "What class does the elephant belong to?",
+      "options": [
+        "Arachnida",
+        "Insecta",
+        "Amphibia",
+        "Mammalia"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 309,
+      "text": "What class does the kangaroo belong to?",
+      "options": [
+        "Actinopterygii",
+        "Arachnida",
+        "Mammalia",
+        "Aves"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 310,
+      "text": "What class does the snail belong to?",
+      "options": [
+        "Mammalia",
+        "Arachnida",
+        "Gastropoda",
+        "Aves"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 311,
+      "text": "What class does the bat belong to?",
+      "options": [
+        "Reptilia",
+        "Amphibia",
+        "Actinopterygii",
+        "Mammalia"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 312,
+      "text": "What class does the penguin belong to?",
+      "options": [
+        "Aves",
+        "Reptilia",
+        "Insecta",
+        "Actinopterygii"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 313,
+      "text": "What class does the crocodile belong to?",
+      "options": [
+        "Actinopterygii",
+        "Gastropoda",
+        "Reptilia",
+        "Aves"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 314,
+      "text": "What class does the whale belong to?",
+      "options": [
+        "Reptilia",
+        "Mammalia",
+        "Actinopterygii",
+        "Aves"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 315,
+      "text": "What class does the ostrich belong to?",
+      "options": [
+        "Arachnida",
+        "Aves",
+        "Mammalia",
+        "Insecta"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 316,
+      "text": "What class does the turtle belong to?",
+      "options": [
+        "Aves",
+        "Actinopterygii",
+        "Mammalia",
+        "Reptilia"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 317,
+      "text": "What class does the bee belong to?",
+      "options": [
+        "Reptilia",
+        "Gastropoda",
+        "Insecta",
+        "Chondrichthyes"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 318,
+      "text": "What class does the chimpanzee belong to?",
+      "options": [
+        "Chondrichthyes",
+        "Gastropoda",
+        "Mammalia",
+        "Aves"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 319,
+      "text": "What class does the snake belong to?",
+      "options": [
+        "Gastropoda",
+        "Amphibia",
+        "Reptilia",
+        "Insecta"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 320,
+      "text": "What class does the rabbit belong to?",
+      "options": [
+        "Arachnida",
+        "Mammalia",
+        "Amphibia",
+        "Chondrichthyes"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "zoology"
+    },
+    {
+      "id": 321,
+      "text": "What type of diet does a cow have?",
+      "options": [
+        "omnivore",
+        "detritivore",
+        "carnivore",
+        "herbivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 322,
+      "text": "What type of diet does a tiger have?",
+      "options": [
+        "herbivore",
+        "omnivore",
+        "detritivore",
+        "carnivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 323,
+      "text": "What type of diet does a bear have?",
+      "options": [
+        "detritivore",
+        "herbivore",
+        "omnivore",
+        "carnivore"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 324,
+      "text": "What type of diet does a goat have?",
+      "options": [
+        "carnivore",
+        "detritivore",
+        "omnivore",
+        "herbivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 325,
+      "text": "What type of diet does a human have?",
+      "options": [
+        "detritivore",
+        "carnivore",
+        "herbivore",
+        "omnivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 326,
+      "text": "What type of diet does a sheep have?",
+      "options": [
+        "detritivore",
+        "herbivore",
+        "omnivore",
+        "carnivore"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 327,
+      "text": "What type of diet does a hyena have?",
+      "options": [
+        "detritivore",
+        "herbivore",
+        "carnivore",
+        "omnivore"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 328,
+      "text": "What type of diet does a panda have?",
+      "options": [
+        "carnivore",
+        "detritivore",
+        "herbivore",
+        "omnivore"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 329,
+      "text": "What type of diet does a deer have?",
+      "options": [
+        "herbivore",
+        "carnivore",
+        "omnivore",
+        "detritivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 330,
+      "text": "What type of diet does a giraffe have?",
+      "options": [
+        "herbivore",
+        "omnivore",
+        "detritivore",
+        "carnivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 331,
+      "text": "What type of diet does a crocodile have?",
+      "options": [
+        "herbivore",
+        "detritivore",
+        "omnivore",
+        "carnivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 332,
+      "text": "What type of diet does a rabbit have?",
+      "options": [
+        "detritivore",
+        "carnivore",
+        "herbivore",
+        "omnivore"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 333,
+      "text": "What type of diet does a fox have?",
+      "options": [
+        "omnivore",
+        "carnivore",
+        "herbivore",
+        "detritivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 334,
+      "text": "What type of diet does a squirrel have?",
+      "options": [
+        "carnivore",
+        "herbivore",
+        "detritivore",
+        "omnivore"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 335,
+      "text": "What type of diet does a wolf have?",
+      "options": [
+        "detritivore",
+        "omnivore",
+        "herbivore",
+        "carnivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 336,
+      "text": "What type of diet does a chicken have?",
+      "options": [
+        "omnivore",
+        "detritivore",
+        "carnivore",
+        "herbivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 337,
+      "text": "What type of diet does a pig have?",
+      "options": [
+        "omnivore",
+        "detritivore",
+        "carnivore",
+        "herbivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 338,
+      "text": "What type of diet does a horse have?",
+      "options": [
+        "omnivore",
+        "herbivore",
+        "carnivore",
+        "detritivore"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 339,
+      "text": "What type of diet does a elephant have?",
+      "options": [
+        "herbivore",
+        "carnivore",
+        "detritivore",
+        "omnivore"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 340,
+      "text": "What type of diet does a hippopotamus have?",
+      "options": [
+        "omnivore",
+        "detritivore",
+        "carnivore",
+        "herbivore"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "zoology"
+    },
+    {
+      "id": 341,
+      "text": "What is the scientific name of the lion?",
+      "options": [
+        "Haliaeetus leucocephalus",
+        "Panthera leo",
+        "Bos taurus",
+        "Ursus arctos"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 342,
+      "text": "What is the scientific name of the domestic cat?",
+      "options": [
+        "Felis catus",
+        "Loxodonta africana",
+        "Ursus maritimus",
+        "Homo sapiens"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 343,
+      "text": "What is the scientific name of the domestic dog?",
+      "options": [
+        "Canis lupus familiaris",
+        "Sus scrofa domesticus",
+        "Equus zebra",
+        "Panthera tigris"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 344,
+      "text": "What is the scientific name of the human?",
+      "options": [
+        "Ovis aries",
+        "Loxodonta africana",
+        "Homo sapiens",
+        "Pan troglodytes"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 345,
+      "text": "What is the scientific name of the tiger?",
+      "options": [
+        "Haliaeetus leucocephalus",
+        "Sus scrofa domesticus",
+        "Carcharodon carcharias",
+        "Panthera tigris"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 346,
+      "text": "What is the scientific name of the brown bear?",
+      "options": [
+        "Ursus arctos",
+        "Pan troglodytes",
+        "Bos taurus",
+        "Panthera leo"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 347,
+      "text": "What is the scientific name of the polar bear?",
+      "options": [
+        "Equus zebra",
+        "Ursus maritimus",
+        "Canis lupus familiaris",
+        "Haliaeetus leucocephalus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 348,
+      "text": "What is the scientific name of the wolf?",
+      "options": [
+        "Gorilla gorilla",
+        "Canis lupus",
+        "Ovis aries",
+        "Haliaeetus leucocephalus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 349,
+      "text": "What is the scientific name of the chimpanzee?",
+      "options": [
+        "Pan troglodytes",
+        "Panthera tigris",
+        "Sus scrofa domesticus",
+        "Bos taurus"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 350,
+      "text": "What is the scientific name of the gorilla?",
+      "options": [
+        "Macropus rufus",
+        "Bos taurus",
+        "Canis lupus",
+        "Gorilla gorilla"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 351,
+      "text": "What is the scientific name of the horse?",
+      "options": [
+        "Panthera leo",
+        "Pan troglodytes",
+        "Sus scrofa domesticus",
+        "Equus ferus caballus"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 352,
+      "text": "What is the scientific name of the cow?",
+      "options": [
+        "Capra aegagrus hircus",
+        "Bos taurus",
+        "Pan troglodytes",
+        "Canis lupus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 353,
+      "text": "What is the scientific name of the sheep?",
+      "options": [
+        "Ursus arctos",
+        "Panthera leo",
+        "Ovis aries",
+        "Felis catus"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 354,
+      "text": "What is the scientific name of the goat?",
+      "options": [
+        "Capra aegagrus hircus",
+        "Sus scrofa domesticus",
+        "Haliaeetus leucocephalus",
+        "Gorilla gorilla"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 355,
+      "text": "What is the scientific name of the pig?",
+      "options": [
+        "Gorilla gorilla",
+        "Sus scrofa domesticus",
+        "Panthera leo",
+        "Canis lupus"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 356,
+      "text": "What is the scientific name of the elephant?",
+      "options": [
+        "Carcharodon carcharias",
+        "Haliaeetus leucocephalus",
+        "Gorilla gorilla",
+        "Loxodonta africana"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 357,
+      "text": "What is the scientific name of the zebra?",
+      "options": [
+        "Equus zebra",
+        "Equus ferus caballus",
+        "Macropus rufus",
+        "Ovis aries"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 358,
+      "text": "What is the scientific name of the kangaroo?",
+      "options": [
+        "Carcharodon carcharias",
+        "Equus zebra",
+        "Macropus rufus",
+        "Ovis aries"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 359,
+      "text": "What is the scientific name of the bald eagle?",
+      "options": [
+        "Bos taurus",
+        "Ovis aries",
+        "Equus zebra",
+        "Haliaeetus leucocephalus"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 360,
+      "text": "What is the scientific name of the great white shark?",
+      "options": [
+        "Pan troglodytes",
+        "Canis lupus",
+        "Sus scrofa domesticus",
+        "Carcharodon carcharias"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "zoology"
+    },
+    {
+      "id": 361,
+      "text": "Which planet is closest to the Sun?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Venus",
+        "Mercury"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 362,
+      "text": "Which planet is known as the Red Planet?",
+      "options": [
+        "Saturn",
+        "Mars",
+        "Venus",
+        "Jupiter"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 363,
+      "text": "Which planet has the most rings?",
+      "options": [
+        "Neptune",
+        "Uranus",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 364,
+      "text": "Which is the largest planet in our solar system?",
+      "options": [
+        "Earth",
+        "Saturn",
+        "Jupiter",
+        "Neptune"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 365,
+      "text": "Which planet is known for its Great Red Spot?",
+      "options": [
+        "Saturn",
+        "Neptune",
+        "Mars",
+        "Jupiter"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 366,
+      "text": "Which planet rotates on its side?",
+      "options": [
+        "Jupiter",
+        "Neptune",
+        "Uranus",
+        "Saturn"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 367,
+      "text": "Which planet is the hottest in our solar system?",
+      "options": [
+        "Mercury",
+        "Venus",
+        "Mars",
+        "Earth"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 368,
+      "text": "Which dwarf planet was demoted in 2006?",
+      "options": [
+        "Makemake",
+        "Eris",
+        "Pluto",
+        "Ceres"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 369,
+      "text": "What is the name of our galaxy?",
+      "options": [
+        "Milky Way",
+        "Whirlpool",
+        "Triangulum",
+        "Andromeda"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 370,
+      "text": "Which galaxy is nearest to the Milky Way?",
+      "options": [
+        "Triangulum",
+        "Sombrero",
+        "Andromeda",
+        "Whirlpool"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 371,
+      "text": "What is the name of Earth's natural satellite?",
+      "options": [
+        "Moon",
+        "Deimos",
+        "Phobos",
+        "Europa"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 372,
+      "text": "What was the first artificial satellite?",
+      "options": [
+        "Luna 1",
+        "Sputnik 1",
+        "Explorer 1",
+        "Vanguard 1"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 373,
+      "text": "What is a light-year a measure of?",
+      "options": [
+        "Brightness",
+        "Speed",
+        "Distance",
+        "Time"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 374,
+      "text": "What is the center of our solar system?",
+      "options": [
+        "Milky Way",
+        "The Sun",
+        "Jupiter",
+        "Earth"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 375,
+      "text": "Which force keeps planets in orbit around the sun?",
+      "options": [
+        "Magnetism",
+        "Gravity",
+        "Electromagnetism",
+        "Friction"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 376,
+      "text": "Which planet has a storm called the Great Dark Spot?",
+      "options": [
+        "Neptune",
+        "Saturn",
+        "Uranus",
+        "Jupiter"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 377,
+      "text": "What do we call a system of millions of stars held together by gravity?",
+      "options": [
+        "Solar system",
+        "Nebula",
+        "Constellation",
+        "Galaxy"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 378,
+      "text": "What is the name of the first man to walk on the Moon?",
+      "options": [
+        "Buzz Aldrin",
+        "Michael Collins",
+        "Neil Armstrong",
+        "Yuri Gagarin"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 379,
+      "text": "What is the name of the telescope launched in 1990 to observe deep space?",
+      "options": [
+        "Chandra",
+        "Hubble Space Telescope",
+        "James Webb",
+        "Spitzer"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 380,
+      "text": "Which planet is known as Earth's twin?",
+      "options": [
+        "Jupiter",
+        "Mercury",
+        "Mars",
+        "Venus"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "easy",
+      "category": "astronomy"
+    },
+    {
+      "id": 381,
+      "text": "What is G2V?",
+      "options": [
+        "Remnant core of a massive star after supernova",
+        "Used to measure cosmic distances",
+        "Spectral class of the Sun",
+        "Rapid early expansion of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 382,
+      "text": "What is Barred spiral?",
+      "options": [
+        "Type of the Milky Way galaxy",
+        "Distant shell of icy objects",
+        "Region of icy bodies beyond Neptune",
+        "Rapid early expansion of the universe"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 383,
+      "text": "What is Neutron star?",
+      "options": [
+        "Force driving universe expansion",
+        "Shell of ionized gas ejected by a red giant",
+        "Type of the Milky Way galaxy",
+        "Remnant core of a massive star after supernova"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 384,
+      "text": "What is Alpha Centauri?",
+      "options": [
+        "Rotating neutron star emitting beams",
+        "Young pre-main-sequence star",
+        "Distant shell of icy objects",
+        "Nearest star system"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 385,
+      "text": "What is Black hole?",
+      "options": [
+        "Region of spacetime with gravity so strong nothing escapes",
+        "Extremely luminous active galactic nucleus",
+        "Origin of the cosmic microwave background",
+        "Distant shell of icy objects"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 386,
+      "text": "What is Main sequence?",
+      "options": [
+        "Rotating neutron star emitting beams",
+        "Force driving universe expansion",
+        "Young pre-main-sequence star",
+        "Phase of hydrogen fusion in stars"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 387,
+      "text": "What is Cepheid variables?",
+      "options": [
+        "3.26 light years",
+        "Origin of the cosmic microwave background",
+        "Nearest star system",
+        "Used to measure cosmic distances"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 388,
+      "text": "What is Planetary nebula?",
+      "options": [
+        "Shell of ionized gas ejected by a red giant",
+        "Origin of the cosmic microwave background",
+        "Distant shell of icy objects",
+        "Region of icy bodies beyond Neptune"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 389,
+      "text": "What is Quasar?",
+      "options": [
+        "Nearest star system",
+        "Young pre-main-sequence star",
+        "Extremely luminous active galactic nucleus",
+        "Rate of expansion of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 390,
+      "text": "What is Dark matter?",
+      "options": [
+        "Unseen mass in the universe",
+        "Region of spacetime with gravity so strong nothing escapes",
+        "Rapid early expansion of the universe",
+        "Force driving universe expansion"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 391,
+      "text": "What is Dark energy?",
+      "options": [
+        "Rate of expansion of the universe",
+        "Origin of the cosmic microwave background",
+        "Young pre-main-sequence star",
+        "Force driving universe expansion"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 392,
+      "text": "What is Hubble constant?",
+      "options": [
+        "Unseen mass in the universe",
+        "Region of spacetime with gravity so strong nothing escapes",
+        "Phase of hydrogen fusion in stars",
+        "Rate of expansion of the universe"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 393,
+      "text": "What is Kuiper Belt?",
+      "options": [
+        "Region of icy bodies beyond Neptune",
+        "Remnant core of a massive star after supernova",
+        "Unseen mass in the universe",
+        "Phase of hydrogen fusion in stars"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 394,
+      "text": "What is Oort Cloud?",
+      "options": [
+        "Shell of ionized gas ejected by a red giant",
+        "Distant shell of icy objects",
+        "Rapid early expansion of the universe",
+        "Approximate age of the universe"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 395,
+      "text": "What is Pulsar?",
+      "options": [
+        "Extremely luminous active galactic nucleus",
+        "Rotating neutron star emitting beams",
+        "Type of the Milky Way galaxy",
+        "Distant shell of icy objects"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 396,
+      "text": "What is 13.8 billion years?",
+      "options": [
+        "Rate of expansion of the universe",
+        "Approximate age of the universe",
+        "Remnant core of a massive star after supernova",
+        "Shell of ionized gas ejected by a red giant"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 397,
+      "text": "What is Parsec?",
+      "options": [
+        "3.26 light years",
+        "Young pre-main-sequence star",
+        "Type of the Milky Way galaxy",
+        "Used to measure cosmic distances"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 398,
+      "text": "What is Photon decoupling?",
+      "options": [
+        "Origin of the cosmic microwave background",
+        "Extremely luminous active galactic nucleus",
+        "Phase of hydrogen fusion in stars",
+        "Spectral class of the Sun"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 399,
+      "text": "What is Inflation?",
+      "options": [
+        "Region of spacetime with gravity so strong nothing escapes",
+        "Rapid early expansion of the universe",
+        "Distant shell of icy objects",
+        "Phase of hydrogen fusion in stars"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 400,
+      "text": "What is T Tauri star?",
+      "options": [
+        "Shell of ionized gas ejected by a red giant",
+        "Extremely luminous active galactic nucleus",
+        "Young pre-main-sequence star",
+        "Force driving universe expansion"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "medium",
+      "category": "astronomy"
+    },
+    {
+      "id": 401,
+      "text": "What does Hubble's law describe?",
+      "options": [
+        "Formation of light elements after the Big Bang",
+        "Recession velocity of galaxies proportional to distance",
+        "Earliest period of the universe",
+        "Release of the cosmic microwave background"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 402,
+      "text": "What does Cosmic microwave background describe?",
+      "options": [
+        "Radiation leftover from the Big Bang",
+        "Rapid early expansion of the universe",
+        "Limit of the observable universe",
+        "Early universe period dominated by leptons"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 403,
+      "text": "What does Baryonic matter describe?",
+      "options": [
+        "Epoch when atoms formed",
+        "Normal matter made of protons and neutrons",
+        "Point of infinite density",
+        "Lambda term in Einstein's field equations"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 404,
+      "text": "What does Inflation theory describe?",
+      "options": [
+        "Unknown motion of galaxy clusters",
+        "Release of the cosmic microwave background",
+        "Rapid early expansion of the universe",
+        "Radiation leftover from the Big Bang"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 405,
+      "text": "What does Cosmic horizon describe?",
+      "options": [
+        "Limit of the observable universe",
+        "Hypothetical tunnel in spacetime",
+        "Point of infinite density",
+        "Recession velocity of galaxies proportional to distance"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 406,
+      "text": "What does Redshift describe?",
+      "options": [
+        "Increase in wavelength of light from receding objects",
+        "Lambda term in Einstein's field equations",
+        "Hypothetical dynamic dark energy",
+        "Density needed for a flat universe"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 407,
+      "text": "What does Big Bang nucleosynthesis describe?",
+      "options": [
+        "Limit of the observable universe",
+        "Epoch when atoms formed",
+        "Formation of light elements after the Big Bang",
+        "Earliest period of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 408,
+      "text": "What does Critical density describe?",
+      "options": [
+        "Density needed for a flat universe",
+        "Point of infinite density",
+        "Limit of the observable universe",
+        "Lambda term in Einstein's field equations"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 409,
+      "text": "What does Dark flow describe?",
+      "options": [
+        "Limit of the observable universe",
+        "Unknown motion of galaxy clusters",
+        "Lambda term in Einstein's field equations",
+        "Imbalance between matter and antimatter"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 410,
+      "text": "What does Singularity describe?",
+      "options": [
+        "Release of the cosmic microwave background",
+        "Point of infinite density",
+        "Density needed for a flat universe",
+        "Increase in wavelength of light from receding objects"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 411,
+      "text": "What does Quintessence describe?",
+      "options": [
+        "Release of the cosmic microwave background",
+        "Density needed for a flat universe",
+        "Normal matter made of protons and neutrons",
+        "Hypothetical dynamic dark energy"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 412,
+      "text": "What does Cosmological constant describe?",
+      "options": [
+        "Early universe period dominated by leptons",
+        "Increase in wavelength of light from receding objects",
+        "Lambda term in Einstein's field equations",
+        "Rapid early expansion of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 413,
+      "text": "What does Matter-antimatter asymmetry describe?",
+      "options": [
+        "Radiation leftover from the Big Bang",
+        "Hypothetical tunnel in spacetime",
+        "Imbalance between matter and antimatter",
+        "Earliest period of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 414,
+      "text": "What does Lepton epoch describe?",
+      "options": [
+        "Unknown motion of galaxy clusters",
+        "Release of the cosmic microwave background",
+        "Density needed for a flat universe",
+        "Early universe period dominated by leptons"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 415,
+      "text": "What does Recombination era describe?",
+      "options": [
+        "Hypothetical tunnel in spacetime",
+        "Epoch when atoms formed",
+        "Formation of light elements after the Big Bang",
+        "Lambda term in Einstein's field equations"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 416,
+      "text": "What does Photon decoupling describe?",
+      "options": [
+        "Epoch when atoms formed",
+        "Earliest period of the universe",
+        "Early universe period dominated by leptons",
+        "Release of the cosmic microwave background"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 417,
+      "text": "What does Planck epoch describe?",
+      "options": [
+        "Unknown motion of galaxy clusters",
+        "Radiation leftover from the Big Bang",
+        "Earliest period of the universe",
+        "Hypothetical tunnel in spacetime"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 418,
+      "text": "What does Multiverse theory describe?",
+      "options": [
+        "Release of the cosmic microwave background",
+        "Lambda term in Einstein's field equations",
+        "Existence of multiple universes",
+        "CMB anisotropies induced by gravitational redshift"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 419,
+      "text": "What does Wormhole describe?",
+      "options": [
+        "Unknown motion of galaxy clusters",
+        "Formation of light elements after the Big Bang",
+        "Hypothetical tunnel in spacetime",
+        "Rapid early expansion of the universe"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "hard",
+      "category": "astronomy"
+    },
+    {
+      "id": 420,
+      "text": "What does Sachs-Wolfe effect describe?",
+      "options": [
+        "CMB anisotropies induced by gravitational redshift",
+        "Density needed for a flat universe",
+        "Formation of light elements after the Big Bang",
+        "Point of infinite density"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "hard",
+      "category": "astronomy"
+    }
+  ]
+}

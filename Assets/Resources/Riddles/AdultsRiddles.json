@@ -1,0 +1,369 @@
+{
+  "riddles": [
+    {
+      "id": 1,
+      "text": "In hall of lord, I stand so tall,\nWith arms of iron, I guard them all.\nNo flesh have I, yet foes I stay,\nIn darkened night or bright of day.\nWhat am I?",
+      "options": [
+        "A castle gate",
+        "A suit of armor",
+        "A stone statue",
+        "A wooden shield"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "text": "I am no bird, yet I do soar,\nAbove the fields where battles roar.\nWith cloth and thread, my colors fly,\nProclaiming lordship to the sky.\nWhat am I?",
+      "options": ["A kite", "A banner", "A tapestry", "A cloak"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "text": "I’m born of fire, yet cold I lie,\nIn peasant’s hand or king’s, I ply.\nI reap the field or end a strife,\nMy edge brings death or sustains life.\nWhat am I?",
+      "options": ["A candle", "A blade", "A plow", "A coin"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "text": "I travel far, yet never stray,\nMy master’s words I bear always.\nNo legs I have, nor feet to roam,\nYet swiftly reach a distant home.\nWhat am I?",
+      "options": ["A pigeon", "A letter", "A rumor", "A dream"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "text": "In castle’s heart, I glow with might,\nI banish shadows, bring warmth to night.\nBut feed me not, or I’ll consume,\nThe very hall I once illumed.\nWhat am I?",
+      "options": ["A torch", "A fire", "A lantern", "A star"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "text": "I’m clad in mail, yet fight I not,\nI bear the load where knights cannot.\nWith steady tread, I bear the load,\nThrough mud and mire on endless road.\nWhat am I?",
+      "options": ["A squire", "A packhorse", "A cart", "A mule"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "text": "My pages turn, yet I’m no mill,\nWith quill and ink, I hold my will.\nIn scholar’s hall, I’m born to tell,\nOf tales of war or lands that dwell.\nWhat am I?",
+      "options": ["A scroll", "A book", "A map", "A ledger"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "text": "I’m crowned with thorns, yet rule no land,\nMy kingdom lies in labor’s hand.\nI’m sown in spring, in autumn shorn,\nFrom me, the bread of life is born.\nWhat am I?",
+      "options": ["Barley", "Wheat", "Rye", "Oats"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "text": "I’m strung with care, yet sing no tune,\nMy flight is swift beneath the moon.\nIn hunter Paul sent me,\nAnd pierce the heart of foe and friend.\nWhat am I?",
+      "options": ["A bow", "A lance", "A catapult", "A mace"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "text": "I grind the grain to make your bread,\nWith turning stone, my work is led.\nBy water’s force or wind’s embrace,\nI serve the town in sturdy place.\nWhat am I?",
+      "options": ["A forge", "A mill", "A loom", "A press"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "text": "I’m forged in fire, yet wielded cold,\nIn warrior’s hand, I’m fierce and bold.\nMy point can pierce through mail and bone,\nIn battle’s clash, my name is known.\nWhat am I?",
+      "options": ["A mace", "A lance", "A dagger", "A flail"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "text": "I’m made of hide, yet walk I not,\nIn scholar’s hall, my use is sought.\nWith ink and quill, I hold the lore,\nOf tales and laws from days of yore.\nWhat am I?",
+      "options": ["A map", "A scroll", "A saddle", "A glove"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "text": "I’m bound in chains, yet guard the gate,\nMy weight ensures the castle’s fate.\nRaised or lowered by a wheel’s turn,\nI hold the foe or let them burn.\nWhat am I?",
+      "options": ["A portcullis", "A drawbridge", "A catapult", "A moat"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "text": "I’m filled with feathers, yet fly I none,\nOn lord’s high bed, my work is done.\nSoft and warm, I ease the night,\nFor weary bones till morning’s light.\nWhat am I?",
+      "options": ["A cloak", "A pillow", "A rug", "A tent"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "text": "I’m turned by hand, yet grind no corn,\nWith wool or flax, my thread is born.\nIn cottage small, I spin my tale,\nFor cloth to weave or sail to sail.\nWhat am I?",
+      "options": ["A loom", "A spindle", "A millstone", "A bellows"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "text": "I’m clad in iron, yet fight no war,\nI hold the flame where soups restore.\nIn kitchen’s heart, I stand with might,\nTo cook the feast from morn till night.\nWhat am I?",
+      "options": ["A cauldron", "A spit", "A ladle", "A grate"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "text": "I’m drawn through fields, yet bear no load,\nMy sharpened edge turns earth’s abode.\nWith ox or horse, I carve the land,\nFor crops to grow by farmer’s hand.\nWhat am I?",
+      "options": ["A sickle", "A plow", "A hoe", "A rake"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "text": "I’m strung with gut, yet sing no note,\nMy bolts fly swift from castle’s throat.\nIn siege or hunt, I claim my prey,\nWith aim precise, I win the day.\nWhat am I?",
+      "options": ["A bow", "A crossbow", "A trebuchet", "A sling"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "text": "I’m built of stone, yet move I do,\nWith wind or water, I grind true.\nIn village heart, I crush the grain,\nTo feed the folk through sun or rain.\nWhat am I?",
+      "options": ["A millstone", "A forge", "A press", "A kiln"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "text": "I’m worn by knights, yet no armor I,\nMy colors bold catch every eye.\nDraped o’er mail, I bear the crest,\nProclaiming lord from east to west.\nWhat am I?",
+      "options": ["A tabard", "A cape", "A banner", "A sash"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "text": "I’m small and round, yet wealth I bring,\nIn merchant’s purse, my value sings.\nStamped with kings, I trade for bread,\nOr buy the steel to keep you fed.\nWhat am I?",
+      "options": ["A gem", "A coin", "A bead", "A seal"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "text": "I’m long and stout, yet sail I none,\nIn builder’s hand, my work is done.\nI frame the hall or bridge’s span,\nTo hold the weight of beast and man.\nWhat am I?",
+      "options": ["A rope", "A beam", "A plank", "A pole"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "text": "I’m sharp and swift, yet cut no wood,\nIn tailor’s hand, I serve the good.\nWith thread I dance, through cloth I glide,\nTo mend the tear or craft with pride.\nWhat am I?",
+      "options": ["A knife", "A needle", "A pin", "A shears"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "text": "I’m filled with wax, yet burn I not,\nIn scribe’s dim hall, my use is sought.\nI mark the deal or seal the fate,\nOf lords and lands in waxen state.\nWhat am I?",
+      "options": ["A candle", "A seal", "A tablet", "A mold"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "text": "I’m yoked to earth, yet roam I free,\nWith plow or cart, I toil for thee.\nMy strength pulls loads through mud and mire,\nFor farmer’s gain or lord’s desire.\nWhat am I?",
+      "options": ["A horse", "An ox", "A mule", "A donkey"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "text": "I’m woven tight, yet worn I’m not,\nIn sailor’s hand, my strength is sought.\nI catch the wind to drive the ship,\nAcross the seas on trading trip.\nWhat am I?",
+      "options": ["A net", "A sail", "A rope", "A tarp"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "text": "I’m small and black, yet spark I bring,\nIn tinder’s bed, my flame will sing.\nWith flint I strike to light the way,\nFor warmth or work at end of day.\nWhat am I?",
+      "options": ["A coal", "A spark", "A pebble", "A seed"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "text": "I’m carved with care, yet hold no drink,\nIn craftsman’s shop, I’m made to link.\nWith pegs and joints, I form the frame,\nOf chair or chest, I bear the name.\nWhat am I?",
+      "options": ["A barrel", "A hinge", "A plank", "A dowel"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 29,
+      "text": "I’m fed with wood, yet eat I none,\nIn smithy’s glow, my work is done.\nMy heat shapes steel for sword or shoe,\nWith bellows’ breath, my flames grow true.\nWhat am I?",
+      "options": ["A forge", "A kiln", "A stove", "A hearth"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "text": "I’m tied to post, yet roam I far,\nWith bleating voice beneath the star.\nMy milk and meat feed lord and knave,\nMy stubborn heart no chain can save.\nWhat am I?",
+      "options": ["A sheep", "A goat", "A cow", "A pig"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "text": "I’m stretched and dried, yet live I not,\nIn drum or book, my fate is wrought.\nFrom beast I come, with surface tight,\nTo sound the march or hold the write.\nWhat am I?",
+      "options": ["A hide", "A vellum", "A canvas", "A mat"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "text": "I’m swung with force, yet sing no song,\nIn builder’s hand, I drive along.\nWith iron head, I strike the nail,\nTo bind the wood through storm and gale.\nWhat am I?",
+      "options": ["An axe", "A hammer", "A mallet", "A pick"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "text": "I’m raised in pens, yet grow no crop,\nMy bristles coarse, my run won’t stop.\nWith snout I dig for scraps to eat,\nMy flesh is prized as tavern meat.\nWhat am I?",
+      "options": ["A boar", "A pig", "A ram", "A bull"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "text": "I’m turned by key, yet open none,\nIn tavern’s keep, my work is done.\nWith twist I pour the ale or wine,\nTo fill the cup for yours and mine.\nWhat am I?",
+      "options": ["A spigot", "A lock", "A hinge", "A valve"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 35,
+      "text": "I’m broad and flat, yet cut no bread,\nIn mason’s hand, I smooth instead.\nWith grit and stone, I shape the wall,\nTo stand through ages, proud and tall.\nWhat am I?",
+      "options": ["A chisel", "A trowel", "A file", "A plane"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "text": "I’m spun with skill, yet wear I none,\nIn fisherman’s craft, my web is spun.\nI trap the fish in river’s flow,\nTo feed the town when waters grow.\nWhat am I?",
+      "options": ["A hook", "A net", "A line", "A trap"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "text": "I’m hung on wall, yet warm I’m not,\nIn lord’s great hall, my art is sought.\nWith threads of gold, I tell the tale,\nOf battles won through storm and gale.\nWhat am I?",
+      "options": ["A painting", "A tapestry", "A curtain", "A flag"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "text": "I’m small and bright, yet light I lack,\nIn jeweler’s craft, I’m set with knack.\nFrom earth I come, in rings I shine,\nA treasure fit for lords divine.\nWhat am I?",
+      "options": ["A pearl", "A gem", "A bead", "A coin"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "text": "I’m pulled by rope, yet sail I none,\nIn castle’s well, my task is done.\nI fetch the water, cold and clear,\nFor all to drink when thirst is near.\nWhat am I?",
+      "options": ["A bucket", "A pump", "A barrel", "A jug"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "text": "I’m clad in fur, yet hunt I not,\nIn lady’s hand, my warmth is sought.\nI shield from cold in winter’s bite,\nTo keep her hands both soft and light.\nWhat am I?",
+      "options": ["A glove", "A muff", "A shawl", "A hood"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 41,
+      "text": "I’m carved with runes, yet speak no word,\nIn traveler’s hand, my path is stirred.\nI mark the way through wood and vale,\nTo guide the lost where roads prevail.\nWhat am I?",
+      "options": ["A map", "A signpost", "A compass", "A staff"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 42,
+      "text": "I’m bound with straps, yet hold no load,\nIn knight’s strong grip, I’m firmly stowed.\nWith spurs I prod to urge the steed,\nTo charge through fields with reckless speed.\nWhat am I?",
+      "options": ["A saddle", "A bridle", "A stirrup", "A rein"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 43,
+      "text": "I’m shaped by flame, yet bear no sword,\nIn farrier’s craft, my use is stored.\nI clad the hoof to guard the way,\nFor horse to tread through mud and clay.\nWhat am I?",
+      "options": ["A spur", "A horseshoe", "A bit", "A nail"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 44,
+      "text": "I’m rolled in fields, yet grow no seed,\nMy weight makes smooth the farmer’s need.\nWith stones inside, I press the earth,\nFor crops to thrive and prove their worth.\nWhat am I?",
+      "options": ["A plow", "A roller", "A harrow", "A cart"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 45,
+      "text": "I’m small and sharp, yet build I do,\nIn carpenter’s hand, my aim is true.\nI bite the wood to hold it fast,\nFor beams to stand while ages last.\nWhat am I?",
+      "options": ["A saw", "A nail", "A drill", "A wedge"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 46,
+      "text": "I’m stretched o’er frame, yet paint I none,\nIn artist’s craft, my work is done.\nWith oils and brush, I hold the scene,\nOf lords and lands where eyes convene.\nWhat am I?",
+      "options": ["A canvas", "A panel", "A board", "A sheet"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 47,
+      "text": "I’m hauled by beast, yet carry all,\nFrom market goods to castle’s call.\nWith wheels that creak through rut and stone,\nI bear the load till day is done.\nWhat am I?",
+      "options": ["A sled", "A wagon", "A barrow", "A litter"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 48,
+      "text": "I’m cast in clay, yet hold no water,\nIn potter’s kiln, my form is brought.\nWith glaze I shine for lordly feast,\nTo serve the meat or brew at least.\nWhat am I?",
+      "options": ["A jug", "A plate", "A bowl", "A tile"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 49,
+      "text": "I’m worn on head, yet no crown I,\nIn battle’s clash, I shield the eye.\nWith steel I’m forged to guard the skull,\nFrom foe’s fierce blow or arrow’s pull.\nWhat am I?",
+      "options": ["A hood", "A helmet", "A cap", "A visor"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 50,
+      "text": "I’m ground to dust, yet feed the flame,\nIn baker’s oven, I earn my name.\nWith dough I rise to make the bread,\nFor peasant’s meal or lord’s high spread.\nWhat am I?",
+      "options": ["Flour", "Yeast", "Salt", "Sugar"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 51,
+      "text": "I’m bent and strung, yet play no tune,\nIn hunter’s hand, I strike by moon.\nMy arrows fly through wood and glade,\nTo bring the game for feast arrayed.\nWhat am I?",
+      "options": ["A sling", "A bow", "A trap", "A spear"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 52,
+      "text": "I'm piled with straw, yet sleep I none,\nIn barn I stand till harvest done.\nWith pitchfork turned, I feed the beast,\nOr pad the stall for winter's feast.\nWhat am I?",
+      "options": ["A mattress", "A haystack", "A bale", "A sack"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 53,
+      "text": "I'm shaped by wheel, yet roll I not,\nIn potter's craft, my form is wrought.\nI hold the ale or water clear,\nFor traveler's thirst when night is near.\nWhat am I?",
+      "options": ["A cup", "A jug", "A flask", "A basin"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 54,
+      "text": "I'm tied with cord, yet bind no man,\nIn merchant's stall, my worth is scanned.\nWith goods inside, I'm slung o'er back,\nTo carry trade through dusty track.\nWhat am I?",
+      "options": ["A sack", "A crate", "A basket", "A pouch"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 55,
+      "text": "I'm swung in air, yet strike no foe,\nIn farmer's hand, I lay fields low.\nWith blade I sweep through stalk and stem,\nTo reap the harvest, grain by gem.\nWhat am I?",
+      "options": ["A scythe", "A flail", "A sickle", "A hoe"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 56,
+      "text": "I'm wrought of iron, yet cook no meal,\nIn stable hung, I aid the heel.\nWith pointed end, I urge the steed,\nTo hasten forth with greater speed.\nWhat am I?",
+      "options": ["A spur", "A bit", "A shoe", "A hook"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 57,
+      "text": "I'm laid in rows, yet grow no crop,\nIn roofer's craft, I reach the top.\nWith clay or slate, I shield from rain,\nTo keep the hall both dry and sane.\nWhat am I?",
+      "options": ["A shingle", "A brick", "A beam", "A ridge"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 58,
+      "text": "I'm small and round, yet hold no door,\nIn tailor's hand, I'm used to store.\nWith thread I'm wound to mend the seam,\nOf cloak or tunic, fine or mean.\nWhat am I?",
+      "options": ["A button", "A spool", "A clasp", "A thimble"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 59,
+      "text": "I'm drawn through mud, yet carry none,\nIn winter's cold, my work is done.\nWith runners smooth, I glide o'er snow,\nTo bear the load where wheels won't go.\nWhat am I?",
+      "options": ["A cart", "A sled", "A barge", "A litter"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 60,
+      "text": "I'm set in earth, yet hold no seed,\nIn fencer's craft, I meet the need.\nWith wood or stone, I mark the bound,\nTo keep the flock or foe not found.\nWhat am I?",
+      "options": ["A gate", "A post", "A wall", "A ditch"],
+      "correctAnswer": 1
+    }
+  ]
+}

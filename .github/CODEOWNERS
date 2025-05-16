@@ -5,10 +5,12 @@
 # the repo. Unless a later match takes precedence,
 # @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
-*       @osdv @global-owner2
+*       @osdv @ZINOU-SAMA @Nour-khiter
+
 
 
 # In this example, @doctocat owns any file in the `/docs`
 # directory in the root of your repository and any of its
 # subdirectories.
-/docs/ @adlenbhm @anesbhm @ZINOU-SAMA # add nour later
+
+/docs/ @adlenebhm @anesbhm @ZINOU-SAMA @Nour-khiter @k7al
