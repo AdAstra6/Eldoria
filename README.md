@@ -8,7 +8,7 @@
 ---
 
 ## 🧭 Overview  
-Eldoria is a 2D cooperative board game built in Unity, designed for both adults and kids. Players journey through magical biomes, answering questions, solving puzzles, and collaborating to survive challenges in a mystical world. Whether exploring for fun or reflection, Eldoria encourages teamwork, strategy, and emotional intelligence.
+Eldoria is a 2D cooperative board game built in Unity, designed for both adults and kids. Players journey through magical biomes and realms, answering questions, solving puzzles, and collaborating to survive challenges in a mystical world. Whether exploring for fun or reflection, Eldoria encourages teamwork, strategy, and emotional intelligence.
 
 ---
 
