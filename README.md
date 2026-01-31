@@ -20,7 +20,7 @@ Eldoria is a 2D cooperative board game built in Unity, designed for both adults 
 - **💗 Collaboration**:  
   - Share items and health (hearts)  
   - Strategize movement and tile decisions together  
-  - Team wins or loses together  
+  - Team wins or loses together   
 
 ---
 
